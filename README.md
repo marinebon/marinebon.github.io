@@ -11,7 +11,7 @@ The `master` branch is used by Travis.CI to deploy the website to GitHub's serve
 
 ## dev
 ### setup
-0. `git clone -b theme https://github.com/marinebon/mbon_jekyll_theme.git _theme` to clone the **"theme"** branch into `_theme/`
+0. `git clone -b src https://github.com/marinebon/mbon_jekyll_theme.git` to clone website source
 1. [install ruby & jekyll](https://jekyllrb.com/)
 2. `bundle install` to set up ruby dependencies
 3. `git submodule update --init --recursive` to install the theme
