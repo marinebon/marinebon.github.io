@@ -10,13 +10,13 @@ Andruszkiewicz, E. A., H. A. Starks, F. P. Chavez, L. M. Sassoubre, B. A. Block,
 
 Biller, S.J., L.D. McDaniel, M. Breitbart, E. Rogers, J.H. Paul, S.W. Chisholm (2017). Membrane vesicles in seawater: heterogeneous DNA content and implications for viral abundance estimates. ISME Journal. 11: 394-404
 
+Closek Collin J., Santora Jarrod A., Starks Hilary A., Schroeder Isaac D., Andruszkiewicz Elizabeth A., Sakuma Keith M., Bograd Steven J., Hazen Elliott L., Field John C., Boehm Alexandria B. 2019\. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732\. doi: 10.3389/fmars.2019.00732
+
 Djurhuus, A. C. Closek, R. Kelly, K. Pitz, R. Michisaki, H. Starks, K. Walz, E. Andruszkiewicz, E. Olesin, K. Hubbard, E. Montes, D. Otis, F. Muller-Karger, F. Chavez, A. Boehm, and M. Breitbart (in press) Environmental DNA reveals seasonal shifts and potential interactions in a marine community. Nature Communications
 
 Djurhuus, Anni, Kathleen Pitz, Natalie A. Sawaya, Jaimie Rojas-Márquez, Brianna Michaud, Enrique Montes, Frank Muller-Karger, and Mya Breitbart. 2018\. Evaluation of marine zooplankton community structure through environmental DNA metabarcoding. Limnology and Oceanography: Methods. 10.1002/lom3.10237 9\.
 
 Djurhuus, Anni, J. Port, C. J. Closek, K. M. Yamahara, O. Romero-Maraccini, K.R. Walz, D. B. Goldsmith, R. Michisaki, M. Breitbart, A. B. Boehm, F. P. Chavez. 2017\. Evaluation of filtration and DNA extraction methods for environmental DNA biodiversity assessments across multiple trophic levels. Frontiers in Marine Science, 4, 314\. doi: 10.3389/fmars.2017.00314
-
-Closek Collin J., Santora Jarrod A., Starks Hilary A., Schroeder Isaac D., Andruszkiewicz Elizabeth A., Sakuma Keith M., Bograd Steven J., Hazen Elliott L., Field John C., Boehm Alexandria B. 2019\. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732\. doi: 10.3389/fmars.2019.00732
 
 Goodwin, Kelly Dee, Frank Edgar Muller-Karger, Anni Djurhuus , Lisa Zeigler Allen, Andrew E. Allen, John P. McCrow, and Gabrielle Canonico Hyde. 2018 (in press). Chapter 32\. Molecular Approaches for an Operational Marine Biodiversity Observation Network. In: World Seas: An Environmental Evaluation, Vol. III: Ecological Issues and Environmental Impacts. 2nd Edition. Charles Sheppard (editor). 12\.
 
