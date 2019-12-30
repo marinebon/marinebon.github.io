@@ -16,6 +16,8 @@ Djurhuus, Anni, Kathleen Pitz, Natalie A. Sawaya, Jaimie Rojas-Márquez, Brianna
 
 Djurhuus, Anni, J. Port, C. J. Closek, K. M. Yamahara, O. Romero-Maraccini, K.R. Walz, D. B. Goldsmith, R. Michisaki, M. Breitbart, A. B. Boehm, F. P. Chavez. 2017\. Evaluation of filtration and DNA extraction methods for environmental DNA biodiversity assessments across multiple trophic levels. Frontiers in Marine Science, 4, 314\. doi: 10.3389/fmars.2017.00314
 
+Closek Collin J., Santora Jarrod A., Starks Hilary A., Schroeder Isaac D., Andruszkiewicz Elizabeth A., Sakuma Keith M., Bograd Steven J., Hazen Elliott L., Field John C., Boehm Alexandria B. 2019\. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732\. doi: 10.3389/fmars.2019.00732
+
 Goodwin, Kelly Dee, Frank Edgar Muller-Karger, Anni Djurhuus , Lisa Zeigler Allen, Andrew E. Allen, John P. McCrow, and Gabrielle Canonico Hyde. 2018 (in press). Chapter 32\. Molecular Approaches for an Operational Marine Biodiversity Observation Network. In: World Seas: An Environmental Evaluation, Vol. III: Ecological Issues and Environmental Impacts. 2nd Edition. Charles Sheppard (editor). 12\.
 
 Goodwin, K.D., F.E. Muller-Karger, G. Canonico. Integrating marine omics into the marine biodiversity observation network (MBON) in support of the U.N. sustainable development goals (SDG) and agenda 2030\. Proceedings of TDWG 1: e2052, doi: 10.3897/tdwgproceedings.1.20521 (2017).
@@ -24,8 +26,7 @@ Kacev, D., Gillett, D., Freire de Carvalho, A., Cash, C., Walther, S., Thompson,
 
 Lafferty, K.D., Benesh, K.C., Mahon, A.R., Jerde, C.L. and Lowe, C.G., 2018\. Detecting southern California’s white sharks with environmental DNA. Frontiers in Marine Science, 5, pp.1-6.
 
-Ryan P. Kelly, Collin J. Closek, James L. O’Donnell, James E. Kralj, Andrew O. Shelton, Jameal F. Samhouri (2017). Genetic and Manual Survey Methods Yield Different and Complementary Views of an Ecosystem. Frontiers in Marine Science, 3:283
-
+Ryan P. Kelly, Collin J. Closek, James L. O’Donnell, James E. Kralj, Andrew O. Shelton, Jameal F. Samhouri (2017). Genetic and Manual Survey Methods Yield Different and Complementary Views of an Ecosystem. Frontiers in Marine Science, 3:283.
 Sassoubre, L. M., K. M. Yamahara, L. Gardner, B. Block, A. B. Boehm. 2016\. Environmental DNA (eDNA) shedding and decay rates of three marine fish. Environmental Science & Technology, 50(19), 10456-10464
 
 Sawaya, Natalie; Djurhuus, Anni; Closek, Collin; Hepner, Megan; Olesin, Emily; Visser, Lindsey; Kelble, Christopher; Hubbard, Katherine; and Breitbart, Mya, "Assessing Eukaryotic Biodiversity in the Florida Keys National Marine Sanctuary Through Environmental DNA Metabarcoding" (2019). Marine Science Faculty Publications. 651\. [https://scholarcommons.usf.edu/msc_facpub/651](https://scholarcommons.usf.edu/msc_facpub/651)
