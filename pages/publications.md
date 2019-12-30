@@ -10,7 +10,7 @@ Andruszkiewicz, E. A., H. A. Starks, F. P. Chavez, L. M. Sassoubre, B. A. Block,
 
 Biller, S.J., L.D. McDaniel, M. Breitbart, E. Rogers, J.H. Paul, S.W. Chisholm (2017). Membrane vesicles in seawater: heterogeneous DNA content and implications for viral abundance estimates. ISME Journal. 11: 394-404
 
-Closek Collin J., Santora Jarrod A., Starks Hilary A., Schroeder Isaac D., Andruszkiewicz Elizabeth A., Sakuma Keith M., Bograd Steven J., Hazen Elliott L., Field John C., Boehm Alexandria B. 2019\. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732\. doi: 10.3389/fmars.2019.00732
+Closek, Collin J., Santora, Jarrod A., Starks, Hilary A., Schroeder, Isaac D., Andruszkiewicz, Elizabeth A., Sakuma, Keith M., Bograd, Steven J., Hazen, Elliott L., Field, John C., Boehm, Alexandria B. 2019\. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732\. doi: 10.3389/fmars.2019.00732
 
 Djurhuus, A. C. Closek, R. Kelly, K. Pitz, R. Michisaki, H. Starks, K. Walz, E. Andruszkiewicz, E. Olesin, K. Hubbard, E. Montes, D. Otis, F. Muller-Karger, F. Chavez, A. Boehm, and M. Breitbart (in press) Environmental DNA reveals seasonal shifts and potential interactions in a marine community. Nature Communications
 
