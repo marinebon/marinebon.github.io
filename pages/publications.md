@@ -6,7 +6,7 @@ author_profile: false
 ---
 **‘Omics and eDNA publications from the MBON Projects**
 
-Andruszkiewicz, E. A., H. A. Starks, F. P. Chavez, L. M. Sassoubre, B. A. Block, and A. B. Boehm. 2017\. Biomonitoring of marine vertebrates in Monterey Bay using eDNA metabarcoding. PLoS ONE 12:e0176343\. [https://doi.org/10.1371/journal.pone.0176343l (https://doi.org/10.1371/journal.pone.0176343l)
+Andruszkiewicz, E. A., H. A. Starks, F. P. Chavez, L. M. Sassoubre, B. A. Block, and A. B. Boehm. 2017\. Biomonitoring of marine vertebrates in Monterey Bay using eDNA metabarcoding. PLoS ONE 12:e0176343\. [https://doi.org/10.1371/journal.pone.01763431](https://doi.org/10.1371/journal.pone.0176343l)
 
 Biller, S.J., L.D. McDaniel, M. Breitbart, E. Rogers, J.H. Paul, S.W. Chisholm (2017). Membrane vesicles in seawater: heterogeneous DNA content and implications for viral abundance estimates. ISME Journal. 11: 394-404
 
