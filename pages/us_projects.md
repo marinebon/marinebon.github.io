@@ -13,7 +13,7 @@ In October 2019, the U.S. MBON government sponsors (U.S. Integrated Ocean Observ
 *   Katrin Iken, University of Alaska - Fairbanks: [A sustainable, integrated AMBON in the Chukchi Sea](/pages/ambon/)
 *   Maria Kavanaugh, Oregon State University: [Marine Biodiversity Observing Network in the Northern California Current: Understanding patterns and drivers of biodiversity and ecosystem functioning from plankton to seascapes](/pages/nccmbon/)
 *   Bob Miller, University of California - Santa Barbara: [Southern California Bight Marine Biodiversity Observation Network](/pages/scbmbon/)
-*   Ru Morrison, Northeastern Regional Association of Coastal Ocean Observing Systems (NERACOOS): [MBON expansion into the Gulf of Maine: the NERACOOS/NROC Integrated Sentinel Monitoring Network (ISMN)](/pages/gommbon/)
+*   Jeffrey Runge, Northeastern Regional Association of Coastal Ocean Observing Systems (NERACOOS): [MBON expansion into the Gulf of Maine: the NERACOOS/NROC Integrated Sentinel Monitoring Network (ISMN)](/pages/gommbon/)
 *   Frank Muller-Karger, University of South Florida: [Implementing a Marine Biodiversity Observation Network (MBON) in South Florida to Advance Ecosystem-Based Management](/pages/sfmbon/)
 
 **2013 - 2018**
