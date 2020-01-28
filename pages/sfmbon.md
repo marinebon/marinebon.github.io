@@ -7,6 +7,8 @@ author_profile: false
 
 This project will build on the foundations laid by the present Sanctuaries MBON demonstration.  A close partnership with NOAA AOML and the FKNMS has focused on periodic MBON surveys of the Florida Keys since 2014. Additional partners now add animal tracking and other dimensions to the Sanctuaries MBON. Specifically, we seek to integrate ground and satellite observations related to biodiversity to inform ecosystem-based management in and around the Florida Keys National Marine Sanctuary (FKNMS). This includes supporting the regional NOAA Integrated Ecosystem Assessment (IEA), the National Marine Fisheries Southeast Fisheries Science Center, the FKNMS, Rookery Bay National Estuarine Research Reserve (NERR), and the State of Florida Fish and Wildlife Commission (FWC) as specific end users of an MBON. 
 
+<img src="/images/sfmbon_map.png" alt="South Florida MBON Map">
+
 The objectives are to: 
 
 *   Further integrate and synthesize information from ongoing monitoring programs through the Integrated Ocean Observing System (IOOS).
