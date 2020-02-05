@@ -5,6 +5,9 @@ layout: single
 author_profile: false
 ---
 
+**[MBON Seascapes](https://coastwatch.noaa.gov/cw/node/153.html)**  
+MBON Seascapes provide information about the quality and extent of different oceanographic habitats or features and can be used to assess and predict the different planktonic and fisheries communities that reside within seascapes. Current Seascapes products include monthly and 8-day time steps at 5 km resolution.  High resolution (1 km) case studies are planned on a case by case basis as through cooperation with US and global MBON partners.
+
 **[U.S. MBON Portal](https://mbon.ioos.us)**  
 U.S. MBON projects and U.S. IOOS Regional Association biological data that supports MBON objectives are being made available at the Marine Biodiversity Observation Network (MBON) Portal, where users can:
 
