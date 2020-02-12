@@ -12,7 +12,7 @@ Biller, S.J., L.D. McDaniel, M. Breitbart, E. Rogers, J.H. Paul, S.W. Chisholm (
 
 Closek, Collin J., Santora, Jarrod A., Starks, Hilary A., Schroeder, Isaac D., Andruszkiewicz, Elizabeth A., Sakuma, Keith M., Bograd, Steven J., Hazen, Elliott L., Field, John C., Boehm, Alexandria B. 2019\. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732\. doi: 10.3389/fmars.2019.00732
 
-Djurhuus, A. C. Closek, R. Kelly, K. Pitz, R. Michisaki, H. Starks, K. Walz, E. Andruszkiewicz, E. Olesin, K. Hubbard, E. Montes, D. Otis, F. Muller-Karger, F. Chavez, A. Boehm, and M. Breitbart (in press) Environmental DNA reveals seasonal shifts and potential interactions in a marine community. Nature Communications
+Djurhuus, A., Closek, C.J., Kelly, R.P. et al. Environmental DNA reveals seasonal shifts and potential interactions in a marine community. Nat Commun 11, 254 (2020). [https://doi.org/10.1038/s41467-019-14105-1](https://doi.org/10.1038/s41467-019-14105-1)
 
 Djurhuus, Anni, Kathleen Pitz, Natalie A. Sawaya, Jaimie Rojas-Márquez, Brianna Michaud, Enrique Montes, Frank Muller-Karger, and Mya Breitbart. 2018\. Evaluation of marine zooplankton community structure through environmental DNA metabarcoding. Limnology and Oceanography: Methods. 10.1002/lom3.10237 9\.
 
