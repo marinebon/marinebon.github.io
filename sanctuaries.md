@@ -1,4 +1,8 @@
-# Sanctuary Ecosystem Trends
+---
+title: "Sanctuary Ecosystem Trends"
+layout: single
+author_profile: false
+---
 
 ## Overview
 
@@ -24,4 +28,4 @@ Select a sanctuary below to explore that sanctuary’s ecosystem. Navigate by cl
 
 ## Partners
 
-This tool is the product of on-going collaboration across NOAA’s [Integrated Ecosystem Assessment Program](https://www.integratedecosystemassessment.noaa.gov), [Integrated Ocean Observing System](https://ioos.noaa.gov/), including the Marine Biodiversity Observation Network, and [Office of National Marine Sanctuaries](https://sanctuaries.noaa.gov).
+This tool is the product of on-going collaboration across NOAA’s [Integrated Ecosystem Assessment Program](https://www.integratedecosystemassessment.noaa.gov), [Integrated Ocean Observing System](https://ioos.noaa.gov/), including the [Marine Biodiversity Observation Network](https://marinebon.org/sanctuaries/), and [Office of National Marine Sanctuaries](https://sanctuaries.noaa.gov).
