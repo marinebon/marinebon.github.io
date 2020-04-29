@@ -6,10 +6,10 @@ main:
   - title: "Resources"
     url: /pages/resources/
     
-  - title: "U.S. Projects"
+  - title: "U.S."
     url: /pages/us_projects/
     
-  - title: "Global Projects"
+  - title: "Global"
     url: /pages/global_efforts/
     
   - title: "Data"
