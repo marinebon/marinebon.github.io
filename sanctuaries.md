@@ -10,8 +10,6 @@ Select a sanctuary below to explore that sanctuary’s ecosystem. Navigate by cl
 
 [Note: currently CINMS is only sanctuary with a complete website, but some some components working for other sites listed below]
 
-- [Sanctuary Soundscapes](https://marinebon.org/sanctsound/)
-
 ### West Coast Region
 - [Channel Islands](https://marinebon.org/cinms)
 
@@ -22,7 +20,7 @@ Select a sanctuary below to explore that sanctuary’s ecosystem. Navigate by cl
 - [Florida Keys](https://marinebon.org/fknms)
 
 ## Related projects
-- [SanctSound](https://marinebon.org/sanctsound)  - Exploring underwater sounds within US national marine sanctuaries
+- [SanctSound](https://marinebon.org/sanctsound): exploring underwater sounds across US national marine sanctuaries
 
 ## Partners
 
