@@ -39,7 +39,7 @@ site_nav:
         
   - title: "GLOBAL"
     children:
-      - title: "MBON Pole to Pole"
+      - title: "Pole to Pole"
         url: "/pages/pole_to_pole/"
                 
   - title: "RESOURCES"
