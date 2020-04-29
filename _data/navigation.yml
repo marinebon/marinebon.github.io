@@ -9,40 +9,40 @@ main:
   - title: "U.S. Projects"
     url: /pages/us_projects/
     
+  - title: "Global Projects"
+    url: /pages/global_efforts/
+    
   - title: "Data"
     url: /pages/data/
 
-  - title: "Global Efforts"
-    url: /pages/global_efforts/
-
 # site_nav links
 site_nav:
-  - title: "U.S. MBON PROJECTS"
+  - title: "U.S."
     children:
-      - title: "Central California MBON"
+      - title: "Central California"
         url: /pages/ccmbon/
 
       - title: "Arctic MBON"
         url: /pages/ambon/
         
-      - title: "Northern California Current MBON"
+      - title: "Northern California Current"
         url: /pages/nccmbon/
                 
-      - title: "Southern California Bight MBON"
+      - title: "Southern California Bight"
         url: /pages/scbmbon/
 
-      - title: "Gulf of Maine MBON"
+      - title: "Gulf of Maine"
         url: /pages/gommbon/
 
-      - title: "South Florida MBON"
+      - title: "South Florida"
         url: /pages/sfmbon/
         
-  - title: "MBON GLOBAL EFFORTS"
+  - title: "GLOBAL"
     children:
       - title: "MBON Pole to Pole"
         url: "/pages/pole_to_pole/"
                 
-  - title: "MBON RESOURCES"
+  - title: "RESOURCES"
     children:
       - title: "News"
         url: "/pages/news/"
@@ -52,8 +52,11 @@ site_nav:
         
       - title: "Presentations"
         url: "/pages/presentations/"
+        
+      - title: "Sanctuaries"
+        url: "/sanctuaries/"
     
-  - title: "MBON GLOBAL COLLABORATORS"
+  - title: "COLLABORATORS"
     children:
       - title: "GEO BON"
         url: "https://geobon.org/"
