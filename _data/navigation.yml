@@ -1,6 +1,6 @@
 # main links links
 main:
-  - title: "About MBON"
+  - title: "About"
     url: /index.html
 
   - title: "Resources"
@@ -19,16 +19,16 @@ main:
 site_nav:
   - title: "U.S."
     children:
-      - title: "Central California"
-        url: /pages/ccmbon/
-
-      - title: "Arctic MBON"
+      - title: "Arctic"
         url: /pages/ambon/
         
-      - title: "Northern California Current"
+      - title: "California, Central"
+        url: /pages/ccmbon/
+
+      - title: "California, Northern"
         url: /pages/nccmbon/
                 
-      - title: "Southern California Bight"
+      - title: "California, Southern
         url: /pages/scbmbon/
 
       - title: "Gulf of Maine"
