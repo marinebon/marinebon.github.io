@@ -22,7 +22,7 @@ This tool is the product of on-going collaboration across NOAA’s [Integrated E
 - [Channel Islands](https://marinebon.org/cinms)
 
 - [Monterey Bay](https://marinebon.org/mbnms) 
-- [Olympic Coast](https://marinebon.org/ocnms)
+- Olympic Coast
 
 ### Southeast Region
 - [Florida Keys](https://marinebon.org/fknms)
