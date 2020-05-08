@@ -16,12 +16,13 @@ This tool is the product of on-going collaboration across NOAA’s [Integrated E
 
 ## Sanctuaries
 
-[Note: currently CINMS is the only sanctuary with a complete website, but some components working for other sites listed below]
+Note: currently CINMS is the only sanctuary with a complete website, but some components working for other sites listed below
 
 ### West Coast Region
 - [Channel Islands](https://marinebon.org/cinms)
 
 - [Monterey Bay](https://marinebon.org/mbnms) 
+
 - Olympic Coast
 
 ### Southeast Region
