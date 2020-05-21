@@ -26,7 +26,7 @@ Note: currently CINMS is the only sanctuary with a complete website, but some co
 - Olympic Coast
 
 ### Southeast Region
-- [Florida Keys](https://marinebon.org/fknms)
+- [Florida Keys](https://marinebon.org/info-fk/index.html)
 
 ## Related projects
 - [SanctSound](https://marinebon.org/sanctsound): exploring underwater sounds across US national marine sanctuaries
