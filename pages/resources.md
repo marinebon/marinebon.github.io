@@ -19,8 +19,3 @@ MBON partners are committed to providing timely information on marine biodiversi
   </div>
 </div>
 
-**MBON Logos**
-To download the MBON logo, right-click on one of the below links and select "Save image as..."
-
-<a href="https://marinebon.org/images/MBON_logo.png">MBON PNG file</a> (12 KB, transparent)<br>
-<a href="https://marinebon.org/images/MBON_logo.jpg">MBON JPG file</a> (422 KB, 300 dpi)
