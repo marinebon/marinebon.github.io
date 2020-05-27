@@ -25,6 +25,8 @@ MBON partners are committed to providing timely information on marine biodiversi
 
 
 **Logo Files**  
-Below are links to the MBON logo in PNG and JPG format. [MBON PNG file](https://marinebon.org/images/MBON_logo.png) (12 KB, transparent)  
+Below are links to the MBON logo in PNG and JPG format. 
+
+[MBON PNG file](https://marinebon.org/images/MBON_logo.png) (12 KB, transparent)  
 
 [MBON JPG file](https://marinebon.org/images/MBON_logo.jpg) (422 KB, 300 dpi)
