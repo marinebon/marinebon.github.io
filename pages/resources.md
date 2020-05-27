@@ -23,7 +23,7 @@ MBON partners are committed to providing timely information on marine biodiversi
   </div>
 </div>
 
-
+<br>
 **Logo Files**  
 Below are links to the MBON logo in PNG and JPG format. 
 
