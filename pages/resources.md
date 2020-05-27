@@ -14,8 +14,12 @@ MBON partners are committed to providing timely information on marine biodiversi
   <div class="resourcebox" style="background-color: #102f84;">
   <a style="color: #ffffff;" href="https://marinebon.org/pages/publications/">Publications</a>
   </div>
+  <br><br>
   <div class="resourcebox" style="background-color: #102f84;">
   <a style="color: #ffffff;" href="https://marinebon.org/pages/presentations/">Presentations</a>
+  </div>
+  <div class="resourcebox" style="background-color: #102f84;">
+  <a style="color: #ffffff;" href="https://marinebon.org/pages/sanctuaries/">Sanctuaries</a>
   </div>
 </div>
 
