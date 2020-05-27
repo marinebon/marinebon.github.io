@@ -43,6 +43,8 @@ site_nav:
         url: "/pages/pole_to_pole/"
                 
   - title: "RESOURCES"
+      url: /pages/resources/
+      
     children:
       - title: "News"
         url: "/pages/news/"
