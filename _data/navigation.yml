@@ -24,15 +24,15 @@ site_nav:
         
       - title: "California, Central"
         url: /pages/ccmbon/
-
-      - title: "California, Northern"
-        url: /pages/nccmbon/
                 
       - title: "California, Southern"
         url: /pages/scbmbon/
 
       - title: "Gulf of Maine"
         url: /pages/gommbon/
+        
+      - title: "Pacific Northwest"
+        url: /pages/nccmbon/
 
       - title: "South Florida"
         url: /pages/sfmbon/
