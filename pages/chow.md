@@ -1,26 +1,19 @@
 ---
-title: Use tabs to organize content
-output: html_document
+title: "MBON at Capitol Hill Ocean Week 2020"
+excerpt: "Marine Biodiversity Observation Network at Capitol Hill Ocean Week 2020"
+layout: single
+author_profile: false
 ---
 
-You can turn parallel sections to tabs in `html_document` output.
+MBON partners and team members will be moderating and presenting during concurrent breakout sessions of the first-ever biodiversity-themed virtual [Capitol Hill Ocean Week 2020 conference](https://marinesanctuary.org/capitol-hill-ocean-week/), to be held June 9.
 
-## Results {.tabset}
+**Presenters at a Glance**
 
-### Plots
+*   10:00 am - 11:00 am: Defining Priorities for Meaningful Protection: Dr. Emmett Duffy, Director, Tennenbaum Marine Observatories Network, Smithsonian Institution
+*   11:15 am - 12:15 pm: Cooperating for Our Global Ocean: Dr. Neil Hammerschlag, Director, Shark Research & Conservation Program, University of Miami, Rosenstiel School of Marine and Atmospheric Science
+*   11:15 am - 12:15 pm Innovative Approaches for Restoration and Monitoring: Ms. Josie Quintrell, Executive Director, IOOS Association, Moderator. Dr. Frank Muller-Karger, Professor, University of South Florida
+*   11:15 am - 12:15 pm Margaret Davidson Emerging Leaders: New Perspectives on Conserving Nature: Dr. Anni Djurhuus, Assistant Professor, University of the Faroe Islands
+*   2:45 pm - 3:45 pm Transformative Technologies: Dr. Francisco P. Chavez, Senior Scientist, Monterey Bay Aquarium Research Institute; and Dr. Heidi M. Sosik, Senior Scientist, Woods Hole Oceanographic Institution
+*   2:45 pm - 3:45 pm The Power of Protection: Dr. Ruth Perry, Marine Scientist and Regulatory Policy Specialist, Shell Upstream Americas
 
-We show a scatter plot in this section.
-
-```{r, fig.dim=c(5, 3)}
-par(mar = c(4, 4, .5, .1))
-plot(mpg ~ hp, data = mtcars, pch = 19)
-```
-
-### Tables
-
-We show the data in this tab.
-
-```{r}
-head(mtcars)
-```
-## {-}
+Visit [https://marinesanctuary.org/capitol-hill-ocean-week/](https://marinesanctuary.org/capitol-hill-ocean-week/) to register and see the full day of activities, including plenaries and concurrent breakout sessions on how science and technology are advancing our understanding of the marine environment, the role of protected areas in conserving biodiversity, and how to engage people as stewards.
