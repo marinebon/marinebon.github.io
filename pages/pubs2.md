@@ -4,22 +4,24 @@ excerpt: "Marine Biodiversity Observation Network Publications"
 layout: single
 author_profile: false
 ---
-[link text](#2020) | [link text](#2019) | [link text](#2018)
+[2020](#2020) | [2019](#2019) | [2018](#2018) | [2017](#2017) | [2016](#2016) | [Ocean Obs '19](#oo19) | [MBON Partners](#partners) 
 
 **‘Omics and eDNA publications from the MBON Projects**
 
-<a name="2020"></a>2020
+<a name="2020"></a>_2020_
 
 Djurhuus, A., Closek, C.J., Kelly, R.P. et al. Environmental DNA reveals seasonal shifts and potential interactions in a marine community. Nat Commun 11, 254 (2020). [https://doi.org/10.1038/s41467-019-14105-1](https://doi.org/10.1038/s41467-019-14105-1)
 
-<a name="2019"></a>2019
+<a name="2019"></a>_2019_
+
 Closek, Collin J., Santora, Jarrod A., Starks, Hilary A., Schroeder, Isaac D., Andruszkiewicz, Elizabeth A., Sakuma, Keith M., Bograd, Steven J., Hazen, Elliott L., Field, John C., Boehm, Alexandria B. 2019. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732.  [https://doi.org/10.3389/fmars.2019.00732](https://doi.org/10.3389/fmars.2019.00732)
 
 Sawaya, Natalie; Djurhuus, Anni; Closek, Collin; Hepner, Megan; Olesin, Emily; Visser, Lindsey; Kelble, Christopher; Hubbard, Katherine; and Breitbart, Mya, “Assessing Eukaryotic Biodiversity in the Florida Keys National Marine Sanctuary Through Environmental DNA Metabarcoding” (2019). Marine Science Faculty Publications. 651. [https://scholarcommons.usf.edu/msc_facpub/651](https://scholarcommons.usf.edu/msc_facpub/651)
 
 Yamahara, Kevan M., Christina M. Preston, James Birch, Kristine Walz, Roman Marin III, Scott Jensen, Douglas Pargett, Brent Roman, William Ussler III, Yanwu Zhang, John Ryan, Brett Hobson, Brian Kieft, Ben Raanan, Kelly D. Goodwin, Francisco P. Chavez, and Christopher Scholin. 2019. In-situ Autonomous Acquisition and Preservation of Marine Environmental DNA Using an Autonomous Underwater Vehicle. Front. Mar. Sci. [https://doi.org/10.3389/fmars.2019.00373](https://doi.org/10.3389/fmars.2019.00373)
 
-<a name="2018"></a>2018
+<a name="2018"></a>_2018_
+
 Goodwin, Kelly Dee, Frank Edgar Muller-Karger, Anni Djurhuus , Lisa Zeigler Allen, Andrew E. Allen, John P. McCrow, and Gabrielle Canonico Hyde. 2018 (in press). Chapter 32. Molecular Approaches for an Operational Marine Biodiversity Observation Network. In: World Seas: An Environmental Evaluation, Vol. III: Ecological Issues and Environmental Impacts. 2nd Edition. Charles Sheppard (editor). 12.
 
 Djurhuus, Anni, Kathleen Pitz, Natalie A. Sawaya, Jaimie Rojas-Márquez, Brianna Michaud, Enrique Montes, Frank Muller-Karger, and Mya Breitbart. 2018. Evaluation of marine zooplankton community structure through environmental DNA metabarcoding. Limnology and Oceanography: Methods. [https://doi.org/10.1002/lom3.10237](https://doi.org/10.1002/lom3.10237)
@@ -30,7 +32,8 @@ Lafferty, K.D., Benesh, K.C., Mahon, A.R., Jerde, C.L. and Lowe, C.G., 2018. Det
 
 Wear, E.K., Wilbanks, E.G., Nelson, C.E. and Carlson, C.A., 2018. Primer selection impacts specific population abundances but not community dynamics in a monthly time-series 16S rRNA gene amplicon analysis of coastal marine bacterioplankton. Environmental Microbiology. [https://pubmed.ncbi.nlm.nih.gov/29521439/](https://pubmed.ncbi.nlm.nih.gov/29521439/)
 
-2017
+<a name="2017"></a>_2017_
+
 Andruszkiewicz, E. A., H. A. Starks, F. P. Chavez, L. M. Sassoubre, B. A. Block, and A. B. Boehm. 2017. Biomonitoring of marine vertebrates in Monterey Bay using eDNA metabarcoding. PLoS ONE 12:e0176343. [https://doi.org/10.1371/journal.pone.01763431](https://doi.org/10.1371/journal.pone.01763431)
 
 Biller, S.J., L.D. McDaniel, M. Breitbart, E. Rogers, J.H. Paul, S.W. Chisholm (2017). Membrane vesicles in seawater: heterogeneous DNA content and implications for viral abundance estimates. ISME Journal. 11: 394-404. [https://pubmed.ncbi.nlm.nih.gov/27824343/](https://pubmed.ncbi.nlm.nih.gov/27824343/)
@@ -42,10 +45,11 @@ Goodwin, K.D., F.E. Muller-Karger, G. Canonico. Integrating marine omics into th
 Ryan P. Kelly, Collin J. Closek, James L. O’Donnell, James E. Kralj, Andrew O. Shelton, Jameal F. Samhouri (2017). Genetic and Manual Survey Methods Yield Different and Complementary Views of an Ecosystem. Frontiers in Marine Science, 3:283. [https://www.frontiersin.org/articles/10.3389/fmars.2016.00283/full](https://www.frontiersin.org/articles/10.3389/fmars.2016.00283/full
 )
 
-2016
+<a name="2016"></a>_2016_
+
 Sassoubre, L. M., K. M. Yamahara, L. Gardner, B. Block, A. B. Boehm. 2016. Environmental DNA (eDNA) shedding and decay rates of three marine fish. Environmental Science & Technology, 50(19), 10456-10464. [https://doi.org/10.1021/acs.est.6b03114](https://doi.org/10.1021/acs.est.6b03114)
 
-**Relevant publications from Ocean Obs ‘19**
+<a name="oo19"></a>**Relevant publications from Ocean Obs ‘19**
 
 Benson A, Brooks CM, Canonico G, Duffy E, Muller-Karger F, Sosik HM, Miloslavich P and Klein E (2018) Integrated Observations and Informatics Improve Understanding of Changing Marine Ecosystems. Front. Mar. Sci. 5:428. [https://doi.org/10.3389/fmars.2018.00428](https://doi.org/10.3389/fmars.2018.00428)
 
@@ -57,6 +61,6 @@ Duffy E et al. (2019) Toward a Coordinated Global Observing System for Seagrasse
 
 Muller-Karger FE, Miloslavich P, Bax NJ, Simmons S, Costello MJ, Sousa Pinto I, Canonico G, Turner W, Gill M, Montes E, Best BD, Pearlman J, Halpin P, Dunn D, Benson A, Martin CS, Weatherdon LV, Appeltans W, Provoost P, Klein E, Kelble CR, Miller RJ, Chavez FP, Iken K, Chiba S, Obura D, Navarro LM, Pereira HM, Allain V, Batten S, Benedetti-Checchi L, Duffy JE, Kudela RM, Rebelo L-M, Shin Y and Geller G (2018) Advancing Marine Biological Observations and Data Requirements of the Complementary Essential Ocean Variables (EOVs) and Essential Biodiversity Variables (EBVs) Frameworks. Front. Mar. Sci. 5:211. [https://doi.org/10.3389/fmars.2018.00211](https://doi.org/10.3389/fmars.2018.00211)
 
-**MBON Partner publications**
+<a name="partners"></a>**MBON Partner publications**
 
 Gil‐Aguedo, D.L., Cintra‐Buenrostro, C.E., Brenner, J., Gonzalez‐Diaz, P., Kiene, W.E., Lustic, C., and Perez‐Espana, H. 2020. Coral reefs in the Gulf of Mexico large marine ecosystem: conservation status, challenges and opportunities. Frontiers in Marine Science 6: 807. [https://www.frontiersin.org/articles/10.3389/fmars.2019.00807/full](https://www.frontiersin.org/articles/10.3389/fmars.2019.00807/full)
