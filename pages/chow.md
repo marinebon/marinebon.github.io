@@ -1,21 +1,25 @@
 ---
-title: "MBON Data"
-excerpt: "Marine Biodiversity Observation Network Data"
-layout: single
-author_profile: false
+title: Use tabs to organize content
+output: html_document
 ---
 
-## title {.tabset .tabset-fade}
-content above tabbed region.
+You can turn parallel sections to tabs in `html_document` output.
 
-### tab 1 
+## Results {.tabset}
 
-tab content 1
+### Plots
 
-### tab 2
+We show a scatter plot in this section.
 
-tab content 2
+```{r, fig.dim=c(5, 3)}
+par(mar = c(4, 4, .5, .1))
+plot(mpg ~ hp, data = mtcars, pch = 19)
+```
 
-##
+### Tables
 
-content below tabbed region
+We show the data in this tab.
+
+```{r}
+head(mtcars)
+```
