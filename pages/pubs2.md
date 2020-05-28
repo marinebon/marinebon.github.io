@@ -4,19 +4,22 @@ excerpt: "Marine Biodiversity Observation Network Publications"
 layout: single
 author_profile: false
 ---
+[link text](#2020) | [link text](#2019) | [link text](#2018)
+
 **‘Omics and eDNA publications from the MBON Projects**
 
-2020
+<a name="2020"></a>2020
+
 Djurhuus, A., Closek, C.J., Kelly, R.P. et al. Environmental DNA reveals seasonal shifts and potential interactions in a marine community. Nat Commun 11, 254 (2020). [https://doi.org/10.1038/s41467-019-14105-1](https://doi.org/10.1038/s41467-019-14105-1)
 
-2019
+<a name="2019"></a>2019
 Closek, Collin J., Santora, Jarrod A., Starks, Hilary A., Schroeder, Isaac D., Andruszkiewicz, Elizabeth A., Sakuma, Keith M., Bograd, Steven J., Hazen, Elliott L., Field, John C., Boehm, Alexandria B. 2019. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732.  [https://doi.org/10.3389/fmars.2019.00732](https://doi.org/10.3389/fmars.2019.00732)
 
 Sawaya, Natalie; Djurhuus, Anni; Closek, Collin; Hepner, Megan; Olesin, Emily; Visser, Lindsey; Kelble, Christopher; Hubbard, Katherine; and Breitbart, Mya, “Assessing Eukaryotic Biodiversity in the Florida Keys National Marine Sanctuary Through Environmental DNA Metabarcoding” (2019). Marine Science Faculty Publications. 651. [https://scholarcommons.usf.edu/msc_facpub/651](https://scholarcommons.usf.edu/msc_facpub/651)
 
 Yamahara, Kevan M., Christina M. Preston, James Birch, Kristine Walz, Roman Marin III, Scott Jensen, Douglas Pargett, Brent Roman, William Ussler III, Yanwu Zhang, John Ryan, Brett Hobson, Brian Kieft, Ben Raanan, Kelly D. Goodwin, Francisco P. Chavez, and Christopher Scholin. 2019. In-situ Autonomous Acquisition and Preservation of Marine Environmental DNA Using an Autonomous Underwater Vehicle. Front. Mar. Sci. [https://doi.org/10.3389/fmars.2019.00373](https://doi.org/10.3389/fmars.2019.00373)
 
-2018
+<a name="2018"></a>2018
 Goodwin, Kelly Dee, Frank Edgar Muller-Karger, Anni Djurhuus , Lisa Zeigler Allen, Andrew E. Allen, John P. McCrow, and Gabrielle Canonico Hyde. 2018 (in press). Chapter 32. Molecular Approaches for an Operational Marine Biodiversity Observation Network. In: World Seas: An Environmental Evaluation, Vol. III: Ecological Issues and Environmental Impacts. 2nd Edition. Charles Sheppard (editor). 12.
 
 Djurhuus, Anni, Kathleen Pitz, Natalie A. Sawaya, Jaimie Rojas-Márquez, Brianna Michaud, Enrique Montes, Frank Muller-Karger, and Mya Breitbart. 2018. Evaluation of marine zooplankton community structure through environmental DNA metabarcoding. Limnology and Oceanography: Methods. [https://doi.org/10.1002/lom3.10237](https://doi.org/10.1002/lom3.10237)
