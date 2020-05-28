@@ -30,7 +30,7 @@ Wear, E.K., Wilbanks, E.G., Nelson, C.E. and Carlson, C.A., 2018. Primer selecti
 2017
 Andruszkiewicz, E. A., H. A. Starks, F. P. Chavez, L. M. Sassoubre, B. A. Block, and A. B. Boehm. 2017. Biomonitoring of marine vertebrates in Monterey Bay using eDNA metabarcoding. PLoS ONE 12:e0176343. [https://doi.org/10.1371/journal.pone.01763431](https://doi.org/10.1371/journal.pone.01763431)
 
-Biller, S.J., L.D. McDaniel, M. Breitbart, E. Rogers, J.H. Paul, S.W. Chisholm (2017). Membrane vesicles in seawater: heterogeneous DNA content and implications for viral abundance estimates. ISME Journal. 11: 394-404. https://pubmed.ncbi.nlm.nih.gov/27824343/
+Biller, S.J., L.D. McDaniel, M. Breitbart, E. Rogers, J.H. Paul, S.W. Chisholm (2017). Membrane vesicles in seawater: heterogeneous DNA content and implications for viral abundance estimates. ISME Journal. 11: 394-404. [https://pubmed.ncbi.nlm.nih.gov/27824343/](https://pubmed.ncbi.nlm.nih.gov/27824343/)
 
 Djurhuus, Anni, J. Port, C. J. Closek, K. M. Yamahara, O. Romero-Maraccini, K.R. Walz, D. B. Goldsmith, R. Michisaki, M. Breitbart, A. B. Boehm, F. P. Chavez. 2017. Evaluation of filtration and DNA extraction methods for environmental DNA biodiversity assessments across multiple trophic levels. Frontiers in Marine Science, 4, 314. [https://www.frontiersin.org/articles/10.3389/fmars.2017.00314/full](https://www.frontiersin.org/articles/10.3389/fmars.2017.00314/full)
 
@@ -57,6 +57,3 @@ Muller-Karger FE, Miloslavich P, Bax NJ, Simmons S, Costello MJ, Sousa Pinto I, 
 **MBON Partner publications**
 
 Gil‐Aguedo, D.L., Cintra‐Buenrostro, C.E., Brenner, J., Gonzalez‐Diaz, P., Kiene, W.E., Lustic, C., and Perez‐Espana, H. 2020. Coral reefs in the Gulf of Mexico large marine ecosystem: conservation status, challenges and opportunities. Frontiers in Marine Science 6: 807. [https://www.frontiersin.org/articles/10.3389/fmars.2019.00807/full](https://www.frontiersin.org/articles/10.3389/fmars.2019.00807/full)
-
-
-
