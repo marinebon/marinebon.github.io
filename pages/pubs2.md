@@ -43,6 +43,7 @@ Ryan P. Kelly, Collin J. Closek, James L. O’Donnell, James E. Kralj, Andrew O.
 Sassoubre, L. M., K. M. Yamahara, L. Gardner, B. Block, A. B. Boehm. 2016. Environmental DNA (eDNA) shedding and decay rates of three marine fish. Environmental Science & Technology, 50(19), 10456-10464. [https://doi.org/10.1021/acs.est.6b03114](https://doi.org/10.1021/acs.est.6b03114)
 
 **Relevant publications from Ocean Obs ‘19**
+
 Benson A, Brooks CM, Canonico G, Duffy E, Muller-Karger F, Sosik HM, Miloslavich P and Klein E (2018) Integrated Observations and Informatics Improve Understanding of Changing Marine Ecosystems. Front. Mar. Sci. 5:428. [https://doi.org/10.3389/fmars.2018.00428](https://doi.org/10.3389/fmars.2018.00428)
 
 Canonico G, Buttigieg PL, Montes E, Muller-Karger FE, Stepien C, Wright D, Benson A, Helmuth B, Costello M, Sousa-Pinto I, Saeedi H, Newton J, Appeltans W, Bednaršek N, Bodrossy L, Best BD, Brandt A, Goodwin KD, Iken K, Marques AC, Miloslavich P, Ostrowski M, Turner W, Achterberg EP, Barry T, Defeo O, Bigatti G, Henry L-A, Ramiro-Sánchez B, Durán P, Morato T, Roberts JM, García-Alegre A, Cuadrado MS and Murton B (2019) Global Observational Needs and Resources for Marine Biodiversity. Front. Mar. Sci. 6:367. [https://doi.org/10.3389/fmars.2019.00367](https://doi.org/10.3389/fmars.2019.00367)
