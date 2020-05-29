@@ -4,15 +4,17 @@ excerpt: "Marine Biodiversity Observation Network Publications"
 layout: single
 author_profile: false
 ---
-[2020](#2020) | [2019](#2019) | [2018](#2018) | [2017](#2017) | [2016](#2016) | [Ocean Obs '19](#oo19) | [MBON Partners](#partners) 
+['Omics and eDNA](#omics) | [Ocean Obs '19](#oo19) | [U.S. MBON Projects](#projects) | [MBON Partners](#partners) 
 
+
+<a name="omics"></a>
 **‘Omics and eDNA publications from the MBON Projects**
 
-<a name="2020"></a>_2020_
+_2020_
 
 Djurhuus, A., Closek, C.J., Kelly, R.P. et al. Environmental DNA reveals seasonal shifts and potential interactions in a marine community. Nat Commun 11, 254 (2020). [https://doi.org/10.1038/s41467-019-14105-1](https://doi.org/10.1038/s41467-019-14105-1)
 
-<a name="2019"></a>_2019_
+_2019_
 
 Closek, Collin J., Santora, Jarrod A., Starks, Hilary A., Schroeder, Isaac D., Andruszkiewicz, Elizabeth A., Sakuma, Keith M., Bograd, Steven J., Hazen, Elliott L., Field, John C., Boehm, Alexandria B. 2019. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732.  [https://doi.org/10.3389/fmars.2019.00732](https://doi.org/10.3389/fmars.2019.00732)
 
@@ -20,7 +22,7 @@ Sawaya, Natalie; Djurhuus, Anni; Closek, Collin; Hepner, Megan; Olesin, Emily; V
 
 Yamahara, Kevan M., Christina M. Preston, James Birch, Kristine Walz, Roman Marin III, Scott Jensen, Douglas Pargett, Brent Roman, William Ussler III, Yanwu Zhang, John Ryan, Brett Hobson, Brian Kieft, Ben Raanan, Kelly D. Goodwin, Francisco P. Chavez, and Christopher Scholin. 2019. In-situ Autonomous Acquisition and Preservation of Marine Environmental DNA Using an Autonomous Underwater Vehicle. Front. Mar. Sci. [https://doi.org/10.3389/fmars.2019.00373](https://doi.org/10.3389/fmars.2019.00373)
 
-<a name="2018"></a>_2018_
+_2018_
 
 Goodwin, Kelly Dee, Frank Edgar Muller-Karger, Anni Djurhuus , Lisa Zeigler Allen, Andrew E. Allen, John P. McCrow, and Gabrielle Canonico Hyde. 2018 (in press). Chapter 32. Molecular Approaches for an Operational Marine Biodiversity Observation Network. In: World Seas: An Environmental Evaluation, Vol. III: Ecological Issues and Environmental Impacts. 2nd Edition. Charles Sheppard (editor). 12.
 
@@ -32,7 +34,7 @@ Lafferty, K.D., Benesh, K.C., Mahon, A.R., Jerde, C.L. and Lowe, C.G., 2018. Det
 
 Wear, E.K., Wilbanks, E.G., Nelson, C.E. and Carlson, C.A., 2018. Primer selection impacts specific population abundances but not community dynamics in a monthly time-series 16S rRNA gene amplicon analysis of coastal marine bacterioplankton. Environmental Microbiology. [https://pubmed.ncbi.nlm.nih.gov/29521439/](https://pubmed.ncbi.nlm.nih.gov/29521439/)
 
-<a name="2017"></a>_2017_
+_2017_
 
 Andruszkiewicz, E. A., H. A. Starks, F. P. Chavez, L. M. Sassoubre, B. A. Block, and A. B. Boehm. 2017. Biomonitoring of marine vertebrates in Monterey Bay using eDNA metabarcoding. PLoS ONE 12:e0176343. [https://doi.org/10.1371/journal.pone.01763431](https://doi.org/10.1371/journal.pone.01763431)
 
@@ -45,7 +47,7 @@ Goodwin, K.D., F.E. Muller-Karger, G. Canonico. Integrating marine omics into th
 Ryan P. Kelly, Collin J. Closek, James L. O’Donnell, James E. Kralj, Andrew O. Shelton, Jameal F. Samhouri (2017). Genetic and Manual Survey Methods Yield Different and Complementary Views of an Ecosystem. Frontiers in Marine Science, 3:283. [https://www.frontiersin.org/articles/10.3389/fmars.2016.00283/full](https://www.frontiersin.org/articles/10.3389/fmars.2016.00283/full
 )
 
-<a name="2016"></a>_2016_
+_2016_
 
 Sassoubre, L. M., K. M. Yamahara, L. Gardner, B. Block, A. B. Boehm. 2016. Environmental DNA (eDNA) shedding and decay rates of three marine fish. Environmental Science & Technology, 50(19), 10456-10464. [https://doi.org/10.1021/acs.est.6b03114](https://doi.org/10.1021/acs.est.6b03114)
 
@@ -60,6 +62,10 @@ deYoung B, Visbeck M, de Araujo Filho MC, Baringer MO, Black CA, Buch E, Canonic
 Duffy E et al. (2019) Toward a Coordinated Global Observing System for Seagrasses and Marine Macroalgae. Front. Mar. Sci. 6: 317. [https://doi.org/10.3389/fmars.2019.00317](https://doi.org/10.3389/fmars.2019.00317)
 
 Muller-Karger FE, Miloslavich P, Bax NJ, Simmons S, Costello MJ, Sousa Pinto I, Canonico G, Turner W, Gill M, Montes E, Best BD, Pearlman J, Halpin P, Dunn D, Benson A, Martin CS, Weatherdon LV, Appeltans W, Provoost P, Klein E, Kelble CR, Miller RJ, Chavez FP, Iken K, Chiba S, Obura D, Navarro LM, Pereira HM, Allain V, Batten S, Benedetti-Checchi L, Duffy JE, Kudela RM, Rebelo L-M, Shin Y and Geller G (2018) Advancing Marine Biological Observations and Data Requirements of the Complementary Essential Ocean Variables (EOVs) and Essential Biodiversity Variables (EBVs) Frameworks. Front. Mar. Sci. 5:211. [https://doi.org/10.3389/fmars.2018.00211](https://doi.org/10.3389/fmars.2018.00211)
+
+<a name="projects"></a>**U.S. MBON Partner projects**
+
+
 
 <a name="partners"></a>**MBON Partner publications**
 
