@@ -4,7 +4,7 @@ excerpt: "Marine Biodiversity Observation Network Publications"
 layout: single
 author_profile: false
 ---
-<div align="center" style="padding: 10px; border: 1px solid #ccc;"><img src="/images/chow_small.jpg" style="float:left;">Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity and work toward global best practices for biodiversity monitoring and data sharing.</div>
+<div align="center" style="padding: 20px; border: 1px solid #ccc;"><img src="/images/chow_small.jpg" style="float:left;"><p stlye="float:left; font-size: smaller;">Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity and work toward global best practices for biodiversity monitoring and data sharing.</p></div>
 <p>&nbsp;</p>
 
 ['Omics and eDNA](#omics)
