@@ -4,13 +4,8 @@ excerpt: "Marine Biodiversity Observation Network at Capital Hill Ocean Week 202
 layout: single
 author_profile: false
 ---
-
-# [Tab1](#tab/id1/condition1)
-Foo
-# [Tab1](#tab/id2)
-Bar
-
-
+<div align="center"><img src="/images/chow_large.jpg"></div>
+<br>
 MBON partners and team members will be moderating and presenting during concurrent breakout sessions of the first-ever biodiversity-themed virtual [Capitol Hill Ocean Week 2020 conference](https://marinesanctuary.org/capitol-hill-ocean-week/), to be held June 9.
 
 **Presenters at a Glance**
