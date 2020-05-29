@@ -67,7 +67,7 @@ Duffy E et al. (2019) Toward a Coordinated Global Observing System for Seagrasse
 
 Muller-Karger FE, Miloslavich P, Bax NJ, Simmons S, Costello MJ, Sousa Pinto I, Canonico G, Turner W, Gill M, Montes E, Best BD, Pearlman J, Halpin P, Dunn D, Benson A, Martin CS, Weatherdon LV, Appeltans W, Provoost P, Klein E, Kelble CR, Miller RJ, Chavez FP, Iken K, Chiba S, Obura D, Navarro LM, Pereira HM, Allain V, Batten S, Benedetti-Checchi L, Duffy JE, Kudela RM, Rebelo L-M, Shin Y and Geller G (2018) Advancing Marine Biological Observations and Data Requirements of the Complementary Essential Ocean Variables (EOVs) and Essential Biodiversity Variables (EBVs) Frameworks. Front. Mar. Sci. 5:211. [https://doi.org/10.3389/fmars.2018.00211](https://doi.org/10.3389/fmars.2018.00211)
 
-<a name="projects"></a>**U.S. MBON Partner projects**
+<a name="projects"></a>**U.S. MBON projects**
 
 
 
