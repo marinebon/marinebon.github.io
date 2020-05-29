@@ -156,7 +156,7 @@ Frank Muller-Karger
 
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">MBON All Hands Meetings 2016 - 2018</div>
 <br>
-<div style="width:100%; float:left; font-size: smaller;">
+
   
 [2018 Meeting](https://cce.nasa.gov/biodiversity/meetings/mbon_spring2018.html)
 
@@ -164,4 +164,3 @@ Frank Muller-Karger
 
 [2016 Meeting](https://cce.nasa.gov/cce/mbon_2016/agenda.html)
 
-</div>
