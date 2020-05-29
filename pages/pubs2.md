@@ -6,8 +6,11 @@ author_profile: false
 ---
 
 ['Omics and eDNA](#omics)
+<br>
 [Ocean Obs '19](#oo19)
+<br>
 [U.S. MBON Projects](#projects)
+<br>
 [MBON Partners](#partners) 
 
 
