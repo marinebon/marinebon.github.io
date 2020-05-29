@@ -154,6 +154,8 @@ Frank Muller-Karger
 
 <div style="clear: both;"></div>
 
+<p>&nbsp;</p>
+
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">MBON All Hands Meetings 2016 - 2018</div>
 <br>
 
