@@ -4,6 +4,8 @@ excerpt: "Marine Biodiversity Observation Network Publications"
 layout: single
 author_profile: false
 ---
+<div align="center" style="padding: 5px; border: 1px solid #333;">Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity and work toward global best practices for biodiversity monitoring and data sharing.</div>
+<p>&nbsp;</p>
 
 ['Omics and eDNA](#omics)
 <br>
