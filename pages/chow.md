@@ -4,13 +4,24 @@ excerpt: "Marine Biodiversity Observation Network at Capital Hill Ocean Week 202
 layout: single
 author_profile: false
 ---
-
 ## Results {.tabset}
-blah blag
-### Tab One
-blah blah blah
-### Tab Two
-blahhhhjhhh
+
+### Plots
+
+We show a scatter plot in this section.
+
+```{r, fig.dim=c(5, 3)}
+par(mar = c(4, 4, .5, .1))
+plot(mpg ~ hp, data = mtcars, pch = 19)
+```
+
+### Tables
+
+We show the data in this tab.
+
+```{r}
+head(mtcars)
+```
 ## {-}
 
 MBON partners and team members will be moderating and presenting during concurrent breakout sessions of the first-ever biodiversity-themed virtual [Capitol Hill Ocean Week 2020 conference](https://marinesanctuary.org/capitol-hill-ocean-week/), to be held June 9.
