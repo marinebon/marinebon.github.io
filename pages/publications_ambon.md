@@ -8,8 +8,8 @@ author_profile: false
 <tr>
 <td><a href="/pages/chow/"><img src="/images/chow_small.jpg"></a></td>
 <td style="vertical-align:top; font-size: smaller;">Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity, and work toward global best practices for biodiversity monitoring and data sharing.</td>
- <tr>
- <table>
+<tr>
+<table>
 
 <p>&nbsp;</p>
 
