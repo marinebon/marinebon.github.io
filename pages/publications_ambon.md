@@ -5,6 +5,9 @@ layout: single
 author_profile: false
 ---
 
+<div style="padding: 10px; border: 1px solid #ccf; align: center; display: flex; flex-wrap: wrap;"><div style="width: 50%; flex-wrap: wrap;"><a href="/pages/chow/"><img src="/images/chow_large.jpg"></a></div><div style="width: 50%; padding-left: 5px; font-size: smaller; flex-wrap: wrap;"><strong><a href="/pages/chow/">U.S. MBON at CHOW 2020</a></strong><br>Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity, and work toward global best practices for biodiversity monitoring and data sharing.</div></div>
+
+
 **Iken K, Mueter FJ, Grebmeier J, Cooper L, Danielson SL, Bluhm B.** 2019. Developing an observational design for epibenthos and fish assemblages in the Chukchi Sea. _Deep-Sea Research II_ 162: 180-190. [https://doi.org/10.1016/j.dsr2.2018.11.005](https://doi.org/10.1016/j.dsr2.2018.11.005)
 
 Divine LM, **Mueter FJ,** Kruse GH, **Bluhm BA,** Jewett SC, **Iken K.** 2019. New estimates of weight-at-size, maturity-at-size, fecundity, mortality and biomass of snow crab, Chionoecetes opilio, in the Arctic Ocean off Alaska. Fisheries Research 218: 246-258
