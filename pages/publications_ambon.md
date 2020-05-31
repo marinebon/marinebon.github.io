@@ -4,12 +4,7 @@ excerpt: "Marine Biodiversity Observation Network - AMBON Publications"
 layout: single
 author_profile: false
 ---
-<table style="margin:auto; padding: 10px; border: 1px solid #ccf; vertical-align:top;">
-<tr>
-<td><a href="/pages/chow/"><img src="/images/chow_small.jpg"></a></td>
-<td style="vertical-align:top; font-size: smaller;">Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity, and work toward global best practices for biodiversity monitoring and data sharing.</td>
-<tr>
-<table>
+<div style="margin:auto; padding: 10px; border: 1px solid #ccf; vertical-align:top;"><a href="/pages/chow/"><img src="/images/chow_small.jpg"></a><span style="position: relative; top: -15px; font-size: smaller;">Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity, and work toward global best practices for biodiversity monitoring and data sharing.</span></div>
 
 <p>&nbsp;</p>
 
