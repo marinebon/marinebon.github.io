@@ -5,7 +5,7 @@ layout: single
 author_profile: false
 ---
 
-<div style="padding: 10px; border: 1px solid #ccf; vertical-align:top; display: flex;"><div style="flex: 0 0 330px"><a href="/pages/chow/"><img src="/images/chow_small.jpg"></a></div><div style="padding-left: 5px; font-size: smaller; flex: 1; flex-wrap: wrap;"><strong><a href="/pages/chow/">U.S. MBON at CHOW 2020</a></strong><br>Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity, and work toward global best practices for biodiversity monitoring and data sharing.</div></div>
+<div style="padding: 10px; border: 1px solid #ccf; vertical-align:top; display: flex; flex-wrap: wrap;"><div style="flex: 0 0 330px"><a href="/pages/chow/"><img src="/images/chow_small.jpg"></a></div><div style="padding-left: 5px; font-size: smaller; flex: 1;"><strong><a href="/pages/chow/">U.S. MBON at CHOW 2020</a></strong><br>Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity and work toward global best practices for biodiversity monitoring and data sharing.</div></div>
 
 <p>&nbsp;</p>
 
