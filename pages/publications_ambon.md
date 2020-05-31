@@ -4,6 +4,9 @@ excerpt: "Marine Biodiversity Observation Network - AMBON Publications"
 layout: single
 author_profile: false
 ---
+<div style="margin: auto; padding: 16px; border: 1px solid #ccf; max-width: 432px;"><a href="/pages/chow/"><img src="/images/chow_small.jpg"></a><p style="font-size: smaller;">Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity and work toward global best practices for biodiversity monitoring and data sharing.</p></div>
+
+<p>&nbsp;</p>
 
 **Iken K, Mueter FJ, Grebmeier J, Cooper L, Danielson SL, Bluhm B.** 2019. Developing an observational design for epibenthos and fish assemblages in the Chukchi Sea. _Deep-Sea Research II_ 162: 180-190. [https://doi.org/10.1016/j.dsr2.2018.11.005](https://doi.org/10.1016/j.dsr2.2018.11.005)
 
