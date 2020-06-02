@@ -58,6 +58,7 @@ _2016_
 
 Sassoubre, L. M., K. M. Yamahara, L. Gardner, B. Block, A. B. Boehm. 2016. Environmental DNA (eDNA) shedding and decay rates of three marine fish. Environmental Science & Technology, 50(19), 10456-10464. [https://doi.org/10.1021/acs.est.6b03114](https://doi.org/10.1021/acs.est.6b03114)
 
+
 <a name="oo19"></a>**Relevant publications from Ocean Obs ‘19**
 
 Benson A, Brooks CM, Canonico G, Duffy E, Muller-Karger F, Sosik HM, Miloslavich P and Klein E (2018) Integrated Observations and Informatics Improve Understanding of Changing Marine Ecosystems. Front. Mar. Sci. 5:428. [https://doi.org/10.3389/fmars.2018.00428](https://doi.org/10.3389/fmars.2018.00428)
@@ -70,9 +71,12 @@ Duffy E et al. (2019) Toward a Coordinated Global Observing System for Seagrasse
 
 Muller-Karger FE, Miloslavich P, Bax NJ, Simmons S, Costello MJ, Sousa Pinto I, Canonico G, Turner W, Gill M, Montes E, Best BD, Pearlman J, Halpin P, Dunn D, Benson A, Martin CS, Weatherdon LV, Appeltans W, Provoost P, Klein E, Kelble CR, Miller RJ, Chavez FP, Iken K, Chiba S, Obura D, Navarro LM, Pereira HM, Allain V, Batten S, Benedetti-Checchi L, Duffy JE, Kudela RM, Rebelo L-M, Shin Y and Geller G (2018) Advancing Marine Biological Observations and Data Requirements of the Complementary Essential Ocean Variables (EOVs) and Essential Biodiversity Variables (EBVs) Frameworks. Front. Mar. Sci. 5:211. [https://doi.org/10.3389/fmars.2018.00211](https://doi.org/10.3389/fmars.2018.00211)
 
+
 <a name="projects"></a>**U.S. MBON projects**
 
 [AMBON publications](/pages/publications_ambon/)
+[SCBMBON publications](/pages/publications_scbmbon/)
+
 
 <a name="partners"></a>**MBON Partner publications**
 
