@@ -41,4 +41,4 @@ Deary, A.L, Vestfals, C.D, Logerwell, E.A, Goldstein, E.D., Stabeno, P.J., Danie
 
 Romano, M.D., Renner H.M., **Kuletz K.J.,** Parrish J.K., Jones T., Burgess H.K., Cushing D.A., Causey D. (Accepted with revisions). Die-offs and reproductive failure of murres in the Bering and Chukchi Seas in 2018. _Deep Sea Research Part II._
 
-* Sutton L., **Bluhm, B.A., Mueter, F.J., Iken K.** (In review) A functional diversity comparison of two Alaskan Arctic shelf epibenthic communities. _Marine Ecology Progress Series._
+\*Sutton L., **Bluhm, B.A., Mueter, F.J., Iken K.** (In review) A functional diversity comparison of two Alaskan Arctic shelf epibenthic communities. _Marine Ecology Progress Series._
