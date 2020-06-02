@@ -5,8 +5,7 @@ layout: single
 author_profile: false
 ---
 
-<div style="padding: 10px; border: 1px solid #ccf; align: center; display: flex; flex-wrap: wrap;"><div style="width: 350px; flex-wrap: wrap;"><a href="/pages/chow/"><img src="/images/chow_large.jpg"></a></div><div style="width: 350px; padding-left: 5px; font-size: smaller; flex-wrap: wrap;"><strong><a href="/pages/chow/">U.S. MBON at CHOW 2020</a></strong><br>Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity, and work toward global best practices for biodiversity monitoring and data sharing.</div></div>
-
+_(AMBON PIs in bold; &ast; indicates AMBON-funded student)_
 
 **Iken K, Mueter FJ, Grebmeier J, Cooper L, Danielson SL, Bluhm B.** 2019. Developing an observational design for epibenthos and fish assemblages in the Chukchi Sea. _Deep-Sea Research II_ 162: 180-190. [https://doi.org/10.1016/j.dsr2.2018.11.005](https://doi.org/10.1016/j.dsr2.2018.11.005)
 
@@ -42,4 +41,4 @@ Deary, A.L, Vestfals, C.D, Logerwell, E.A, Goldstein, E.D., Stabeno, P.J., Danie
 
 Romano, M.D., Renner H.M., **Kuletz K.J.,** Parrish J.K., Jones T., Burgess H.K., Cushing D.A., Causey D. (Accepted with revisions). Die-offs and reproductive failure of murres in the Bering and Chukchi Seas in 2018. _Deep Sea Research Part II._
 
-Sutton L., **Bluhm, B.A., Mueter, F.J., Iken K.** (In review) A functional diversity comparison of two Alaskan Arctic shelf epibenthic communities. _Marine Ecology Progress Series._
+&ast;Sutton L., **Bluhm, B.A., Mueter, F.J., Iken K.** (In review) A functional diversity comparison of two Alaskan Arctic shelf epibenthic communities. _Marine Ecology Progress Series._
