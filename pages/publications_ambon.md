@@ -5,7 +5,7 @@ layout: single
 author_profile: false
 ---
 
-_(AMBON PIs in bold; * indicates AMBON-funded student)_
+_(AMBON PIs in **bold;** * indicates AMBON-funded student)_
 
 **Iken K, Mueter FJ, Grebmeier J, Cooper L, Danielson SL, Bluhm B.** 2019. Developing an observational design for epibenthos and fish assemblages in the Chukchi Sea. _Deep-Sea Research II_ 162: 180-190. [https://doi.org/10.1016/j.dsr2.2018.11.005](https://doi.org/10.1016/j.dsr2.2018.11.005)
 
