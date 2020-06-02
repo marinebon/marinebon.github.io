@@ -1,11 +1,9 @@
 ---
-title: "AMBON Publications"
-excerpt: "Marine Biodiversity Observation Network - AMBON Publications"
+title: "SCBMBON Publications"
+excerpt: "Marine Biodiversity Observation Network - SCBMBON Publications"
 layout: single
 author_profile: false
 ---
-
-_(AMBON PIs in **bold;** * indicates AMBON-funded student)_
 
 Bell TW, Reed DC, Nelson NB, Siegel DA. 2018. Regional patterns of physiological condition determine giant kelp net primary production dynamics. Limnology and Oceanography 63(1):472-483.
 
