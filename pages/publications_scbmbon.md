@@ -1,6 +1,6 @@
 ---
-title: "SCBMBON Publications"
-excerpt: "Marine Biodiversity Observation Network - SCBMBON Publications"
+title: "Southern California Bight MBON Publications"
+excerpt: "Marine Biodiversity Observation Network - Southern California Bight MBON Publications"
 layout: single
 author_profile: false
 ---
