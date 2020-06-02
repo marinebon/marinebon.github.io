@@ -74,7 +74,7 @@ Muller-Karger FE, Miloslavich P, Bax NJ, Simmons S, Costello MJ, Sousa Pinto I, 
 
 <a name="projects"></a>**U.S. MBON projects**
 
-[ARCTIC MBON publications](/pages/publications_ambon/)
+[Arctic MBON publications](/pages/publications_ambon/)
 
 [Southern California Bight MBON publications](/pages/publications_scbmbon/)
 
