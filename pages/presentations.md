@@ -5,12 +5,12 @@ layout: single
 author_profile: false
 ---
 
-<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">IOC-UNESCO Marine Spatial Planning (MSP) Forum - May 6, 2020</div>
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">GEO Virtual Symposium 2020 - June 19, 2020</div>
 <br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
-<a href="/assets/McEachron%20MSP%20Slides%202020e.pdf" target="_blank"><img src="/images/msp_lm.png"><br>
-Marine Spatial Planning from an Ecosystem-Based Management Perspective in Florida, USA</a><br>
-Luke McEachron
+<a href="https://www.youtube.com/embed/V-wLqk2ln1U" target="_blank"><img src="/images/geo_symposium_2020.png"><br>
+Essential Ocean Variables for Sustained Observations of Marine Biodiversity and Ecosystems (VIDEO)</a><br>
+Gabrielle Canonico, Frank Muller-Karger
 
 </div>
 
@@ -18,12 +18,12 @@ Luke McEachron
 
 <p>&nbsp;</p>
 
-<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">GEO Virtual Symposium 2020 - June 19, 2020</div>
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">IOC-UNESCO Marine Spatial Planning (MSP) Forum - May 6, 2020</div>
 <br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
-<a href="https://www.youtube.com/embed/V-wLqk2ln1U" target="_blank"><img src="/images/geo_symposium_2020.png"><br>
-Essential Ocean Variables for Sustained Observations of Marine Biodiversity and Ecosystems (VIDEO)</a><br>
-Gabrielle Canonico, Frank Muller-Karger
+<a href="/assets/McEachron%20MSP%20Slides%202020e.pdf" target="_blank"><img src="/images/msp_lm.png"><br>
+Marine Spatial Planning from an Ecosystem-Based Management Perspective in Florida, USA</a><br>
+Luke McEachron
 
 </div>
 
