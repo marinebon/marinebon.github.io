@@ -4,6 +4,11 @@ excerpt: "Marine Biodiversity Observation Network News"
 layout: single
 author_profile: false
 ---
+**Summer 2020**
+
+**GEO Virtual Symposium 2020**  
+One priority for MBON is to advance global interoperability and use of standards for a minimum set of observations (Essential Ocean Variables and Essential Biodiversity Variables) through broad partnerships. On June 19, Frank Muller-Karger and Gabrielle Canonico spoke about this effort during a "Monitoring Essential Variables" panel during the Group on Earth Observations (GEO) Virtual Symposium 2020. [A video of the session is posted here.](https://earthobservations.org/symposium2020.php?session=12)
+
 **Fall 2019**
 
 **Global MBON Seascapes Now Available on CoastWatch**  
