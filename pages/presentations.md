@@ -11,7 +11,14 @@ author_profile: false
 <a href="https://www.youtube.com/embed/V-wLqk2ln1U" target="_blank"><img src="/images/geo_symposium_2020.png"><br>
 Essential Ocean Variables for Sustained Observations of Marine Biodiversity and Ecosystems (VIDEO)</a><br>
 Gabrielle Canonico, Frank Muller-Karger
+</div>
 
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">GEO Virtual Symposium 2020 - June 19, 2020</div>
+<br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="/assets/FMK_GC_GEO-2020-Presentation_June 8.pdf" target="_blank"><img src="/images/geo_symposium_2020.png"><br>
+Essential Ocean Variables for Sustained Observations of Marine Biodiversity and Ecosystems (PDF)</a><br>
+Gabrielle Canonico, Frank Muller-Karger
 </div>
 
 <div style="clear: both;"></div>
