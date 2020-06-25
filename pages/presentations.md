@@ -5,9 +5,21 @@ layout: single
 author_profile: false
 ---
 
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">Kavli Frontiers of Science, 18th Chinese-American Symposium - October 19-21, 2018, Nanjing, China</div>
+<br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="https://vimeo.com/297203776" target="_blank"><img src="/images/ecosystem_shifts_ad.png"><br>
+Tracking Ecosystem Shifts, from Microbes to Mammals, with Environmental DNA</a><br>
+Anni Djurhuus<br><a href="https://vimeo.com/297203776" target="_blank">Watch video here</a>
+</div>
+
+<div style="clear: both;"></div>
+
+<p>&nbsp;</p>
+
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">GEO Virtual Symposium 2020 - June 19, 2020</div>
 <br>
-<div style="width:45%; float:lrft; text-align:center; font-size: smaller;">
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
 <a href="/assets/FMK_GC_GEO-2020-Presentation_June 8.pdf" target="_blank"><img src="/images/geo_symposium_2020.png"><br>
 Essential Ocean Variables for Sustained Observations of Marine Biodiversity and Ecosystems</a><br>
 Gabrielle Canonico, Frank Muller-Karger<br>(<a href="https://www.youtube.com/embed/V-wLqk2ln1U" target="_blank">Watch video here</a>)
