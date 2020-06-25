@@ -5,18 +5,6 @@ layout: single
 author_profile: false
 ---
 
-<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">Kavli Frontiers of Science, 18th Chinese-American Symposium - October 19-21, 2018, Nanjing, China</div>
-<br>
-<div style="width:45%; float:left; text-align:center; font-size: smaller;">
-<a href="https://vimeo.com/297203776" target="_blank"><img src="/images/ecosystem_shifts_ad.png"><br>
-Tracking Ecosystem Shifts, from Microbes to Mammals, with Environmental DNA</a><br>
-Anni Djurhuus<br><a href="https://vimeo.com/297203776" target="_blank">Watch video here</a>
-</div>
-
-<div style="clear: both;"></div>
-
-<p>&nbsp;</p>
-
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">GEO Virtual Symposium 2020 - June 19, 2020</div>
 <br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
@@ -76,6 +64,18 @@ Katrin Iken
 </div>
 
 <div style="clear: both;"></div>
+<p>&nbsp;</p>
+
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">Kavli Frontiers of Science, 18th Chinese-American Symposium - October 19-21, 2018, Nanjing, China</div>
+<br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="https://vimeo.com/297203776" target="_blank"><img src="/images/ecosystem_shifts_ad.png"><br>
+Tracking Ecosystem Shifts, from Microbes to Mammals, with Environmental DNA</a><br>
+Anni Djurhuus<br><a href="https://vimeo.com/297203776" target="_blank">Watch video here</a>
+</div>
+
+<div style="clear: both;"></div>
+
 <p>&nbsp;</p>
 
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">MBON All Hands Meeting - May 24, 2019</div>
