@@ -66,17 +66,7 @@ Katrin Iken
 <div style="clear: both;"></div>
 <p>&nbsp;</p>
 
-<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">Kavli Frontiers of Science, 18th Chinese-American Symposium - October 19-21, 2018, Nanjing, China</div>
-<br>
-<div style="width:45%; float:left; text-align:center; font-size: smaller;">
-<a href="https://vimeo.com/297203776" target="_blank"><img src="/images/ecosystem_shifts_ad.png"><br>
-Tracking Ecosystem Shifts, from Microbes to Mammals, with Environmental DNA</a><br>
-Anni Djurhuus<br><a href="https://vimeo.com/297203776" target="_blank">Watch video here</a>
-</div>
 
-<div style="clear: both;"></div>
-
-<p>&nbsp;</p>
 
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">MBON All Hands Meeting - May 24, 2019</div>
 <br>
@@ -174,6 +164,18 @@ Emily Smail
 <a href="/assets/1430_Muller-Karger_MBON_International_May2019-converted-compressed.pdf" target="_blank"><img src="/images/linkages_fmk_mbonallhands.png"><br>
 Linkages to the Inergovernmental Oceanographic Commission, Ocean Obs 19 and the UN Decade of Ocean Science for Sustainable Development (2021-2030)</a><br>
 Frank Muller-Karger
+</div>
+
+<div style="clear: both;"></div>
+
+<p>&nbsp;</p>
+
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">Kavli Frontiers of Science, 18th Chinese-American Symposium - October 19-21, 2018, Nanjing, China</div>
+<br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="https://vimeo.com/297203776" target="_blank"><img src="/images/ecosystem_shifts_ad.png"><br>
+Tracking Ecosystem Shifts, from Microbes to Mammals, with Environmental DNA</a><br>
+Anni Djurhuus<br><a href="https://vimeo.com/297203776" target="_blank">Watch video here</a>
 </div>
 
 <div style="clear: both;"></div>
