@@ -6,6 +6,9 @@ author_profile: false
 ---
 **Summer 2020**
 
+**Watching for Changes in Marine Biodiversity**
+Changes in marine biodiversity—the variety and variability of life in the ocean—can be an early indicator of change, provided it's noticed. [Read more here.](https://www.maritime-executive.com/editorials/watching-for-changes-in-marine-biodiversity/)
+
 **GEO Virtual Symposium 2020**  
 One priority for MBON is to advance global interoperability and use of standards for a minimum set of observations (Essential Ocean Variables and Essential Biodiversity Variables) through broad partnerships. On June 19, Frank Muller-Karger and Gabrielle Canonico spoke about this effort during a "Monitoring Essential Variables" panel during the Group on Earth Observations (GEO) Virtual Symposium 2020. [A video of the session is posted here.](https://earthobservations.org/symposium2020.php?session=12)
 
