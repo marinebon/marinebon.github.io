@@ -19,14 +19,14 @@ This tool is the product of on-going collaboration across NOAA’s [Integrated E
 Note: currently CINMS is the only sanctuary with a complete website, but some components working for other sites listed below
 
 ### West Coast Region
-- [Channel Islands](https://marinebon.org/cinms)
+- [Channel Islands](https://marinebon.org/cinms) (in production)
 
-- [Monterey Bay](https://marinebon.org/mbnms) 
+- [Monterey Bay (pelagic)](https://marinebon.org/info-mb) → [Monterey Bay](https://marinebon.org/mbnms) (under development)
 
-- Olympic Coast
+- Olympic Coast (under development)
 
 ### Southeast Region
-- [Florida Keys](https://marinebon.org/info-fk/index.html)
+- [Florida Keys](https://marinebon.org/info-fk/index.html) (under development)
 
 ## Related projects
-- [SanctSound](https://marinebon.org/sanctsound): exploring underwater sounds across US national marine sanctuaries
+- [SanctSound](https://marinebon.org/sanctsound) (under development): exploring underwater sounds across US national marine sanctuaries
