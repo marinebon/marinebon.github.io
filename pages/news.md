@@ -6,6 +6,9 @@ author_profile: false
 ---
 **Summer 2020**
 
+**Ocean Scientists Create Global Network to Help Save Biodiversity**<br>
+Ocean scientists have been busy creating a global network to understand and measure changes in ocean life. The system will aggregate data from the oceans, climate and human activity to better inform sustainable marine management practices. [Read more here.](https://www.ecowatch.com/ocean-scientists-biodiversity-network-2646381356.html)
+
 **Watching for Changes in Marine Biodiversity**<br>
 Changes in marine biodiversity—the variety and variability of life in the ocean—can be an early indicator of change, provided it's noticed. [Read more here.](https://www.maritime-executive.com/editorials/watching-for-changes-in-marine-biodiversity/)
 
