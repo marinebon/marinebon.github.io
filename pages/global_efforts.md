@@ -19,3 +19,8 @@ MBON actively collaborates with the Ocean Biogeographic Information System (OBIS
 
 **Asia-Pacific MBON**  
 In 2019, GEO BON announced establishment of Asia-Pacific MBON to further development of marine biodiversity science in the Asia-Pacific region, as a sub-group of the MBON and Asia-Pacific BON networks of GEO BON. The geographic scope of AP-MBON extends from pole to pole through Asia and the western Pacific, including the Pacific islands and the Indian Ocean. It includes the deepest ocean trenches, and the Coral Triangle, the highest density of marine species on Earth, as well as the highest densities of human populations.
+
+**IABO** 
+The International Association for Biological Oceanography (IABO) is a global non-profit organization dedicated to promoting the advancement of knowledge of the biology of the sea by providing opportunities for communication between marine biologists.  IABO supports the network by raising awareness about MBON activities and promoting the coordination of biodiversity efforts across the globe. As member of the Scientific Committee on Oceanic Research (SCOR) IABO fosters international collaborations with the scientific community and across disciplines in support of MBON goals.   
+
+[Learn more about IABO](https://iabo.org).
