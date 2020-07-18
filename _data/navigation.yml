@@ -67,7 +67,7 @@ site_nav:
         image: obis_logo.png
 
       - title: "IABO"
-        url: "https://iabo.org/"
+        url: "http://www.iabo.org"
         image: iabo_logo.png
         
       - title: "IOOS"
