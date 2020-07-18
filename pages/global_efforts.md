@@ -23,4 +23,4 @@ In 2019, GEO BON announced establishment of Asia-Pacific MBON to further develop
 **IABO** <br>
 The International Association for Biological Oceanography (IABO) is a global non-profit organization dedicated to promoting the advancement of knowledge of the biology of the sea by providing opportunities for communication between marine biologists.  IABO supports the network by raising awareness about MBON activities and promoting the coordination of biodiversity efforts across the globe. As member of the Scientific Committee on Oceanic Research (SCOR) IABO fosters international collaborations with the scientific community and across disciplines in support of MBON goals.   
 
-[Learn more about IABO](https://iabo.org).
+[Learn more about IABO](http://www.iabo.org).
