@@ -66,6 +66,10 @@ site_nav:
         url: "https://obis.org/"
         image: obis_logo.png
 
+      - title: "IABO"
+        url: "https://iabo.org/"
+        image: iabo_logo.png
+        
       - title: "IOOS"
         url: "https://ioos.noaa.gov/"
         image: ioos_logo.jpg
