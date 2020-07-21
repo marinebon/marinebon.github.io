@@ -6,6 +6,9 @@ author_profile: false
 ---
 **Summer 2020**
 
+**MBON and AOML Characterize Seascapes Biogeographic Regions to Understand Phytoplankton Assemblages in the Florida Keys National Marine Sanctuary**<br>
+MBON, with NOAA/AOML, has characterized seascapes for the Florida Keys National Marine Sanctuary (FKNMS) and southwest Florida shelf nearshore environment using multivariate satellite and in situ measurements (MBON/CoastWatch Seascapes products:  The effort illustrates best practices developed by MBON in collaboration with the South Florida Ecosystem Restoration Research (SFER) project and NOAA/AOML. The work is described in a [July 15 paper in Frontiers of Marine Science](https://www.frontiersin.org/articles/10.3389/fmars.2020.00575/full).
+
 **Ocean Scientists Create Global Network to Help Save Biodiversity**<br>
 Ocean scientists have been busy creating a global network to understand and measure changes in ocean life. The system will aggregate data from the oceans, climate and human activity to better inform sustainable marine management practices. [Read more here.](https://www.ecowatch.com/ocean-scientists-biodiversity-network-2646381356.html)
 
