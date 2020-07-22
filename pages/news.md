@@ -18,8 +18,11 @@ Changes in marine biodiversity—the variety and variability of life in the ocea
 **GEO Virtual Symposium 2020**  
 One priority for MBON is to advance global interoperability and use of standards for a minimum set of observations (Essential Ocean Variables and Essential Biodiversity Variables) through broad partnerships. On June 19, Frank Muller-Karger and Gabrielle Canonico spoke about this effort during a "Monitoring Essential Variables" panel during the Group on Earth Observations (GEO) Virtual Symposium 2020. [A video of the session is posted here.](https://earthobservations.org/symposium2020.php?session=12)
 
+**U.S. MBON at CHOW 2020**<br>
+Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity and work toward global best practices for biodiversity monitoring and data sharing. [Read more here.](https://marinesanctuary.org/capitol-hill-ocean-week/)
+
 **A New, Fast Way to Analyze Hurricane Damage to Coastal Environments**<br>
-MBON, NERRS and NASA team develops automated, satellite-based method to evaluate damage caused by hurricanes and severe storms in coastal areas. [Read more here.](https://www.marine.usf.edu/news-and-events/a-new-fast-way-to-analyze-hurricane-damage-to-coastal-environments/)
+MBON, NERRS and NASA team develops automated, satellite-based method to evaluate damage caused by hurricanes and severe storms in coastal areas. [Read more here.](https://www.usf.edu/marine-science/news/2020/a-new-fast-way-to-analyze-hurricane-damage-to-coastal-environments.aspx)
 
 **Fall 2019**
 
