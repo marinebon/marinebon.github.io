@@ -23,6 +23,8 @@ _2020_
 
 Djurhuus, A., Closek, C.J., Kelly, R.P. et al. Environmental DNA reveals seasonal shifts and potential interactions in a marine community. Nat Commun 11, 254 (2020). [https://doi.org/10.1038/s41467-019-14105-1](https://doi.org/10.1038/s41467-019-14105-1)
 
+McElroy Mary E., Dressler Terra L., Titcomb Georgia C., Wilson Emily A., Deiner Kristy, Dudley Tom L., Eliason Erika J., Evans Nathan T., Gaines Steven D., Lafferty Kevin D., Lamberti Gary A., Li Yiyuan, Lodge David M., Love Milton S., Mahon Andrew R., Pfrender Michael E., Renshaw Mark A., Selkoe Kimberly A., Jerde Christopher L.  Calibrating Environmental DNA Metabarcoding to Conventional Surveys for Measuring Fish Species Richness. Frontiers in Ecology and Evolution 8, 276 (2020). [https://doi.org/10.3389/fevo.2020.00276](https://doi.org/10.3389/fevo.2020.00276)
+
 _2019_
 
 Closek, Collin J., Santora, Jarrod A., Starks, Hilary A., Schroeder, Isaac D., Andruszkiewicz, Elizabeth A., Sakuma, Keith M., Bograd, Steven J., Hazen, Elliott L., Field, John C., Boehm, Alexandria B. 2019. Marine Vertebrate Biodiversity and Distribution Within the Central California Current Using Environmental DNA (eDNA) Metabarcoding and Ecosystem Surveys. Frontiers in Marine Science, 6:732.  [https://doi.org/10.3389/fmars.2019.00732](https://doi.org/10.3389/fmars.2019.00732)
