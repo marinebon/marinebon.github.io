@@ -4,7 +4,7 @@ excerpt: "BioTrack"
 layout: single
 author_profile: false
 ---
-<img src="/images/biotrack_logo.png" alt="BioTrack">
+<img src="/images/biotrack_logo.png" alt="BioTrack logo">
 
 BioTrack is a collaborative network to assess and monitor biodiversity hotspots where marine megafauna share habitat. These hotspots are expected to be changing with global change. 
 
@@ -97,4 +97,4 @@ _Q: How do I become a collaborator?_
 
 A: To join this collaborative initiative, please contact [Chelsea Black](mailto:clb210@miami.edu).
 
-<img src="/images/biotrack_contact.jpg" alt="BioTrack shark tagging">
+<img src="/images/biotrack_contact.jpg" alt="BioTrack contact information">
