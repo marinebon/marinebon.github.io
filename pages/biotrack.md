@@ -82,13 +82,16 @@ A: Data will be aggregated and synthesized into products, which will be made ava
 
 
 _Q: Will this preclude me from publishing my data separately?_
+
 A: Not at all. Individual data contributors are free to use their data in any way. Collaboration in BioTrack does not prevent or preclude contributors from using their data in any other research projects or papers.
 
 
 _Q: What is the timeline for this project?_
+
 A: As this is a large scale project with many collaborators, we predict this to progress over the next few years. Updates will be shared as they arise. 
 
 
 _Q: How do I become a collaborator?_
+
 A: To join this collaborative initiative, please contact [Chelsea Black](mailto:clb210@miami.edu).
 
