@@ -97,3 +97,4 @@ _Q: How do I become a collaborator?_
 
 A: To join this collaborative initiative, please contact [Chelsea Black](mailto:clb210@miami.edu).
 
+<img src="/images/biotrack_contact.jpg" alt="BioTrack shark tagging">
