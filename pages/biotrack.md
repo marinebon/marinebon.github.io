@@ -77,5 +77,5 @@ _Q: What is the timeline for this project?_
 A: As this is a large scale project with many collaborators, we predict this to progress over the next few years. Updates will be shared as they arise. 
 
 _Q: How do I become a collaborator?_
-A: To join this collaborative initiative, please contact: Chelsea Black clb210@miami.edu 
+A: To join this collaborative initiative, please contact [Chelsea Black](mailto:clb210@miami.edu).
 
