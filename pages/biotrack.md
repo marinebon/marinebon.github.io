@@ -1,6 +1,6 @@
 ---
-title: "U.S. MBON Projects - Central California MBON"
-excerpt: "Marine Biodiversity Observation Network U.S. Projects - Central California MBON"
+title: "BioTrack"
+excerpt: "BioTrack"
 layout: single
 author_profile: false
 ---
