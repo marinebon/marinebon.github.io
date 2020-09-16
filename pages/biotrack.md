@@ -4,6 +4,7 @@ excerpt: "BioTrack"
 layout: single
 author_profile: false
 ---
+<img src="/images/biotrack_logo.png" alt="BioTrack">
 
 BioTrack is a collaborative network to assess and monitor biodiversity hotspots where marine megafauna share habitat. These hotspots are expected to be changing with global change. 
 
