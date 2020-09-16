@@ -16,6 +16,8 @@ The data will be made available in an interactive portal available to the public
 
 Currently the effort focuses on the Western North Atlantic, Gulf of Mexico, and Caribbean Sea, with a plan to scale the framework to other regions.
 
+<img src="/images/shark_tagging.jpg" alt="BioTrack shark tagging">
+
 **Frequently Asked Questions**
 
 _Q: What are the specific project objectives?_
