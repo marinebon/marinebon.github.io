@@ -75,7 +75,7 @@ A: Raw data will be protected to the extent desired by the contributor. If you j
 
 _Q: How is my data protected?_
 
-A: Please see the [data management plan](assets/biotrack_datamanagementplan.pdf) for more information.
+A: Please see the [data management plan](/assets/biotrack_datamanagementplan.pdf) for more information.
 
 
 _Q: Will my data become public?_
