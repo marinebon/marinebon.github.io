@@ -4,6 +4,11 @@ excerpt: "Marine Biodiversity Observation Network News"
 layout: single
 author_profile: false
 ---
+**Fall 2020**
+
+**A New Collaboration Seeks to to Assess and Monitor Biodiversity Hotspots where Marine Megafauna Share Habitat**<br>
+BioTrack is a collaborative network that maps and tracks hotspots through biotelemetry and biologging. The approach integrates tracking data from tagged marine megafauna (e.g., sharks, teleosts, marine mammals, seabirds, and reptiles). [Read more here.](/pages/biotrack/)
+
 **Summer 2020**
 
 **MBON and AOML Characterize Seascapes Biogeographic Regions to Understand Phytoplankton Assemblages in the Florida Keys National Marine Sanctuary**<br>
