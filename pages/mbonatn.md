@@ -7,7 +7,6 @@ author_profile: false
 
 **MBON and ATN: Collaborations to Integrate Biodiversity and Animal Movement Information**  
 
-
 MBON was borne out of the Census of Marine Life and the recognition through that process that while huge investments are made in ocean observing systems and biodiversity monitoring, there is no systematic and integrated global effort to observe life in the sea that can tell us about status, trends, and shifts over time and further - how that impacts people. The US MBON represents a long-term, multi-sector effort to observe marine life and ecosystem interactions and to understand how those are changing and how that affects us.  US MBON was established in 2014 with three demonstration projects and expanded in 2016 to six projects covering the Arctic, California Current, Pacific Northwest, Gulf of Maine, and South Florida.
 
 <img src="/images/tigershark.png" alt="Tiger Shark">
