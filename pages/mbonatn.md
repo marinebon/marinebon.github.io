@@ -5,6 +5,12 @@ layout: single
 author_profile: false
 ---
 
+[Background](#background)
+<br>
+[Active Collaborations](#collaborations)
+
+
+<a name="background"></a>
 **MBON and ATN: Collaborations to Integrate Biodiversity and Animal Movement Information**  
 
 MBON was borne out of the Census of Marine Life and the recognition through that process that while huge investments are made in ocean observing systems and biodiversity monitoring, there is no systematic and integrated global effort to observe life in the sea that can tell us about status, trends, and shifts over time and further - how that impacts people. The US MBON represents a long-term, multi-sector effort to observe marine life and ecosystem interactions and to understand how those are changing and how that affects us.  US MBON was established in 2014 with three demonstration projects and expanded in 2016 to six projects covering the Arctic, California Current, Pacific Northwest, Gulf of Maine, and South Florida.
@@ -22,3 +28,8 @@ At the heart of the ATN data management vision is a centralized data assembly ce
 MBON priorities include making available data from existing biodiversity monitoring efforts and  filling gaps where they exist, integrating remote sensing with in situ observations, and advancing new technologies and approaches (including integration of biodiversity with animal telemetry observations, development of remote-sensing based Seascapes products, operational use of environmental DNA, and streamlining taxonomic identification from still and video imagery) - all in the service of users and stakeholders.  
 
 Like ATN, MBON seeks to build communities through alliances and collaborations in the US and globally, support baseline observations, and advance data management and delivery. While both programs place strong emphasis on addressing their unique objectives, each is committed to supporting collaborative efforts and activities that bring together biodiversity with animal movement information to inform decision-makers, managers, and the public about where marine life is, how it is moving, if it is changing and why.
+
+<a name="background"></a>
+**Active Collaborations**  
+
+[BioTrack](/pages/biotrack.md): A collaborative network to assess and monitor biodiversity hotspots where marine megafauna share habitat
