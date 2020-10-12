@@ -29,7 +29,7 @@ MBON priorities include making available data from existing biodiversity monitor
 
 Like ATN, MBON seeks to build communities through alliances and collaborations in the US and globally, support baseline observations, and advance data management and delivery. While both programs place strong emphasis on addressing their unique objectives, each is committed to supporting collaborative efforts and activities that bring together biodiversity with animal movement information to inform decision-makers, managers, and the public about where marine life is, how it is moving, if it is changing and why.
 
-<a name="background"></a>
+<a name="collaborations"></a>
 **Active Collaborations**  
 
 [BioTrack](/pages/biotrack.md): A collaborative network to assess and monitor biodiversity hotspots where marine megafauna share habitat
