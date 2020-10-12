@@ -14,6 +14,9 @@ main:
     
   - title: "Data"
     url: /pages/data/
+        
+  - title: "MBON-ATN Collaboration"
+    url: /pages/mbonatn/
 
 # site_nav links
 site_nav:
