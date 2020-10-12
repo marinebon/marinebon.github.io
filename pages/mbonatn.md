@@ -32,4 +32,4 @@ Like ATN, MBON seeks to build communities through alliances and collaborations i
 <a name="collaborations"></a>
 **Active Collaborations**  
 
-[BioTrack](/pages/biotrack.md): A collaborative network to assess and monitor biodiversity hotspots where marine megafauna share habitat
+[BioTrack](/pages/biotrack/): A collaborative network to assess and monitor biodiversity hotspots where marine megafauna share habitat
