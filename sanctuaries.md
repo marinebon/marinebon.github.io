@@ -28,7 +28,6 @@ Note: currently CINMS is the only sanctuary with a complete website, but some co
 ### Southeast Region
 - [Florida Keys](https://marinebon.org/info-fk/index.html)
 
-<!-- @bbest commented out b/c still in prototype
+
 ## Related projects
-- [SanctSound](https://marinebon.org/sanctsound): exploring underwater sounds across US national marine sanctuaries
--->
+- [SanctSound](https://marinebon.org/sanctsound): exploring underwater sounds across US national marine sanctuaries. Prototype database and web portal development [expected release date spring 2022]
