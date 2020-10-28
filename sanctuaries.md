@@ -30,4 +30,4 @@ Note: currently CINMS is the only sanctuary with a complete website, but some co
 
 
 ## Related projects
-- [SanctSound](https://marinebon.org/sanctsound): exploring underwater sounds across US national marine sanctuaries. Prototype database and web portal development [expected release date spring 2022]
+- [SanctSound](https://sanctuaries.noaa.gov/science/monitoring/sound/): exploring underwater sounds across US national marine sanctuaries. Prototype database and web portal development [expected release date spring 2022]
