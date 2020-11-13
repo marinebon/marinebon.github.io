@@ -6,6 +6,9 @@ author_profile: false
 ---
 **Fall 2020**
 
+**COVID-Delayed Arctic Research Cruise Yields Late-Season Data**<br>
+Researchers studying the Bering and Chukchi seas for three weeks in October found no ice and a surprisingly active ecosystem as they added another year’s data to a key climate change record. [Read more here.](https://news.uaf.edu/covid-delayed-arctic-research-cruise-yields-late-season-data/)
+
 **Joint US-Canada Zooplankton Workshop on Modeling Abundance and Distribution of Zooplankton Prey for North Atlantic Right Whales in Canadian and U.S. Coastal and Shelf Waters**<br>
 _Convened by Chris Orphanides, NEFSC Protected Species Branch, NOAA Fisheries; Catherine Johnson, Bedford Institute of Oceanography, Canada DFO; Jeffrey Runge, University of Maine, MBON_<br>
 
