@@ -22,7 +22,7 @@ From 2021, EMBRC will work to consolidate the ARMS-MBON infrastructure and promo
 To find out more about the ARMS network or joining EMBRC as a member, please contact Matthias Obst (matthias.obst@marine.gu.se). The Marine Biodiversity Observation Network (MBON) promotes best practices for the observation and application of ocean biodiversity data for societal benefit as part of the Group on Earth Observations (http://marinebon.org).
 
 **Links**
-[Global ARMS Program](http://www.oceanarms.org)
-[The European ARMS Programme](http://www.arms-mbon.eu/)
-[Full publication](http://www.frontiersin.org/articles/10.3389/fmars.2020.572680/full) 
-[Video](https://www.youtube.com/watch?v=sckV0FIAXd8&feature=emb_logo0
+[Global ARMS Program](http://www.oceanarms.org)<br>
+[The European ARMS Programme](http://www.arms-mbon.eu/)<br>
+[Full publication](http://www.frontiersin.org/articles/10.3389/fmars.2020.572680/full) <br>
+[Video](https://www.youtube.com/watch?v=sckV0FIAXd8&feature=emb_logo0)
