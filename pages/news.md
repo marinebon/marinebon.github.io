@@ -19,7 +19,7 @@ Over 30 regional experts in zooplankton oceanography and North Atlantic right wh
 
 There is a need to include the best knowledge about present and future patterns of C. finmarchicus abundance into NARW foraging habitat models used to inform U.S. and Canadian regulations and guidance to the shipping and fishing industries. The workshop provided an opportunity for exchange of information about NARW management, zooplankton data sharing, and zooplankton modeling approaches.  An important outcome of the workshop was the creation of cross-border working groups to coordinate data sharing and deliver products useful to NARW conservation measures. A third working group was formed to identify and coordinate research on the causes of NARW foraging habitat change, for which there is strong evidence that climate drivers have resulted in warming and shifts in currents supplying water into the Gulf of Maine, affecting zooplankton abundance and distribution. For further information, please contact Gulf of Maine MBON PI Jeffrey Runge: [jeffrey.runge@maine.edu](mailto:jeffrey.runge@maine.edu).
 
-**A New Collaboration Seeks to to Assess and Monitor Biodiversity Hotspots where Marine Megafauna Share Habitat**<br>
+**A New Collaboration Seeks to to Assess and Monitor Biodiversity Hotspots where Marine Megafauna Share Habitat**<br> 
 BioTrack is a collaborative network that maps and tracks hotspots through biotelemetry and biologging. The approach integrates tracking data from tagged marine megafauna (e.g., sharks, teleosts, marine mammals, seabirds, and reptiles). [Read more here.](/pages/biotrack/)
 
 **Summer 2020**
