@@ -7,7 +7,7 @@ author_profile: false
 **Fall 2020**
 
 **ARMS-MBON – a New Network For Genetic Monitoring and Early Detection of Non-Indigenous Marine Species**<br>
-As part of a global initiative originally developed by the Smithsonian Institute, a marine biodiversity observation network (MBON) has deployed more than 130 Autonomous Reef Monitoring Structures (ARMS) in the vicinity of marine sanctuaries as well as industrial locations (e.g. ports, and marinas) in Europe and the polar regions. [Read more here.](news_armsmbon.md)
+As part of a global initiative originally developed by the Smithsonian Institute, a marine biodiversity observation network (MBON) has deployed more than 130 Autonomous Reef Monitoring Structures (ARMS) in the vicinity of marine sanctuaries as well as industrial locations (e.g. ports, and marinas) in Europe and the polar regions. [Read more here.](/pages/news_armsmbon.md)
 
 **COVID-Delayed Arctic Research Cruise Yields Late-Season Data**<br>
 Researchers studying the Bering and Chukchi seas for three weeks in October found no ice and a surprisingly active ecosystem as they added another year’s data to a key climate change record. [Read more here.](https://news.uaf.edu/covid-delayed-arctic-research-cruise-yields-late-season-data/)
