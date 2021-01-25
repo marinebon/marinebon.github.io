@@ -7,6 +7,11 @@ author_profile: false
 
 _(AMBON PIs in **bold;** * indicates AMBON-funded student)_
 
+
+\*Sutton L, **Iken K, Bluhm BA, Mueter FJ** 2020. Comparison of functional diversity of two Alaskan Arctic shelf epibenthic communities. _Mar Ecol Prog Ser_ 651: 1-21. [https://doi.org/10.3354/meps13478](https://doi.org/10.3354/meps13478)
+
+Huntington, H.P., Danielson, S.L., Wiese, F.K. et al. 2020. Evidence suggests potential transformation of the Pacific Arctic ecosystem is underway. _Nat. Clim. Chang._ 10, 342–348 (2020). [https://doi.org/10.1038/s41558-020-0695-2](https://doi.org/10.1038/s41558-020-0695-2)
+
 **Iken K, Mueter FJ, Grebmeier J, Cooper L, Danielson SL, Bluhm B.** 2019. Developing an observational design for epibenthos and fish assemblages in the Chukchi Sea. _Deep-Sea Research II_ 162: 180-190. [https://doi.org/10.1016/j.dsr2.2018.11.005](https://doi.org/10.1016/j.dsr2.2018.11.005)
 
 Divine LM, **Mueter FJ,** Kruse GH, **Bluhm BA,** Jewett SC, **Iken K.** 2019. New estimates of weight-at-size, maturity-at-size, fecundity, mortality and biomass of snow crab, Chionoecetes opilio, in the Arctic Ocean off Alaska. Fisheries Research 218: 246-258
