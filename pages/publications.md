@@ -84,6 +84,8 @@ Muller-Karger FE, Miloslavich P, Bax NJ, Simmons S, Costello MJ, Sousa Pinto I, 
 
 [Southern California Bight MBON publications](/pages/publications_scbmbon/)
 
+[South Florida MBON Publications](/pages/publications_sfmbon/)
+
 
 <a name="partners"></a>**MBON Partner publications**
 
