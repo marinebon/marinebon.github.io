@@ -93,4 +93,6 @@ Gil‐Aguedo, D.L., Cintra‐Buenrostro, C.E., Brenner, J., Gonzalez‐Diaz, P.,
 <a name="seascapes"></a>
 **Seascapes**<br>
 
+Montes et al. 2020. Dynamic Satellite Seascapes as a Biogeographic Framework for Understanding Phytoplankton Assemblages in the Florida Keys National Marine Sanctuary, United States. Front. Mar. Sci., 15 July 2020. [https://doi.org/10.3389/fmars.2020.00575](https://doi.org/10.3389/fmars.2020.00575)
+
 Montes, Enrique, Anni Djurhuus, Frank Edgar Muller-Karger, Daniel Otis, Christopher R Kelble, Maria T. Kavanaugh. 2020. Dynamic satellite seascapes as a biogeographic framework for understanding phytoplankton assemblages in the Florida Keys National Marine Sanctuary, USA. Frontiers in Marine Science, section Marine Ecosystem Ecology. [https://doi.org/10.3389/fmars.2020.00575](https://doi.org/10.3389/fmars.2020.00575)
