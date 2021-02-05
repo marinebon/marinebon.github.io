@@ -15,7 +15,7 @@ Jason Landrum
 </div>
 
 <div style="width:45%; float:right; text-align:center; font-size: smaller;">
-  <strong>MEETING DOCUMENTS</strong><br><a href="/assets/AGENDA%20-%20MBON%20Workshop%20FEB%202021%20.pdf" target="_blank">Meeting Agenda</a><br><br>
+  <strong>MEETING DOCUMENTS</strong><br><br><a href="/assets/AGENDA%20-%20MBON%20Workshop%20FEB%202021%20.pdf" target="_blank">Meeting Agenda</a><br><br>
 <a href="https://usf.box.com/s/z295uo8nmd2ytidl8awqdmar58vsruht" target="_blank">Session Recording: Monday, February 1</a><br><br>
 <a href="https://usf.box.com/s/h20m5gak2hzlsqpa5vqs7epvd6bk815dSession" target="_blank">Recording: Tuesday, February 2</a>
   
