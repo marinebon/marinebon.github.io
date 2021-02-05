@@ -5,6 +5,38 @@ layout: single
 author_profile: false
 ---
 
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">Cross-MBON Virtual Meeting: Toward a National Operational MBON, February 2021</div>
+<br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="/assets/Landrum_X-MBON keynote_Final_02012021.pdf" target="_blank"><img src="/images/landrum.png"><br>
+Perspectives on Making Monitoring Biodiversity more Useful and Usable</a><br>
+Jason Landrum
+
+</div>
+
+<div style="width:45%; float:right; text-align:center; font-size: smaller;">
+<a href="/assets/AGENDA%20-%20MBON%20Workshop%20FEB%202021%20.pdf" target="_blank">Meeting Agenda</a><br>
+<a href="https://usf.box.com/s/z295uo8nmd2ytidl8awqdmar58vsruht" target="_blank">Session Recording: Monday, February 1</a><br>
+<a href="https://usf.box.com/s/h20m5gak2hzlsqpa5vqs7epvd6bk815dSession" target="_blank">Recording: Tuesday, February 2</a>
+  
+
+</div>
+
+<div style="clear: both;"></div>
+
+<p>&nbsp;</p>
+
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="/assets/XMBON_2.2.2021_Satterthwaite_FINAL.pdf" target="_blank"><img src="/images/satterthwaite.png"><br>
+Translational Marine Research: the Missing Link in the Data Value Chain</a><br>
+Erin Satterthwaite
+</div>
+
+
+<div style="clear: both;"></div>
+<p>&nbsp;</p>
+
+
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">GEO Virtual Symposium 2020 - June 19, 2020</div>
 <br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
