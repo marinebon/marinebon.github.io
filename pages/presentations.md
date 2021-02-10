@@ -32,6 +32,10 @@ Translational Marine Research: the Missing Link in the Data Value Chain</a><br>
 Erin Satterthwaite
 </div>
 
+<div style="width:45%; float:right; text-align:center; font-size: smaller;">
+<a href="/assets/Werner_MBON_Feb2021.pdf" target="_blank"><img src="/images/werner.png"><br>
+Building an Operational MBON: Vision and Opportunity</a><br>
+Cisco Werner</div>
 
 <div style="clear: both;"></div>
 <p>&nbsp;</p>
