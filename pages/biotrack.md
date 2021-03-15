@@ -7,6 +7,7 @@ author_profile: false
 <img src="/images/biotrack_logo.png" alt="BioTrack logo">
 
 <div align="center"><img src="/images/biotrack_banner.jpg"></div>
+<br>
 
 [**Sign up for the BioTrack Working Group**](https://docs.google.com/spreadsheets/d/1OcuEh_NQ56jfwi5yMo2jtjbpOnVZSItcrxzjVeUauC0/edit#gid=0)
 
