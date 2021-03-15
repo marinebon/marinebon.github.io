@@ -6,6 +6,10 @@ author_profile: false
 ---
 <img src="/images/biotrack_logo.png" alt="BioTrack logo">
 
+<div align="center"><img src="/images/biotrack_banner.jpg"></div>
+
+[**Sign up for the BioTrack Working Group**](https://docs.google.com/spreadsheets/d/1OcuEh_NQ56jfwi5yMo2jtjbpOnVZSItcrxzjVeUauC0/edit#gid=0)
+
 BioTrack is a collaborative network to assess and monitor biodiversity hotspots where marine megafauna share habitat. These hotspots are expected to be changing with global change. 
 
 BioTrack maps and tracks hotspots through biotelemetry and biologging. Our approach integrates tracking data from tagged marine megafauna (e.g., sharks, teleosts, marine mammals, seabirds, and reptiles). We record remotely sensed environmental data on multiple Essential Ocean Variables (EOVs) and geographic “seascapes”. This identifies areas of overlapping migratory pathways and characterizes shared highly suitable habitats. 
