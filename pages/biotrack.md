@@ -16,7 +16,7 @@ BioTrack is a collaborative network to assess and monitor biodiversity hotspots 
 BioTrack maps and tracks hotspots through biotelemetry and biologging. Our approach integrates tracking data from tagged marine megafauna (e.g., sharks, teleosts, marine mammals, seabirds, and reptiles). We record remotely sensed environmental data on multiple Essential Ocean Variables (EOVs) and geographic “seascapes”. This identifies areas of overlapping migratory pathways and characterizes shared highly suitable habitats. 
 
 <div align="center"><img src="/images/atn_biotrack.png" alt="A screenshot of the ATN Data Assembly Center map display"><br>
-<span class="small">A screenshot of the ATN Data Assembly Center (DAC) map display showing some example marine animal satellite telemetry tracks in the DAC from the South Florida/Gulf of Mexico region.</span></div><br>
+<span class="small">A screenshot of the ATN Data Assembly Center (DAC) map display showing some example marine animal satellite telemetry tracks in the DAC from the South Florida/Gulf of Mexico region.</span></div>
 
 Knowledge about marine megafauna hotspots and how they are changing will provide opportunities for prioritizing spatial protections, planning for multiple use of ocean spaces, and monitoring for ecosystem responses to environmental change.
 
