@@ -10,10 +10,15 @@ author_profile: false
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
 <a href="/assets/UVICapstoneProject-MBONWriteUp.pdf" target="_blank"><img src="/images/usvi_cohort.png"><br>
 Fishing for Answers: An Investigation Into the Role of Herbivory on Coral Reef Recovery in Puerto Rico and the US Virgin Islands</a><br>
-<a href="https://www.youtube.com/watch?v=T6bLoB6UrDk#herbi%23herbivory%20and%20reef%20recovery" target="_blank">Webinar Recording</a> | <a href="/assets/UVICapstoneProject-MBONWriteUp.pdf" target="_blank">Write-up</a>
+
 
 </div>
+<div style="width:45%; float:right; text-align:center; font-size: smaller;">
+  <strong>MEETING DOCUMENTS</strong><br><br><a href="https://www.youtube.com/watch?v=T6bLoB6UrDk#herbi%23herbivory%20and%20reef%20recovery" target="_blank">Webinar Recording</a><br><br>
+  <a href="/assets/UVICapstoneProject-MBONWriteUp.pdf" target="_blank">Write-up</a>
+  
 
+</div>
 
 <div style="clear: both;"></div>
 
