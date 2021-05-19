@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">University of the Virgin Islands in the Master of Marine and Environmental Science Program May 6, 2021</div>
-<br>
+<br><br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
 <a href="/assets/UVICapstoneProject-MBONWriteUp.pdf" target="_blank"><img src="/images/usvi_cohort.png"><br>
 Fishing for Answers: An Investigation Into the Role of Herbivory on Coral Reef Recovery in Puerto Rico and the US Virgin Islands</a><br>
