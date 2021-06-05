@@ -232,7 +232,7 @@ Emily Smail
 
 <div style="width:45%; float:right; text-align:center; font-size: smaller;">
 <a href="/assets/1430_Muller-Karger_MBON_International_May2019-converted-compressed.pdf" target="_blank"><img src="/images/linkages_fmk_mbonallhands.png"><br>
-Linkages to the Inergovernmental Oceanographic Commission, Ocean Obs 19 and the UN Decade of Ocean Science for Sustainable Development (2021-2030)</a><br>
+Linkages to the Intergovernmental Oceanographic Commission, Ocean Obs 19 and the UN Decade of Ocean Science for Sustainable Development (2021-2030)</a><br>
 Frank Muller-Karger
 </div>
 
