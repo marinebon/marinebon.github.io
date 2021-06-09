@@ -7,15 +7,16 @@ author_profile: false
 **Summer 2021**
 
 **Marine Life 2030 Endorsed as a UN Ocean Decade Program**<br>
-We are pleased to announce that [Marine Life 2030](https://marinebon.org/assets/Marine_Life_2030_UN_Ocean_Decade_request_for_endorsement_20210115.pdf) was endorsed as a UN Ocean Decade Action. In the spirit of the [UN Decade of Ocean Science and Sustainability](https://www.oceandecade.org/), Marine Life 2030 will deliver global knowledge about marine life for local decisions. 
+We are pleased to announce that [Marine Life 2030](https://marinebon.org/assets/Marine_Life_2030_UN_Ocean_Decade_request_for_endorsement_20210115.pdf) was endorsed as a UN Ocean Decade Action. In the spirit of the [UN Decade of Ocean Science for Sustainable Development (the Ocean Decade)](https://www.oceandecade.org/), Marine Life 2030 will deliver global knowledge about marine life for local decisions.
 
-As part of the global celebrations for World Oceans Day 2021, UNESCO’s Intergovernmental Oceanographic Commission announced yesterday the first Actions as part of the UN Ocean Decade, with more than [60 programmes and contributions being officially endorsed](https://www.oceandecade.org/resource/166/Announcement-of-the-results-of-the-first-endorsed-Decade-Actions-following-Call-for-Decade-Actions-No-012020).
+As part of the global celebrations for World Oceans Day 2021, the UN announced the first Actions as part of the UN Ocean Decade, with more than [60 programmes and contributions officially endorsed](https://www.oceandecade.org/resource/166/Announcement-of-the-results-of-the-first-endorsed-Decade-Actions-following-Call-for-Decade-Actions-No-012020).
 
 The ocean’s >200,000 species form the heart of ecosystems that provide protein, stable climate, protection, and livelihoods to billions of people worldwide. Many of these species, and the services they provide, are threatened. Yet marine biodiversity remains poorly known and inadequately integrated into ocean observing systems. Marine Life 2030 aspires to solve that problem, by establishing a globally coordinated system to deliver actionable knowledge of ocean life to those who need it, promoting human well-being, sustainable development, and ocean conservation. The program will build partnerships, bring together diverse communities, and serve as a connector and facilitator to foster “the science we need for the ocean we want”. 
 
 Marine Life 2030 is a global, collaborative team led by the Smithsonian´s National Museum of Natural History, Smithsonian MarineGEO program, the US Integrated Ocean Observing System (US IOOS), the Marine Biodiversity Observation Network (GEO BON - MBON), the Global Ocean Observing System (GOOS), the Ocean Knowledge Action Network, the Ocean Biodiversity Information System (OBIS) and the World Conservation and Monitoring Centre (UNEP-WCMC), and engages many communities and organizations across the globe.
 
 Pressing questions remain about how the diversity of marine organisms is changing over time in the face of climate and other environmental pressures. Marine Life 2030 will integrate information about marine life into observation, management and forecasting systems for a sustainable healthy ocean all around the world. We aim to put a layer of life in the seascape. 
+
 
 
 **Winter 2021**
