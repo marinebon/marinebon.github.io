@@ -6,7 +6,7 @@ author_profile: false
 ---
 **Summer 2021**
 
-**Marine Life 2030 Endorsed as a UN Ocean Decade Program**<br>
+**Marine Life 2030 Endorsed as a UN Ocean Decade Action**<br>
 We are pleased to announce that [Marine Life 2030](https://marinebon.org/assets/Marine_Life_2030_UN_Ocean_Decade_request_for_endorsement_20210115.pdf) was endorsed as a UN Ocean Decade Action. In the spirit of the [UN Decade of Ocean Science for Sustainable Development (the Ocean Decade)](https://www.oceandecade.org/), Marine Life 2030 will deliver global knowledge about marine life for local decisions.
 
 As part of the global celebrations for World Oceans Day 2021, the UN announced the first Actions as part of the UN Ocean Decade, with more than [60 programmes and contributions officially endorsed](https://www.oceandecade.org/resource/166/Announcement-of-the-results-of-the-first-endorsed-Decade-Actions-following-Call-for-Decade-Actions-No-012020).
