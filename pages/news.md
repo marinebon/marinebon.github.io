@@ -4,6 +4,66 @@ excerpt: "Marine Biodiversity Observation Network News"
 layout: single
 author_profile: false
 ---
+**Summer 2021**
+
+**Marine Life 2030 Endorsed as a UN Ocean Decade Action**<br>
+We are pleased to announce that [Marine Life 2030 program](https://marinebon.org/assets/Marine_Life_2030_UN_Ocean_Decade_request_for_endorsement_20210115.pdf) was endorsed as a UN Ocean Decade Action. In the spirit of the [UN Decade of Ocean Science for Sustainable Development (the Ocean Decade)](https://www.oceandecade.org/), Marine Life 2030 will deliver global knowledge about marine life for local decisions.
+
+As part of the global celebrations for World Oceans Day 2021, the UN announced the first Actions as part of the UN Ocean Decade, with more than [60 programmes and contributions officially endorsed](https://www.oceandecade.org/resource/166/Announcement-of-the-results-of-the-first-endorsed-Decade-Actions-following-Call-for-Decade-Actions-No-012020).
+
+The ocean’s >200,000 species form the heart of ecosystems that provide protein, stable climate, protection, and livelihoods to billions of people worldwide. Many of these species, and the services they provide, are threatened. Yet marine biodiversity remains poorly known and inadequately integrated into ocean observing systems. Marine Life 2030 aspires to solve that problem, by establishing a globally coordinated system to deliver actionable knowledge of ocean life to those who need it, promoting human well-being, sustainable development, and ocean conservation. The program will build partnerships, bring together diverse communities, and serve as a connector and facilitator to foster “the science we need for the ocean we want”. 
+
+Marine Life 2030 is a global, collaborative team led by the Smithsonian´s National Museum of Natural History, Smithsonian MarineGEO program, the US Integrated Ocean Observing System (US IOOS), the Marine Biodiversity Observation Network (GEO BON - MBON), the Global Ocean Observing System (GOOS), the Ocean Knowledge Action Network, the Ocean Biodiversity Information System (OBIS) and the World Conservation and Monitoring Centre (UNEP-WCMC), and engages many communities and organizations across the globe.
+
+Pressing questions remain about how the diversity of marine organisms is changing over time in the face of climate and other environmental pressures. Marine Life 2030 will integrate information about marine life into observation, management and forecasting systems for a sustainable healthy ocean all around the world. We aim to put a layer of life in the seascape. 
+
+
+
+**Winter 2021**
+
+**Marine Life 2030**<br>
+_Programme proposal: submitted by MBON partners to the first call for Actions by the UN Decade of Ocean Science for Sustainable Development (the Ocean Decade) from the Intergovernmental Oceanographic Commission (IOC)._
+
+Marine Life 2030 will establish the globally coordinated system to deliver actionable, transdisciplinary knowledge of ocean life to those who need it, promoting human well-being, sustainable development, and ocean conservation. Within a decade, Marine Life 2030 will unite existing and new programs into a global, interoperable network, transforming the observation and forecasting of marine life. The network of networks will be founded on frontier technologies for measuring marine biodiversity across regions, from molecules to ecosystems, linking the ocean’s diverse stakeholders to advance society’s grand challenge of achieving a healthy and resilient ocean and the sustainable society that depends on it. [Read more here.](/assets/Marine_Life_2030_UN_Ocean_Decade_request_for_endorsement_20210115.pdf)
+
+**Fall 2020**
+
+**ARMS-MBON – a New Network For Genetic Monitoring and Early Detection of Non-Indigenous Marine Species**<br>
+As part of a global initiative originally developed by the Smithsonian Institute, a marine biodiversity observation network (MBON) has deployed more than 130 Autonomous Reef Monitoring Structures (ARMS) in the vicinity of marine sanctuaries as well as industrial locations (e.g. ports, and marinas) in Europe and the polar regions. [Read more here.](/pages/news_armsmbon/)
+
+**COVID-Delayed Arctic Research Cruise Yields Late-Season Data**<br>
+Researchers studying the Bering and Chukchi seas for three weeks in October found no ice and a surprisingly active ecosystem as they added another year’s data to a key climate change record. [Read more here.](https://news.uaf.edu/covid-delayed-arctic-research-cruise-yields-late-season-data/)
+
+**Joint US-Canada Zooplankton Workshop on Modeling Abundance and Distribution of Zooplankton Prey for North Atlantic Right Whales in Canadian and U.S. Coastal and Shelf Waters**<br>
+_Convened by Chris Orphanides, NEFSC Protected Species Branch, NOAA Fisheries; Catherine Johnson, Bedford Institute of Oceanography, Canada DFO; Jeffrey Runge, University of Maine, MBON_<br>
+
+Over 30 regional experts in zooplankton oceanography and North Atlantic right whale (NARW) management met virtually over four days in September to coordinate Canadian and U.S. approaches to understanding NARW foraging habitat and applications to NARW conservation strategies. The population of NARW, now at approximately 400 individuals, has been declining since 2010 and their foraging habitat has been shifting from the Gulf of Maine in summer/fall to the Gulf of St. Lawrence. The causes for this decline are associated with a decline in abundance and shift in distribution of the planktonic copepod, Calanus finmarchicus, the principal prey of the NARW, and an increase in mortality due to ship strikes and fishing gear entanglement as the NARW move to new foraging areas.
+
+There is a need to include the best knowledge about present and future patterns of C. finmarchicus abundance into NARW foraging habitat models used to inform U.S. and Canadian regulations and guidance to the shipping and fishing industries. The workshop provided an opportunity for exchange of information about NARW management, zooplankton data sharing, and zooplankton modeling approaches.  An important outcome of the workshop was the creation of cross-border working groups to coordinate data sharing and deliver products useful to NARW conservation measures. A third working group was formed to identify and coordinate research on the causes of NARW foraging habitat change, for which there is strong evidence that climate drivers have resulted in warming and shifts in currents supplying water into the Gulf of Maine, affecting zooplankton abundance and distribution. For further information, please contact Gulf of Maine MBON PI Jeffrey Runge: [jeffrey.runge@maine.edu](mailto:jeffrey.runge@maine.edu).
+
+**A New Collaboration Seeks to to Assess and Monitor Biodiversity Hotspots where Marine Megafauna Share Habitat**<br> 
+BioTrack is a collaborative network that maps and tracks hotspots through biotelemetry and biologging. The approach integrates tracking data from tagged marine megafauna (e.g., sharks, teleosts, marine mammals, seabirds, and reptiles). [Read more here.](/pages/biotrack/)
+
+**Summer 2020**
+
+**MBON and AOML Characterize Seascapes Biogeographic Regions to Understand Phytoplankton Assemblages in the Florida Keys National Marine Sanctuary**<br>
+MBON, with NOAA/AOML, has characterized seascapes for the Florida Keys National Marine Sanctuary (FKNMS) and southwest Florida shelf nearshore environment using multivariate satellite and in situ measurements (MBON/CoastWatch Seascapes products:  The effort illustrates best practices developed by MBON in collaboration with the South Florida Ecosystem Restoration Research (SFER) project and NOAA/AOML. The work is described in a [July 15 paper in Frontiers of Marine Science](https://www.frontiersin.org/articles/10.3389/fmars.2020.00575/full).
+
+**Ocean Scientists Create Global Network to Help Save Biodiversity**<br>
+Ocean scientists have been busy creating a global network to understand and measure changes in ocean life. The system will aggregate data from the oceans, climate and human activity to better inform sustainable marine management practices. [Read more here.](https://www.ecowatch.com/ocean-scientists-biodiversity-network-2646381356.html)
+
+**Watching for Changes in Marine Biodiversity**<br>
+Changes in marine biodiversity—the variety and variability of life in the ocean—can be an early indicator of change, provided it's noticed. [Read more here.](https://www.maritime-executive.com/editorials/watching-for-changes-in-marine-biodiversity/)
+
+**GEO Virtual Symposium 2020**  
+One priority for MBON is to advance global interoperability and use of standards for a minimum set of observations (Essential Ocean Variables and Essential Biodiversity Variables) through broad partnerships. On June 19, Frank Muller-Karger and Gabrielle Canonico spoke about this effort during a "Monitoring Essential Variables" panel during the Group on Earth Observations (GEO) Virtual Symposium 2020. [A video of the session is posted here.](https://earthobservations.org/symposium2020.php?session=12)
+
+**U.S. MBON at CHOW 2020**<br>
+Join U.S. Marine Biodiversity Observation Network (MBON) partners as they deliver insightful discussions on how to conserve biodiversity and work toward global best practices for biodiversity monitoring and data sharing. [Read more here.](https://marinesanctuary.org/capitol-hill-ocean-week/)
+
+**A New, Fast Way to Analyze Hurricane Damage to Coastal Environments**<br>
+MBON, NERRS and NASA team develops automated, satellite-based method to evaluate damage caused by hurricanes and severe storms in coastal areas. [Read more here.](https://www.usf.edu/marine-science/news/2020/a-new-fast-way-to-analyze-hurricane-damage-to-coastal-environments.aspx)
+
 **Fall 2019**
 
 **Global MBON Seascapes Now Available on CoastWatch**  

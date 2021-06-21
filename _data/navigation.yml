@@ -1,26 +1,65 @@
 # main links links
 main:
-  - title: "About MBON"
+  - title: "About"
     url: /index.html
 
-  - title: "News"
-    url: /pages/news/
+  - title: "Resources"
+    url: /pages/resources/
     
-  - title: "U.S. Projects"
+  - title: "U.S."
     url: /pages/us_projects/
+    
+  - title: "Global"
+    url: /pages/global_efforts/
     
   - title: "Data"
     url: /pages/data/
-
-  - title: "Global Efforts"
-    url: /pages/global_efforts/
-
-  - title: "MBON Pole to Pole"
-    url: /pages/pole_to_pole/
+        
+  - title: "MBON-ATN Partnership"
+    url: /pages/mbonatn/
 
 # site_nav links
 site_nav:
-  - title: MBON GLOBAL COLLABORATORS
+  - title: "U.S."
+    children:
+      - title: "Arctic"
+        url: /pages/ambon/
+        
+      - title: "California, Central"
+        url: /pages/ccmbon/
+                
+      - title: "California, Southern"
+        url: /pages/scbmbon/
+
+      - title: "Gulf of Maine"
+        url: /pages/gommbon/
+        
+      - title: "Pacific Northwest"
+        url: /pages/nccmbon/
+
+      - title: "South Florida"
+        url: /pages/sfmbon/
+        
+  - title: "GLOBAL"
+    children:
+      - title: "Pole to Pole"
+        url: "/pages/pole_to_pole/"
+                
+  - title: "RESOURCES" 
+    children:
+      - title: "News"
+        url: "/pages/news/"
+
+      - title: "Publications"
+        url: "/pages/publications/"
+        
+      - title: "Presentations"
+        url: "/pages/presentations/"
+        
+      - title: "Sanctuaries"
+        url: "/sanctuaries/"
+    
+  - title: "COLLABORATORS"
     children:
       - title: "GEO BON"
         url: "https://geobon.org/"
@@ -28,8 +67,12 @@ site_nav:
 
       - title: "OBIS"
         url: "https://obis.org/"
-        image: obis_logo.png
+        image: obis_logo_updated.png
 
+      - title: "IABO"
+        url: "http://www.iabo.org"
+        image: iabo_logo.png
+        
       - title: "IOOS"
         url: "https://ioos.noaa.gov/"
         image: ioos_logo.jpg
