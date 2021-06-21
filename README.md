@@ -1,5 +1,10 @@
 # marinebon.org re-build
-This is a WiP rebuild of the marinebon.org website using jekyll based on the Jekyll theme for IOOS github pages.
+
+## ⚠️ deprecated ⚠️
+This version of marinebon.org is currently (2021-06) being replaced by a wowchemy website being developed at marinebon/www_marinebon2.
+
+--------------------------------------
+This is a rebuild of the marinebon.org website using jekyll based on the Jekyll theme for IOOS github pages.
 
 With this rebuild the following MBON web pages will be updated (and merged where appropriate):
 * http://www.marinebon.org/
@@ -7,6 +12,7 @@ With this rebuild the following MBON web pages will be updated (and merged where
 * marinebon.github.io
 
 The jekyll theme used ([mbon_jekyll_theme](https://github.com/marinebon/mbon_jekyll_theme)) is a modified fork of the IOOS theme, and the `src` branch contains the actual content of the website.
+
 The `master` branch is used by Travis.CI to deploy the website to GitHub's servers as a static website.
 
 ## dev
