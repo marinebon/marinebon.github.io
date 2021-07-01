@@ -25,6 +25,28 @@ Do not edit the `master` branch or Travis will get upset with you.
 3. `git submodule update --init --recursive` to install the theme
 3. `bundle exec jekyll serve` to build & host the site at localhost:4000
 
+### manual build & push
+In the event that the automated build is not working you may build the site from your PC and push the new build.
+Once things are installed do this:
+
+```bash
+# build site
+bundle exec jekyll build
+# website files are now in ./_site/
+# (these are not tracked by git (see ./.gitignore file))
+
+git checkout master
+git pull origin master
+
+# cp files from _site into master root 
+# (the slash before cp avoids the common alias cp='cp -i')
+\cp -r -f _site/* .
+
+# commit & push files to github
+git commit -a -m 'put_a_useful_commit_message_here'
+git push origin master
+```
+
 ------------------------------------------------------------
 
 ## Jekyll theme for IOOS GitHub pages
