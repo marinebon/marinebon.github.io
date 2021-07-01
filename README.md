@@ -42,6 +42,10 @@ git pull origin master
 # (the slash before cp avoids the common alias cp='cp -i')
 \cp -r -f _site/* .
 
+# now you must add any new files (images, etc) needed
+# to view what is new and untracked use `git status`
+git add images/my_new_image.png images/my_other_new_image.png
+
 # commit & push files to github
 git commit -a -m 'put_a_useful_commit_message_here'
 git push origin master
