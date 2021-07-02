@@ -7,7 +7,7 @@ author_profile: false
 **Summer 2021**
 
 **Coordinating the Observation of Biodiversity in the Sea: A Collaboration Spanning the Southern Ocean and the Rest of the Globe**<br>
-The Marine Biodiversity Observation Network (MBON) of the Group on Earth Observations Biodiversity Observation Network (GEO BON), the Scientific Committee on Antarctic Research (SCAR), and the SCAR Antarctic Biodiversity Portal share a common vision on the building and coordination of a global ocean biodiversity observation system. The common goal is to systematically assess the state and trends in the ocean’s biodiversity, including biological resources and ecosystems, and how these will change in the future. [Read more here.](/pages/mou_scar_mbon.md)
+The Marine Biodiversity Observation Network (MBON) of the Group on Earth Observations Biodiversity Observation Network (GEO BON), the Scientific Committee on Antarctic Research (SCAR), and the SCAR Antarctic Biodiversity Portal share a common vision on the building and coordination of a global ocean biodiversity observation system. The common goal is to systematically assess the state and trends in the ocean’s biodiversity, including biological resources and ecosystems, and how these will change in the future. [Read more here.](/pages/mou_scar_mbon/)
 
 **Marine Life 2030 Endorsed as a UN Ocean Decade Action**<br>
 We are pleased to announce that [Marine Life 2030 program](https://marinebon.org/assets/Marine_Life_2030_UN_Ocean_Decade_request_for_endorsement_20210115.pdf) was endorsed as a UN Ocean Decade Action. In the spirit of the [UN Decade of Ocean Science for Sustainable Development (the Ocean Decade)](https://www.oceandecade.org/), Marine Life 2030 will deliver global knowledge about marine life for local decisions.
