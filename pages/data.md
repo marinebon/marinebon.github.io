@@ -29,4 +29,4 @@ MBON Portal Example Data Views:
 *   East Coast: [Florida Keys Reef Fish Visual Census](https://mbon.ioos.us/#default-data/6.1)  
 
 **[OBIS Global Data Portal](https://obis.org/)**  
-U.S. MBON and U.S. IOOS partners are encouraged to align biological data with the Darwin Core standard to ensure it is globally accessible via the Ocean Biogeographic Information System. OBIS provides a gateway to many datasets containing information on where and when marine species have been recorded. The datasets are integrated and searchable by species name, higher taxonomic level, geographic area, depth, and time.
+U.S. MBON and U.S. IOOS partners are encouraged to align biological data with the Darwin Core standard to ensure it is globally accessible via the Ocean Biodversity Information System. OBIS provides a gateway to many datasets containing information on where and when marine species have been recorded. The datasets are integrated and searchable by species name, higher taxonomic level, geographic area, depth, and time.
