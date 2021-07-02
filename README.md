@@ -35,6 +35,10 @@ bundle exec jekyll build
 # website files are now in ./_site/
 # (these are not tracked by git (see ./.gitignore file))
 
+# this is a workaround for some wierdness
+rm -rf ./_theme/
+
+# switch git branches
 git checkout master
 git pull origin master
 
@@ -49,6 +53,11 @@ git add images/my_new_image.png images/my_other_new_image.png
 # commit & push files to github
 git commit -a -m 'put_a_useful_commit_message_here'
 git push origin master
+
+# switch back to src branch and restore
+git checkout src
+git submodule update --init --recursive
+# that last part is an undo for the `rm -rf _theme` we did earlier
 ```
 
 ------------------------------------------------------------
