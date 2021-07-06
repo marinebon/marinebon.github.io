@@ -29,7 +29,7 @@ The Marine Biodiversity Observation Network (MBON) is the key biodiversity pilla
 <img src="/images/scar_logo_350.png">
 </div>
 <div style="width:60%; float:right; text-align:left; padding-left:2%; font-size: smaller;">
-The Scientific Committee on Antarctic Research (SCAR) is a thematic organisation of the International Science Council (ISC), and was created in 1958. SCAR is charged with initiating, developing and coordinating high quality international scientific research in the Antarctic region (including the Southern Ocean), and on the role of the Antarctic region in the Earth system. SCAR provides objective and independent scientific advice to the Antarctic Treaty System  and other organizations such as the United Nations Framework Convention on Climate Change (UNFCCC) and the Intergovernmental Panel on Climate Change
+  The Scientific Committee on Antarctic Research (<a href="https://www.scar.org/">SCAR</a>) is a thematic organisation of the <a href="https://council.science/">International Science Council (ISC)</a>, and was created in 1958. SCAR is charged with initiating, developing and coordinating high quality international scientific research in the Antarctic region (including the Southern Ocean), and on the role of the Antarctic region in the Earth system. SCAR provides objective and independent scientific advice to the <a href="https://www.ats.aq/index_e.html">Antarctic Treaty System</a> and other organizations such as the United Nations Framework Convention on Climate Change (UNFCCC) and the Intergovernmental Panel on Climate Change 
 (IPCC) on issues of science and conservation affecting the management of Antarctica and the Southern Ocean and on the role of the Antarctic region in the Earth system.
 
 
@@ -43,7 +43,7 @@ The Scientific Committee on Antarctic Research (SCAR) is a thematic organisation
 <img src="/images/abp_logo_350.png">
 </div>
 <div style="width:60%; float:right; text-align:left; padding-left:2%; font-size: smaller;">
-The Antarctic Biodiversity Portal (biodiversity.aq) is an international effort of SCAR. It finds it roots in the Census of Antarctic Marine Life and started in 2005. It seeks to increase our knowledge and understanding of Antarctic and Southern Ocean biodiversity. The SCAR Antarctic Biodiversity Portal is the regional thematic node of the Ocean Biogeographic Information System (OBIS), the Global Biodiversity Information Facility (GBIF) and works closely together with the Southern Ocean Observation System (SOOS). It provides support to publish Southern Ocean biodiversity data and to improve standards and best practices in the collection, management, and publication of marine biodiversity data.
+  The Antarctic Biodiversity Portal (<a href="https://www.biodiversity.aq/">biodiversity.aq</a>) is an international effort of SCAR. It finds it roots in the Census of Antarctic Marine Life and started in 2005. It seeks to increase our knowledge and understanding of Antarctic and Southern Ocean biodiversity. The SCAR Antarctic Biodiversity Portal is the regional thematic node of the Ocean Biogeographic Information System (<a href="http://www.obis.org/">OBIS</a>), the Global Biodiversity Information Facility (<a href="http://www.gbif.org/">GBIF</a>) and works closely together with the Southern Ocean Observation System (<a href="http://www.soos.aq/">SOOS</a>). It provides support to publish Southern Ocean biodiversity data and to improve standards and best practices in the collection, management, and publication of marine biodiversity data.
 
 </div>
 
