@@ -18,7 +18,7 @@ The actors:
 <img src="/images/mbon_logo_350.png">
 </div>
 <div style="width:60%; float:right; text-align:left; padding-left:2%; font-size: smaller;">
-The Marine Biodiversity Observation Network (MBON) is the key biodiversity pillar of the Group on Earth Observations Biodiversity Observation Network (GEO BON) for the marine realm. The MBON is a community of practice that facilitates the coordination of individual monitoring programs and existing networks focused on local, regional, and thematic aspects of marine biology and biodiversity, to improve standards and best practices in the collection, management, and publication of marine biodiversity data and the status and trends of ecosystems and their services.
+  The Marine Biodiversity Observation Network (<a href="https://marinebon.org">MBON</a>) is the key biodiversity pillar of the Group on Earth Observations Biodiversity Observation Network (GEO BON) for the marine realm. The MBON is a community of practice that facilitates the coordination of individual monitoring programs and existing networks focused on local, regional, and thematic aspects of marine biology and biodiversity, to improve standards and best practices in the collection, management, and publication of marine biodiversity data and the status and trends of ecosystems and their services.
 
 </div>
 
