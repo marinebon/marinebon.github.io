@@ -19,11 +19,12 @@ Do not edit the `master` branch or Travis will get upset with you.
 
 ## dev
 ### setup
-0. `git clone -b src https://github.com/marinebon/mbon_jekyll_theme.git` to clone website source
+0. `git clone -b src https://github.com/marinebon/marinebon.github.io` to clone website source
 1. [install ruby & jekyll](https://jekyllrb.com/)
-2. `bundle install` to set up ruby dependencies
-3. `git submodule update --init --recursive` to install the theme
-3. `bundle exec jekyll serve` to build & host the site at localhost:4000
+2. `cd marinebon.github.io` to enter the repo directory
+3. `bundle install` to set up ruby dependencies
+4. `git submodule update --init --recursive` to install the theme
+5. `bundle exec jekyll serve` to build & host the site at localhost:4000
 
 ### manual build & push
 In the event that the automated build is not working you may build the site from your PC and push the new build.
