@@ -9,7 +9,7 @@ author_profile: false
 <br><br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
 <a href="https://www.youtube.com/watch?v=lbaVgatmEP0" target="_blank"><img src="/images/iqoe_2021.png"><br>
-Estimating Marine Biodiversity with Passive Acoustic Monitoring (IQOE) (Webinar Video)</a><br>
+Estimating Marine Biodiversity with Passive Acoustic Monitoring (IQOE) (Webinar Recording)</a><br>
 
 
 </div>
