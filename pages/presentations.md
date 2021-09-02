@@ -5,6 +5,23 @@ layout: single
 author_profile: false
 ---
 
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">BioSound Working Group - August 11, 2021</div>
+<br><br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="https://www.youtube.com/watch?v=lbaVgatmEP0" target="_blank"><img src="/images/iqoe_2021.png"><br>
+Estimating Marine Biodiversity with Passive Acoustic Monitoring (IQOE)</a><br>
+
+
+</div>
+<div style="width:45%; float:right; text-align:center; font-size: smaller;">
+  
+
+</div>
+
+<div style="clear: both;"></div>
+
+<p>&nbsp;</p>
+
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">University of the Virgin Islands in the Master of Marine and Environmental Science Program - May 6, 2021</div>
 <br><br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
