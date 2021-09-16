@@ -5,10 +5,28 @@ layout: single
 author_profile: false
 ---
 
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">GOOS Boundary Systems Working Group - September 14, 2021</div>
+<br><br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="https://media.oregonstate.edu/media/t/1_0u6pnm7w" target="_blank"><img src="/images/goos_kavanaugh.png"><br>
+MBON: Integrating satellite and in situ measurements to assess dynamic biology and ecology Essential Ocean Variables (Webinar Recording)</a><br>
+Maria Kavanaugh
+
+
+</div>
+<div style="width:45%; float:right; text-align:center; font-size: smaller;">
+  
+
+</div>
+
+<div style="clear: both;"></div>
+
+<p>&nbsp;</p>
+
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">BioSound Working Group - August 11, 2021</div>
 <br><br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
-<a href="https://www.youtube.com/watch?v=lbaVgatmEP0" target="_blank"><img src="/images/iqoe_2021.png"><br>
+<a href="https://www.youtube.com/watch?v=lbaVgatmEP0" target="_blank"><img src="/images/iqoe_2021_updated.png"><br>
 Estimating Marine Biodiversity with Passive Acoustic Monitoring (IQOE) (Webinar Recording)</a><br>
 
 
