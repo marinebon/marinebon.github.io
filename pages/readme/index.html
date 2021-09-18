@@ -19,7 +19,7 @@
 
 
 
-<title>About MBON - IOOS MBON Project Site</title>
+<title>IOOS MBON Project Site</title>
 
 
 
@@ -29,15 +29,15 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="IOOS MBON Project Site">
-<meta property="og:title" content="About MBON">
+<meta property="og:title" content="IOOS MBON Project Site">
 
 
-  <link rel="canonical" href="https://marinebon.org//">
-  <meta property="og:url" content="https://marinebon.org//">
+  <link rel="canonical" href="https://marinebon.org//pages/readme/">
+  <meta property="og:url" content="https://marinebon.org//pages/readme/">
 
 
 
-  <meta property="og:description" content="About the Marine Biodiversity Observation Network">
+  <meta property="og:description" content="IOOS Jekyll Theme Getting Started">
 
 
 
@@ -428,69 +428,140 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="About MBON">
-    <meta itemprop="description" content="About the Marine Biodiversity Observation Network">
+    
+    <meta itemprop="description" content="IOOS Jekyll Theme Getting Started">
     
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">About MBON
-</h1>
+          
           
         
         </header>
       
 
       <section class="page__content" itemprop="text">
-        
+        <p>tylar was here</p>
 
-<div style="padding: 10px; border: 1px solid #ccf; display: flex; flex-wrap: wrap;"><div style="width: 50%; flex-wrap: wrap; align: center;"><a href="pages/news"><img src="/images/mbon_scar_mou.jpg"></a></div><div style="width: 50%; padding-left: 10px; font-size: smaller; flex-wrap: wrap; align: center;"><span style="font-size: larger;">LATEST MBON UPDATES</span><br><strong>Coordinating the Observation of Biodiversity in the Sea: A Collaboration Spanning the Southern Ocean and the Rest of the Globe</strong><br><br>The Marine Biodiversity Observation Network (MBON) of the Group on Earth Observations Biodiversity Observation Network (GEO BON), the Scientific Committee on Antarctic Research (SCAR), and the SCAR Antarctic Biodiversity Portal share a common vision on the building and coordination of a global ocean biodiversity observation system. <a href="pages/news">Read More >></a></div></div> 
+<h2 id="ioos-jekyll-theme-getting-started">IOOS Jekyll Theme Getting Started</h2>
+<p>This repo holds the common Jekyll theme code for IOOS GitHub.io documentation sites.  The IOOS theme is based on IOOS’
+fork of the <a href="https://github.com/mmistakes/minimal-mistakes">‘Minimal Mistakes’</a>
+Jekyll theme originally developed for the <a href="https://ioos.github.io/catalog/">IOOS Catalog documentation site</a>.</p>
 
-<br>
+<p>This single IOOS theme was developed to streamline and simplify management of the IOOS documentation sites hosted on
+GitHub Pages (aka GitHub.io).  When a new IOOS documentation site is built following the instructions described here,
+it will provide a consistent look and feel across all of IOOS’ project documentation sites, and will simplify the process
+to update the template across each site if needed.</p>
 
-<p><strong>What is MBON?</strong> <br />
-The Marine Biodiversity Observation Network (MBON) is a growing global initiative composed of regional networks of scientists, resource managers, and end-users working to integrate data from existing long-term programs to improve our understanding of changes and connections between marine biodiversity and ecosystem functions.</p>
+<p>This is accomplished by using the git submodule concept, which
+allows each individual documentation site to reference this template for the Jekyll boilerplate code.  Updating each
+downstream documentation site can be accomplished by a <code class="language-plaintext highlighter-rouge">git submodule update</code> command, rather than separately modifying
+the Jekyll boilerplate code to match in each.</p>
 
-<p>The <a href="pages/us_projects">U.S. MBON projects</a> are integrating independent historical and current biology and ecosystem surveys with new observations, and expanding application of remote sensing methods, novel molecular (eDNA) technologies, traditional environmental research tools, and coordinated experiments.
-</p>
+<h2 id="getting-the-ioos-jekyll-theme">Getting the IOOS Jekyll Theme</h2>
+<p>Deploying this template for your own IOOS-branded GitHub Pages documentation site can be done in a couple different ways.</p>
 
-<div align="center"><img src="images/mboninfographic_cropped.png"></div>
-<br>
-<p><strong>Benefits of MBON</strong> <br />
-MBON projects, partners and <a href="https://mbon.ioos.us/">data</a> play an important role in enabling the scientific community to describe the relationships between biodiversity, organism abundance, system productivity, ecosystem health and ecosystem services.</p>
+<p>The main difference in the approach you take is whether you want to run the Jekyll development environment locally (for
+  more rapid iterative markdown/content update), or if you prefer to use GitHub Pages’ own Jekyll framework to render your
+  updates (GitHub Pages internally uses Jekyll to render HTML from markdown).  This means you can copy the example code
+  in this repository into your own repository ‘gh-pages’ branch, make a few config file modifications, and push to GitHub
+  directly to see a rendered site matching exactly this site without any special software on your workstation (other than
+  perhaps a GitHub client for pushing updates to GitHub).</p>
 
-<p>Anticipated Benefits of MBON include:</p>
+<h3 id="1-local-jekyll-development">1. Local Jekyll Development:</h3>
+<p>Running Jekyll locally will allow for faster site development, but you must be able to install Ruby on your workstation.</p>
+
+<p>If you are able to run the Ruby/Jekyll environment locally, refer to the <a href="https://ioos.github.io/mbon_jekyll_theme/pages/jekyll/">Jekyll Development Environment Set Up</a>
+page for the steps required for this approach.</p>
+
+<h3 id="2--github-pages-based-development">2.  GitHub Pages-based Development:</h3>
+<p>If you can’t run Ruby/Jekyll on your workstation, you can still make a GitHub Pages documentation site based on this
+template.  The process to do this is to download the code from the <a href="https://github.com/ioos/mbon_jekyll_theme/tree/gh-pages">‘gh-pages’</a>
+branch of this repository, adapt for your site needs, and publish to a ‘gh-pages’ branch of your own repository.  Instructions to do this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /my/sourcecode/dir
+git clone --recursive -b gh-pages https://github.com/ioos/mbon_jekyll_theme.git
+cd mbon_jekyll_theme
+</code></pre></div></div>
+<p>Next, you will need to copy the files downloaded to the ‘mbon_jekyll_theme’ directory to your target repository.
+Assuming you have an existing repository, the easiest way to do this is to create a new ‘gh-pages’ branch, and then remove
+all git-tracked files and replace by the template code.  Roughly, this looks like (use with caution):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /my/target/repository
+git checkout -b gh-pages master
+git rm -r *
+git rm .*
+</code></pre></div></div>
+<p>Then copy from the mbon_jekyll_theme repository and add all the file to git for tracking <code class="language-plaintext highlighter-rouge">git add *</code>.
+Once you have the code in hand, instructions below describe relevant files to modify to adapt the template to your needs.\</p>
+
+<p>When you’ve made changes and you would like to see how they look on your GitHub Pages site, simply commit and push them
+up to your GitHub repo:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -am "Initial GitHub Pages site built using 'mbon_jekyll_theme'"
+git push origin gh-pages
+</code></pre></div></div>
+
+<h2 id="modifying-theme-content-for-your-site">Modifying Theme Content For Your Site</h2>
+<p>The important files and directories to modify the template are the following:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>_config.yml and _config_dev.yml</td>
+      <td>Main Jekyll configuration files.  Modify settings in these to change anything related to the theme</td>
+    </tr>
+    <tr>
+      <td>/_data/navigation.yml</td>
+      <td>Configuration file for main header categories and side navigation bar(s) to use in your site</td>
+    </tr>
+    <tr>
+      <td>/_pages/</td>
+      <td>Directory to place any standard ‘page’ markdown content to publish</td>
+    </tr>
+    <tr>
+      <td>index.html</td>
+      <td>This markdown/HTML hybrid file contains the content for the splash page for the site</td>
+    </tr>
+  </tbody>
+</table>
 
 <ul>
-<li>Providing biological and environmental data collected by multiple independent programs in an integrated web-based tool that informs scientists, resource managers, educators, and all stakeholders about the state of marine biodiversity and how it is changing.</li>
-
-<li>Providing best practices and mechanisms to share data, experiences, knowledge, and protocols to understand species and the status and trends of ecosystem services.</li>
-
-<li>Contributing to increasing our understanding of physical and biological connectivity, including distributions and movements of species across biogeographical regions and political jurisdictions.</li>
-
-<li>Sharing innovative technologies and methods developed for the observation of marine biodiversity (e.g. remote sensing and genetic methods).</li>
-
-<li>Expanding our knowledge of biodiversity and its connection to ecosystem services with the purpose of improving management of human activities that impact these services and promote sustainable use of such services.</li>
-
-<li>Leveraging and amplifying national investments in biodiversity research, monitoring and data management.</li>
-  
-<li>Optimizing the costs of data management and improving access to information on marine biodiversity and ecosystem health.</li>
-  
-<li>Providing a framework for a region or a country to evaluate status and identify trends in biodiversity and living marine resources.</li>
+  <li>
+    <p>_config.yml and _config_dev.yml:  Important settings to update in these files are primarily in the top of the file,
+and include settings like: ‘title’, ‘name’, ‘description’, ‘baseurl’, among others.  More documentation can be found in
+the Minimal Mistakes documentation (see below).</p>
+  </li>
+  <li>
+    <p>_data/navigation.yml: This file contains the settings for both the page header categories and destinations, as well
+as the side bar navigation menu(s).  You can configure multiple side bars if needed (for different content types).
+Associations between the content types (ie Jekyll ‘colllections’) and the side bar to display for each can be set in
+the _config.yml file, or in the front matter of the markdown page (for more granularity).  Further description of how
+this works is beyond the scope here, refer to the Jekyll and Minimal Mistakes documentation for more info.</p>
+  </li>
 </ul>
 
-<p><strong>Sponsors</strong> <br />
-U.S. MBON projects have been funded since 2013 under the National Oceanographic Partnership Program (FY14 RFP NOAA-NOS-IOOS-2014-2003803 and FY19 ONR Announcement # N00014-18-S-B007).</p>
+<h2 id="references">References</h2>
+<p>Jekyll <a href="https://jekyllrb.com/docs/home/">Documentation</a>.</p>
 
-<p>U.S. MBON represents a partnership among NOAA, NASA, BOEM, and ONR, with coordination provided by the U.S. Integrated Ocean Observing System (U.S. IOOS) Program Office.  
-</p>
+<p>Documentation for working with the Minimal Mistakes template is can be found here:
+<a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/</a>.</p>
 
-<p><strong>U.S. MBON Contacts</strong> <br />
-<a href="mailto:gabrielle.canonico@noaa.gov">Gabrielle Canonico</a>, U.S. MBON Program Manager <br />
-  <a href="mailto:carib@usf.edu">Frank Muller-Karger</a>, U.S. MBON Team Leader <br />
-<a href="mailto:emontesh@mail.usf.edu">Enrique Montes</a>, MBON Pole to Pole</p> 
+<h3 id="github-pages-and-jekyll">GitHub Pages and Jekyll</h3>
+<p>Information on the way GitHub uses Jekyll in ‘GitHub Pages’ sites can be found here:
+<a href="https://help.github.com/articles/about-github-pages-and-jekyll/">https://help.github.com/articles/about-github-pages-and-jekyll/</a></p>
+
+<p>In particular, to push documentation for a ‘Project’ page (which most repos will fall under), use a
+specially-named branch ‘gh-pages’ to push content to.  More information on this requirement can be
+found here: <a href="https://help.github.com/articles/user-organization-and-project-pages/">https://help.github.com/articles/user-organization-and-project-pages/</a>.</p>
 
         
       </section>
