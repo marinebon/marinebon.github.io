@@ -26,4 +26,4 @@ jobs:
         target_branch: 'master'
         pre_build_commands: git submodule update --init --recursive
         jekyll_src: .
-        jekyll_build_options: '--baseurl ""''
+        jekyll_build_options: '--baseurl ""'
