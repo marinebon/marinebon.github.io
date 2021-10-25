@@ -30,3 +30,6 @@ MBON Portal Example Data Views:
 
 **[OBIS Global Data Portal](https://obis.org/)**  
 U.S. MBON and U.S. IOOS partners are encouraged to align biological data with the Darwin Core standard to ensure it is globally accessible via the Ocean Biodversity Information System. OBIS provides a gateway to many datasets containing information on where and when marine species have been recorded. The datasets are integrated and searchable by species name, higher taxonomic level, geographic area, depth, and time.
+
+**[A Primer for Biological Data Management](/assets/Biological%20Data%20Standards%20Primer_V5.pdf)**<br>
+The Earth Science Information Partners (ESIP) Biological Data Standards Cluster developed this primer for managers of biological data to provide a quick, easy resource for navigating a selection of the standards that exist. The goal of the primer is to spread awareness about existing standards and is intended to be shared online and at conferences to increase the adoption of standards for biological data and make them FAIR." and then a link to the primer itself.
