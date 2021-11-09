@@ -5,12 +5,35 @@ layout: single
 author_profile: false
 ---
 
-<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">GOOS Boundary Systems Working Group - September 14, 2021</div>
-<br><br>
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">MBON All-Hands Meeting, October 2021</div>
+<br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
-<a href="https://media.oregonstate.edu/media/t/1_0u6pnm7w" target="_blank"><img src="/images/goos_kavanaugh.png"><br>
-MBON: Integrating satellite and in situ measurements to assess dynamic biology and ecology Essential Ocean Variables (Webinar Recording)</a><br>
-Maria Kavanaugh
+<a href="/assets/MBON_BDEF_FMK-2021_short.pdf" target="_blank"><img src="/images/mbonallhands2021_fmk.png"><br>
+MBON: Observing Life in the Sea</a><br>
+Frank Muller-Karger
+
+</div>
+
+<div style="width:45%; float:right; text-align:center; font-size: smaller;">
+  <strong>MEETING DOCUMENTS</strong><br><br><a href="/assets/MBON%20All%20Hands%20Agenda_Oct%2022%202021.pdf" target="_blank">Meeting Agenda (PDF)</a><br><br>
+<a href="https://usf.app.box.com/s/eenlecum0lmgyucm1m5za754xl1jg9kx/file/879556301945" target="_blank">Session Recording</a><br><br>
+<a href="/assets/MBON%20All%20Hands%20Meeting%20Notes_v2.pdf" target="_blank">Meeting Notes (PDF)</a><br><br>
+<a href="/assets/Main%20Session%20Chat.txt">Main Session Chat (txt)</a>
+
+  
+
+</div>
+
+<div style="clear: both;"></div>
+
+<p>&nbsp;</p>
+
+
+
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="/assets/Marine Life_Canonico-MBON All Hands Oct 2021.pdf" target="_blank"><img src="/images/mbonallhands2021_gc.png"><br>
+IOOS Marine Life Program: Monitoring Ecological Change Through Observing Systems</a><br>
+Gabrielle Canonico
 
 
 </div>
@@ -296,4 +319,3 @@ Anni Djurhuus<br><a href="https://vimeo.com/297203776" target="_blank">Watch vid
 [2017 Meeting](https://cce.nasa.gov/cce/mbon_2017/agenda.html)
 
 [2016 Meeting](https://cce.nasa.gov/cce/mbon_2016/agenda.html)
-
