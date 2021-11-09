@@ -1,0 +1,179 @@
+07:58:42 From Frank Muller-Karger to Everyone:
+	Agenda: https://docs.google.com/document/d/1o1iTRR4uZoo12vTkw-7eLqqSfCafHPe4GNMIMPyGra8/edit?usp=sharing
+08:03:52 From kgaddis to Everyone:
+	Here is more info on BioSCape for those that missed it. Marine systems are definitely a focus from the outset of the campaign: https://www.bioscape.io/home
+08:34:20 From Emmett Duffy to Everyone:
+	Marine Biodiversity Dialogues project:  https://www.lenfestocean.org/en/research-projects/marine-biodiversity-dialogues
+08:40:56 From jenniferbrown to Everyone:
+	Do you think plastics has broken through also because people feel like that they  can make a difference at the individual level - by making different choices. How can we link people to other issues where they feel they are empowered to make a difference?
+08:43:21 From Woody Turner to Everyone:
+	Thanks for drawing attention to 30x30, Kris.  Hard to think of a challenge that more requires observations of marine life in order to understand the wheres and the why's and the hows of managing and protecting our oceans.
+08:43:30 From Franz Mueter to Everyone:
+	Food security & sovereignty could be another 'break-through' issue as subsistence and commercial resources are impacted by cc, pollution, etc.
+08:44:21 From Margaret O'Brien to Everyone:
+	@Maria - the way we work with Indigenous populations is coming up at ESIP (the data mgt group for NASA, NOAA, USGS, and others). And you're right - the principles we are working with translate to any group of stakeholders. the ESIP work will appear at AGU in a few weeks.
+08:46:38 From Frank Muller-Karger to Everyone:
+	Kris - this group is interested to work with you on messaging, including planning and working on Capitol Hill Ocean Week/CHOW
+08:54:33 From Chris S to Everyone:
+	For examples of positive messages with beautiful ocean imagery, check out Just a Minute ECO Public Service Announcements. My copy is on VHS but messages are as relevant as ever!
+08:54:34 From Digna Rueda-Roa (USF) to Everyone:
+	The effect of plastic in ocean life have been made easy to grasp for many people. Every time that we see a photo with animals with their bodies enclosed with plastic, we feel it. That type of visualization brings the issue very close to the general public. Thinking on that, we need to make people Feel the importance of biological diversity. It would be great to have inputs from persons with a good background in promotion/advertisement, to find good tools to increase the awareness on Biological diversity for everybody.
+09:02:35 From Jason Landrum (he/him), Lenfest Ocean Program to Everyone:
+	@Francisco - what geographical scales are your current eDNA measurements assessing?  Follow-up: which locations across the U.S. are most advanced in terms of using eDNA?
+09:05:15 From Emmett Duffy to Everyone:
+	Re eDNA: Also curious about the relative value/efficacy of eDNA approaches for relatively well-mixed pelagic systems vs benthic seascapes.
+09:07:00 From Francisco Chavez to Everyone:
+	@Jason - individual groups are sampling at different scales, the largest is probably off California where we are covering the entire state and out to many hundreds of kms.
+09:09:46 From Gabrielle Canonico to Everyone:
+	https://marinebon.org/pages/biotrack/
+09:10:28 From Francisco Chavez to Everyone:
+	@Emmett - the more we look the more we find that eDNA is a very effective (and much more quantitative) method for well-mixed pelagic systems as well as benthic ones. There is fine tuning that can be done since the number of nets/options is large, both a blessing and a curse.
+09:11:16 From Francisco Chavez to Everyone:
+	Meant to write much more quantitative than we thought
+09:11:26 From Jason Landrum (he/him), Lenfest Ocean Program to Everyone:
+	Thanks, Francisco!
+09:11:45 From Emmett Duffy to Everyone:
+	Thanks Francisco - exciting.
+09:14:06 From Francisco Chavez to Everyone:
+	@Jason, also should have mentioned that we have done sample archeology that have allowed the construction of eDNA monthly time series for over a decade
+09:14:38 From Jeffrey Runge to Everyone:
+	MBON Biodiversity and Ecosystem Function Working Group Report	All Hands Meeting, Oct 22, 2021		https://usf.box.com/s/pxoge9wxavhp0es31ededyspmou4zsvv		TOP 3 BIODIVERSITY ISSUES	1.	Measurement and interpretation of biodiversity data	o	Development of biodiversity baselines for characterization of ecosystem health: identification of key species, characterization of trophic levels and functional traits measurement through standardized use of imaging technology to assess biodiversity across MBON projects	o	Development of functional traits (e.g. size, lipid concentrations) as leading indicators of ecosystem function, for example shifting trophic efficiencies and linkage		2.	Dissemination of information, including infographics. Development of clear and understandable ways to use MBON DMAC capabilities to disseminate MBON data. Development of infographics and other ways to interpret and present understanding of biodiversity information partners and other users.
+	3.	Connection: Sustain and expand opportunities for connection with partners to address specific biodiversity applications at the regional level: engaging sociologists, involving managers, participation in preparatory meetings for regional NOAA IEAs.
+09:21:29 From maria kavanaugh to Everyone:
+	REMOTE SENSING SUMMARY: MBON remote sensing tracks: plankton groups, foundation species, higher trophic levels (SDMs) and pelagic habitat extent and diversity	Remote sensing WG members integrates instrumentation (traditional and new technology), models, and ecological time series (context, mechanism, and partnerships). Provides validation, depth information, and increased taxonomic resolution. 	Indices used for marine ecosystem management: National Marine Sanctuaries, fisheries management, Integrated Ecosystem Assessment and global indicators EBVs and EOVs. PACE/SBG Application Readiness. Engage early, listen, and be ready for diverse needs.	Indices also used for innovative science, and trans-sector science (e.g. academic-agency partnerships with IFCB). Science as stakeholders. How do we continue innovation and PACE/SBG preparation? Focused X-MBON studies across working groups?
+09:23:12 From Aimee Neeley to Everyone:
+	@maria
+09:23:36 From Aimee Neeley to Everyone:
+	What are the definitions of the phytoplankton functional types you mentioned?
+09:26:46 From maria kavanaugh to Everyone:
+	@Amy: PFT groups include the classics such as diatoms, dinoflagellates, cyanos, chloros  through pigments and spectroscopy. But also PSD micro, nano, pico through hyperspectral spectroscopy (ac-s, hyperbb, LiSST) and micro:nano and dino:diatom indices from IFCB. We then look across IFCB and ISIIS to get multitrophic level PSDs.
+09:27:16 From Woody Turner to Everyone:
+	Seems like all of these groups involve multiple MBON projects as well as multiple IOOS regional associations, true??
+09:33:30 From Emmett Duffy to Everyone:
+	@Neil you’ve hit it on the head. Standardization is in my mind the central challenge to an observing NETWORK. Reef Life Survey, Continuous Plankton Recorder group, and NERRS do a great job of this. We struggle with it in Smithsonian MarineGEO too.
+09:35:19 From Aimee Neeley to Everyone:
+	Agreed, Neil. Standardization of both data reporting and measurement protocols is important.
+09:35:26 From Miguel G. Figuerola to Everyone:
+	Exactly. Some user might not understand at all what's behind the standardization of sampling protocols to compare across regions/projects. However, they will value the capability of comparison.
+09:36:04 From Russell Hopcroft to Everyone:
+	standardization require wee all have the same infrastructure - or the funds to acquire it
+09:39:00 From Emmett Duffy to Everyone:
+	Maybe standardization is not the right word, but interoperability. Supporting that was one motivation for the flexible approach of the GOOS EOV spec sheets.  Different parties will always use somewhat different approaches but perhaps it’s possible to hone in on how to ensure that they produce data that can ultimately be compared. My sense is that eDNA community is working hard to move in that direction.
+09:39:28 From Ben Best to Everyone:
+	Ocean Best Practices is a good vehicle for standardization reports. MBON is a reasonable curator of these.  The MBON Pole to Pole is a good example of same protocol for data collection across sandy beach and rocky intertidal habitats  within a community.
+09:39:34 From Mathew Biddle  to Everyone:
+	The data management working group is trying to do this, at least for the data management part.
+09:42:30 From Aimee Neeley to Everyone:
+	Agreed Emmett. Maybe one can say standardization is more for using a suite of well-characterized methods where uncertainties are understood. When this is not always possible, interoperability of the same variables from different methods (including uncertainties) is also important.
+09:52:55 From Bob Miller to Everyone:
+	Since MBON does not do most of the data collection it would be impossible to standardize protocols. IMO data management is the primary way we can help standardize biodiversity data and slowly different programs will see the value in the products produced and change their methods. The exception is new efforts like eDNA collection across projects.
+09:59:20 From Mathew Biddle  to Everyone:
+	@Bob, eDNA has a data management component as well :)
+10:00:17 From Bob Miller to Everyone:
+	Of course Matt! But if we all collect the data then methods could be standardized.
+10:00:46 From Mathew Biddle  to Everyone:
+	Agreed. 
+10:45:37 From Mitchell Roffer’s iPad_2 (2) to Everyone:
+	Info products, not just data, are important, especially for the public and legislators.
+10:57:15 From maria kavanaugh to Everyone:
+	Thanks @Bob! That's important about the value added.
+10:59:19 From Franz Mueter to Everyone:
+	By making data available to other researchers, the 'value-added' analyses will follow. We don't need to do all the work within MBON. Hence the importance of other researchers as 'users'.
+11:00:21 From maria kavanaugh to Everyone:
+	Thanks @Jeff! To a large degree, that is what our MBON PNW/NCC is doing with our PSD across multiple trophic level and explicit measurement of export production.
+11:02:37 From Mathew Biddle to Everyone:
+	@Franz to add, those requests will change with time and MBON should be flexible enough to handle that. Building a foundation to help address value-added analyses.
+11:10:28 From maria kavanaugh to Everyone:
+	Examples-- 1. Changes in the forage species in response to changing habitat and temperatures (across the US) and effect on higher trophic levels.
+	Examples 2- Spatial and temporal coherence of eDNA within Seascapes.
+	3. Imaging the volume vs. surface. What sectors technologies do we need to mobilize to see what we need to see?
+	4. Ecological theory to management indicators: role of size in structuring marine ecosystems
+11:11:38 From Gabrielle Canonico to Everyone:
+	@Maria example 1 would resonate with lots of folks 
+11:11:59 From Neil Hammerschlag (he/him) to Everyone:
+	@Maria - really like #1 - spans everything and very integrative
+11:13:02 From Jeffrey Runge to Everyone:
+	E.g in the Gulf of Maine: link between calanus, sandlance and humpback whales in the Stellwagen NMS
+11:13:44 From Mathew Biddle to Everyone:
+	ERDDAP! Thanks @Ben
+11:13:52 From Clarissa Anderson to Everyone:
+	#1 and #2 overlaps with RESON objectives
+11:14:58 From Chris S to Everyone:
+	For integrated project: Maybe start by reviewing Matt's data set registration to see what's out there; think about Neil comments regarding scales of data collection and see where best overlap is...what data sets overlap in time and have scaling capabilities?
+11:15:18 From Gabrielle Canonico to Everyone:
+	#1 can include case studies across multiple regions and would really help with our storytelling, going back to our intro segment today.
+11:16:38 From Gabrielle Canonico to Everyone:
+	@Jason we don't have the repository or meeting place that you describe though it would be very useful. 
+11:20:05 From Jason Landrum (he/him), Lenfest Ocean Program to Everyone:
+	Does MBON have a central repository to deposit and track which "users" are being supported across the collective regional MBONs and how those efforts are supporting those specific users?  I was just thinking that a central, shareable space with this information could be useful for all the MBONs to understand the entire "userverse" for the MBON  and engagement therein.  Also, it might be a good resource in creating a common "meeting place" where you could continue to organize, track, and discuss coordination and collaboration needs across the different regional MBON efforts?  Does that exist? Would it be a useful resource?
+11:21:34 From Emmett Duffy to Everyone:
+	As @jenniferbrown noted MARINE is a great example of standardized data on biodiversity (https://marine.ucsc.edu/overview/index.html)
+11:22:40 From Bob Miller to Everyone:
+	I think Enrique’s Pole to Pole MBON project is also following MARINe protocols.
+11:24:11 From jenniferbrown to Everyone:
+	Yes, I meant to mention the Pole to Pole MBON effort to expand that MARINe protocol. thanks for making that connection Bob
+11:24:28 From Emmett Duffy to Everyone:
+	Yes! Pole-to-pole is a pioneer (which itself was built on the COML project Nagisa?)
+11:25:56 From Enrique Montes to Everyone:
+	MARINe is indeed a model monitoring program Pole to Pole participants are looking at as reference.
+11:26:25 From Bob Miller to Everyone:
+	Our MBON project is working with MARINe to analyze photographic data
+11:29:26 From Enrique Montes to Everyone:
+	That’s great, Bob. Pole to Pole is also looking at tracking changes in functional groups using imagery: https://www.frontiersin.org/articles/10.3389/fmars.2021.691313/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Marine_Science&id=691313
+11:29:52 From Enrique Montes to Everyone:
+	It’d be great to collaborate to implement a common approach!
+11:33:16 From Chris S to Everyone:
+	In the early days of IOOS, we did Buildout Plans for the RAs. They were very informative in moving towards operations. What does an ideal MBON look like?
+11:34:39 From jenniferdorton to Everyone:
+	Chris you just gave me flashbacks with the the buildout plan refernce
+11:34:45 From Clarissa Anderson to Everyone:
+	We just need to sustain the really good products and observing — make it routine and reliable at some level for users
+11:35:15 From Clarissa Anderson to Everyone:
+	e.g if we stick something in the water like an IFCB, can we keep those going
+11:37:33 From Mitchell Roffer’s iPad_2 (2) to Everyone:
+	To me Operationalizing should be done by the partners who need the data products and/ or by the NOAA IOOS regional associations
+11:37:58 From Clarissa Anderson to Everyone:
+	where are the RAs getting that funding though, Mitch? perennial problem
+11:39:46 From Mitchell Roffer’s iPad_2 (2) to Everyone:
+	The RA’s are getting their money from NOAA IOOS primarily and are leveraging other funding
+11:41:09 From Clarissa Anderson to Everyone:
+	Mitch, I know lol but I’m saying there’s been little focus on transition funding to help RAs sustain MBON time series or products
+11:41:16 From Gabrielle Canonico to Everyone:
+	The RAs should be part of the MBON project proposals to build out those partnerships.
+11:41:52 From maria kavanaugh to Everyone:
+	I'm not quite comfortable picking a science/technological advancement vs. serving products line. In isolation range from useless: dangerous.  How can we also include science and technological development as stakeholders?
+11:42:30 From Gabrielle Canonico to Everyone:
+	@Maria if we have time maybe you can explain.
+11:42:32 From Diana LaScala-Gruenewald to Everyone:
+	@ben that almost sounds like MBON as a tech/startup accelerator….
+11:44:01 From maria kavanaugh to Everyone:
+	The development of meaningful management indicators that maintain their utility through time requires that they be ecologically robust.  This requires we understand the ecological connections to a reasonable degree.
+11:44:24 From maria kavanaugh to Everyone:
+	But there can be a mix of mechanistic vs empirical measurements.
+11:47:16 From Margaret O'Brien to Everyone:
+	https://oceaninfohub.org/
+11:47:29 From Gabrielle Canonico to Everyone:
+	Maria I agree absolutely.
+11:47:40 From Emmett Duffy to Everyone:
+	Re @Clarissa’s point about transitioning research to long-term observing: Perhaps this comes back to Kris Sarri’s point about engaging new partners: can some of the biodiversity measurement approaches be made attractive to adoption by industry and NGOs users that have need for the data?
+11:48:49 From Mathew Biddle to Everyone:
+	Ocean Info Hub is working with OBIS
+11:50:30 From Luke McEachron to Everyone:
+	There is no shortage of ecosystem indices, but they are often difficult for managers (and researchers) to understand in our experience.
+11:50:38 From Gabrielle Canonico to Everyone:
+	@Emmett this is a good idea and something to pursue - would  be good to know who among us has a seat at the table because there are some active discussions ongoing in this space - for offshore energy etc.
+11:52:40 From Gabrielle Canonico to Everyone:
+	@Luke YES
+11:55:46 From Kym Jacobson  to Everyone:
+	Agree with Luke, managers need to know what the indicators really represent.
+11:58:39 From Mitchell Roffer’s iPad_2 (2) to Everyone:
+	If you want industrial involvement, then provide something they need.
+13:07:02	 From Matt Galaska : My audio got killed when joining the breakout group, if I leave the meeting and come back in, will I have access to this group?
+13:11:13	 From jenniferdorton : Hi Matt. I’m not sure.
+13:11:21	 From jenniferdorton : But give it a try
+13:11:40	 From David Siegel : https://sanctuaries.noaa.gov/science/condition/rating.html
+13:28:10	 From Adrienne (she/her/PC) : A PS - the un-engaged, 'fleeting', user is the hardest user story, for sure, so I think it's great that MBON already has some grip on the challenge
+13:31:34	 From Katrin : it seems we all face rhe challenge to continue the on the ground biodiversity observations in addition to providing synthesized products to endusers. These products also may be different for different regions, so not the same across all MBON groups
+13:38:24	 From Mathew Biddle : @Katrin, this is where the MBON's data management activities can facilitate the variety of products that might be requested for the different regions (and in years to come). 
+13:40:04	 From Mathew Biddle : If the observations are managed following identified standards/recommendations, the products themselves can be (a little) easier to build.
+13:44:40	 From Adrienne (she/her/PC) : +100 Matt
