@@ -5,7 +5,25 @@ layout: single
 author_profile: false
 ---
 
-<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">MBON All-Hands Meeting, October 2021</div>
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">SOST Biodiversity IWG Meeting - January 27, 2022</div>
+<br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="/assets/SOST%20AMBON%20Presentation%20Jan2022_final.pdf" target="_blank"><img src="/images/sost_ambon.png"><br>
+Sustainable AMBON: Arctic Marine Biodiversity Observing Network</a><br>
+Katrin Ikin, Jacqueline Grebmeier
+
+
+</div>
+<div style="width:45%; float:right; text-align:center; font-size: smaller;">
+  
+
+</div>
+
+<div style="clear: both;"></div>
+
+<p>&nbsp;</p>
+
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">MBON All-Hands Meeting - October 2021</div>
 <br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
 <a href="/assets/MBON_BDEF_FMK-2021_short.pdf" target="_blank"><img src="/images/mbonallhands2021_fmk.png"><br>
