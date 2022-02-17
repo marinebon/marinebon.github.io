@@ -5,6 +5,24 @@ layout: single
 author_profile: false
 ---
 
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;"><a href="https://www.iode.org/conf2022">International Ocean Data Conference - February 14-16, 2022 - Sopot, Poland</a></div>
+<br>
+<div style="width:45%; float:left; text-align:center; font-size: smaller;">
+<a href="https://www.youtube.com/watch?v=HCvToJS0DeA" target="_blank"><img src="/images/iodc_obis.png"><br>
+The OBIS We Need for the Ocean We Want</a> (YouTube video)<br>
+Ward Appeltans
+
+
+</div>
+<div style="width:45%; float:right; text-align:center; font-size: smaller;">
+  
+
+</div>
+
+<div style="clear: both;"></div>
+
+<p>&nbsp;</p>
+
 <div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">SOST Biodiversity IWG Meeting - January 27, 2022</div>
 <br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
