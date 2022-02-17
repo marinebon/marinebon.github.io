@@ -5,7 +5,7 @@ layout: single
 author_profile: false
 ---
 
-<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;"><a href="https://www.iode.org/conf2022">International Ocean Data Conference - February 14-16, 2022 - Sopot, Poland</a></div>
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;"><a href="https://www.iode.org/conf2022">International Ocean Data Conference</a> - February 14-16, 2022 - Sopot, Poland</div>
 <br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
 <a href="https://www.youtube.com/watch?v=HCvToJS0DeA" target="_blank"><img src="/images/iodc_obis.png"><br>
