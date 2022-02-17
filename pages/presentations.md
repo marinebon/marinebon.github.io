@@ -100,7 +100,7 @@ Fishing for Answers: An Investigation Into the Role of Herbivory on Coral Reef R
 
 <p>&nbsp;</p>
 
-<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">Cross-MBON Virtual Meeting: Toward a National Operational MBON, February 2021</div>
+<div style="width: 100%; float:left; background-color: #efefef; font-weight: 900; color: #102f84; padding: 5px;">Cross-MBON Virtual Meeting: Toward a National Operational MBON - February 2021</div>
 <br>
 <div style="width:45%; float:left; text-align:center; font-size: smaller;">
 <a href="/assets/Landrum_X-MBON keynote_Final_02012021.pdf" target="_blank"><img src="/images/landrum.png"><br>
