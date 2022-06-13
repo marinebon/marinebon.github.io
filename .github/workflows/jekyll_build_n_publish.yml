@@ -18,6 +18,8 @@ jobs:
         key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-gems-
+        pre_build_commands: git config --global --add safe.directory /github/workspace
+
 
     # build & push to target branch 'master'
     - uses: helaili/jekyll-action@v2
