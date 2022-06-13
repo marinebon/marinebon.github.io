@@ -40,9 +40,7 @@ This includes supporting the regional NOAA Integrated Ecosystem Assessment (IEA)
    An annotated screenshot of the Early Alert Dashboard interface showing satllite imagery and time-series data which can be used to detect events and send alert emails to resource managers.
 </span></div><br>
 
-<img src="
-https://marinebon2.netlify.app/product/infographic-florida-keys-esr/featured_hu6738961b6153aafddb77ed11371a44a6_248624_720x0_resize_lanczos_3.png
-">
+<img src="https://marinebon2.netlify.app/product/infographic-florida-keys-esr/featured_hu6738961b6153aafddb77ed11371a44a6_248624_720x0_resize_lanczos_3.png">
 <div align="center"><span class="small">
    Screenshot of an infographic develped using the infographiq library to create an interactive status report for the FKNMS.
 </span></div><br>
