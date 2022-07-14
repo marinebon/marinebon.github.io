@@ -4,6 +4,43 @@ excerpt: "Marine Biodiversity Observation Network News"
 layout: single
 author_profile: false
 ---
+**Spring 2022**
+**Statement of the All-Atlantic Ocean Research Alliance Forum MBON Side Event: The Importance of Marine Life Information for Human Well-Being in the Atlantic.**
+
+Biodiversity information is a pillar of the Blue Economy; society benefits directly from the
+diversity of marine life and the ecosystem services it provides. Long term, sustained monitoring
+of marine life, when integrated with physical, chemical, and socio-economic information
+provides compelling and extremely useful information for policy and decision-makers. This
+knowledge is fundamental to sustaining development and conserving living marine resources,
+and to meet the vision of the Galway and the Belém Statements on ocean cooperation for
+research and innovation. The All-Atlantic Ocean Research Alliance Forum is an opportunity to
+bring this vision to reality, to satisfy local needs and national reporting requirements for targets
+of Sustainable Development Goals, the UN Decade of Ocean Science for Sustainable
+Development, and the post-2020 Global Biodiversity Framework of the Convention on
+Biological Diversity.
+
+Experts and stakeholders met during the All-Atlantic Ocean Research Alliance Forum on June
+3, 2022, to discuss existing efforts and co-design strategies for marine life knowledge in
+collaboration with the Marine Biodiversity Observation Network (MBON), the Global Ocean
+Observing System (GOOS), the Ocean Biodiversity Information System (OBIS), the Ocean
+Best Practices System (OBPS), and other groups. Collaborations, monitoring networks and
+common standards are in place to support marine life monitoring and to exchange and adapt our
+knowledge for the benefit of human communities. Yet significant gaps in investment and
+understanding exist along and across the Atlantic Basin. Therefore the experts and stakeholders
+of the Atlantic Ocean call upon nations, scientists, sponsors, and stakeholders to:
+
+1. Invest in long term efforts to provide and share knowledge about marine life and its changes in the face of multiple stressors to enable the conservation, management and sustainable use of Atlantic Ocean ecosystems.
+2. Encourage the use of standards and best practices for marine life data and metadata collection and sharing [Essential Ocean Variables (EOV), Essential Biodiversity Variables (EBV), following Findable, Accessible, Interoperable, Reusable (FAIR) principles].
+3. Provide a space for meaningful dialogue among stakeholders, seeking collaborations to conserve and conduct responsible use of the Atlantic Ocean, including deep ocean, marginal seas, and coastal ecosystems in the context of sustainable development goal 14 (SDG 14).
+4. Increase co-production of knowledge and capacity development across the Atlantic Basin, to lessen regional inequalities and ensure informed collection and application of biodiversity and ecosystem information to address human community needs.
+5. Increase support for the coordination and collaboration of regional efforts for a successful UN Decade of Ocean Science for Sustainable Development.
+
+No single nation or group can alone advance the goals of a Marine Life 2030 initiative endorsed
+by the UN Decade of Ocean Science for Sustainable Development and the vision of the Galway
+and the Belém Statements. This grand challenge requires robust collaborations across the
+Atlantic so that each community has the information needed to adapt and plan for resilience and
+sustainable use of the ocean.
+
 **Summer 2021**
 
 **Coordinating the Observation of Biodiversity in the Sea: A Collaboration Spanning the Southern Ocean and the Rest of the Globe**<br>
