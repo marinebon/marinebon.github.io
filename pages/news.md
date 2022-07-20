@@ -4,7 +4,7 @@ excerpt: "Marine Biodiversity Observation Network News"
 layout: single
 author_profile: false
 ---
-**Spring 2022**<br>
+**Summer 2022**<br>
 **Statement of the All-Atlantic Ocean Research Alliance Forum MBON Side Event: The Importance of Marine Life Information for Human Well-Being in the Atlantic.**<br>
 Biodiversity information is a pillar of the Blue Economy; society benefits directly from the
 diversity of marine life and the ecosystem services it provides. Long term, sustained monitoring
