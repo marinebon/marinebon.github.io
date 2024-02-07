@@ -1,7 +1,7 @@
 # marinebon.org re-build
 
 ## ⚠️ deprecated ⚠️
-This version of marinebon.org is currently (2021-06) being replaced by a wowchemy website being developed at marinebon/www_marinebon2.
+This version of marinebon.org is currently (2021-06) being replaced by a wowchemy website being developed at [marinebon/www_marinebon2](https://github.com/marinebon/www_marinebon2).
 
 --------------------------------------
 This is a rebuild of the marinebon.org website using jekyll based on the Jekyll theme for IOOS github pages.
