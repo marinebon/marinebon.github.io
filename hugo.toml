@@ -27,40 +27,26 @@ pluralizelisttitles = false
 # Main menu
 [menu]
 [[menu.main]]
-    name       = "Home"
+    name       = "About Us"
     identifier = "menu.home"
-    url        = "/"
+    url        = "/img/template-easy-customize.png"
     weight     = 1
 
 [[menu.main]]
+    identifier = "section.default_page"
     name       = "Option 1: Default Page"
     url        = "/"
     weight     = 1
     parent     = "menu.home"
+    post       = 1
 
 [[menu.main]]
+    identifier = "section.app"
     name       = "Option 2: Application"
     url        = "/"
     weight     = 2
     parent     = "menu.home"
-
-[[menu.main]]
-    name       = "Option 3: Startup"
-    url        = "/"
-    weight     = 3
-    parent     = "menu.home"
-
-[[menu.main]]
-    name       = "Option 4: Agency"
-    url        = "/"
-    weight     = 4
-    parent     = "menu.home"
-
-[[menu.main]]
-    name       = "Option 5: Portfolio"
-    url        = "/"
-    weight     = 5
-    parent     = "menu.home"
+    post       = 2
 
 [[menu.main]]
     name       = "Features"
