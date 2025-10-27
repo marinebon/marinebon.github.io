@@ -25,17 +25,19 @@ pluralizelisttitles = false
     pagerSize = 10
 
 # Main menu
+# use `section.*` to use 4-column submenu
+#     `post` is what column the submenu item will go in
 [menu]
 [[menu.main]]
     name       = "About Us"
     identifier = "menu.home"
-    url        = "/img/template-easy-customize.png"
+    url        = "/"
+    params.img = "img/template-easy-customize.png"
     weight     = 1
 
 [[menu.main]]
     identifier = "section.default_page"
     name       = "Option 1: Default Page"
-    url        = "/"
     weight     = 1
     parent     = "menu.home"
     post       = 1
