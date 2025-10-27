@@ -1,5 +1,5 @@
-baseurl = "https://devcows.github.io/hugo-universal-theme/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
-title = "Universal"
+baseurl = "https://marinebon.github.io/mbon_org" 
+title = "Marine Biodiversity Observation Network"
 theme = "hugo-universal-theme"
 themesDir = "themes"
 languageCode = "en-us"
