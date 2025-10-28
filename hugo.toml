@@ -36,13 +36,14 @@ pluralizelisttitles = false
     weight     = 1
     params.layout = "grid"
     params.colsize = 2
-
+    params.n_columns = 3
 [[menu.main]]
     identifier = "section.default_page"
     name       = "Option 1: Default Page"
     weight     = 1
     parent     = "menu.home"
     post       = 1
+    params.column = 1
     params.img = "img/template-easy-customize.png"
     url        = "/"
 
@@ -53,6 +54,7 @@ pluralizelisttitles = false
     weight     = 2
     parent     = "menu.home"
     post       = 2
+    params.column = 2
     params.img = ""
 
 [[menu.main]]
@@ -60,6 +62,8 @@ pluralizelisttitles = false
     name       = "Option 3"
     url        = "/"
     weight     = 3
+    post       = 2
+    params.column = 3
     parent     = "menu.home"
     params.img = ""
 

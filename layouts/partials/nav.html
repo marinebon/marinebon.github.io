@@ -58,24 +58,32 @@
 			<!-- GRID LAYOUT -->
                         {{ if eq .Params.layout "grid" }}
                           <div class="row">			
-                            <div class="col-sm-{{ .Params.colsize }}">
-                              <h5>{{ .Name }}</h5>
-                              {{ if .HasChildren }}
-                                <ul>
-                                  {{ range .Children.ByWeight }}
-                                    {{ if ne .Params.img "" }}
-                                      <a href="{{ if .Page }}{{ .Page.RelPermalink }}{{ else }}{{ .URL }}{{ end }}">
-                                        <img src="{{ .Params.img | relURL }}" class="img-responsive hidden-xs"/>
-                                      </a>
-				    {{ else }}
-				      <a href="{{ if .Page }}{{ .Page.RelPermalink }}{{ else }}{{ .URL }}{{ end }}">  
-					{{ .Name }}
-				      </a>
-                                    {{ end }}
-                                  {{ end }}
-                                </ul>
-                              {{ end }}
-                            </div>
+			    {{ $n_columns := .Params.n_columns | int }}
+			    {{ $parent := . }} <!-- Save the original page context -->
+			    {{ range $i := seq 1 $n_columns }}
+
+                              <div class="col-sm-{{ $parent.Params.colsize }}">
+                                <h5>{{ $parent.Name }}</h5>
+                                {{ if $parent.HasChildren }}
+  				<ul>
+  				  {{ range $parent.Children.ByWeight }}
+    			            {{ $column := .Params.column | int }}
+      				    {{ if eq $column $i }}
+      				      {{ if ne .Params.img "" }}
+        			        <a href="{{ if .Page }}{{ .Page.RelPermalink }}{{ else }}{{ .URL }}{{ end }}">
+	                      	          <img src="{{ .Params.img | relURL }}" class="img-responsive hidden-xs"/>
+		               		</a>
+			      	      {{ else }}
+  		        	      <a href="{{ if .Page }}{{ .Page.RelPermalink }}{{ else }}{{ .URL }}{{ end }}">
+  			                {{ .Name }}
+  			              </a>
+  			            {{ end }}
+  			          {{ end }}
+  			        {{ end }}
+  			      </ul>
+  			    {{ end }}
+                             </div>
+                           {{ end }}
                           </div>
                         {{ else }}
                           <!-- default image_and_list layout -->
