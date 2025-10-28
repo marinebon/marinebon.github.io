@@ -32,8 +32,10 @@ pluralizelisttitles = false
     name       = "About Us"
     identifier = "menu.home"
     url        = "/"
-    params.img = "img/template-easy-customize.png"
+#    params.img = "img/template-easy-customize.png"
     weight     = 1
+    params.layout = "grid"
+    params.colsize = 2
 
 [[menu.main]]
     identifier = "section.default_page"
@@ -41,6 +43,8 @@ pluralizelisttitles = false
     weight     = 1
     parent     = "menu.home"
     post       = 1
+    params.img = "img/template-easy-customize.png"
+    url        = "/"
 
 [[menu.main]]
     identifier = "section.app"
@@ -49,6 +53,19 @@ pluralizelisttitles = false
     weight     = 2
     parent     = "menu.home"
     post       = 2
+    params.img = ""
+
+[[menu.main]]
+    identifier = "section.test"
+    name       = "Option 3"
+    url        = "/"
+    weight     = 3
+    parent     = "menu.home"
+    params.img = ""
+
+
+
+
 
 [[menu.main]]
     name       = "Features"
