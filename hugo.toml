@@ -36,65 +36,6 @@ pluralizelisttitles = false
     weight     = 1
     params.customPartial = "menu-about-us" 
 
-[[menu.main]]
-    identifier = "section.about_us"
-    name       = "-------------"
-    weight     = 1
-    parent     = "menu.about"
-    post       = 1
-    params.img = ""
-    params.colsize = 4
-    url        = "/"
-
-[[menu.main]]
-    name       = "MBON"
-    url        = "/"
-    weight     = 2
-    parent     = "section.about_us"
-    post       = 1
-    params.img = ""
-
-[[menu.main]]
-    name       = "People"
-    url        = "/"
-    weight     = 3
-    post       = 2
-    parent     = "section.about_us"
-    params.img = ""
-
-[[menu.main]]
-    name       = "Strategy and Implementation Plan"
-    url        = "/"
-    weight     = 3
-    post       = 3
-    parent     = "section.about_us"
-    params.img = ""
-
-[[menu.main]]
-    name       = "Supporting Organizations"
-    identifier = "section.supporters"
-    url        = "/"
-    weight     = 3
-    post       = 2
-    parent     = "menu.about"
-    params.colsize = 8
-    params.img = ""
-
-[[menu.main]]
-    name = "geo"
-    params.img = "img/template-easy-customize.png"
-    parent = "section.supporters"
-
-[[menu.main]]
-    name = "geobon"
-    params.img = "img/template-easy-customize.png"
-    parent = "section.supporters"
-
-[[menu.main]]
-    name = "air"
-    params.img = "img/template-easy-customize.png"
-    parent = "section.supporters"
-
 
 
 
