@@ -55,8 +55,12 @@
                   <ul class="dropdown-menu">
                     <li>
                       <div class="yamm-content">
+			{{ if ne .Params.customPartial "" }}
+			  {{ with .Params.customPartial }}
+			    {{ partial . $ }}
+			  {{ end }}
 			<!-- GRID LAYOUT -->
-                        {{ if eq .Params.layout "grid" }}
+                        {{ else if eq .Params.layout "grid" }}
                           <div class="row">						    
 			    <!-- col foreach section -->
 			    {{ if .HasChildren }}

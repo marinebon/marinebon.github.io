@@ -33,11 +33,8 @@ pluralizelisttitles = false
     name       = "About Us"
     identifier = "menu.about"
     url        = "/"
-#    params.img = "img/template-easy-customize.png"
     weight     = 1
-    params.layout = "grid"
-    params.colsize = 2
-    params.n_columns = 3
+    params.customPartial = "menu-about-us" 
 
 [[menu.main]]
     identifier = "section.about_us"
