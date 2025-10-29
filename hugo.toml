@@ -28,45 +28,75 @@ pluralizelisttitles = false
 # use `section.*` to use 4-column submenu
 #     `post` is what column the submenu item will go in
 [menu]
+# === 
 [[menu.main]]
     name       = "About Us"
-    identifier = "menu.home"
+    identifier = "menu.about"
     url        = "/"
 #    params.img = "img/template-easy-customize.png"
     weight     = 1
     params.layout = "grid"
     params.colsize = 2
     params.n_columns = 3
+
 [[menu.main]]
-    identifier = "section.default_page"
-    name       = "Option 1: Default Page"
+    identifier = "section.about_us"
+    name       = "-------------"
     weight     = 1
-    parent     = "menu.home"
+    parent     = "menu.about"
     post       = 1
-    params.column = 1
-    params.img = "img/template-easy-customize.png"
+    params.img = ""
+    params.colsize = 4
     url        = "/"
 
 [[menu.main]]
-    identifier = "section.app"
-    name       = "Option 2: Application"
+    name       = "MBON"
     url        = "/"
     weight     = 2
-    parent     = "menu.home"
-    post       = 2
-    params.column = 2
+    parent     = "section.about_us"
+    post       = 1
     params.img = ""
 
 [[menu.main]]
-    identifier = "section.test"
-    name       = "Option 3"
+    name       = "People"
     url        = "/"
     weight     = 3
     post       = 2
-    params.column = 3
-    parent     = "menu.home"
+    parent     = "section.about_us"
     params.img = ""
 
+[[menu.main]]
+    name       = "Strategy and Implementation Plan"
+    url        = "/"
+    weight     = 3
+    post       = 3
+    parent     = "section.about_us"
+    params.img = ""
+
+[[menu.main]]
+    name       = "Supporting Organizations"
+    identifier = "section.supporters"
+    url        = "/"
+    weight     = 3
+    post       = 2
+    parent     = "menu.about"
+    params.colsize = 8
+    params.img = ""
+
+[[menu.main]]
+    name = "geo"
+    params.img = "img/template-easy-customize.png"
+    parent = "section.supporters"
+
+[[menu.main]]
+    name = "geobon"
+    params.img = "img/template-easy-customize.png"
+    parent = "section.supporters"
+
+[[menu.main]]
+    name = "air"
+    params.img = "img/template-easy-customize.png"
+    parent = "section.supporters"
 
 
 

@@ -54,19 +54,19 @@
                             <li>
                             <div class="yamm-content">
                             <div class="row">
-                                {{ if ne .URL "" }}
+                                {{ if ne .URL "" }}  <!-- image -->
                                 <div class="col-sm-6">
                                     <img src="{{ .URL }}" class="img-responsive hidden-xs"/>
                                 </div>
                                 {{ end }}
-                                <div class="col-sm-3">
+                                <div class="col-sm-3">  <!-- div per section -->
                                 {{ range .Children.ByWeight }}
                                     {{ $column := printf "%s" .Post }}
                                     {{ if eq $column "1" }}
                                     <h5>{{ .Name }}</h5>
                                     {{ if .HasChildren }}
                                     <ul>
-                                    {{ range .Children.ByWeight }}
+                                    {{ range .Children.ByWeight }} <!-- entry under section -->
                                     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
                                     {{- end }}
                                     </ul>
