@@ -3,7 +3,12 @@ title: "US MBON"
 description: |
   <p>Regional Data From: 
     <ul>
-      <li><a href="bons/arctic"> Arctic </a></li>
+      <li><a href="bons/arctic" style="color:black">- Arctic </a></li>
+      <li><a href="bons/california_central" style="color:black">- California, Central </a></li>
+      <li><a href="bons/california_southern" style="color:black">- California, Southern </a></li>
+      <li><a href="bons/gulf_of_maine" style="color:black">- Gulf of Maine </a></li>
+      <li><a href="bons/pacific_nw" style="color:black">- Pacific NorthWest </a></li>
+      <li><a href="bons/south_florida" style="color:black">- South Florida </a></li>
     </ul>
   </p>
 image: "img/carousel/OceanImageBank_TraceyJennings_04-1.jpg"
