@@ -1,0 +1,40 @@
+{{/* carousel.html — reusable partial */}}
+
+{{ $context := . }}
+{{ $dataset := or $context.dataset "carousel" }}   {{/* default to "carousel" */}}
+{{ $carousel := index $context.Site.Data $dataset }}
+
+{{ if and $carousel (gt (len $carousel) 0) }}
+<section>
+    <div class="home-carousel">
+        <div class="dark-mask"></div>
+        <div class="container">
+            <div class="homepage owl-carousel"
+                data-autoplay="{{ default true $context.Site.Params.CarouselHomepage.auto_play }}"
+                data-slide-speed="{{ default 2000 $context.Site.Params.CarouselHomepage.slide_speed }}"
+                data-pagination-speed="{{ default 1000 $context.Site.Params.CarouselHomepage.pagination_speed }}">
+                
+                {{ range sort $carousel "weight" }}
+                <div class="item">
+                    {{ if .href }}
+                    <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
+                    {{ end }}
+                    <div class="row">
+                        <div class="col-sm-5 right">
+                            <h1>{{ .title | safeHTML }}</h1>
+                            {{ .description | safeHTML }}
+                        </div>
+                        <div class="col-sm-7">
+                            <img class="img-responsive" src="{{ .image }}" alt="">
+                        </div>
+                    </div>
+                    {{ if .href }}
+                    </a>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

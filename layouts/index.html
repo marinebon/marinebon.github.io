@@ -14,11 +14,23 @@
 
         {{ partial "nav.html" . }}
 
-        {{ partial "carousel.html" . }}
+	{{ partial "carousel.html" (dict "Site" .Site "dataset" "carousel") }}
+
 
         {{ partial "recent_posts.html" . }}
 
-        {{ partial "clients.html" . }}
+        {{ partial "clients.html" . }}  <!-- supporting organizations -->
+
+	{{ partial "carousel.html" (dict "Site" .Site "dataset" "carousel_bon_highlights") }}
+	<div class="row">
+	  <div class='col-xs-6'>
+	    US MBON
+	  </div>
+	  <div class='col-xs-6'>
+	    MBON Pole to Pole of the Americas
+	  </div>
+	</div>
+
 
         {{ partial "features.html" . }}
 
