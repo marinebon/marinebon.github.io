@@ -209,7 +209,7 @@ pluralizelisttitles = false
 
 [params.carouselHomepage]
     # All carousel items are defined in their own files. You can find example items
-    # at 'exampleSite/data/carousel'.
+    # at 'data/carousel_main_page'.
     # For more information take a look at the README.
     enable = true
     auto_play = true
