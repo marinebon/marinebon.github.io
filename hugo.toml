@@ -249,8 +249,8 @@ pluralizelisttitles = false
 
 [params.recent_posts]
     enable = true
-    title = "From our blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    title = "Latest News & Updates"
+    subtitle = "Learn what we and our partners are doing around the globe."
     hide_summary = false
 
 [params.footer.recent_posts]
