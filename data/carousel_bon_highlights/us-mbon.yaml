@@ -1,8 +1,9 @@
 weight: 1
 title: "US MBON"
 description: |
-  <p>Regional Data From: 
-    <ul>
+  <p style="text-align: left">
+    Regional Data From: 
+    <ul style="text-align: left">
       <li><a href="bons/arctic" style="color:black">- Arctic </a></li>
       <li><a href="bons/california_central" style="color:black">- California, Central </a></li>
       <li><a href="bons/california_southern" style="color:black">- California, Southern </a></li>
