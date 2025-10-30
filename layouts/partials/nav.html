@@ -43,14 +43,12 @@
                 {{ end }}
               {{ end }}
             {{ end }}
-
             {{ if .HasChildren }}
               {{ $hasSections := (hasPrefix (index .Children 0).Identifier "section.") }}
               <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{ end }} {{ $active }}">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   {{ .Name }} <span class="caret"></span>
                 </a>
-
                 {{ if $hasSections }}
                   <ul class="dropdown-menu">
                     <li>
@@ -95,7 +93,6 @@
                                 <img src="{{ .Params.img | relURL }}" class="img-responsive hidden-xs"/>
                               </div>
                             {{ end }}
-
                             {{ $item := . }}
                             {{ range $i := seq 1 4 }}
                               <div class="col-sm-3">
@@ -132,10 +129,16 @@
               </li>
             {{ end }}
           {{ end }}
+          <li class="nav-item" style="position:relative; top:20px;">
+            <div class="social" style=" margin-left:10px">
+              {{ range .Site.Menus.topbar.ByWeight }}
+              <a href="{{ .URL | safeURL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
+              {{ end }}
+            </div>
+	  </li>
         </ul>
       </div>
       <!--/.nav-collapse -->
-
       <div class="collapse clearfix" id="search">
         <form class="navbar-form" role="search">
           <div class="input-group">
@@ -148,5 +151,6 @@
       </div>
       <!--/.nav-collapse -->
     </div>
+
   </div>
 </header>
