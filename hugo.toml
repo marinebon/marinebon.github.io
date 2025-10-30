@@ -24,11 +24,8 @@ pluralizelisttitles = false
 [pagination]
     pagerSize = 10
 
-# Main menu
-# use `section.*` to use 4-column submenu
-#     `post` is what column the submenu item will go in
-[menu]
-# === 
+# === Main menu
+[menu] 
 [[menu.main]]
     name       = "About Us"
     identifier = "menu.about"
@@ -36,335 +33,69 @@ pluralizelisttitles = false
     weight     = 1
     params.customPartial = "menu-about-us" 
 
-
-
+[[menu.main]]
+    name       = "The Network"
+    identifier = "menu.network"
+    url        = "/network"
+    params.customPartial = "menu-network"
+    weight     = 2
 
 [[menu.main]]
-    name       = "Features"
-    identifier = "menu.features"
-    url        = "/img/template-easy-customize.png"
+    name       = "Data & Products"
+    identifier = "menu.products"
+    url        = "/products"
     weight     = 3
 
 [[menu.main]]
-    name       = "Shortcodes"
-    identifier = "section.shortcodes"
-    url        = ""
-    weight     = 1
-    parent     = "menu.features"
-    post       = 1
-
-[[menu.main]]
-    name       = "Header variations"
-    identifier = "section.headervariations"
-    url        = ""
-    weight     = 2
-    parent     = "menu.features"
-    post       = 2
-
-[[menu.main]]
-    name       = "Accordions"
-    url        = ""
-    weight     = 1
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "Alerts"
-    url        = ""
-    weight     = 2
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "Buttons"
-    url        = ""
-    weight     = 3
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "Content Boxes"
-    url        = ""
+    name       = "Media"
+    identifier = "menu.media"
+    url        = "/media"
     weight     = 4
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "Horizontal Blocks"
-    url        = ""
-    weight     = 5
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "Pagination"
-    url        = ""
-    weight     = 6
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "Tabs"
-    url        = ""
-    weight     = 7
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "Typography"
-    url        = ""
-    weight     = 8
-    parent     = "section.shortcodes"
-
-[[menu.main]]
-    name       = "Default Sticky Header"
-    url        = ""
-    weight     = 1
-    parent     = "section.headervariations"
-
-[[menu.main]]
-    name       = "No Sticky Header"
-    url        = ""
-    weight     = 2
-    parent     = "section.headervariations"
-
-[[menu.main]]
-    name       = "Light Header"
-    url        = ""
-    weight     = 3
-    parent     = "section.headervariations"
-
-[[menu.main]]
-    name       = "Portfolio"
-    identifier = "menu.portfolio"
-    url        = "/img/template-homepage.png"
-    weight     = 3
-
-[[menu.main]]
-    name       = "Portfolio"
-    identifier = "section.portfolio"
-    url        = ""
-    weight     = 1
-    parent     = "menu.portfolio"
-    post       = 1
-
-[[menu.main]]
-    name       = "2 Columns"
-    url        = ""
-    weight     = 1
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "2 Columns With Negative Space"
-    url        = ""
-    weight     = 2
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "3 Columns"
-    url        = ""
-    weight     = 3
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "3 Columns With Negative Space"
-    url        = ""
-    weight     = 4
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "4 Columns"
-    url        = ""
-    weight     = 5
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "4 Columns With Negative Space"
-    url        = ""
-    weight     = 6
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "Portfolio - detail"
-    url        = ""
-    weight     = 7
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "Portfolio - detail 2"
-    url        = ""
-    weight     = 8
-    parent     = "section.portfolio"
-
-[[menu.main]]
-    name       = "About"
-    identifier = "section.about"
-    url        = ""
-    weight     = 2
-    parent     = "menu.portfolio"
-    post       = 2
-
-[[menu.main]]
-    name       = "About Us"
-    url        = ""
-    weight     = 1
-    parent     = "section.about"
-
-[[menu.main]]
-    name       = "Our Team"
-    url        = ""
-    weight     = 2
-    parent     = "section.about"
-
-[[menu.main]]
-    name       = "Marketing"
-    identifier = "section.marketing"
-    url        = ""
-    weight     = 3
-    parent     = "menu.portfolio"
-    post       = 2
-
-[[menu.main]]
-    name       = "Packages"
-    url        = ""
-    weight     = 1
-    parent     = "section.marketing"
-
-[[menu.main]]
-    name       = "All Pages"
-    identifier = "menu.allpages"
-    url        = ""
-    weight     = 4
-
-[[menu.main]]
-    name       = "Home"
-    identifier = "section.ap-home"
-    url        = ""
-    weight     = 1
-    parent     = "menu.allpages"
-    post       = 1
-
-[[menu.main]]
-    name       = "About"
-    identifier = "section.ap-about"
-    url        = ""
-    weight     = 2
-    parent     = "menu.allpages"
-    post       = 1
-
-[[menu.main]]
-    name       = "Marketing"
-    identifier = "section.ap-marketing"
-    url        = ""
-    weight     = 3
-    parent     = "menu.allpages"
-    post       = 1
-
-[[menu.main]]
-    name       = "Portfolio"
-    identifier = "section.ap-portfolio"
-    url        = ""
-    weight     = 1
-    parent     = "menu.allpages"
-    post       = 2
-
-[[menu.main]]
-    name       = "User Pages"
-    identifier = "section.ap-userpages"
-    url        = ""
-    weight     = 2
-    parent     = "menu.allpages"
-    post       = 2
-
-[[menu.main]]
-    name       = "Shop"
-    identifier = "section.ap-shop"
-    url        = ""
-    weight     = 1
-    parent     = "menu.allpages"
-    post       = 3
-
-[[menu.main]]
-    name       = "Shop - Order Process"
-    identifier = "section.ap-shoporderprocess"
-    url        = ""
-    weight     = 2
-    parent     = "menu.allpages"
-    post       = 3
+    params.customPartial = "menu-network"
 
 [[menu.main]]
     name       = "Contact"
-    identifier = "section.ap-contact"
+    identifier = "menu.contact"
     url        = ""
-    weight     = 1
-    parent     = "menu.allpages"
-    post       = 4
-
-[[menu.main]]
-    name       = "Pages"
-    identifier = "section.ap-pages"
-    url        = ""
-    weight     = 2
-    parent     = "menu.allpages"
-    post       = 4
-
-[[menu.main]]
-    name       = "Blog"
-    identifier = "section.ap-blog"
-    url        = "/blog/"
-    weight     = 3
-    parent     = "menu.allpages"
-    post       = 4
-
-[[menu.main]]
-    name       = "Blog Listing Big"
-    url        = "/blog/"
-    weight     = 1
-    parent     = "section.ap-blog"
-
-[[menu.main]]
-    name       = "Blog"
-    identifier = "menu.blog"
-    url        = "/blog/"
     weight     = 5
-
-[[menu.main]]
-    name       = "FAQ"
-    identifier = "menu.faq"
-    url        = "/faq/"
-    weight     = 6
-
-[[menu.main]]
-    identifier = "contact"
-    name       = "Contact"
-    url        = "/contact/"
-    weight     = 7
-
-
-# Top bar social links menu
-
-[[menu.topbar]]
-    weight = 1
-    name = "Phone"
-    url = "tel:+12 34 567 89 01"
-    pre = "<i class='fas fa-2x fa-phone'></i>"
+    
+# === Top bar social links menu
+#[[menu.topbar]]
+#    weight = 1
+#    name = "Phone"
+#    url = "tel:+12 34 567 89 01"
+#    pre = "<i class='fas fa-2x fa-phone'></i>"
 
 [[menu.topbar]]
     weight = 2
     name = "GitHub"
-    url = "https://github.com/devcows/hugo-universal-theme"
+    url = "https://github.com/marinebon"
     pre = "<i class='fab fa-2x fa-github'></i>"
 
-[[menu.topbar]]
-    weight = 3
-    name = "Facebook"
-    url = "https://facebook.com"
-    pre = "<i class='fab fa-2x fa-facebook'></i>"
+#[[menu.topbar]]
+#    weight = 3
+#    name = "Facebook"
+#    url = "https://facebook.com"
+#    pre = "<i class='fab fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
     weight = 4
     name = "X"
-    url = "https://x.com"
+    url = "https://x.com/MarineBON1"
     pre = "<i class='fab fa-2x fa-x-twitter'></i>"
 
+#[[menu.topbar]]
+#    weight = 5
+#    name = "Email"
+#    url = "mailto:hello@universal.com"
+#    pre = "<i class='fas fa-2x fa-envelope'></i>"
+
 [[menu.topbar]]
-    weight = 5
-    name = "Email"
-    url = "mailto:hello@universal.com"
-    pre = "<i class='fas fa-2x fa-envelope'></i>"
+    weight = 3
+    name = "youtube"
+    url = "https://www.youtube.com/channel/UCiXkc3xHhl9bOHYdE3LtWMg"
+    pre = "<i class='fab fa-2x fa-youtube'></i>"
+
 
 [params]
     viewMorePostLink = "/blog/"
