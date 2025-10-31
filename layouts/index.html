@@ -18,11 +18,29 @@
 
         {{ partial "recent_posts.html" . }}
 
-        {{ partial "clients.html" . }}  <!-- supporting organizations -->
+        <!-- supporting organizations -->
+        {{ partial "clients.html" (dict 
+          "context" . 
+          "data" "clients_supporting" 
+          "title" "Supporting Organizations" 
+          "subtitle" ""
+	) }}
 
 	{{ partial "carousel.html" (dict "Site" .Site "dataset" "carousel_bon_highlights") }}
 
         {{ partial "features.html" . }}  <!-- mbon ecosystem -->
+
+        <!-- strategic collaborators -->
+
+        {{ partial "clients.html" (dict 
+          "context" . 
+          "data" "clients_collaborators" 
+          "title" "MBON Strategic Collaborators" 
+          "subtitle" "We work with different organizations that support our network around the world."
+	) }}
+
+
+
 
         {{ partial "testimonials.html" . }}
 

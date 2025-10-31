@@ -246,8 +246,8 @@ pluralizelisttitles = false
     # All clients are defined in their own files. You can find example items
     # at 'exampleSite/data/clients'.
     # For more information take a look at the README.
-    title = "Supporting Organizations"
-    subtitle = ""
+#    title = "Supporting Organizations"
+#    subtitle = ""
 
 [params.recent_posts]
     enable = true
