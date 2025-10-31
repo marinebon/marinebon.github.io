@@ -7,6 +7,15 @@
     * any images should be uploaded to `static/img/blog/`
 
 
+### Content Directory
+location | description
+---------|------------------------------------------------------------
+content  | .md files for blogs, project pages, etc
+data     | information for the custom widget partials (carousel, etc)
+static   | raw files to be hosted (images, pdf, etc)
+layouts  | hugo html templates
+
+
 --------------------------------------------------------------
 
 # TODO:
