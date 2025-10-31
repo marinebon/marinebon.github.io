@@ -51,7 +51,7 @@ pluralizelisttitles = false
     identifier = "menu.media"
     url        = "/media"
     weight     = 4
-    params.customPartial = "menu-network"
+    params.customPartial = "menu-media"
 
 [[menu.main]]
     name       = "Contact"
