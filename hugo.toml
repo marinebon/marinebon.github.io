@@ -29,9 +29,9 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "About Us"
     identifier = "menu.about"
-    url        = "/about-us"
     weight     = 1
     params.customPartial = "menu-about-us" 
+
 
 [[menu.main]]
     name       = "The Network"

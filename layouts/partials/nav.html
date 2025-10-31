@@ -43,8 +43,9 @@
                 {{ end }}
               {{ end }}
             {{ end }}
-            {{ if .HasChildren }}
-              {{ $hasSections := (hasPrefix (index .Children 0).Identifier "section.") }}
+	    {{ $shouldDropDown := or (.HasChildren) (.Params.customPartial) }}
+            {{ if $shouldDropDown }}
+              {{ $hasSections := or (hasPrefix (index .Children 0).Identifier "section.") (.Params.customPartial) }}
               <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{ end }} {{ $active }}">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   {{ .Name }} <span class="caret"></span>
