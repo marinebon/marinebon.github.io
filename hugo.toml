@@ -218,10 +218,12 @@ pluralizelisttitles = false
 
 [params.features]
     enable = true
-    cols = 3 # Default: 3, Available values 2,3,4,6
+    cols = 4 # Default: 3, Available values 2,3,4,6
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more information take a look at the README.
+    title = "MBON ECOSYSTEM"
+    subtitle = "MBON is a growing global initiative composed of regional networks of scientists, resource managers, and end-users working to integrate data from existing long-term programs to improve our understanding of changes and connections between marine biodiversity and ecosystem functions."
 
 [params.testimonials]
     enable = true
