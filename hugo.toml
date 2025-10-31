@@ -236,10 +236,10 @@ pluralizelisttitles = false
 [params.see_more]
     enable = true
     icon = "far fa-file-alt"
-    title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    title = "Strategy and Implementation?"
+    subtitle = "The MBON Strategic and Implementation Plan reflects the ocean observing community engagement to deliver a common vision, stronger statement, and steady partnership to achieve a sustained system of global ocean observations and data management."
     link_url = "#"
-    link_text = "Check other homepages"
+    link_text = "TODO..."
 
 [params.clients]
     enable = true
