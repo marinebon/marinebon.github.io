@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-
-  <head>
-    {{ partial "headers.html" . }}
-    {{ partial "custom_headers.html" . }}
-  </head>
-
-  <body>
-
-    <div id="all">
-
-        {{ partial "top.html" . }}
-
-        {{ partial "nav.html" . }}
+{{ define "main" }}
 
 	{{ partial "carousel.html" (dict "Site" .Site "dataset" "carousel_main_page") }}
 
@@ -40,12 +26,5 @@
 
         {{ partial "see_more.html" . }}
 
-        {{ partial "footer.html" . }}
+{{ end }}
 
-    </div>
-    <!-- /#all -->
-
-    {{ partial "scripts.html" . }}
-
-  </body>
-</html>
