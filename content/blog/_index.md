@@ -1,5 +1,5 @@
 ---
 title: "Data & Products"
 layout: "list"
-list_folders: ["products"]
+list_folders: ["blog"]
 ---

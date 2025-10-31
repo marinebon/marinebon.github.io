@@ -23,13 +23,7 @@
 
                     <div class="col-md-9" id="blog-listing-medium">
 
-		      {{ $listFolder := .Params.list_folder | default "" }}
-		      {{ $paginator := dict }}
-		      {{ if ne $listFolder "" }}
-		        {{ $paginator = .Paginate (where .Site.RegularPages "Type" $listFolder) }}
-		      {{ else }}
-		        {{ $paginator = .Paginate (where .Data.Pages "Type" "in" .Site.Params.mainSections) }}
-		      {{ end }}
+		      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Params.list_folders) }}
 
                         {{ range $paginator.Pages }}
                         <section class="post">
