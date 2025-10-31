@@ -1,3 +1,8 @@
+{{/* sidebar.html */}}
+
 {{ partial "widgets/search.html" . }}
 
-{{ partial "widgets/tags.html" . }}
+{{/* get list_folders from .Params or default to empty */}}
+{{ $listFolders := .Params.list_folders | default (slice) }}
+
+{{ partial "widgets/tags.html" (dict "Site" .Site "Params" (dict "list_folders" $listFolders)) }}
