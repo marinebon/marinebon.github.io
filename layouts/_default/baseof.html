@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+    <div id="all">
+
+      <!-- Shared header and navigation -->
+      {{ partial "top.html" . }}
+      {{ partial "nav.html" . }}
+
+      <!-- Main page content block -->
+      {{ block "main" . }}
+      {{ end }}
+
+      <!-- Shared footer -->
+      {{ partial "footer.html" . }}
+    </div>
+
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
