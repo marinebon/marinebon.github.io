@@ -18,6 +18,16 @@ layouts  | hugo html templates
 
 --------------------------------------------------------------
 
+## Technical Information
+This website uses the static-site generator hugo to translate `.md` (markdown) and `.html` templates into files for hosting as a static site.
+
+Static-site hosting has several benefits including page fetch speed and ease of hosting.
+For testing the site is hosted using the free service GitHub pages.
+Deployment and rendering of the `.md` and `.html` templates is performed by a GitHub action.
+This makes it possible for files to be edited directly on GitHub.com and changes will appear on the site within a few minutes. 
+
+----------------------------------------------------------------
+
 # TODO:
 walk through [config steps](https://github.com/devcows/hugo-universal-theme?tab=readme-ov-file#configuration)
 
