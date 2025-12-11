@@ -28,16 +28,14 @@ This makes it possible for files to be edited directly on GitHub.com and changes
 
 ----------------------------------------------------------------
 
-# TODO:
-walk through [config steps](https://github.com/devcows/hugo-universal-theme?tab=readme-ov-file#configuration)
-
-# !!!
-
+## Development Server
 gh-actions is set up to build & deploy the site upon commit push.
-
-
-
+A local server can be run for testing changes before pushing to GitHub:
 
 ```bash
 hugo server -w
 ```
+
+# TODO:
+walk through [config steps](https://github.com/devcows/hugo-universal-theme?tab=readme-ov-file#configuration)
+
