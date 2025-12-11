@@ -49,9 +49,32 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Media"
     identifier = "menu.media"
-    url        = "/media"
     weight     = 4
-    params.customPartial = "menu-media"
+    #    params.customPartial = "menu-media"
+
+[[menu.main]]
+    name       = "News"
+    url        = "/news"
+    weight     = 1
+    parent     = "menu.media"
+
+[[menu.main]]
+    name       = "Events"
+    url        = "/events"
+    weight     = 1
+    parent     = "menu.media"
+
+[[menu.main]]
+    name       = "Presentations"
+    url        = "/presentations"
+    weight     = 1
+    parent     = "menu.media"
+
+[[menu.main]]
+    name       = "Photos"
+    url        = "/photos"
+    weight     = 1
+    parent     = "menu.media"
 
 [[menu.main]]
     name       = "Contact"
