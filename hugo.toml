@@ -54,7 +54,7 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "News"
-    url        = "/news"
+    url        = "/blog"
     weight     = 1
     parent     = "menu.media"
 
