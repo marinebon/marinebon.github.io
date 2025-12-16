@@ -2,6 +2,7 @@
 title = "AIR Centre Partnership Renewal"
 tags = ["air-centre", "partnership", "secretariat"]
 categories = ["news"]
+banner = "media/storage/2024/02/ocean-image-bank.jpg"
 +++
 
 A partnership renewal has been announced between the Marine Biodiversity
@@ -18,7 +19,6 @@ evolution and functions of biodiversity and ecosystem services is now of
 crucial importance, not only for scientific reasons but also to meet the
 demand from policymakers, managers, and stakeholders for
 scientific-based tools.
-![](media/storage/2024/02/ocean-image-bank.jpg)
 
 Photo credit: Renata Romeo, Ocean Image Bank.
 
@@ -88,7 +88,7 @@ challenges. It builds on and expands the abilities of individual
 organizations, and it advances selected scientific and technological
 domains and their constellations of actors towards shared targets.
 For more information about the MBON, please visit our website,
-[marinebon.org](xmlrpc.php%3Frsd.html), follow us on Twitter @MarineBON1
+marinebon.org, follow us on Twitter @MarineBON1
 or contact . For more information about Marine
 Life 2030, please visit our website,
 [marinelife2030.org](https://marinelife2030.org/), follow us on
@@ -100,5 +100,3 @@ For more information about the AIR Centre, please visit our website,
 , follow us on Twitter @AIRCentre\_org,
 LinkedIn  , YouTube
 @AIRCentre or contact .
-
-[](index.html%3Fp=9525.html)

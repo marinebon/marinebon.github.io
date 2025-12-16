@@ -27,7 +27,7 @@ The MBON secretariat, hosted by the AIR Centre Earth Observation (EO)
 Laboratory at Terceira Island-Azores, helps coordinate and focus the
 community of practice on addressing societal problems in the face of the
 climate and biodiversity crisis.
-![](media/storage/2022/08/image1_all_atlantic_session_photo.png)
+![](/media/storage/2022/08/image1_all_atlantic_session_photo.png)
 During this side event, experts and stakeholders reviewed co-design
 strategies conducted under the MBON and the Marine Life 2030 Programme
 endorsed by the UN Decade of Ocean Science for Sustainable Development.
@@ -62,11 +62,10 @@ Research and Innovation Declaration. This will continue the successful
 journey of ocean science diplomacy and set a common path forward for
 ocean research cooperation in the Atlantic, from Pole to Pole, for the
 next decade.
-![](media/storage/2022/08/image2_allatlantic-1024x420.jpg)
+![](/media/storage/2022/08/image2_allatlantic-1024x420.jpg)
 
 Isabel Sousa Pinto, MBON co-chair, and José Moutinho, MBON
 member, with Dr. Cisco Werner, Acting Assistant Administrator for
 Oceanic and Atmospheric Research at the National Oceanic and Atmospheric
 Administration (NOAA).
 
-[](index.html%3Fp=9222.html)

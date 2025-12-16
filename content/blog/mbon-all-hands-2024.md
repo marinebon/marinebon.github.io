@@ -1,5 +1,5 @@
 +++
-title = "MBON Description"
+title = "MBON All Hands"
 tags = ["about", "description"]
 categories = ["about"]
 +++
