@@ -1,3 +1,9 @@
++++
+title = "Biodiversity Monitoring Best Practices"
+tags = ["best-practices", "monitoring", "training"]
+categories = ["events", "Data management and best practices"]
++++
+
 Join U.S. Marine Biodiversity Observation Network (MBON) partners as
 they deliver insightful discussions on how to conserve biodiversity and
 work toward global best practices for biodiversity monitoring and data

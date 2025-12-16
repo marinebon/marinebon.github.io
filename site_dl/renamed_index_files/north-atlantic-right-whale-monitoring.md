@@ -1,3 +1,9 @@
++++
+title = "North Atlantic Right Whale Monitoring"
+tags = ["right-whales", "monitoring", "conservation"]
+categories = ["news"]
++++
+
 \*Convened by Chris Orphanides, NEFSC Protected Species Branch, NOAA
 Fisheries; Catherine Johnson, Bedford Institute of Oceanography, Canada
 DFO; Jeffrey Runge, University of Maine, MBON\*.

@@ -1,3 +1,9 @@
++++
+title = "NOAA and Partner Agencies New Awards"
+tags = ["noaa", "awards", "funding"]
+categories = ["news"]
++++
+
 NOAA and partner agencies, including NASA, the Bureau of Ocean Energy
 Management, and the Office of Naval Research have awarded several new
 proposals

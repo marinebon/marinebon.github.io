@@ -1,3 +1,9 @@
++++
+title = "Higher Education Curriculum Development"
+tags = ["education", "curriculum", "air-centre"]
+categories = ["news", "Trainings and Workshops"]
++++
+
 The Marine Biodiversity Observation
 Network
 ([MBON](xmlrpc.php%3Frsd.html)),

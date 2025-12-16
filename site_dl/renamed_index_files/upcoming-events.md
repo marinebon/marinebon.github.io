@@ -1,3 +1,9 @@
++++
+title = "Upcoming Events"
+tags = ["events", "workshops"]
+categories = ["events"]
++++
+
 ## Upcoming \*\*Events\*\*
 
 ![](media/storage/2025/10/Enhancing-marine-biodiversity-data-collection-and-publishing.jpg)

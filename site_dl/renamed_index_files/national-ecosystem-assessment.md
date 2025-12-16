@@ -1,3 +1,9 @@
++++
+title = "National Ecosystem Assessment Initiative"
+tags = ["ecosystem-assessment", "nea", "unep"]
+categories = ["news"]
++++
+
 NEA at UNEP-WCMC supports countries undertaking ecosystems
 assessments.
 The National Ecosystem Assessment Initiative (NEA Initiative) at

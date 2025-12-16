@@ -1,3 +1,9 @@
++++
+title = "Northern California Current MBON"
+tags = ["pacific-northwest", "california-current", "ocean-observing"]
+categories = ["regional-mbon", "US"]
++++
+
 ## \*\*Northern California Current\*\* MBON
 
 The goal of this project is to extend the observational framework of US

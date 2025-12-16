@@ -1,3 +1,9 @@
++++
+title = "Marine Life 2030 UN Ocean Decade Endorsement"
+tags = ["marine-life-2030", "un-ocean-decade", "endorsement"]
+categories = ["news", "programs"]
++++
+
 We are pleased to announce that Marine Life 2030 program was endorsed as
 a UN Ocean Decade Action.
 We are pleased to announce that [Marine Life 2030 program](https://marinebon.org/assets/Marine_Life_2030_UN_Ocean_Decade_request_for_endorsement_20210115.pdf) was endorsed

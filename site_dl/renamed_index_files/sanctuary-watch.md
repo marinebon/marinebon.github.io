@@ -1,3 +1,9 @@
++++
+title = "Sanctuary Watch - Web-Enabled Information"
+tags = ["sanctuaries", "data", "tools"]
+categories = ["Tool Product", "National Marine Sanctuaries"]
++++
+
 ## Web-Enabled Information for Sanctuary Management
 
 [![sanctuaries logo](media/storage/2023/01/sanctuary-watch-150x150.png)](https://sanctuarywatch.ioos.us)Easy access to

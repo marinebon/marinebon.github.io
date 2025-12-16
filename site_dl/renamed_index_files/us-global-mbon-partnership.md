@@ -1,3 +1,9 @@
++++
+title = "US and Global MBON Partnership"
+tags = ["partnership", "collaboration", "ioos"]
+categories = ["news"]
++++
+
 US and global MBON partnered with US IOOS, NOAA’s Oceanic and
 Atmospheric Research Atlantic Oceanographic and Meteorological
 Laboratory (AOML), and NOAA’s National Environmental Satellite, Data,

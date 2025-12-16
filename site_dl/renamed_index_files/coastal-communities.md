@@ -1,3 +1,9 @@
++++
+title = "Coastal Communities and Marine Life"
+tags = ["coastal-communities", "ocean", "culture"]
+categories = ["news"]
++++
+
 Over 2.15 billion people live close to
 the coast, with 898 million in low-lying areas. For these communities,
 the sea is central to their lives, work, culture, emotions and

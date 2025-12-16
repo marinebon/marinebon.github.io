@@ -1,3 +1,9 @@
++++
+title = "Seascapes Biogeographic Regions Analysis"
+tags = ["seascapes", "florida-keys", "research"]
+categories = ["news", "science"]
++++
+
 MBON, with NOAA/AOML, has characterized seascapes for the Florida Keys
 National Marine Sanctuary (FKNMS) and southwest Florida shelf nearshore
 environment using multivariate satellite and in situ measurements

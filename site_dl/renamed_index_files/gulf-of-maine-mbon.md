@@ -1,3 +1,9 @@
++++
+title = "Gulf of Maine MBON"
+tags = ["gulf-of-maine", "climate-change", "fisheries"]
+categories = ["regional-mbon", "US"]
++++
+
 ## \*\*Gulf of Maine\*\* MBON
 
 The Gulf of Maine (GoM) lies at the epicenter of the most rapid warming

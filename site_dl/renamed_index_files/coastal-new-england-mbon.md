@@ -1,3 +1,9 @@
++++
+title = "Coastal New England MBON"
+tags = ["new-england", "eDNA", "fisheries"]
+categories = ["regional-mbon", "US"]
++++
+
 ## \*\*Coastal New England\*\* MBON
 
 The Coastal New England project integrates powerful technologies

@@ -1,3 +1,9 @@
++++
+title = "Global Network for Marine Biodiversity"
+tags = ["network", "global", "announcement"]
+categories = ["news"]
++++
+
 Ocean scientists have been busy creating a global network to understand
 and measure changes in ocean life. The system will aggregate data from
 the oceans, climate and human activity to better inform sustainable

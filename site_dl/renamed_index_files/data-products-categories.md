@@ -1,3 +1,9 @@
++++
+title = "Data Products Categories"
+tags = ["data", "products"]
+categories = ["Data Product"]
++++
+
 ## Categories
 - [25All](index.html%3Fp=8607.html#)
 - [4Data

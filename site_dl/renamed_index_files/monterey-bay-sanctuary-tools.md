@@ -1,3 +1,9 @@
++++
+title = "Monterey Bay Sanctuary Analysis Tools"
+tags = ["monterey-bay", "tools", "sanctuaries"]
+categories = ["news", "Tool Product", "National Marine Sanctuaries"]
++++
+
 New tools were developed by partners of the Sanctuaries MBON team in
 Monterey Bay National Marine Sanctuary to investigate the relationships
 between the ocean environment and animal communities of the Sanctuary,

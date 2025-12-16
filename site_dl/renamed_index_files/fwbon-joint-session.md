@@ -1,3 +1,9 @@
++++
+title = "MBON and FWBON Joint Session"
+tags = ["fwbon", "freshwater", "geobon"]
+categories = ["events"]
++++
+
 MBON and the Fresh Water Biodiversity Observation Network (FWBON)
 brought together their members in a joint session at the GEO BON Global
 Conference 2023 in Montreal

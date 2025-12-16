@@ -1,3 +1,9 @@
++++
+title = "International Women's Day Celebration"
+tags = ["womens-day", "celebration"]
+categories = ["events"]
++++
+
 an early celebration of the International Women’s Day
 - DATE:
 \*\*March 4th, 2022, 1-3 PM UTC\*\*

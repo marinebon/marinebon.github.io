@@ -1,3 +1,9 @@
++++
+title = "Southern California Bight MBON"
+tags = ["california", "santa-barbara", "biodiversity"]
+categories = ["regional-mbon", "US"]
++++
+
 ## \*\*Southern California Bight\*\* MBON
 
 This project will continue the

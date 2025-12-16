@@ -1,3 +1,9 @@
++++
+title = "Advances in Molecular eDNA Techniques"
+tags = ["eDNA", "research", "biodiversity"]
+categories = ["news", "science"]
++++
+
 Central to the US MBON is the development of new and innovative means to
 assess marine biodiversity. The MBON community has made significant
 advances in molecular eDNA techniques to evaluate taxa diversity – from

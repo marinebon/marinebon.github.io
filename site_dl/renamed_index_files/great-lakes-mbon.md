@@ -1,3 +1,9 @@
++++
+title = "Great Lakes MBON"
+tags = ["great-lakes", "lakescapes", "freshwater"]
+categories = ["regional-mbon", "US"]
++++
+
 ## \*\*Great Lakes\*\* MBON
 
 This project will fill a critical gap in science and management of the

@@ -1,3 +1,9 @@
++++
+title = "MBON Europe"
+tags = ["europe", "biodiversity", "coordination"]
+categories = ["regional-mbon"]
++++
+
 ## MBON \*\*EUROPE\*\*
 
 The Marine Biodiversity Observation Network for Europe (MBON Europe)

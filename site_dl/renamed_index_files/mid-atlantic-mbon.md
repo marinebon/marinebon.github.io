@@ -1,3 +1,9 @@
++++
+title = "Mid-Atlantic MBON"
+tags = ["mid-atlantic", "data-products", "coastal-management"]
+categories = ["regional-mbon", "US"]
++++
+
 ## \*\*Mid-Atlantic\*\* MBON
 
 The Mid-Atlantic MBON project integrates cutting edge biological

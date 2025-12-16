@@ -1,3 +1,9 @@
++++
+title = "Genetic Monitoring for Non-Indigenous Species"
+tags = ["genetic-monitoring", "invasive-species", "early-detection"]
+categories = ["news", "science"]
++++
+
 A New Network For Genetic Monitoring and Early Detection of
 Non-Indigenous Marine Species.
 

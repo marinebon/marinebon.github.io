@@ -1,3 +1,9 @@
++++
+title = "MBON Pole to Pole Progress Report"
+tags = ["pole-to-pole", "americas", "progress"]
+categories = ["news"]
++++
+
 On September 9, Enrique Montes, University of South Florida, presented
 on the tremendous progress of the MBON Pole to Pole network in the
 Americas region. The talk, titled “A Marine Biodiversity Observation

@@ -1,3 +1,9 @@
++++
+title = "Marine Biodiversity Networking on Coral Reefs"
+tags = ["coral-reef", "networking", "biodiversity"]
+categories = ["events"]
++++
+
 Marine Biodiversity Networking Friday on IOC/WESTPAC and coral reef
 survey and recovery activities
 - DATE:

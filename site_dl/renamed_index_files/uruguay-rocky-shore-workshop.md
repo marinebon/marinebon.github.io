@@ -1,3 +1,9 @@
++++
+title = "Uruguay Rocky Shore Monitoring Workshop"
+tags = ["workshop", "rocky-shore", "uruguay"]
+categories = ["events", "Trainings and Workshops"]
++++
+
 An MBON Pole to Pole Workshop for Rocky Shore Monitoring in Uruguay was
 held during the 1st-4th October, 20204, organized
 by the Forum for the Conservation of the Patagonian Sea and Areas of

@@ -1,3 +1,9 @@
++++
+title = "Essential Ocean Variables and Standards"
+tags = ["essential-ocean-variables", "standards", "interoperability"]
+categories = ["news", "Data management and best practices"]
++++
+
 One priority for MBON is to advance global interoperability and use of
 standards for a minimum set of observations (Essential Ocean Variables
 and Essential Biodiversity Variables) through broad partnerships. On

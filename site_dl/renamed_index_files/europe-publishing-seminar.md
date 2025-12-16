@@ -1,3 +1,9 @@
++++
+title = "MBON Europe Data Publishing Seminar"
+tags = ["europe", "data-publishing", "seminar"]
+categories = ["events", "Trainings and Workshops"]
++++
+
 MBON Europe held an online seminar about how to publish biodiversity
 data on 18th December 2023.
 The seminar was attended by 35 researchers interested in publishing

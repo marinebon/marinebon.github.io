@@ -1,3 +1,9 @@
++++
+title = "Marine Foundation Species and Biodiversity"
+tags = ["foundation-species", "kelp", "biodiversity"]
+categories = ["news", "science"]
++++
+
 Marine foundation species like giant kelp, seagrass, and corals, harbor
 great reservoirs of biodiversity in coastal oceans. Now the Santa
 Barbara Channel MBON team, supported in part by NOAA, has shown the

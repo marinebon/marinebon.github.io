@@ -1,3 +1,9 @@
++++
+title = "Latest News"
+tags = ["news", "updates"]
+categories = ["news"]
++++
+
 ## Latest \*\*News\*\*
 
 ![](media/storage/2025/06/Higher-Education-Curriculum-1-500x740.jpg)

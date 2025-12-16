@@ -1,3 +1,9 @@
++++
+title = "Terceira Island Workshop 2025"
+tags = ["workshop", "training", "azores"]
+categories = ["events", "Trainings and Workshops"]
++++
+
 \*\*Workshop: Enhancing marine biodiversity data collection and
 publishing\*\*
 \*\*Date:\*\* 10 – 14 November 2025

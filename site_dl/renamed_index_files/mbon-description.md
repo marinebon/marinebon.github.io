@@ -1,3 +1,9 @@
++++
+title = "MBON Description"
+tags = ["about", "description"]
+categories = ["about"]
++++
+
 The
 Marine Biodiversity Observation Network
 (MBON; [https://marinebon.org/](xmlrpc.php%3Frsd.html))

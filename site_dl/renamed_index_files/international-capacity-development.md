@@ -1,3 +1,9 @@
++++
+title = "International Capacity Development Collaboration"
+tags = ["capacity-development", "collaboration", "ocean-regulations"]
+categories = ["news"]
++++
+
 International collaboration to share capacity development to observe and
 preserve data on life in the sea in compliance with ocean regulations
 The Marine Biodiversity Observation Network (MBON) of the Group on Earth

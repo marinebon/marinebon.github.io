@@ -1,3 +1,9 @@
++++
+title = "All-Atlantic Ocean Research Alliance Forum"
+tags = ["all-atlantic", "research", "brazil"]
+categories = ["events"]
++++
+
 The All-Atlantic Ocean Research Alliance Forum held a Scientific Event
 in Brasilia (Brazil) from May 21 to June 2, 2022
 The All-Atlantic Ocean Research Alliance Forum held a Scientific Event

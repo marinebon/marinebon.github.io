@@ -1,3 +1,9 @@
++++
+title = "AIR Centre Partnership Renewal"
+tags = ["air-centre", "partnership", "secretariat"]
+categories = ["news"]
++++
+
 A partnership renewal has been announced between the Marine Biodiversity
 Observation Network (MBON) and the Atlantic International Research
 Centre (AIR Centre), for the continuation of a Secretariat to coordinate

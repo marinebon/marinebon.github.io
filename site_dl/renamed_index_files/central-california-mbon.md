@@ -1,3 +1,9 @@
++++
+title = "Central California MBON"
+tags = ["california", "sanctuaries", "ecosystem-assessment"]
+categories = ["regional-mbon", "US"]
++++
+
 ## \*\*Central California\*\* MBON
 
 This project will integrate remote sensing products, \*in situ\* data and

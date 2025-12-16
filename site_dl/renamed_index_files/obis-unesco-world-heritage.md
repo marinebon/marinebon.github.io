@@ -1,3 +1,9 @@
++++
+title = "OBIS and UNESCO Marine World Heritage Sites"
+tags = ["obis", "unesco", "world-heritage"]
+categories = ["news"]
++++
+
 OBIS helping to assess biodiversity at UNESCO Marine World Heritage
 sites
 OBIS partnered with UNESCO’s Marine World Heritage sites in a global

@@ -1,3 +1,9 @@
++++
+title = "Watching for Changes in Marine Biodiversity"
+tags = ["biodiversity", "monitoring", "indicators"]
+categories = ["news"]
++++
+
 Changes in marine biodiversity—the variety and variability of life in
 the ocean—can be an early indicator of change, provided it’s noticed. [Read more here.](https://www.maritime-executive.com/editorials/watching-for-changes-in-marine-biodiversity/)
 

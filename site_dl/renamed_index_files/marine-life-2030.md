@@ -1,3 +1,9 @@
++++
+title = "Marine Life 2030"
+tags = ["marine-life-2030", "un-ocean-decade", "global"]
+categories = ["programs"]
++++
+
 Programme proposal: submitted by MBON partners to the first call for
 Actions by the UN Decade of Ocean Science for Sustainable Development
 (the Ocean Decade) from the Intergovernmental Oceanographic Commission

@@ -1,3 +1,9 @@
++++
+title = "GOOS and BioEcoOcean Special Session"
+tags = ["goos", "bioecean", "workshop"]
+categories = ["events"]
++++
+
 The Global Ocean Observing System (GOOS), the BioEcoOcean EU-project,
 the Marine Biodiversity Observation Network (MBON) and the Atlantic
 International Research Centre (AIR Centre) are organising a special

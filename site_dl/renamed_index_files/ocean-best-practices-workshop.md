@@ -1,3 +1,9 @@
++++
+title = "Ocean Best Practices Workshop"
+tags = ["workshop", "best-practices", "data"]
+categories = ["events", "Trainings and Workshops", "Data management and best practices"]
++++
+
 MBON, Marine Life 2030, GOOS and the AIR Centre will host two special
 sessions at the VIII Ocean Best Practices (OBPS) workshop ranging in
 different time zones.

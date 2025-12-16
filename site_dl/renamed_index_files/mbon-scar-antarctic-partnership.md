@@ -1,3 +1,9 @@
++++
+title = "MBON and SCAR Antarctic Partnership"
+tags = ["antarctic", "partnership", "collaboration"]
+categories = ["news", "programs"]
++++
+
 The Marine Biodiversity Observation Network (MBON) of the Group on Earth
 Observations Biodiversity Observation Network (GEO BON), the Scientific
 Committee on Antarctic Research (SCAR), and the SCAR Antarctic

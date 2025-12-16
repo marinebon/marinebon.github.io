@@ -1,3 +1,9 @@
++++
+title = "UN Ocean Conference 2022"
+tags = ["un", "conference", "ocean"]
+categories = ["events", "Global"]
++++
+
 \*\*Lisbon / 27 June – July 2, 2022\*\*
 #### Scaling up Ocean Action Based on Science and Innovation for the Implementation of Goal 14: Stocktaking, Partnerships and Solutions 
 The Ocean Conference, co-hosted by the Governments of Kenya and
