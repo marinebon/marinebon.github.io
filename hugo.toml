@@ -61,19 +61,13 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "Events"
     url        = "/events"
-    weight     = 1
+    weight     = 2
     parent     = "menu.media"
 
 [[menu.main]]
     name       = "Presentations"
-    url        = "/presentations"
-    weight     = 1
-    parent     = "menu.media"
-
-[[menu.main]]
-    name       = "Photos"
-    url        = "/photos"
-    weight     = 1
+    url        = "https://usf.box.com/s/jye2shn8ulble8r1xf33za9g9cv9yhq7"
+    weight     = 3
     parent     = "menu.media"
 
 [[menu.main]]
