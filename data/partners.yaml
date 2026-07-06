@@ -29,6 +29,10 @@
   tier: partner
   logo: img/partners/seabed2030.png
   url: https://seabed2030.org/
+- name: Antarctic Biodiversity Portal
+  tier: partner
+  logo: img/partners/biodiversity.aq.png
+  url: https://biodiversity.aq/
 - name: IOCCP
   tier: collaborator
   logo: img/partners/ioccp.png
