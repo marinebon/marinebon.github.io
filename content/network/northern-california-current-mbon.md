@@ -9,6 +9,7 @@ since: '2014'
 summary: Upwelling-driven productivity off Oregon and Washington.
 tags:
 - place.US
+- place.California-Current
 - topic.Seascapes
 - topic.Ecosystem-Assessment
 - topic.Phytoplankton

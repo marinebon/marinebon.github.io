@@ -11,6 +11,7 @@ since: '2019'
 summary: Wind-energy planning and shelf biodiversity.
 tags:
 - place.US
+- place.Mid-Atlantic
 - topic.Fisheries
 - topic.eDNA
 - method.Genomics

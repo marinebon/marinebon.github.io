@@ -9,6 +9,7 @@ since: '2015'
 summary: CalCOFI-anchored monitoring of the Bight.
 tags:
 - place.US
+- place.Southern-California-Bight
 - topic.Kelp
 - topic.Phytoplankton
 - topic.eDNA

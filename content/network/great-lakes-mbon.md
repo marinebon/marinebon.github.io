@@ -9,6 +9,7 @@ since: '2020'
 summary: Freshwater biodiversity at continental scale.
 tags:
 - place.US
+- place.Great-Lakes
 - topic.Freshwater
 - topic.Fisheries
 - topic.eDNA

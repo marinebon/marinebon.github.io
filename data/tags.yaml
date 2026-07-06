@@ -86,6 +86,13 @@
     Azores:  Azores
     Lisbon:  Lisbon
     Uruguay: Uruguay
+    Asia-Pacific:              "Asia-Pacific"
+    New-England:               "New England"
+    Great-Lakes:               "Great Lakes"
+    Gulf-of-Maine:             "Gulf of Maine"
+    Mid-Atlantic:              "Mid-Atlantic"
+    California-Current:        "California Current"
+    Southern-California-Bight: "Southern California Bight"
 
 - facet: org
   label: Organization

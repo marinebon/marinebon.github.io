@@ -11,6 +11,7 @@ since: '2018'
 summary: Nearshore observing from Long Island to Cape Cod.
 tags:
 - place.US
+- place.New-England
 - topic.Climate-Change
 - topic.Fisheries
 - topic.eDNA

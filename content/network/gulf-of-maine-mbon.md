@@ -11,6 +11,7 @@ since: '2016'
 summary: Cold-water shelf ecosystem and fisheries.
 tags:
 - place.US
+- place.Gulf-of-Maine
 - topic.Phytoplankton
 - topic.Climate-Change
 - topic.Seascapes
