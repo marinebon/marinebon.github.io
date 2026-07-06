@@ -9,6 +9,7 @@ tags:
 - org.MBON
 - topic.Workshop
 - topic.eDNA
+- topic.Species-Distribution-Modeling
 - method.Genomics
 title: 'MBON All Hands 2024: Ten Years of U.S. MBON'
 aliases:

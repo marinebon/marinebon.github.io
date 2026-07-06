@@ -11,6 +11,7 @@ summary: Materials and code for building marine species distribution models (SDM
 tags:
 - tool.Protocol
 - method.Remote-Sensing
+- topic.Species-Distribution-Modeling
 title: MarineSDMs
 weight: 28
 ---

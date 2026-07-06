@@ -11,6 +11,7 @@ summary: Downscaled AquaMaps modeled species distributions for finer-resolution 
 tags:
 - tool.Workflow
 - method.Remote-Sensing
+- topic.Species-Distribution-Modeling
 title: AquaMaps Downscaled
 weight: 27
 ---
