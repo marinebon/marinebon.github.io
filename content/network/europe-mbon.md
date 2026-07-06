@@ -17,7 +17,7 @@ tags:
 - place.Europe
 - place.North-Atlantic
 - topic.Data-Publishing
-title: Europe MBON
+title: MBON Europe
 ---
 
 The Marine Biodiversity Observation Network for Europe (MBON Europe) will spearhead coordination of active monitoring of marine biodiversity by organisations in Europe.
