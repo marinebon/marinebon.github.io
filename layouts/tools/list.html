@@ -11,33 +11,17 @@
 
   <section class="section">
     <div class="container">
-      <div class="filter-bar" data-tool-filter>
-        {{ range where hugo.Data.tags "filters" "intersect" (slice "tools") }}
-          {{ $facet := .facet }}
-          <div class="filter-group">
-            <span class="filter-group__label" style="color:var(--facet-{{ $facet }});">{{ .label }}</span>
-            <div class="filter-group__btns">
-              {{ range .values }}
-                <button class="filter-btn tag tag--{{ $facet }}" data-facet="{{ $facet }}" data-value="{{ .value }}">{{ .name }}</button>
-              {{ end }}
-            </div>
-          </div>
-        {{ end }}
-        <div class="filter-foot">
-          <span class="filter-count" data-tool-count></span>
-          <button class="btn btn--ghost btn--sm" data-tool-clear style="display:none;"><i class="fas fa-xmark" aria-hidden="true"></i> Clear filters</button>
-        </div>
-      </div>
+      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "tools") }}
 
       <div class="grid-auto">
         {{ range sort (where site.RegularPages "Section" "tools") "Params.weight" }}
-          <div data-tool data-tags="{{ delimit (.Params.tags | default slice) " " }}">
+          <div data-filter-item data-tags="{{ delimit (.Params.tags | default slice) " " }}">
             {{ partial "card-tool.html" . }}
           </div>
         {{ end }}
       </div>
 
-      <div data-tool-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
+      <div data-filter-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
         <i class="fas fa-fish" style="font-size:32px;opacity:.4;" aria-hidden="true"></i>
         <p style="margin-top:var(--space-4);">No tools match those filters yet.</p>
       </div>
@@ -45,4 +29,4 @@
   </section>
 </main>
 {{ end }}
-{{ define "scripts" }}<script src="{{ "js/tools-filter.js" | relURL }}" defer></script>{{ end }}
+{{ define "scripts" }}<script src="{{ "js/tag-filter.js" | relURL }}" defer></script>{{ end }}

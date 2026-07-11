@@ -1,0 +1,59 @@
+{{/* Unified free-text + tag-filter control. One markup, two backends (see
+     static/js/tag-filter.js):
+       mode "dom"      — filters the page's server-rendered [data-filter-item] cards
+                         (AND across all selected tags; free-text = substring over card text)
+       mode "pagefind" — drives Pagefind across all content; renders results into __results
+     Params: mode ("dom"|"pagefind"), noun (e.g. "tools"), placeholder (optional).
+     Emits a build-time config JSON (facet order + friendly labels from data/tags.yaml) so
+     the JS can render colorized pills with proper names ("GEO BON", "Remote Sensing"). */}}
+{{ $mode := .mode | default "dom" }}
+{{ $noun := .noun | default "results" }}
+{{ $ph := .placeholder | default (cond (eq $mode "pagefind") "Search the network…" (printf "Search %s…" $noun)) }}
+{{/* Dropdown facet order is derived from the registry (data/tags.yaml), so adding a
+     facet there slots it in automatically — nothing is hardcoded here. The JS safety-net
+     also appends any facet found in the content but absent from the registry, so a brand
+     new tag prefix still shows up. */}}
+{{ $order := slice }}
+{{ range hugo.Data.tags }}{{ $order = $order | append .facet }}{{ end }}
+
+{{/* friendly-label maps from the canonical registry (data/tags.yaml) */}}
+{{ $flabels := dict }}
+{{ $vlabels := dict }}
+{{ range hugo.Data.tags }}
+  {{ $facet := .facet }}
+  {{ $flabels = merge $flabels (dict $facet .label) }}
+  {{ range .values }}
+    {{ $vlabels = merge $vlabels (dict (printf "%s.%s" $facet .value) .name) }}
+  {{ end }}
+  {{ range $k, $v := .aliases }}
+    {{ $vlabels = merge $vlabels (dict (printf "%s.%s" $facet $k) $v) }}
+  {{ end }}
+{{ end }}
+{{ $cfg := dict "mode" $mode "noun" $noun "facetOrder" $order "facetLabels" $flabels "valueLabels" $vlabels "base" (relURL "") "pagefindJs" (relURL "pagefind/pagefind.js") }}
+
+<div class="tag-filter" data-tag-filter data-mode="{{ $mode }}" data-noun="{{ $noun }}">
+  <div class="tag-filter__bar">
+    <i class="fas fa-magnifying-glass tag-filter__icon" aria-hidden="true"></i>
+    <input type="search" class="tag-filter__text" placeholder="{{ $ph }}" aria-label="Search" autocomplete="off">
+    <div class="tag-filter__add">
+      <button type="button" class="tag-filter__add-btn" aria-expanded="false" aria-haspopup="true">
+        <i class="fas fa-tag" aria-hidden="true"></i> Filter by tag
+        <i class="fas fa-chevron-down tag-filter__caret" aria-hidden="true"></i>
+      </button>
+      <div class="tag-filter__panel" hidden>
+        <input type="text" class="tag-filter__panel-search" placeholder="Type to narrow tags…" aria-label="Narrow tags" autocomplete="off">
+        <div class="tag-filter__panel-body" role="listbox" aria-label="Available tags"></div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-filter__foot">
+    <div class="tag-filter__chips" aria-live="polite"></div>
+    <button type="button" class="btn btn--ghost btn--sm tag-filter__clear" hidden><i class="fas fa-xmark" aria-hidden="true"></i> Clear</button>
+    <span class="tag-filter__count" aria-live="polite"></span>
+  </div>
+  {{ if eq $mode "pagefind" }}
+  <p class="tag-filter__status" aria-live="polite"></p>
+  <ul class="tag-filter__results search-widget__results"></ul>
+  {{ end }}
+  <script type="application/json" class="tag-filter__config">{{ $cfg | jsonify | safeJS }}</script>
+</div>

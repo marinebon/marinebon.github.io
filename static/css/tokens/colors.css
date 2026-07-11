@@ -53,9 +53,15 @@
   --facet-type:    #b5651d;  /* amber  — content/tool types                 */
   --facet-topic:   #44606e;  /* ink    — general topics                     */
   --facet-portal:  #6d4aa7;  /* violet — data portals (OBIS/GBIF/EDI/ERDDAP)*/
+  --facet-content: #a83b6f;  /* berry  — content type (Tools/Papers/…)      */
+  --facet-year:    var(--ink-500);  /* neutral ink — publication years      */
   /* legacy aliases kept for backward compat */
   --facet-region:  var(--facet-place);
   --facet-tool:    var(--facet-type);
+  /* NOTE: a tag facet with no --facet-<name> token here is auto-assigned a
+     deterministic color at runtime by static/js/tag-filter.js (genColor), so a
+     newly-introduced facet still renders colored pills. Define a token here to
+     override that automatic color. */
   /* darker variants for borders */
   --facet-place-deep:  #002843;
   --facet-method-deep: #0d5a6b;

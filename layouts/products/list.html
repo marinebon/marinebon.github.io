@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{/* Hub over the three output catalogs. Counts come from the live sections, so this
+     page never drifts from what is actually published. */}}
+{{ $cards := slice
+    (dict "section" "papers"   "icon" "fa-file-lines" "eyebrow" "Peer-reviewed"
+          "title" "Papers"
+          "blurb" "Publications from MBON researchers, filterable by method and year — with one-click citation export.")
+    (dict "section" "datasets" "icon" "fa-database"   "eyebrow" "Open data"
+          "title" "Datasets"
+          "blurb" "Marine biodiversity observations published openly to OBIS, GBIF, EDI, and ERDDAP, harvested into one catalog.")
+    (dict "section" "tools"    "icon" "fa-toolbox"    "eyebrow" "Software"
+          "title" "Tools"
+          "blurb" "Portals, apps, packages, protocols, and workflows built across the network to reach and analyze the data.") }}
+
+<main>
+  <section class="page-header">
+    <div class="page-header__inner">
+      <span class="eyebrow eyebrow--rule eyebrow--ondark">What the network produces</span>
+      <h1>Products</h1>
+      <p class="page-header__lead">{{ .Params.summary }}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+        {{ range $cards }}
+          {{ $count := len (where site.RegularPages "Section" .section) }}
+          <a class="card" href="{{ .section | relURL }}" style="text-decoration:none;">
+            <div class="card__body">
+              <span class="card__type card__type--{{ .section }}"><i class="fas {{ .icon }}" aria-hidden="true"></i> {{ .eyebrow }}</span>
+              <h2 class="card__title" style="margin:var(--space-2) 0;">{{ .title }}</h2>
+              <span class="stat__value" style="font-size:var(--text-2xl);">{{ partial "num.html" $count }}</span>
+              <p class="card__summary" style="-webkit-line-clamp:4;margin-top:var(--space-3);">{{ .blurb }}</p>
+              <span class="card__foot">Browse {{ lower .title }} <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

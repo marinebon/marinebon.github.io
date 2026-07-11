@@ -86,7 +86,7 @@ layouts/                 # Hugo templates (HTML)
   <section>/{list,single}.html
 static/
   css/styles.css         #   imports tokens/* then components.css + layout.css
-  js/                    #   globe.js, methods.js, tools-filter.js, papers-filter.js
+  js/                    #   globe.js, methods.js, tag-filter.js (unified filter+search)
   img/<section>/         #   images referenced by front matter and Markdown
 scripts/                 # Python helpers (import_papers.py, issue_to_content.py)
 .github/
@@ -124,10 +124,11 @@ Each tag facet has one of two roles:
   (a dataset is served by a portal; a tool uses a portal's data). **OBIS is a portal, not
   an org.** Prefer a specific facet over a vague one, and don't mint a `topic.*` that
   duplicates a `method`/`place`.
-- Every facet — its filter-bar buttons and the display-name **aliases** (so `org.GEOBON`
-  renders "GEO BON") — lives in one file, `data/tags.yaml`. `layouts/partials/tag.html`
-  resolves labels there case-insensitively; the Tools/Papers/Data filter bars read the
-  same file (Papers **Year** buttons come from the papers themselves).
+- The filter + search UI (one control on Tools/Papers/Datasets and `/search/`) derives its
+  tag options from the tags actually in use, so a new tag needs no wiring. `data/tags.yaml`
+  supplies only display-name **aliases** (so `org.GEOBON` renders "GEO BON"), resolved by
+  `layouts/partials/tag.html`; colors come from `--facet-<facet>` tokens. Both fall back
+  automatically (humanized label, auto-generated color) when unregistered.
 
 **It all interlinks at build time — nothing is hand-maintained.** On any page the tag
 chips are clickable (→ the `/tags/<tag>/` collection), and a **Related across the

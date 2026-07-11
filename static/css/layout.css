@@ -144,15 +144,6 @@
 .feature-row{ display:flex; gap:var(--space-5); background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-6); align-items:center; }
 .feature-row img{ width:84px; height:84px; object-fit:contain; border-radius:var(--radius-md); flex:none; background:#fff; }
 
-/* ---- Products filter bar ---------------------------------------------- */
-.filter-bar{ background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:var(--space-5) var(--space-6); margin-bottom:var(--space-6); }
-.filter-group{ display:flex; align-items:center; gap:var(--space-4); padding:var(--space-3) 0; border-bottom:1px solid var(--divider); }
-.filter-group__label{ flex:0 0 9em; font-family:var(--font-mono); font-size:var(--text-xs); text-transform:uppercase; letter-spacing:var(--ls-label); font-weight:600; }
-.filter-group__btns{ display:flex; flex-wrap:wrap; gap:var(--space-2); }
-.filter-foot{ display:flex; align-items:center; justify-content:space-between; padding-top:var(--space-4); flex-wrap:wrap; gap:var(--space-3); }
-.filter-count{ font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); letter-spacing:.04em; }
-@media (max-width:680px){ .filter-group{ flex-direction:column; align-items:flex-start; } .filter-group__label{ flex-basis:auto; } }
-
 /* ---- People grid (About page) ----------------------------------------- */
 .people-grid{ display:flex; flex-wrap:wrap; gap:var(--space-6); margin:var(--space-5) 0; }
 .person-card{ display:flex; flex-direction:column; align-items:center; text-align:center; gap:var(--space-2); width:160px; }

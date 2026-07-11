@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""harvest marine biodiversity datasets into content/data/*.md.
+"""harvest marine biodiversity datasets into content/datasets/*.md.
 
 Discovers MBON datasets across four open repositories and writes one Hugo
 content file per dataset, cross-listing every portal the dataset appears in.
@@ -43,7 +43,7 @@ import yaml
 # ----------------------------------------------------------------------------
 HERE        = os.path.dirname(os.path.abspath(__file__))
 REPO        = os.path.dirname(HERE)
-OUT_DIR     = os.path.join(REPO, "content", "data")
+OUT_DIR     = os.path.join(REPO, "content", "datasets")
 UA          = {"User-Agent": "mbon-harvest/1.0 (+https://marinebon.github.io)"}
 GENERATOR   = "harvest_datasets.py"
 
@@ -596,7 +596,7 @@ def write_dataset(rec, harvested, used_slugs):
 # main
 # ----------------------------------------------------------------------------
 def main():
-    ap = argparse.ArgumentParser(description="Harvest MBON datasets into content/data/*.md")
+    ap = argparse.ArgumentParser(description="Harvest MBON datasets into content/datasets/*.md")
     ap.add_argument("--query", default="MBON", help="free-text query (default: MBON)")
     ap.add_argument("--limit", type=int, default=150, help="max dataset files to write")
     ap.add_argument("--gbif-limit", type=int, default=300, help="GBIF candidates to consider")

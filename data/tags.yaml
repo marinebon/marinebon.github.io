@@ -1,37 +1,56 @@
-# Canonical tag registry for the whole site.
+# Tag label + ordering registry for the whole site.
 #
 # Tags are written `facet.Value` in content front matter (e.g. method.Remote-Sensing).
-# This file is the single source of truth for every facet:
-# Tags are for FILTER & SEARCH only. Content TYPE is structural (the section) — not a
-# tag. Page-to-page links use the `related:` front-matter field (content paths), NOT tags.
+# Tags are for FILTER & SEARCH only. Content TYPE is structural (the section); it's also
+# exposed to search as the `content` facet (no front-matter tags — emitted by baseof.html
+# as `content:<section>`). Page-to-page links use the `related:` front-matter field, NOT tags.
 #
-#   facet    machine prefix (drives color via --facet-<facet> / .tag--<facet>)
-#   role     what kind of tag this facet is (see the two roles below)
-#   label    human heading shown above a filter group
-#   filters  sections whose filter-bar renders buttons for this facet
-#            (year for papers is generated dynamically from the papers themselves)
-#   values   curated filter-button values: { value, name } (name = display label)
-#   aliases  display-name overrides for open-set values that have no button
-#            (so org.GEOBON renders "GEO BON", not the humanized "Geobon")
+# The unified filter+search control (layouts/partials/tag-filter.html +
+# static/js/tag-filter.js) DERIVES its options from the tags actually in use — this file no
+# longer decides *which* filters exist. It now supplies presentation only:
 #
-# The two roles (semantic only — they do NOT change the contribution pipeline):
-#   subtype    a finer type within ONE section; drives that section's filter (tool.*)
-#   attribute  cross-cutting filter/browse axis (method/place/topic/year/org/portal)
+#   facet    machine prefix; also the color key (--facet-<facet> / .tag--<facet>) and the
+#            dropdown group ORDER (facets appear in the order listed in this file)
+#   label    human heading shown above the facet's group of pills
+#   values   friendly display labels for known values: { value, name }
+#   aliases  display-name overrides for open-set values (org.GEOBON → "GEO BON")
+#   role     LEGACY, informational only — `subtype` (tool.*) vs `attribute` (everything else)
+#   filters  LEGACY, no longer read (the old per-section filter bars are gone)
+#
+# Fallbacks make new tags safe: an unregistered value is humanized in the UI, and a facet
+# with no --facet-<facet> token gets an auto-generated color (see tag-filter.js genColor).
 #
 # org vs portal: `org` = who BUILT a tool (developer, e.g. NOAA-IEA); `portal` = whose
 # DATA a tool uses / where a dataset is served (OBIS/GBIF/EDI/ERDDAP). OBIS is a portal,
 # not an org. Don't mint a `topic.*` that duplicates a method/place.
 #
-# Used by: layouts/partials/tag.html (label lookup over values+aliases),
-#          layouts/tags/terms.html (flat facet /tags index),
-#          layouts/tools|papers|data list.html (filter bars).
-# To wire up a new filter button: add it to `values` here and to the matching
-# dropdown in .github/ISSUE_TEMPLATE/add-*.yml.
+# Used by: layouts/partials/tag.html (label lookup), layouts/partials/tag-filter.html
+#          (labels + facet order for the picker), layouts/tags/terms.html (/tags index).
+# Adding a value here only improves its label; add it to the matching
+# .github/ISSUE_TEMPLATE/add-*.yml dropdown so the issue form offers it.
+
+# `content` = content section (Tools/Papers/Datasets/News/…). Search-only, so `filters: []`
+# (list pages are already one type). Facet name is `content` (not `type`) to avoid colliding
+# with the `tool` subtype facet's "Type" label and amber color. Emitted as the Pagefind
+# filter `content:<section>` by baseof.html; the picker derives its pills from the index.
+- facet: content
+  label: Content
+  role: attribute
+  filters: []
+  values:
+    - { value: tools,          name: Tools }
+    - { value: papers,         name: Papers }
+    - { value: datasets,       name: Datasets }
+    - { value: news,           name: News }
+    - { value: events,         name: Events }
+    - { value: methods,        name: Methods }
+    - { value: network,        name: Network }
+    - { value: working-groups, name: "Working Groups" }
 
 - facet: portal
   label: Portal
   role: attribute
-  filters: [data, tools]
+  filters: [datasets, tools]
   values:
     - { value: OBIS,   name: OBIS }
     - { value: GBIF,   name: GBIF }
@@ -41,7 +60,7 @@
 - facet: method
   label: Method
   role: attribute
-  filters: [tools, papers, data]
+  filters: [tools, papers, datasets]
   values:
     - { value: Remote-Sensing, name: "Remote Sensing" }
     - { value: Genomics,       name: Genomics }
@@ -69,7 +88,7 @@
 - facet: place
   label: Region
   role: attribute
-  filters: [tools, data]
+  filters: [tools, datasets]
   values:
     - { value: Global,         name: Global }
     - { value: US,             name: "U.S." }

@@ -44,30 +44,14 @@
   </section>
 
   {{/* ---- Dataset catalog: filterable grid ----------------------------- */}}
-  {{ $datasets := where site.RegularPages "Section" "data" }}
+  {{ $datasets := where site.RegularPages "Section" "datasets" }}
   <section class="section section--tint">
     <div class="container">
       <span class="eyebrow eyebrow--rule">Dataset catalog</span>
       <h2 style="margin:var(--space-2) 0 var(--space-3);">{{ len $datasets }} marine biodiversity datasets</h2>
       <p style="max-width:64ch;color:var(--text-body);margin-bottom:var(--space-6);">Harvested from <strong>OBIS</strong>, <strong>GBIF</strong>, <strong>EDI</strong>, and <strong>ERDDAP</strong>. The same dataset is often mirrored across portals — we list the <strong>OBIS</strong> record when available, since it carries richer Darwin&nbsp;Core extensions and QA/QC. Filter by portal, method, region, or organization; every card links back to its source.</p>
 
-      <div class="filter-bar" data-filter data-noun="datasets" data-param="portal">
-        {{ range where hugo.Data.tags "filters" "intersect" (slice "data") }}
-          {{ $facet := .facet }}
-          <div class="filter-group">
-            <span class="filter-group__label" style="color:var(--facet-{{ $facet }});">{{ .label }}</span>
-            <div class="filter-group__btns">
-              {{ range .values }}
-                <button class="filter-btn tag tag--{{ $facet }}" data-facet="{{ $facet }}" data-value="{{ .value }}">{{ .name }}</button>
-              {{ end }}
-            </div>
-          </div>
-        {{ end }}
-        <div class="filter-foot">
-          <span class="filter-count" data-filter-count></span>
-          <button class="btn btn--ghost btn--sm" data-filter-clear style="display:none;"><i class="fas fa-xmark" aria-hidden="true"></i> Clear filters</button>
-        </div>
-      </div>
+      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "datasets") }}
 
       <div class="grid-auto">
         {{ range sort $datasets "Params.records" "desc" }}
@@ -101,4 +85,4 @@
   </section>
 </main>
 {{ end }}
-{{ define "scripts" }}<script src="{{ "js/filter.js" | relURL }}" defer></script>{{ end }}
+{{ define "scripts" }}<script src="{{ "js/tag-filter.js" | relURL }}" defer></script>{{ end }}

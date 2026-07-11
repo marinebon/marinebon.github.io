@@ -57,16 +57,5 @@
        nodes" above already lists those); build-time from shared place/org/topic tags */}}
   {{ partial "related.html" (dict "page" . "excludeSection" true "heading" "In this region") }}
 
-  {{/* pagefind tag filters */}}
-  {{ if .Params.tags }}
-  <div style="display:none" aria-hidden="true">
-    {{ range .Params.tags }}
-    {{ $parts := split . "." }}
-    {{ if ge (len $parts) 2 }}
-    <span data-pagefind-filter="{{ index $parts 0 }}:{{ strings.TrimPrefix (printf "%s." (index $parts 0)) . }}"></span>
-    {{ end }}
-    {{ end }}
-  </div>
-  {{ end }}
 </main>
 {{ end }}

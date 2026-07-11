@@ -41,7 +41,7 @@ python3 scripts/import_papers.py     # regenerate content/papers/*.md
 # build one content file from issue-form JSON (what the workflow runs):
 ISSUE_JSON='{"title":"…","tags_topic":"Research"}' CONTENT_TYPE=news ISSUE_NUMBER=0 \
   python3 scripts/issue_to_content.py
-# (re)generate the Data catalog: content/data/*.md from OBIS/GBIF/EDI/ERDDAP
+# (re)generate the Datasets catalog: content/datasets/*.md from OBIS/GBIF/EDI/ERDDAP
 python3 scripts/harvest_datasets.py --clean        # add --dry-run to preview
 ```
 
@@ -53,6 +53,13 @@ Structured data lives in `data/*.yaml`; client behavior in `static/js/` (globe,
 methods hotspots, tools/papers filters). `hugo.yaml` holds the menu, hero text,
 and `params.github_repo` (which backs the contribution links).
 
+The top nav collapses the three output catalogs under one **Products** item
+(`content/products/_index.md` + `layouts/products/list.html`) whose dropdown holds
+Papers / Datasets / Tools. Products is a hub, **not** a content type: it owns no
+regular pages, so it never appears as a `.Type`, a card, a tag, or a search group —
+search still groups results as Papers / Datasets / Tools. `header.html` keeps the
+Products link lit whenever `.Section` is one of those three.
+
 Two things require reading multiple files to understand:
 
 ### Tags, content type, and `related:` links
@@ -60,22 +67,26 @@ Two things require reading multiple files to understand:
 **Three separate mechanisms — keep them apart (conflating them caused a lot of churn):**
 
 1. **Content type = structural.** A page's type is the section it lives in (`.Type` ∈
-   network, working-groups, methods, tools, data, papers, news, events) — it drives the
+   network, working-groups, methods, tools, datasets, papers, news, events) — it drives the
    layout, card, and URL. It is **not** a tag (there is no `type.*`), and `/tags` does not
    list it (the top nav / section index pages cover that).
 
 2. **Tags = faceted labels for filter & search only.** Written `facet.Value` in
    `ProperCase` (e.g. `method.Remote-Sensing`, `tool.Portal`, `place.US`, `portal.OBIS`,
-   `topic.Research`, `year.2021`). `data/tags.yaml` is the single source of truth per
-   facet (its `role`, filter-bar `values`, and label `aliases` so `org.GEOBON` → "GEO
-   BON"); `layouts/partials/tag.html` resolves labels there **case-insensitively** (Hugo
-   lowercases taxonomy terms). The `tools`/`papers`/`data` list filter bars render buttons
-   for the facets whose `filters:` names that section. Only two `role`s: `subtype`
-   (`tool.*`) and `attribute` (everything else). **`org` = who *built* a tool (developer);
-   `portal` = whose *data* a tool uses / where a dataset is served (OBIS/GBIF/EDI/ERDDAP).**
-   `portal` filters both `/data/` and `/tools/`. **OBIS is a portal, not an org.** Prefer a
-   specific facet over a vague one (no `topic.*` duplicating a `method`/`place`); `topic`
-   stays flat — no hierarchy.
+   `topic.Research`, `year.2021`). The **filter/search UI derives itself from the tags
+   actually present** (see the unified control below) — `data/tags.yaml` no longer drives
+   *which* buttons exist; it now supplies only **friendly labels** (`values`/`aliases`, so
+   `org.GEOBON` → "GEO BON") and, via `--facet-<facet>` CSS tokens, **colors**. Both have
+   automatic fallbacks: an unregistered value is humanized, an untokened facet is
+   auto-colored. `layouts/partials/tag.html` resolves labels **case-insensitively** (Hugo
+   lowercases taxonomy terms). Only two `role`s: `subtype` (`tool.*`) and `attribute`
+   (everything else). **`org` = who *built* a tool (developer); `portal` = whose *data* a
+   tool uses / where a dataset is served (OBIS/GBIF/EDI/ERDDAP).** **OBIS is a portal, not
+   an org.** Prefer a specific facet over a vague one (no `topic.*` duplicating a
+   `method`/`place`); `topic` stays flat — no hierarchy. The `content` facet
+   (Tools/Papers/Datasets/News/…) is the content *type* exposed as a search filter — it is
+   the one facet with no front-matter tags; `baseof.html` emits it as the Pagefind filter
+   `content:<section>`.
 
 3. **`related:` = page-to-page links.** A front-matter list of **content-page paths**
    (e.g. `related: [/working-groups/indicators, /network/pole-to-pole-americas]`). This —
@@ -100,20 +111,45 @@ Two things require reading multiple files to understand:
   the live taxonomy terms (`.Data.Terms.Alphabetical`, bucketed by the prefix before `.`)
   with usage counts. No content-type or "references" rows.
 - **Portal hub** — a portal tool page (`tools/single.html`, tagged `tool.Portal`) shows "N
-  datasets available via <CODE>" → `/data/?portal=<CODE>`, and each **dataset page** links
+  datasets available via <CODE>" → `/datasets/?portal=<CODE>`, and each **dataset page** links
   its portals (from `sources[]`) back to the tool page; with `related:` backlinks,
   `tools/obis` is the single "everything OBIS" hub.
 - **Network nodes carry `place.*`** so their page's related section surfaces the region's
   datasets/tools/news; content that *belongs to* a node uses `related: /network/<node>`
   (e.g. the Pole-to-Pole news + atlas ↔ `network/pole-to-pole-americas`).
 
-**Adding a new tag value requires two places to agree:** add it to `data/tags.yaml`
-(under `values` for a filter button, or `aliases` for a label only) AND add the
-human label to the dropdown `options:` in the matching
-`.github/ISSUE_TEMPLATE/add-*.yml`. If a label doesn't kebab-case cleanly to its
-`Value`, also add it to `TAG_ALIASES` in `scripts/issue_to_content.py`. **A `related:`
-link needs no registry** — it's just a content path; the issue forms expose it via a
-"Related pages" field (parsed by `collect_related` in `issue_to_content.py`).
+**Adding a new tag value just works** — it appears in the filter dropdown and search
+automatically (the UI derives options from the tags in use), humanized if unregistered
+and auto-colored if its facet has no token. Register it only to *improve* presentation:
+add a `values`/`aliases` entry in `data/tags.yaml` for a friendly label, a
+`--facet-<facet>` token in `static/css/tokens/colors.css` for a specific color, and the
+human label to the matching `.github/ISSUE_TEMPLATE/add-*.yml` `options:` so the issue
+form offers it (if it doesn't kebab-case cleanly to its `Value`, also add it to
+`TAG_ALIASES` in `scripts/issue_to_content.py`). **A `related:` link needs no registry** —
+it's just a content path; the issue forms expose it via a "Related pages" field (parsed by
+`collect_related` in `issue_to_content.py`).
+
+### The unified filter + search control
+
+One control — `layouts/partials/tag-filter.html` + `static/js/tag-filter.js` — powers
+both the list-page filters (Tools/Papers/Datasets) and `/search/`. It is a single row
+(free-text box + a "Filter by tag" dropdown of colorized pills grouped by facet) with a
+second row of removable chips; **every tag and the free text are combined with AND**
+(both across facets and within one facet — Pagefind's array default, matched by the DOM
+engine). Two backends, one UI:
+- **`mode: dom`** (list pages) show/hides the page's server-rendered `[data-filter-item]`
+  cards by AND-matching `data-tags`; free text is a substring match. Grid stays
+  server-rendered (SEO / no-JS safe). Dropdown lists only tags present on that page.
+- **`mode: pagefind`** (`/search/`) queries Pagefind across all content and renders result
+  cards; dropdown is populated from `pf.filters()` (all site tags + the `content` facet).
+
+Nothing is hardcoded: facet **order** comes from `data/tags.yaml` order (JS appends any
+extra facet found only in content); facet **color** is `--facet-<facet>` or an
+auto-generated deterministic HSL; value **labels** come from the registry or are
+humanized. So a brand-new tag or even a brand-new facet renders correctly with zero code
+edits. Deep links `?<facet>=v1,v2` and `?q=` pre-select and are written back for
+shareable filtered views. This replaced three near-identical filter engines
+(`filter.js`/`tools-filter.js`/`papers-filter.js`, now deleted).
 
 ### The contribution pipeline (no-Git path)
 
@@ -138,14 +174,14 @@ else (`card-tool`, generic image card). Any mixed-content list should call
 `card.html` so each result keeps its section's treatment. The tag term page
 `layouts/_default/taxonomy.html` uses it, grouping a tag's results by type.
 
-### The Data catalog (harvested datasets)
+### The Datasets catalog (harvested datasets)
 
-The **Data** nav item (`content/data/`, type `data`, rendered by
-`layouts/data/{list,single}.html`) is an auto-generated catalog of marine
+The **Datasets** nav item (`content/datasets/`, type `datasets`, rendered by
+`layouts/datasets/{list,single}.html`) is an auto-generated catalog of marine
 biodiversity datasets — *not* hand-edited or issue-form contributed.
 `scripts/harvest_datasets.py` (pyyaml + stdlib) discovers MBON datasets via GBIF
 `dataset/search?q=MBON`, then cross-lists each across **OBIS / GBIF / EDI / ERDDAP**
-and writes one `content/data/<slug>.md` per dataset (front matter: `records`,
+and writes one `content/datasets/<slug>.md` per dataset (front matter: `records`,
 `doi`, `sources[]`, `portal_primary`, `tags`, optional `extent`/temporal).
 
 Two rules encoded there: **OBIS-first** — when a dataset is mirrored in both OBIS
@@ -157,7 +193,7 @@ only if it carries an MBON text signal *or* is served by the MBON IPT
 stdlib re-implementation of `erddapy.multiple_server_search` over the
 awesome-erddap registry. The new `portal` facet (OBIS/GBIF/EDI/ERDDAP) lives in
 `data/tags.yaml` like any other; since datasets are harvested, it needs no
-issue-template counterpart. `data/{list,single}` reuse the generic
+issue-template counterpart. `datasets/{list,single}` reuse the generic
 `static/js/filter.js` (parameterized by `data-noun`/`data-param`), and each
 dataset page emits `schema.org/Dataset` JSON-LD for Google Dataset Search.
 
@@ -185,6 +221,11 @@ Pagefind, and without `-ignore` the hidden values leak into result excerpts.
   links/images are safe automatically: `layouts/_default/_markup/render-{link,image}.html`
   trim a leading slash and run every internal destination through `relURL`.
   `scripts/check_links.py` enforces all of this against the built site (see Commands).
+- **An `aliases:` entry silently overwrites a real page** at the same path — Hugo writes
+  the redirect stub last and does not warn, and `check_links.py` still passes because
+  *a* file exists there. `content/tools/_index.md` used to alias bare `/products/`;
+  that clobbered the Products hub until it was removed. Before giving a new page a path,
+  `grep -rn "^- /<path>/" content/`.
 - All CSS is in `static/css/`: `styles.css` imports `tokens/*` then
   `components.css` + `layout.css`. Brand and `--facet-*` colors are single-source.
 

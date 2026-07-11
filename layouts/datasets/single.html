@@ -57,24 +57,13 @@
 
       <div style="max-width:64ch;">{{ .Content }}</div>
 
-      <p style="margin-top:var(--space-7);"><a href="{{ "data" | relURL }}" class="btn btn--ghost"><i class="fas fa-arrow-left" aria-hidden="true"></i> All datasets</a></p>
+      <p style="margin-top:var(--space-7);"><a href="{{ "datasets" | relURL }}" class="btn btn--ghost"><i class="fas fa-arrow-left" aria-hidden="true"></i> All datasets</a></p>
     </div>
   </section>
 
   {{/* related-by-tag across the network (build-time, shared tags) */}}
   {{ partial "related.html" . }}
 
-  {{/* ---- pagefind tag filters ---- */}}
-  {{ if .Params.tags }}
-  <div style="display:none" aria-hidden="true">
-    {{ range .Params.tags }}
-    {{ $parts := split . "." }}
-    {{ if ge (len $parts) 2 }}
-    <span data-pagefind-filter="{{ index $parts 0 }}:{{ strings.TrimPrefix (printf "%s." (index $parts 0)) . }}"></span>
-    {{ end }}
-    {{ end }}
-  </div>
-  {{ end }}
 
   {{/* ---- schema.org/Dataset JSON-LD → Google Dataset Search ---- */}}
   {{ $ld := dict

@@ -11,12 +11,22 @@
   </section>
   <section class="section">
     <div class="container">
+      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "news") }}
+
       <div class="grid-3">
         {{ range .Pages.ByDate.Reverse }}
-          {{ partial "card-news.html" . }}
+          <div data-filter-item data-tags="{{ delimit (.Params.tags | default slice) " " }}">
+            {{ partial "card-news.html" . }}
+          </div>
         {{ end }}
+      </div>
+
+      <div data-filter-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
+        <i class="fas fa-newspaper" style="font-size:32px;opacity:.4;" aria-hidden="true"></i>
+        <p style="margin-top:var(--space-4);">No news matches those filters.</p>
       </div>
     </div>
   </section>
 </main>
 {{ end }}
+{{ define "scripts" }}<script src="{{ "js/tag-filter.js" | relURL }}" defer></script>{{ end }}

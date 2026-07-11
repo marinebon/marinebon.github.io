@@ -13,26 +13,50 @@
   {{ $upcoming := where .Pages "Date" ">=" $now }}
   {{ $past     := where .Pages "Date" "<" $now }}
 
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "events") }}
+    </div>
+  </section>
+
   {{ with $upcoming }}
-  <section class="section">
+  <section class="section" data-filter-section>
     <div class="container">
       <span class="eyebrow eyebrow--rule">Upcoming</span>
       <h2 style="margin:var(--space-2) 0 var(--space-6);">On the calendar</h2>
       <div class="grid-3">
-        {{ range .ByDate }}{{ partial "card-event.html" . }}{{ end }}
+        {{ range .ByDate }}
+          <div data-filter-item data-tags="{{ delimit (.Params.tags | default slice) " " }}">
+            {{ partial "card-event.html" . }}
+          </div>
+        {{ end }}
       </div>
     </div>
   </section>
   {{ end }}
 
-  <section class="section{{ if $upcoming }} section--tint{{ end }}">
+  <section class="section{{ if $upcoming }} section--tint{{ end }}" data-filter-section>
     <div class="container">
       <span class="eyebrow eyebrow--rule">{{ if $upcoming }}Past events{{ else }}Archive{{ end }}</span>
       <h2 style="margin:var(--space-2) 0 var(--space-6);">Presentations &amp; meetings</h2>
       <div class="grid-3">
-        {{ range $past.ByDate.Reverse }}{{ partial "card-event.html" . }}{{ end }}
+        {{ range $past.ByDate.Reverse }}
+          <div data-filter-item data-tags="{{ delimit (.Params.tags | default slice) " " }}">
+            {{ partial "card-event.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div data-filter-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
+        <i class="fas fa-calendar-xmark" style="font-size:32px;opacity:.4;" aria-hidden="true"></i>
+        <p style="margin-top:var(--space-4);">No events match those filters.</p>
       </div>
     </div>
   </section>
 </main>
 {{ end }}
+{{ define "scripts" }}<script src="{{ "js/tag-filter.js" | relURL }}" defer></script>{{ end }}

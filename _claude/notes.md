@@ -14,6 +14,77 @@ Expand and refine the use of , so they could be prefixed by type, eg method.Trac
 And add **People** as its own content type under About to similarly enable connecting with Papers and Projects / Working Groups (ie Network). We want to be able to see related content throughout website.
 
 
+## 2026-07-10
+
+Done. The nav is now six items, with Papers / Data / Tools collapsed into a single Products dropdown containing Papers, Datasets, and Tools — and no sub-shortcuts under Tools.
+
+What shipped
+
+/products/ is a real hub page (content/products/_index.md + layouts/products/list.html) with three cards whose counts come from the live sections, so they can't drift: Papers 88, Datasets 54, Tools 46. The Products nav item stays highlighted whenever you're anywhere inside those three sections, not just on the hub itself.
+
+Data became a genuine section rename, /data/ → /datasets/: 54 content files and both layouts moved, and I updated every place the section name was load-bearing — the .Type lookups in card.html, card-kind.html, taxonomy.html, and baseof.html's Pagefind meta; the filters: keys in data/tags.yaml; the portal-hub query on tool pages; the footer; the card__type--datasets CSS rule; and OUT_DIR in harvest_datasets.py. Old /data/ now redirects to /datasets/.
+
+Per your follow-up: search result grouping is untouched. Papers, Datasets, and Tools remain separate groups. Products owns no regular pages, so it never becomes a .Type — and its page carries data-pagefind-ignore, so it isn't indexed at all. I confirmed the built site emits exactly the nine existing type values with no products among them.
+
+One real bug found along the way
+
+content/tools/_index.md carried a legacy alias for bare /products/ (an old marinebon.org URL). Hugo writes alias redirects last and doesn't warn, so it silently overwrote my new hub page — and check_links.py still passed, because a file existed at that path. I removed that one alias, kept the /products/<slug>/ ones, and wrote the trap into CLAUDE.md since nothing in the build catches it.
+
+Two things worth your call
+
+Consolidating the nav dropped the shortcuts that used to live under Data (OBIS/GBIF/EDI/ERDDAP, "How to access") and under Tools (Apps, Infographics, Packages, Portals, Protocols, Trainings, Workflows). Those views all still exist as ?portal= / ?tool= deep links and are reachable from each list page's filter bar, but they're now two clicks from the nav instead of one. Also, only the /data/ index redirects — old /data/<slug>/ dataset URLs will 404. Say the word and I'll emit per-dataset aliases from the harvest script.
+
+Verified with hugo --gc --minify --baseURL "https://marinebon.org/hugo2/" (exit 0), check_links.py (exit 0, 31,095 internal links), and a browser pass over the dropdown, the hub, the /data/ redirect, and ?portal=EDI filtering to 10 of 54. Nothing is committed yet.
+
+### consolidate filters / search with text + tags drop-down
+
+PROMPT: Looks good! Please next think deeply about consolidating the filters and search across the website
+  to a much simpler interface that displays all tags (as colorized pills) in a drop-down and then
+  allows adding to the selection (or clicking an x to delete individuals), all of which are joined
+  by AND in the filter (not OR)
+----
+
+I now have a complete model: three byte-identical DOM filter engines (filter.js, tools-filter.js, papers-filter.js) doing OR-within-facet on server-rendered grids, plus a separate Pagefind-backed /search/ that already does AND. The consolidation is clear in shape; three decisions determine the details.
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────
+←  ☐ Architecture  ☐ List-page control  ☐ Type facet  ✔ Submit  →
+
+The list pages (Tools/Papers/Datasets) are server-rendered grids today; /search/ is Pagefind (JS-only). How should the unified filter be wired?
+
+❯ 1. Shared UI, two backends (Recommended)  │ ONE tag-picker.js (UI + AND state)           │
+  1. Everything on Pagefind                 │    ├─ list pages  → filters server-rendered  │
+                                            │    │                grid via data-tags (DOM) │
+                                            │    └─ /search/    → Pagefind (all content,   │
+                                            │                     free text + facets)      │
+                                            │                                              │
+                                            │ 3 engines (filter/tools/papers) → deleted    │
+                                            │ Grids stay server-rendered (SEO safe)        │
+                                            └──────────────────────────────────────────────┘
+
+Notes: To clarify, we don't want another grid of clickable tags like presently on the Tools/Datasets/Pages index pages, just a streamlined single row search with all tags available as a dropdown (NOT a grid like existing). Maybe another line showing all the selected tags.
+
+←  ☒ Architecture  ☒ List-page control  ☒ Type facet  ✔ Submit  →
+
+On the list pages, should the unified control also include the free-text box, or just the tag dropdown?
+
+❯ 1. Free text + tags (Recommended) ✔
+     Same control everywhere: a free-text box (client-side substring match over card title/summary) plus the tag dropdown. Matches the 'free text search plus all tags' you described, applied on every page.
+  2. Tags only on list pages
+     List pages get just the tag-pill dropdown + chips (no free text); free-text search stays exclusive to /search/. Slightly less code, but the control differs between list pages and search.
+
+←  ☒ Architecture  ☒ List-page control  ☒ Type facet  ✔ Submit  →
+
+Add content type (Tools / Papers / Datasets / News / Events / …) as a selectable facet pill in the picker?
+
+❯ 1. Yes, add a type facet (Recommended) ✔
+     Emit a Pagefind `type` filter so /search/ can narrow to one or more content types via the same pill UI — currently impossible. Gives it its own color. Makes the single picker able to answer 'only Tools tagged Genomics'.
+  2. No type facet
+     Keep type as display-only meta; the picker filters by the existing 6 tag facets only (method/org/place/portal/tool/topic). Content type is still visible per-result via its badge/group.
+
+----
+
+Clear now. Your note settles the UI: a streamlined single row (free-text + a tags dropdown), with selected tags shown as removable chips on a second line — not the always-open button grid that's there now. Backend wiring wasn't the thing you cared about, so I'll take my recommended low-risk route (keep the list grids server-rendered; share the UI). Let me verify two precision details before writing the plan.
+
 ## 2026-07-01 
 
 Read all the messages in the Gmail thread with subject "MarineBON website redesign with spinning globe using Claude.ai/design" since I (ben@ecoquants.com) last responded.

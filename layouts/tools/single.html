@@ -27,7 +27,7 @@
        portal.<CODE> tag, matched to the tool slug uppercased, e.g. tools/obis -> portal.OBIS) */}}
   {{ if in .Params.tags "tool.Portal" }}
     {{ $portal := upper .File.ContentBaseName }}
-    {{ $dsets := where (where site.RegularPages "Section" "data") "Params.tags" "intersect" (slice (printf "portal.%s" $portal)) }}
+    {{ $dsets := where (where site.RegularPages "Section" "datasets") "Params.tags" "intersect" (slice (printf "portal.%s" $portal)) }}
     {{ with $dsets }}
     {{/* OBIS-first: how many of this portal's datasets are also mirrored to OBIS (the canonical/preferred portal) */}}
     {{ $alsoObis := len (where . "Params.tags" "intersect" (slice "portal.OBIS")) }}
@@ -35,7 +35,7 @@
       <div class="container">
         <span class="eyebrow eyebrow--rule">In this portal</span>
         <h2 style="margin:var(--space-2) 0 var(--space-4);">{{ len . }} dataset{{ if ne (len .) 1 }}s{{ end }} available via {{ $portal }}{{ if and (ne $portal "OBIS") (gt $alsoObis 0) }} — {{ $alsoObis }} also in OBIS (preferred){{ end }}</h2>
-        <p style="margin-bottom:var(--space-6);"><a class="btn btn--action" href="{{ relURL "data/" }}?portal={{ $portal }}">Browse all {{ $portal }} datasets <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+        <p style="margin-bottom:var(--space-6);"><a class="btn btn--action" href="{{ relURL "datasets/" }}?portal={{ $portal }}">Browse all {{ $portal }} datasets <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
         <div class="grid-auto">
           {{ range first 6 (sort . "Params.records" "desc") }}{{ partial "card-dataset.html" . }}{{ end }}
         </div>
@@ -47,16 +47,5 @@
   {{/* related-by-tag across the network (build-time, shared tags) */}}
   {{ partial "related.html" . }}
 
-  {{/* pagefind tag filters */}}
-  {{ if .Params.tags }}
-  <div style="display:none" aria-hidden="true">
-    {{ range .Params.tags }}
-    {{ $parts := split . "." }}
-    {{ if ge (len $parts) 2 }}
-    <span data-pagefind-filter="{{ index $parts 0 }}:{{ strings.TrimPrefix (printf "%s." (index $parts 0)) . }}"></span>
-    {{ end }}
-    {{ end }}
-  </div>
-  {{ end }}
 </main>
 {{ end }}

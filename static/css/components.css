@@ -53,6 +53,7 @@
 .tag--type{   --_c:var(--facet-type); }
 .tag--topic{  --_c:var(--facet-topic); }
 .tag--portal{ --_c:var(--facet-portal); }
+.tag--content{ --_c:var(--facet-content); }
 /* year tags — neutral ink */
 .tag--year{   --_c:var(--ink-500,#64748b); }
 /* legacy aliases */
@@ -145,7 +146,7 @@ a.card:hover .card__foot i{ transform:translateX(3px); }
 .card__type--working-groups{ color:var(--facet-org); }
 .card__type--methods{        color:var(--facet-method); }
 .card__type--network{        color:var(--facet-place); }
-.card__type--data{           color:var(--facet-portal); }
+.card__type--datasets{       color:var(--facet-portal); }
 .card__type--papers{         color:var(--ink-400); }
 .card__type--news{           color:var(--coral-600); }
 .card__type--events{         color:var(--teal-600); }
@@ -365,52 +366,73 @@ a.card:hover .card__foot i{ transform:translateX(3px); }
 }
 .citation-block__doi:hover{ text-decoration:underline; }
 
-/* ---- Search widget ------------------------------------------------------- */
-.search-widget__bar{
+/* ---- Unified tag filter + search control -------------------------------- */
+/* One row: free-text + a "Filter by tag" dropdown of colorized pills; a second
+   row shows the selected tags as removable chips. Used on the list pages (DOM
+   filtering) and /search/ (Pagefind). See static/js/tag-filter.js. */
+.tag-filter{ margin-bottom:var(--space-6); }
+.tag-filter__bar{
   display:flex; align-items:center; gap:var(--space-2);
   border:2px solid var(--border-strong); border-radius:var(--radius-md);
   padding:var(--space-2) var(--space-4); background:var(--bg-surface);
-  margin-bottom:var(--space-3);
   transition:border-color var(--dur-fast) var(--ease-out);
 }
-.search-widget__bar:focus-within{ border-color:var(--brand); }
-.search-widget__icon{ color:var(--text-muted); font-size:var(--text-md); flex-shrink:0; }
-#sw-text{
-  flex:1; border:none; outline:none; font-size:var(--text-base);
+.tag-filter__bar:focus-within{ border-color:var(--brand); }
+.tag-filter__icon{ color:var(--text-muted); font-size:var(--text-md); flex-shrink:0; }
+.tag-filter__text{
+  flex:1; min-width:0; border:none; outline:none; font-size:var(--text-base);
   background:transparent; color:var(--text-heading);
 }
-.search-widget__tag-wrap{
-  position:relative; display:flex; align-items:center;
-  border-left:1px solid var(--border); padding-left:var(--space-3);
+.tag-filter__add{ position:relative; flex-shrink:0; border-left:1px solid var(--border); padding-left:var(--space-3); }
+.tag-filter__add-btn{
+  display:inline-flex; align-items:center; gap:.5em; cursor:pointer;
+  border:none; background:none; color:var(--text-body);
+  font-family:var(--font-mono); font-size:var(--text-sm); letter-spacing:var(--ls-wide);
+  padding:.25em .1em;
 }
-#sw-tag-input{
-  border:none; outline:none; font-size:var(--text-sm);
-  background:transparent; color:var(--text-body); width:160px;
-}
-.search-widget__suggest{
-  position:absolute; top:calc(100% + 6px); left:0; right:0; z-index:50;
+.tag-filter__add-btn:hover{ color:var(--brand); }
+.tag-filter__caret{ font-size:.7em; transition:transform var(--dur-base) var(--ease-out); }
+.tag-filter__add-btn[aria-expanded="true"] .tag-filter__caret{ transform:rotate(180deg); }
+.tag-filter__panel{
+  position:absolute; top:calc(100% + 8px); right:0; z-index:50;
+  width:min(92vw, 420px); max-height:min(60vh, 460px); overflow-y:auto;
   background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-md);
-  box-shadow:var(--shadow-lg); list-style:none; margin:0; padding:var(--space-2) 0;
-  min-width:240px;
+  box-shadow:var(--shadow-lg); padding:var(--space-3);
 }
-.search-widget__suggest li{
-  padding:var(--space-2) var(--space-4);
-  font-size:var(--text-sm); cursor:pointer;
-  transition:background var(--dur-fast) var(--ease-out);
+.tag-filter__panel-search{
+  width:100%; box-sizing:border-box; outline:none;
+  border:1px solid var(--border); border-radius:var(--radius-sm);
+  padding:var(--space-2) var(--space-3); font-size:var(--text-sm); margin-bottom:var(--space-3);
+  background:var(--bg-page); color:var(--text-body);
 }
-.search-widget__suggest li:hover{ background:var(--foam-100); }
-/* on phones the tag filter drops below the text input instead of crowding it */
+.tag-filter__panel-search:focus{ border-color:var(--brand); }
+.tag-filter__group{ margin-bottom:var(--space-3); }
+.tag-filter__group:last-child{ margin-bottom:0; }
+.tag-filter__group-label{
+  display:block; font-family:var(--font-mono); font-size:var(--text-xs); text-transform:uppercase;
+  letter-spacing:var(--ls-wide); padding-bottom:var(--space-2); margin-bottom:var(--space-2);
+  border-bottom:1px solid var(--divider);
+}
+.tag-filter__group-pills{ display:flex; flex-wrap:wrap; gap:var(--space-2); }
+.tag-filter__empty-tags{ font-size:var(--text-sm); color:var(--text-muted); margin:0; padding:var(--space-2); }
+.tag-filter__foot{ display:flex; flex-wrap:wrap; align-items:center; gap:var(--space-2); margin-top:var(--space-3); }
+.tag-filter__chips{ display:flex; flex-wrap:wrap; gap:var(--space-2); }
+.tag-filter__count{ margin-left:auto; font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); }
+.tag-filter__status{ font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); margin:var(--space-3) 0 0; }
+.tag-filter__results{ margin-top:var(--space-6); }
+/* phones: the tag adder drops below the text input instead of crowding it */
 @media (max-width:560px){
-  .search-widget__bar{ flex-wrap:wrap; }
-  #sw-text{ flex:1 1 60%; }
-  .search-widget__tag-wrap{ width:100%; border-left:none; padding-left:0; margin-top:var(--space-2); padding-top:var(--space-2); border-top:1px solid var(--border); }
-  #sw-tag-input{ width:100%; }
+  .tag-filter__bar{ flex-wrap:wrap; }
+  .tag-filter__text{ flex:1 1 60%; }
+  .tag-filter__add{ width:100%; border-left:none; padding-left:0; margin-top:var(--space-2); padding-top:var(--space-2); border-top:1px solid var(--border); }
+  .tag-filter__panel{ width:100%; }
+  .tag-filter__count{ margin-left:0; }
 }
-.search-widget__chips{ display:flex; flex-wrap:wrap; gap:var(--space-2); margin-bottom:var(--space-3); }
+
+/* ---- Search results (shared by /search/, /404, and the tag filter) ------- */
 .tag-chip{ display:inline-flex; align-items:center; gap:.4em; }
 .tag-chip button{ border:none; background:none; cursor:pointer; font-size:1em; padding:0; line-height:1; color:inherit; opacity:.7; }
 .tag-chip button:hover{ opacity:1; }
-.search-widget__status{ font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); margin:0 0 var(--space-4); }
 .search-widget__results{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:var(--space-8); }
 /* grouped results: a type header above each cluster of cards */
 .search-group{ list-style:none; }

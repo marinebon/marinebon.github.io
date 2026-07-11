@@ -54,38 +54,19 @@
             </div>
           </div>
 
-        {{ else if eq .Identifier "data" }}
+        {{ else if eq .Identifier "products" }}
+          {{/* Products is a hub over the three output catalogs; keep it lit while the
+               reader is anywhere inside one of them, not just on /products/ itself. */}}
+          {{ $inProducts := in (slice "papers" "datasets" "tools") $.Section }}
           <div class="nav-dropdown">
-            <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="is-active"{{ end }}>
+            <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) $inProducts }} class="is-active"{{ end }}>
               {{ .Name }}<i class="fas fa-chevron-down nav-dropdown__caret" aria-hidden="true"></i>
             </a>
             <div class="nav-dropdown__panel nav-dropdown__panel--single">
               <div class="nav-dropdown__col">
-                <a href="{{ "data" | relURL }}">All datasets</a>
-                <a href="{{ "data" | relURL }}?portal=OBIS">OBIS</a>
-                <a href="{{ "data" | relURL }}?portal=GBIF">GBIF</a>
-                <a href="{{ "data" | relURL }}?portal=EDI">EDI</a>
-                <a href="{{ "data" | relURL }}?portal=ERDDAP">ERDDAP</a>
-                <a href="{{ "data/#access" | relURL }}" style="margin-top:var(--space-3);color:var(--text-muted);font-size:var(--text-xs);">How to access →</a>
-              </div>
-            </div>
-          </div>
-
-        {{ else if eq .Identifier "tools" }}
-          <div class="nav-dropdown">
-            <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="is-active"{{ end }}>
-              {{ .Name }}<i class="fas fa-chevron-down nav-dropdown__caret" aria-hidden="true"></i>
-            </a>
-            <div class="nav-dropdown__panel nav-dropdown__panel--single">
-              <div class="nav-dropdown__col">
-                <a href="{{ "tools" | relURL }}">All Tools</a>
-                <a href="{{ "tools" | relURL }}?tool=App">Apps</a>
-                <a href="{{ "tools" | relURL }}?tool=Infographic">Infographics</a>
-                <a href="{{ "tools" | relURL }}?tool=Package">Packages</a>
-                <a href="{{ "tools" | relURL }}?tool=Portal">Portals</a>
-                <a href="{{ "tools" | relURL }}?tool=Protocol">Protocols</a>
-                <a href="{{ "tools" | relURL }}?tool=Training">Trainings</a>
-                <a href="{{ "tools" | relURL }}?tool=Workflow">Workflows</a>
+                <a href="{{ "papers" | relURL }}">Papers</a>
+                <a href="{{ "datasets" | relURL }}">Datasets</a>
+                <a href="{{ "tools" | relURL }}">Tools</a>
               </div>
             </div>
           </div>

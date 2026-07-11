@@ -60,16 +60,5 @@
   {{/* related-by-tag across the network (build-time, shared tags) */}}
   {{ partial "related.html" . }}
 
-  {{/* pagefind tag filters */}}
-  {{ if .Params.tags }}
-  <div style="display:none" aria-hidden="true">
-    {{ range .Params.tags }}
-    {{ $parts := split . "." }}
-    {{ if ge (len $parts) 2 }}
-    <span data-pagefind-filter="{{ index $parts 0 }}:{{ strings.TrimPrefix (printf "%s." (index $parts 0)) . }}"></span>
-    {{ end }}
-    {{ end }}
-  </div>
-  {{ end }}
 </main>
 {{ end }}

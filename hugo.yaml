@@ -34,24 +34,17 @@ menu:
     - name: Methods
       pageRef: /methods
       weight: 3
-    - name: Papers
-      pageRef: /papers
+    - name: Products
+      identifier: products
+      pageRef: /products
       weight: 4
-    - name: Data
-      identifier: data
-      pageRef: /data
-      weight: 5
-    - name: Tools
-      identifier: tools
-      pageRef: /tools
-      weight: 6
     - name: News
       identifier: news
       pageRef: /news
-      weight: 7
+      weight: 5
     - name: About
       pageRef: /about
-      weight: 8
+      weight: 6
 
 taxonomies:
   tag: tags

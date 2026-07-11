@@ -12,47 +12,11 @@
   <section class="section">
     <div class="container">
 
-      <div class="filter-bar" data-paper-filter>
-        {{/* curated facets (method) from the canonical registry */}}
-        {{ range where hugo.Data.tags "filters" "intersect" (slice "papers") }}
-          {{ if .values }}
-          {{ $facet := .facet }}
-          <div class="filter-group">
-            <span class="filter-group__label" style="color:var(--facet-{{ $facet }}, var(--text-muted));">{{ .label }}</span>
-            <div class="filter-group__btns">
-              {{ range .values }}
-                <button class="filter-btn tag tag--{{ $facet }}" data-facet="{{ $facet }}" data-value="{{ .value }}">{{ .name }}</button>
-              {{ end }}
-            </div>
-          </div>
-          {{ end }}
-        {{ end }}
-        {{/* Year buttons generated from the papers themselves (newest first) */}}
-        {{ $years := slice }}
-        {{ range where site.RegularPages "Section" "papers" }}
-          {{ with .Params.year }}{{ $years = $years | append (string .) }}{{ end }}
-        {{ end }}
-        {{ with ($years | uniq) }}
-        <div class="filter-group">
-          <span class="filter-group__label" style="color:var(--facet-year, var(--text-muted));">Year</span>
-          <div class="filter-group__btns">
-            {{ range sort . "value" "desc" }}
-              <button class="filter-btn tag tag--year" data-facet="year" data-value="{{ . }}">{{ . }}</button>
-            {{ end }}
-          </div>
-        </div>
-        {{ end }}
-        <div class="filter-foot">
-          <span class="filter-count" data-paper-count></span>
-          <button class="btn btn--ghost btn--sm" data-paper-clear style="display:none;">
-            <i class="fas fa-xmark" aria-hidden="true"></i> Clear filters
-          </button>
-        </div>
-      </div>
+      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "papers") }}
 
       <ul class="paper-list">
         {{ range sort (where site.RegularPages "Section" "papers") "Params.year" "desc" }}
-        <li class="paper-row" data-paper data-tags="{{ delimit (.Params.tags | default slice) " " }}">
+        <li class="paper-row" data-filter-item data-tags="{{ delimit (.Params.tags | default slice) " " }}">
           <span class="paper-row__year">{{ .Params.year }}</span>
           <div class="paper-row__body">
             <a class="paper-row__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -70,7 +34,7 @@
         {{ end }}
       </ul>
 
-      <div data-paper-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
+      <div data-filter-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
         <i class="fas fa-file-circle-xmark" style="font-size:32px;opacity:.4;" aria-hidden="true"></i>
         <p style="margin-top:var(--space-4);">No papers match those filters.</p>
       </div>
@@ -79,4 +43,4 @@
   </section>
 </main>
 {{ end }}
-{{ define "scripts" }}<script src="{{ "js/papers-filter.js" | relURL }}" defer></script>{{ end }}
+{{ define "scripts" }}<script src="{{ "js/tag-filter.js" | relURL }}" defer></script>{{ end }}

@@ -27,16 +27,5 @@
       <p style="text-align:center;"><a class="btn btn--outline" href="{{ "news" | relURL }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> All news</a></p>
     </div>
   </section>
-  {{/* pagefind tag filters */}}
-  {{ if .Params.tags }}
-  <div style="display:none" aria-hidden="true">
-    {{ range .Params.tags }}
-    {{ $parts := split . "." }}
-    {{ if ge (len $parts) 2 }}
-    <span data-pagefind-filter="{{ index $parts 0 }}:{{ strings.TrimPrefix (printf "%s." (index $parts 0)) . }}"></span>
-    {{ end }}
-    {{ end }}
-  </div>
-  {{ end }}
 </main>
 {{ end }}

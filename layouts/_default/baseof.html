@@ -9,13 +9,27 @@
        attribute into multiple keys, and the HTML minifier drops empty elements. */}}
   {{ if eq .Kind "page" }}
     {{/* singular content-type label for the search result card */}}
-    {{ $typeLabels := dict "papers" "Paper" "tools" "Tool" "methods" "Method" "data" "Dataset" "news" "News" "events" "Event" "network" "Node" "working-groups" "Working Group" }}
+    {{ $typeLabels := dict "papers" "Paper" "tools" "Tool" "methods" "Method" "datasets" "Dataset" "news" "News" "events" "Event" "network" "Node" "working-groups" "Working Group" }}
     {{ $badge := index $typeLabels .Type | default (humanize .Type) }}
     {{ $img := .Params.image | default .Params.banner }}
     <div hidden aria-hidden="true" data-pagefind-ignore>
       <span data-pagefind-meta="type">{{ .Type }}</span>
       <span data-pagefind-meta="badge">{{ $badge }}</span>
       {{ with $img }}<span data-pagefind-meta="image">{{ . | relURL }}</span>{{ end }}
+    </div>
+    {{/* Pagefind filters for the unified tag picker (static/js/tag-filter.js): one span
+         per faceted tag, plus the content type. Centralized here so EVERY page type is
+         filterable — previously the per-section single templates each re-emitted this and
+         papers/events/working-groups were silently omitted, dropping them from any filtered
+         search. Not wrapped in -ignore: filter spans are empty, so nothing leaks to excerpts. */}}
+    <div hidden aria-hidden="true">
+      {{ with .Section }}<span data-pagefind-filter="content:{{ . }}"></span>{{ end }}
+      {{ range .Params.tags }}
+        {{ $parts := split . "." }}
+        {{ if ge (len $parts) 2 }}
+          <span data-pagefind-filter="{{ index $parts 0 }}:{{ strings.TrimPrefix (printf "%s." (index $parts 0)) . }}"></span>
+        {{ end }}
+      {{ end }}
     </div>
   {{ end }}
   {{ if eq .Kind "page" }}{{ partial "edit-link.html" . }}{{ end }}
