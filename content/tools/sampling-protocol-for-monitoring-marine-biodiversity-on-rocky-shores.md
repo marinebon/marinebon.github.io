@@ -1,4 +1,5 @@
 ---
+image: img/tools/rocky-shore-sampling.png
 title: Sampling protocol for monitoring marine biodiversity on rocky shores
 summary: Third edition
 tags:
