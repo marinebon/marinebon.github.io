@@ -9,7 +9,6 @@
 {{ $title := printf "Edit: %s" $.Title }}
 <div class="edit-cta" data-pagefind-ignore>
   <div class="edit-cta__inner">
-    <span class="edit-cta__label"><i class="fas fa-pen-to-square" aria-hidden="true"></i> Help improve this page</span>
     <span class="edit-cta__links">
       <a href="https://github.com/{{ $repo }}/issues/new?template=edit-content.yml&title={{ $title }}&page_url={{ $.Permalink }}&content_path={{ .Path }}" target="_blank" rel="noopener">Suggest an edit</a>
       <span class="edit-cta__sep">·</span>
