@@ -169,7 +169,9 @@
 
       function hit(ev) {
         var r = canvas.getBoundingClientRect();
-        var mx = ev.clientX - r.left, my = ev.clientY - r.top, found = null, best = 16;
+        // a fingertip is coarser than a mouse pointer, so widen the tap target
+        var tol = ev.pointerType && ev.pointerType !== 'mouse' ? 26 : 16;
+        var mx = ev.clientX - r.left, my = ev.clientY - r.top, found = null, best = tol;
         regions.forEach(function (reg) {
           if (reg._sx == null) return;
           var dd = Math.hypot(reg._sx - mx, reg._sy - my);
@@ -178,31 +180,51 @@
         return found;
       }
 
-      var drag = { on: false, x0: 0, rot0: 0, moved: false };
+      var drag = { on: false, id: null, x0: 0, rot0: 0, moved: false, touch: false };
 
-      canvas.addEventListener('mousedown', function (ev) {
-        drag.on = true; drag.x0 = ev.clientX; drag.rot0 = st.rot; drag.moved = false;
+      /* pointer events cover mouse, touch and pen with one code path; the
+         canvas is touch-action:pan-y so horizontal drags come to us while
+         vertical swipes still scroll the page (browser fires pointercancel). */
+      function endDrag() {
+        if (drag.touch) st.hot = null;
+        drag.on = false; drag.id = null; drag.touch = false;
+        canvas.style.cursor = 'grab';
+      }
+
+      canvas.addEventListener('pointerdown', function (ev) {
+        if (drag.on) return;                       // ignore extra fingers (e.g. pinch)
+        drag.on = true; drag.id = ev.pointerId; drag.x0 = ev.clientX; drag.rot0 = st.rot;
+        drag.moved = false; drag.touch = ev.pointerType !== 'mouse';
         st.target = null;
+        // capture keeps the drag alive when the finger/cursor leaves the canvas
+        try { canvas.setPointerCapture(ev.pointerId); } catch (e) {}
         canvas.style.cursor = 'grabbing';
       });
-      canvas.addEventListener('mousemove', function (ev) {
+      canvas.addEventListener('pointermove', function (ev) {
         if (drag.on) {
+          if (ev.pointerId !== drag.id) return;
           var dx = ev.clientX - drag.x0;
-          if (Math.abs(dx) > 3) drag.moved = true;
+          if (Math.abs(dx) > (drag.touch ? 8 : 3)) drag.moved = true;
           var R = Math.min(st.w, st.h) / 2 - Math.min(st.w, st.h) * 0.07;
           st.rot = drag.rot0 - dx * 90 / R;
           st.hot = null;
           canvas.style.cursor = 'grabbing';
-        } else {
+        } else if (ev.pointerType === 'mouse') {
           var f = hit(ev); st.hot = f ? f.id : null; canvas.style.cursor = f ? 'pointer' : 'grab';
         }
       });
-      canvas.addEventListener('mouseup', function (ev) {
-        if (drag.on && !drag.moved) { var f = hit(ev); if (f) setActive(f.id, true); }
-        drag.on = false;
-        canvas.style.cursor = 'grab';
+      canvas.addEventListener('pointerup', function (ev) {
+        if (!drag.on || ev.pointerId !== drag.id) return;
+        if (!drag.moved) { var f = hit(ev); if (f) setActive(f.id, true); }
+        endDrag();
       });
-      canvas.addEventListener('mouseleave', function () { drag.on = false; });
+      // vertical page scroll or a system gesture steals the pointer
+      canvas.addEventListener('pointercancel', function (ev) {
+        if (drag.on && ev.pointerId === drag.id) endDrag();
+      });
+      canvas.addEventListener('pointerleave', function (ev) {
+        if (ev.pointerType === 'mouse' && !drag.on) { st.hot = null; }
+      });
     }).catch(function () { /* offline: leave loading text */ });
   }
 

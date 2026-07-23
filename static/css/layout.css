@@ -120,7 +120,9 @@
 .globe-band{ background:linear-gradient(180deg, var(--navy-700), var(--abyss-900)); color:#fff; }
 .globe-band__inner{ max-width:var(--container-wide); margin:0 auto; padding:var(--section-y) var(--space-6); display:grid; grid-template-columns:1fr 1fr; gap:var(--space-8); align-items:center; }
 .globe-stage{ height:min(56vh,520px); min-height:380px; position:relative; }
-.globe-stage canvas{ display:block; }
+/* pan-y: vertical swipes still scroll the page, horizontal drags spin the globe.
+   -webkit-tap-highlight-color/user-select keep taps from flashing or selecting. */
+.globe-stage canvas{ display:block; cursor:grab; touch-action:pan-y; -webkit-tap-highlight-color:transparent; -webkit-user-select:none; user-select:none; }
 .globe-loading{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:rgba(174,226,234,0.7); }
 .node-chips{ display:grid; grid-template-columns:1fr 1fr; gap:var(--space-3) var(--space-4); margin-bottom:var(--space-4); }
 .node-chips__col{ display:flex; flex-wrap:wrap; gap:var(--space-2); align-content:flex-start; }
