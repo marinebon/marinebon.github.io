@@ -7,6 +7,11 @@ summary: Developing standardized environmental DNA protocols and pipelines for m
 leads:
 - name: Luke Thompson
   org: NOAA Atlantic Oceanographic and Meteorological Laboratory
+related:
+- /tools/ocean-dna-explorer
+- /tools/obon-fair-edna-workshop-2026
+- /tools/edna-vis
+- /network/southeast-mbon
 tags:
 - method.Genomics
 - topic.eDNA

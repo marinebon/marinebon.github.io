@@ -4,14 +4,18 @@ links:
 - label: Open Ocean DNA Explorer
   primary: true
   url: https://www.oceandnaexplorer.org/
-- label: OBON FAIR eDNA Workshop 2026 (YouTube playlist)
-  url: https://www.youtube.com/playlist?list=PLS6jqgZoUzto
 summary: A data sharing platform, search engine, and visualization and analysis tool for ocean environmental DNA data.
+related:
+- /working-groups/edna
+- /network/southeast-mbon
+- /tools/edna-vis
+- /tools/obon-fair-edna-workshop-2026
 tags:
 - tool.Portal
+- method.Genomics
 - place.Global
+- org.NOAA
 - topic.eDNA
-- topic.Genomics
 - topic.Biodiversity
 title: Ocean DNA Explorer
 weight: 1

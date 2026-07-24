@@ -5,11 +5,16 @@ links:
   url: https://www.youtube.com/playlist?list=PLS6jqgZoUzto
 summary: Recorded sessions from the OBON FAIR eDNA Workshop 2026 on findable, accessible,
   interoperable, and reusable (FAIR) practices for ocean environmental DNA data.
+related:
+- /working-groups/edna
+- /tools/ocean-dna-explorer
 tags:
 - tool.Training
+- method.Genomics
 - place.Global
 - topic.eDNA
 - topic.Capacity-Development
+- topic.Standards
 title: OBON FAIR eDNA Workshop 2026
 weight: 52
 ---

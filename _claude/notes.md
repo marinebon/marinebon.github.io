@@ -14,6 +14,10 @@ Expand and refine the use of , so they could be prefixed by type, eg method.Trac
 And add **People** as its own content type under About to similarly enable connecting with Papers and Projects / Working Groups (ie Network). We want to be able to see related content throughout website.
 
 
+## 2026-07-24
+
+Look for the email thread with subject "eDNA resources for MBON website". Note the updates Adriano (@adrianocl) implemented yesterday to add these to the Products page for the current website marinebon.org found at @../marinebon.github.io. Create similar products but type-specific in this prototype website @../hugo2. Try to create ones as similar as possible and then expand with related working group and tags with a subsequent commit to highlight the extra connectedness of this website. Draft an email response to Gabrielle and Frank demonstrating how its the same backend website and can be similarly updated. Feel free to think of it as an interim website open for further review. There's no need for announcements or fanfare. It is simply an improvement over the status quo. I am not understanding why we haven't switched over already. 
+
 ## 2026-07-10
 
 Done. The nav is now six items, with Papers / Data / Tools collapsed into a single Products dropdown containing Papers, Datasets, and Tools — and no sub-shortcuts under Tools.
