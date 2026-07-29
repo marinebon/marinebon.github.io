@@ -9,6 +9,7 @@ tags:
 - method.Acoustics
 - place.South-Florida
 - org.FWRI
+banner: img/news/from-a-whale-s-song-to-an-ocean-s-symphony-how-ai-decodes-underwater-sound.png
 ---
 
 **Original post**: [From a Whale’s Song to an Ocean’s Symphony: How AI Decodes Underwater Sound - SECOORA](https://secoora.org/from-a-whales-song-to-an-oceans-symphony-how-ai-decodes-underwater-sound/)
