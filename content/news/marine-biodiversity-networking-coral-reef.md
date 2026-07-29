@@ -15,7 +15,7 @@ aliases:
 Marine Biodiversity Networking Friday on IOC/WESTPAC and coral reef survey and recovery activities.
 
 - **Date:** April 8th, 2022, 8–9 AM UTC (3–4 PM Thailand, 4–5 PM Philippines, 5–6 PM Japan)
-- [AIR Centre Networking Fridays — more information](https://www.aircentre.org/netfridays/)
+- [AIR Centre Networking Fridays — more information](https://aircentre.org/en/networking-fridays/)
 - [Watch on YouTube](https://youtu.be/eWd2IUy40iQ)
 
 This Networking Friday was endorsed as a [UN Ocean Decade Activity](https://forum.oceandecade.org/events/p/55374).
