@@ -15,4 +15,4 @@ layout: contact
 
 ---
 
-Found an issue with this website? [Open a GitHub issue](https://github.com/marinebon/hugo2/issues).
+Found an issue with this website? [Open a GitHub issue](https://github.com/marinebon/marinebon.github.io/issues).

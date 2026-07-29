@@ -4,9 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the Marine Biodiversity Observation Network (MBON) website: a **Hugo**
 static site. Content is Markdown with YAML front matter, data is YAML, styling is
-plain CSS tokens. Published to GitHub Pages at `marinebon/hugo2` on every push to
-`main`. `README.md` is the contributor-facing guide and is the source of truth for
-the contribution flow — read it for anything user-facing.
+plain CSS tokens. Published to GitHub Pages at `marinebon/marinebon.github.io` on
+every push to `main`, served at **https://marinebon.org/** (org site, custom domain
+set in the repo's Pages settings). `README.md` is the contributor-facing guide and is
+the source of truth for the contribution flow — read it for anything user-facing.
+
+This repo was `marinebon/hugo2` (served at `marinebon.org/hugo2/`) until the
+2026-07-29 cutover; the site it replaced is archived at
+`marinebon/marinebon.github.io_hugo-2026-07-28`. Anything in `_claude/` that talks
+about a `/hugo2/` base path predates that — **the site now serves at the root**.
 
 ## Commands
 
@@ -29,9 +35,14 @@ Requires Hugo **extended** ≥ 0.163 (CI pins `HUGO_VERSION: 0.163.3` in
 `hugo --gc --minify` must exit 0 and not leak unintended files into `public/`,
 and `check_links.py` must exit 0.
 
-To reproduce the deployed subpath locally (CI serves under `/hugo2/`), build with
-`hugo --gc --minify --baseURL "https://marinebon.org/hugo2/"` before checking —
-the default local `baseURL` has no path, so base-path bugs only surface that way.
+CI builds with `--baseURL "${{ steps.pages.outputs.base_url }}/"`, which is now the
+**root** `https://marinebon.org/` — so the local default `baseURL` matches production
+and a subpath build is no longer needed to catch base-path bugs. Keep the `relURL`
+discipline below anyway: it is what makes the site portable across base paths (it is
+why this repo could be served at `/hugo2/` and then moved to `/` without touching a
+single link), and a preview deploy under a subpath would regress silently otherwise.
+Check with `hugo --gc --minify --baseURL "https://example.org/sub/"` if you change
+link plumbing.
 
 Python helper scripts use only `pyyaml` + stdlib:
 
@@ -238,10 +249,12 @@ Pagefind, and without `-ignore` the hidden values leak into result excerpts.
 - Adding a `content/network/*.md` with `lat`/`lng` auto-adds a globe node
   (`globe.js` reads nodes emitted by `layouts/partials/globe.html`).
 - Markdown allows raw HTML (`unsafe: true` in `hugo.yaml`); icons are Font Awesome 6.
-- **Internal links must carry the base path** (`/hugo2/` in prod). The trap:
+- **Internal links must carry the base path.** Production is the root today, so this
+  costs nothing to honor and everything to skip if the site ever moves again. The trap:
   `relURL` *drops* the base path on a leading-slash string — `relURL "/methods/x/"`
-  → `/methods/x/` (404s under `/hugo2/`), while `relURL "methods/x/"` →
-  `/hugo2/methods/x/`. So write `relURL` args **without** a leading slash, prefer
+  → `/methods/x/` (404s under a subpath like the old `/hugo2/`), while
+  `relURL "methods/x/"` → `/sub/methods/x/`. So write `relURL` args
+  **without** a leading slash, prefer
   `.RelPermalink` for pages, and keep `data/*.yaml` link values slash-free. Markdown
   links/images are safe automatically: `layouts/_default/_markup/render-{link,image}.html`
   trim a leading slash and run every internal destination through `relURL`.

@@ -1,10 +1,10 @@
 # MBON website (Hugo)
 
-The [Marine Biodiversity Observation Network](https://marinebon.github.io) site,
+The [Marine Biodiversity Observation Network](https://marinebon.org) site,
 built with the [Hugo](https://gohugo.io) static-site generator. Content is plain
 **Markdown** with **YAML** front matter; data is **YAML**; styling comes from a
 small set of **CSS tokens**. It is rendered statically and hosted on **GitHub
-Pages** at `marinebon/hugo2`.
+Pages** at `marinebon/marinebon.github.io`.
 
 Two ways to contribute:
 

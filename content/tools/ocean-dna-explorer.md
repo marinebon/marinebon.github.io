@@ -19,6 +19,8 @@ tags:
 - topic.Biodiversity
 title: Ocean DNA Explorer
 weight: 1
+aliases:
+- /products/ocean-dna-explorer/
 ---
 
 The Ocean DNA Explorer is a data portal, search engine, and visualization tool dedicated to ocean environmental DNA (eDNA) data. Built to host datasets generated using standardized protocols, it enables researchers to compare studies, discover trends, and perform complex searches across data contributed by NOAA Omics, NOAA Ocean Exploration, and partner organizations worldwide.

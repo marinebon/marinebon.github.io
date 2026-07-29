@@ -3,8 +3,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: 📖 How contributing works
-    url: https://github.com/marinebon/hugo2/blob/main/README.md#4-contributing-content
+    url: https://github.com/marinebon/marinebon.github.io/blob/main/README.md#4-contributing-content
     about: Read how adding & editing content works, and how tags are chosen, before you start.
   - name: ✏️ Edit a page directly on GitHub
-    url: https://github.com/marinebon/hugo2/tree/main/content
+    url: https://github.com/marinebon/marinebon.github.io/tree/main/content
     about: Power users can edit the Markdown file directly — GitHub opens a fork and a PR for you.

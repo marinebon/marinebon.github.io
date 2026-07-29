@@ -6,7 +6,7 @@
      it works both for original-case tags in front matter and the lowercased terms Hugo
      emits on taxonomy pages. Color comes from .tag--{facet}. The link URL is built from
      the lowercased tag (Hugo lowercases taxonomy terms) run through relURL so it carries
-     the /hugo2/ base path — checked by scripts/check_links.py. */}}
+     the site base path — checked by scripts/check_links.py. */}}
 {{ $raw := . }}{{ $link := false }}
 {{ if reflect.IsMap . }}{{ $raw = .value }}{{ $link = .link }}{{ end }}
 {{ $parts := split $raw "." }}

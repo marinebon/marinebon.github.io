@@ -1,5 +1,5 @@
 {{- /* Markdown link render hook. Mirrors render-image.html: internal links are
-       resolved through relURL so they carry the site base path (e.g. /hugo2/),
+       resolved through relURL so they carry the site base path (root today; a subpath if ever moved),
        both for root-relative ("/tools/x/") and bare ("docs/x.pdf") destinations.
        A leading slash is trimmed first because relURL drops the base path on an
        already-absolute path. External, protocol-relative, mailto/tel, and

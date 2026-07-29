@@ -1,4 +1,4 @@
-baseURL: https://marinebon.github.io/
+baseURL: https://marinebon.org/
 locale: en-us
 title: Marine Biodiversity Observation Network
 summaryLength: 40
@@ -11,7 +11,7 @@ pagination:
 
 params:
   # GitHub repo backing the contribution links (Suggest an edit / Edit on GitHub / Add forms)
-  github_repo: marinebon/hugo2
+  github_repo: marinebon/marinebon.github.io
   github_branch: main
   # Google Apps Script web-app /exec URL backing the Contact form (see scripts/contact-form.gs).
   # Leave empty until deployed; recipient emails live in the script, never on the site.
