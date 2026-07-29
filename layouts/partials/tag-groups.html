@@ -1,0 +1,75 @@
+{{/* Buckets a page list by the values of ONE tag facet, for the grouped list
+     pages (Tools by tool.*, Papers by year.*, Datasets by portal.*).
+
+     Args (dict):
+       pages       page slice to group
+       facet       facet name, e.g. "tool" (matches tags like "tool.Portal")
+       first       optional value hoisted to the front (e.g. "Portal", "OBIS");
+                   every other value sorts alphabetically by its friendly label
+       reverse     sort the non-hoisted values descending (used for year.*)
+       otherLabel  heading for pages carrying no value of this facet (default "Other")
+
+     Returns a slice of dicts {value, label, id, pages}, pages sorted
+     case-insensitively by title. A page tagged with several values of the facet
+     appears in EACH bucket (Sanctuary Watch is both a Portal and an Infographic),
+     so bucket lengths sum to more than len(pages) — list pages give each copy its
+     own [data-filter-item] and a data-filter-key so the shared filter still
+     counts distinct pages. Pages with no value land in the trailing "other"
+     bucket (value ""), so nothing ever drops off the page. */}}
+{{ $pages  := .pages }}
+{{ $facet  := .facet }}
+{{ $first  := .first | default "" }}
+{{ $rev    := .reverse | default false }}
+{{ $other  := .otherLabel | default "Other" }}
+{{ $prefix := printf "%s." $facet }}
+
+{{/* distinct values in play, keeping the front-matter casing */}}
+{{ $values := slice }}
+{{ range $pages }}
+  {{ range .Params.tags }}
+    {{ if hasPrefix (lower .) (lower $prefix) }}
+      {{ $values = $values | append (substr . (len $prefix)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $values = $values | uniq }}
+
+{{/* one bucket per value, pages sorted A→Z by title (case-insensitive) */}}
+{{ $groups := slice }}
+{{ range $values }}
+  {{ $value := . }}
+  {{ $keyed := slice }}
+  {{ range where $pages "Params.tags" "intersect" (slice (printf "%s%s" $prefix $value)) }}
+    {{ $keyed = $keyed | append (dict "k" (lower .Title) "p" .) }}
+  {{ end }}
+  {{ $sorted := slice }}
+  {{ range sort $keyed "k" }}{{ $sorted = $sorted | append .p }}{{ end }}
+  {{ $groups = $groups | append (dict
+      "value" $value
+      "label" (partial "tag-label.html" (dict "facet" $facet "value" $value))
+      "id"    (printf "%s-%s" $facet (urlize $value))
+      "pages" $sorted) }}
+{{ end }}
+
+{{/* order: hoisted value, then the rest by label (desc for years) */}}
+{{ $ordered := sort $groups "label" (cond $rev "desc" "asc") }}
+{{ $out := slice }}
+{{ if $first }}
+  {{ range $ordered }}{{ if eq .value $first }}{{ $out = $out | append . }}{{ end }}{{ end }}
+{{ end }}
+{{ range $ordered }}{{ if or (not $first) (ne .value $first) }}{{ $out = $out | append . }}{{ end }}{{ end }}
+
+{{/* trailing bucket for pages with no value of this facet */}}
+{{ $untagged := slice }}
+{{ range $pages }}
+  {{ $has := false }}
+  {{ range .Params.tags }}{{ if hasPrefix (lower .) (lower $prefix) }}{{ $has = true }}{{ end }}{{ end }}
+  {{ if not $has }}{{ $untagged = $untagged | append (dict "k" (lower .Title) "p" .) }}{{ end }}
+{{ end }}
+{{ if $untagged }}
+  {{ $sorted := slice }}
+  {{ range sort $untagged "k" }}{{ $sorted = $sorted | append .p }}{{ end }}
+  {{ $out = $out | append (dict "value" "" "label" $other "id" (printf "%s-other" $facet) "pages" $sorted) }}
+{{ end }}
+
+{{ return $out }}

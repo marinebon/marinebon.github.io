@@ -151,6 +151,31 @@ edits. Deep links `?<facet>=v1,v2` and `?q=` pre-select and are written back for
 shareable filtered views. This replaced three near-identical filter engines
 (`filter.js`/`tools-filter.js`/`papers-filter.js`, now deleted).
 
+### Grouped list pages (Tools / Papers / Datasets)
+
+The three catalogs are **grouped under headings by one facet** — Tools by `tool.*`
+(Portal first, then A→Z), Papers by `year.*` (newest first), Datasets by `portal.*`
+(OBIS first, then A→Z) — with items **alphabetical by title** inside each group. Three
+partials do it, all facet-agnostic, so pointing a fourth list at a different facet is a
+one-line change:
+- `tag-groups.html` **returns** the ordered buckets (`{value,label,id,pages}`) for
+  `(dict "pages" … "facet" … "first" … "reverse" … "otherLabel" …)`. A page carrying
+  **several values of the facet appears in every bucket** — Sanctuary Watch is both a
+  Portal and an Infographic, and ~34 datasets are in both OBIS and GBIF. Pages with no
+  value of the facet fall into a trailing bucket (papers → "Undated"), so nothing drops
+  off the page.
+- `tag-group-head.html` renders the heading (facet-tinted rule, live count).
+- `tag-pills.html` renders the quick-filter pill row under the search bar.
+- `tag-label.html` resolves one `facet.value` to its friendly registry label and is now
+  the single source for that lookup (`tag.html` calls it too).
+
+Because a page can repeat, each `[data-filter-item]` carries `data-filter-key`
+(its `.RelPermalink`) and the JS tallies **distinct keys** — "49 tools", not 51 cards.
+Quick pills share the selection state of the dropdown chips and the `?facet=value` deep
+link (click toggles; counts and `is-active` follow the filter), and when the grouping
+facet is filtered, **only the chosen groups' sections stay visible** — otherwise picking
+"Infographic" would still show a "Portal" heading for a tool that is both.
+
 ### The contribution pipeline (no-Git path)
 
 ```
@@ -193,9 +218,9 @@ only if it carries an MBON text signal *or* is served by the MBON IPT
 stdlib re-implementation of `erddapy.multiple_server_search` over the
 awesome-erddap registry. The new `portal` facet (OBIS/GBIF/EDI/ERDDAP) lives in
 `data/tags.yaml` like any other; since datasets are harvested, it needs no
-issue-template counterpart. `datasets/{list,single}` reuse the generic
-`static/js/filter.js` (parameterized by `data-noun`/`data-param`), and each
-dataset page emits `schema.org/Dataset` JSON-LD for Google Dataset Search.
+issue-template counterpart. `datasets/list` uses the unified tag filter and is
+grouped by portal (see above), and each dataset page emits `schema.org/Dataset`
+JSON-LD for Google Dataset Search.
 
 Search (`layouts/search.html`, Pagefind) renders the same type-aware cards in JS.
 `baseof.html` emits per-page Pagefind meta (`type`, `badge`, `image`) as **one

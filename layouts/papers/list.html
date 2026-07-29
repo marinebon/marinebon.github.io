@@ -12,27 +12,39 @@
   <section class="section">
     <div class="container">
 
-      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "papers") }}
+      {{/* grouped by the year.* tag, newest first; the group heading carries the
+           year, so the row no longer repeats it. Papers with no year tag land in
+           a trailing "Undated" group. */}}
+      {{ $groups := partial "tag-groups.html" (dict
+          "pages" (where site.RegularPages "Section" "papers")
+          "facet" "year" "reverse" true "otherLabel" "Undated") }}
 
-      <ul class="paper-list">
-        {{ range sort (where site.RegularPages "Section" "papers") "Params.year" "desc" }}
-        <li class="paper-row" data-filter-item data-tags="{{ delimit (.Params.tags | default slice) " " }}">
-          <span class="paper-row__year">{{ .Params.year }}</span>
-          <div class="paper-row__body">
-            <a class="paper-row__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <span class="paper-row__meta">
-              {{ with .Params.authors }}
-                {{ index . 0 }}{{ if gt (len .) 1 }} et al.{{ end }}
-              {{ end }}
-              {{ with .Params.journal }}<em class="paper-row__journal"> · {{ . }}</em>{{ end }}
-            </span>
-            <div class="paper-row__tags">
-              {{ range .Params.tags }}{{ partial "tag.html" . }}{{ end }}
-            </div>
-          </div>
-        </li>
-        {{ end }}
-      </ul>
+      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "papers") }}
+      {{ partial "tag-pills.html" (dict "facet" "year" "groups" $groups) }}
+
+      {{ range $groups }}
+        <div class="tag-group" data-filter-section data-facet="year" data-value="{{ .value }}">
+          {{ partial "tag-group-head.html" (dict "group" . "facet" "year") }}
+          <ul class="paper-list">
+            {{ range .pages }}
+            <li class="paper-row" data-filter-item data-filter-key="{{ .RelPermalink }}" data-tags="{{ delimit (.Params.tags | default slice) " " }}">
+              <div class="paper-row__body">
+                <a class="paper-row__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <span class="paper-row__meta">
+                  {{ with .Params.authors }}
+                    {{ index . 0 }}{{ if gt (len .) 1 }} et al.{{ end }}
+                  {{ end }}
+                  {{ with .Params.journal }}<em class="paper-row__journal"> · {{ . }}</em>{{ end }}
+                </span>
+                <div class="paper-row__tags">
+                  {{ range .Params.tags }}{{ partial "tag.html" . }}{{ end }}
+                </div>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
 
       <div data-filter-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
         <i class="fas fa-file-circle-xmark" style="font-size:32px;opacity:.4;" aria-hidden="true"></i>

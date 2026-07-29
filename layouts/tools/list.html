@@ -9,17 +9,29 @@
     </div>
   </section>
 
+  {{/* grouped by tool type: Portal first, then A→Z; a tool with two types
+       (e.g. Sanctuary Watch = Portal + Infographic) appears under each */}}
+  {{ $groups := partial "tag-groups.html" (dict
+      "pages" (where site.RegularPages "Section" "tools")
+      "facet" "tool" "first" "Portal" "otherLabel" "Other tools") }}
+
   <section class="section">
     <div class="container">
       {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "tools") }}
+      {{ partial "tag-pills.html" (dict "facet" "tool" "groups" $groups) }}
 
-      <div class="grid-auto">
-        {{ range sort (where site.RegularPages "Section" "tools") "Params.weight" }}
-          <div data-filter-item data-tags="{{ delimit (.Params.tags | default slice) " " }}">
-            {{ partial "card-tool.html" . }}
+      {{ range $groups }}
+        <div class="tag-group" data-filter-section data-facet="tool" data-value="{{ .value }}">
+          {{ partial "tag-group-head.html" (dict "group" . "facet" "tool") }}
+          <div class="grid-auto">
+            {{ range .pages }}
+              <div data-filter-item data-filter-key="{{ .RelPermalink }}" data-tags="{{ delimit (.Params.tags | default slice) " " }}">
+                {{ partial "card-tool.html" . }}
+              </div>
+            {{ end }}
           </div>
-        {{ end }}
-      </div>
+        </div>
+      {{ end }}
 
       <div data-filter-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
         <i class="fas fa-fish" style="font-size:32px;opacity:.4;" aria-hidden="true"></i>

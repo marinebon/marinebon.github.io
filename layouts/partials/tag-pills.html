@@ -1,0 +1,19 @@
+{{/* Quick-filter pills — one per group produced by tag-groups.html, in the same
+     order as the headings below them. They are wired into the unified tag filter
+     by static/js/tag-filter.js: clicking one toggles that tag (so it stays in
+     sync with the dropdown chips and the ?facet=value deep link), and the count
+     tracks how many items in that group survive the current filter.
+     Args: dict {facet, groups}. Colors come from the .tag--<facet> class. */}}
+{{ $facet := .facet }}
+{{ $flabel := humanize $facet }}
+{{ range hugo.Data.tags }}{{ if eq (lower .facet) (lower $facet) }}{{ $flabel = .label }}{{ end }}{{ end }}
+<div class="tag-pills" role="group" aria-label="Filter by {{ $flabel }}">
+  {{ range .groups }}
+    {{ if .value }}
+      <button type="button" class="tag tag--{{ $facet }} tag-pills__pill"
+              data-quick-filter data-facet="{{ $facet }}" data-value="{{ .value }}" aria-pressed="false">
+        {{ .label }}<span class="tag-pills__n">{{ len .pages }}</span>
+      </button>
+    {{ end }}
+  {{ end }}
+</div>

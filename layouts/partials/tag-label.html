@@ -1,0 +1,19 @@
+{{/* Returns the friendly display label for one facet value, resolved from the
+     canonical registry (data/tags.yaml): `values` first, then `aliases`, matched
+     case-insensitively (Hugo lowercases taxonomy terms). Falls back to the
+     humanized value; a pure-numeric value (a year) is left as-is.
+     Args: dict {facet, value}. Used by tag.html, tag-groups.html, tag-pills.html. */}}
+{{ $facet := .facet }}
+{{ $value := .value }}
+{{ $label := cond (findRE `^\d+$` $value) $value (humanize $value) }}
+{{ range hugo.Data.tags }}
+  {{ if eq (lower .facet) (lower $facet) }}
+    {{ range .values }}
+      {{ if eq (lower .value) (lower $value) }}{{ $label = .name }}{{ end }}
+    {{ end }}
+    {{ range $k, $v := .aliases }}
+      {{ if eq (lower $k) (lower $value) }}{{ $label = $v }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $label }}

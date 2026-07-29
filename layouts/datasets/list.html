@@ -51,15 +51,27 @@
       <h2 style="margin:var(--space-2) 0 var(--space-3);">{{ len $datasets }} marine biodiversity datasets</h2>
       <p style="max-width:64ch;color:var(--text-body);margin-bottom:var(--space-6);">Harvested from <strong>OBIS</strong>, <strong>GBIF</strong>, <strong>EDI</strong>, and <strong>ERDDAP</strong>. The same dataset is often mirrored across portals — we list the <strong>OBIS</strong> record when available, since it carries richer Darwin&nbsp;Core extensions and QA/QC. Filter by portal, method, region, or organization; every card links back to its source.</p>
 
-      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "datasets") }}
+      {{/* grouped by portal: OBIS first (the canonical record when a dataset is
+           mirrored), then A→Z. A cross-listed dataset appears under each portal
+           that serves it. */}}
+      {{ $groups := partial "tag-groups.html" (dict
+          "pages" $datasets "facet" "portal" "first" "OBIS" "otherLabel" "Other portals") }}
 
-      <div class="grid-auto">
-        {{ range sort $datasets "Params.records" "desc" }}
-          <div data-filter-item data-tags="{{ delimit (.Params.tags | default slice) " " }}">
-            {{ partial "card-dataset.html" . }}
+      {{ partial "tag-filter.html" (dict "mode" "dom" "noun" "datasets") }}
+      {{ partial "tag-pills.html" (dict "facet" "portal" "groups" $groups) }}
+
+      {{ range $groups }}
+        <div class="tag-group" data-filter-section data-facet="portal" data-value="{{ .value }}">
+          {{ partial "tag-group-head.html" (dict "group" . "facet" "portal") }}
+          <div class="grid-auto">
+            {{ range .pages }}
+              <div data-filter-item data-filter-key="{{ .RelPermalink }}" data-tags="{{ delimit (.Params.tags | default slice) " " }}">
+                {{ partial "card-dataset.html" . }}
+              </div>
+            {{ end }}
           </div>
-        {{ end }}
-      </div>
+        </div>
+      {{ end }}
 
       <div data-filter-empty style="display:none;text-align:center;padding:var(--space-9);color:var(--text-muted);">
         <i class="fas fa-fish" style="font-size:32px;opacity:.4;" aria-hidden="true"></i>

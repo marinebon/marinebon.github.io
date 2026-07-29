@@ -42,6 +42,9 @@
     var countEl  = root.querySelector('.tag-filter__count');
     var statusEl = root.querySelector('.tag-filter__status');   // pagefind only
     var resultsEl = root.querySelector('.tag-filter__results'); // pagefind only
+    // quick-filter pills above a grouped list (partials/tag-pills.html) — same
+    // selection state as the dropdown, so the two always agree
+    var quickPills = [].slice.call(document.querySelectorAll('[data-quick-filter]'));
 
     // selected filters, in add order: [{facet, value}]
     var selected = [];
@@ -148,6 +151,15 @@
     function updateClear() {
       clearEl.hidden = !(selected.length || (textEl.value || '').trim());
     }
+    // quick pills mirror the current selection (a tag added from the dropdown or
+    // the URL lights up its pill, and vice versa)
+    function renderQuick() {
+      quickPills.forEach(function (b) {
+        var on = isSelected(b.getAttribute('data-facet'), b.getAttribute('data-value'));
+        b.classList.toggle('is-active', on);
+        b.setAttribute('aria-pressed', String(on));
+      });
+    }
 
     /* ---- URL sync (shareable filtered views) ----------------------------- */
     function syncUrl() {
@@ -189,28 +201,51 @@
     }
     function domApply() {
       var q = (textEl.value || '').toLowerCase().trim();
-      var shown = 0;
-      cards.forEach(function (card) {
+      // grouped lists repeat a card under every group it belongs to (a tool that is
+      // both a Portal and an Infographic), so the tally counts distinct pages via
+      // data-filter-key rather than DOM nodes
+      var shown = {}, total = {};
+      cards.forEach(function (card, i) {
+        var key = card.getAttribute('data-filter-key') || ('#' + i);
+        total[key] = 1;
         var ok = selected.every(function (s) {
           return card._tags.indexOf(s.facet + '.' + s.value) !== -1;
         }) && (!q || card._text.indexOf(q) !== -1);
         card.style.display = ok ? '' : 'none';
-        if (ok) shown++;
+        if (ok) shown[key] = 1;
       });
-      // multi-section lists (e.g. Events → Upcoming/Past): hide a whole section,
-      // heading and all, once none of its items are visible
+      // multi-section lists (Events → Upcoming/Past, and the grouped Tools/Papers/
+      // Datasets catalogs): hide a whole section, heading and all, once none of its
+      // items are visible, and keep its heading + pill counts in step
       [].forEach.call(document.querySelectorAll('[data-filter-section]'), function (sec) {
-        var anyVisible = [].some.call(sec.querySelectorAll('[data-filter-item]'), function (c) {
+        var vis = [].filter.call(sec.querySelectorAll('[data-filter-item]'), function (c) {
           return c.style.display !== 'none';
+        }).length;
+        var facet = sec.getAttribute('data-facet'), value = sec.getAttribute('data-value');
+        // when the grouping facet itself is filtered (a pill / chip on tool, year,
+        // portal), show only the chosen groups — otherwise picking "Infographic"
+        // would still surface a "Portal" heading for a tool that is both
+        var chosen = true;
+        if (facet) {
+          var picks = selected.filter(function (s) { return s.facet === facet; });
+          chosen = !picks.length || picks.some(function (s) { return s.value === value; });
+        }
+        sec.style.display = (vis && chosen) ? '' : 'none';
+        var cnt = sec.querySelector('[data-group-count]');
+        if (cnt) cnt.textContent = vis;
+        if (!facet || !value) return;
+        quickPills.forEach(function (b) {
+          if (b.getAttribute('data-facet') !== facet || b.getAttribute('data-value') !== value) return;
+          var n = b.querySelector('.tag-pills__n');
+          if (n) n.textContent = vis;
         });
-        sec.style.display = anyVisible ? '' : 'none';
       });
-      var active = selected.length || q;
-      countEl.textContent = active
-        ? shown + ' of ' + cards.length + ' ' + noun
-        : cards.length + ' ' + noun;
+      var nShown = Object.keys(shown).length, nTotal = Object.keys(total).length;
+      countEl.textContent = (selected.length || q)
+        ? nShown + ' of ' + nTotal + ' ' + noun
+        : nTotal + ' ' + noun;
       var empty = document.querySelector('[data-filter-empty]');
-      if (empty) empty.style.display = shown === 0 ? '' : 'none';
+      if (empty) empty.style.display = nShown === 0 ? '' : 'none';
     }
 
     /* ====================================================================== */
@@ -299,7 +334,7 @@
     /* ---- unified apply ---------------------------------------------------- */
     function apply() { updateClear(); mode === 'pagefind' ? pfApply() : domApply(); }
 
-    function changed() { renderChips(); renderPanel(); syncUrl(); apply(); }
+    function changed() { renderChips(); renderPanel(); renderQuick(); syncUrl(); apply(); }
 
     /* ---- events ----------------------------------------------------------- */
     addBtn.addEventListener('click', function () {
@@ -331,6 +366,14 @@
       removeSel(b.getAttribute('data-facet'), b.getAttribute('data-value'));
       changed();
     });
+    // quick pill toggles its own tag
+    quickPills.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var f = b.getAttribute('data-facet'), v = b.getAttribute('data-value');
+        if (isSelected(f, v)) removeSel(f, v); else addSel(f, v);
+        changed();
+      });
+    });
     clearEl.addEventListener('click', function () { selected = []; textEl.value = ''; changed(); });
     // close panel on outside click
     document.addEventListener('click', function (e) {
@@ -361,10 +404,10 @@
     /* ---- boot ------------------------------------------------------------- */
     if (mode === 'pagefind') {
       pfSetup().then(function () {
-        ensureColors(); readUrl(); renderChips(); renderPanel(); apply();
+        ensureColors(); readUrl(); renderChips(); renderPanel(); renderQuick(); apply();
       });
     } else {
-      domSetup(); ensureColors(); readUrl(); renderChips(); renderPanel(); apply();
+      domSetup(); ensureColors(); readUrl(); renderChips(); renderPanel(); renderQuick(); apply();
     }
   }
 

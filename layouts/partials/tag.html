@@ -13,18 +13,8 @@
 {{ if ge (len $parts) 2 }}
   {{ $facet := index $parts 0 }}
   {{ $value := strings.TrimPrefix (printf "%s." $facet) $raw }}
-  {{ $label := cond (findRE `^\d+$` $value) $value (humanize $value) }}
-  {{/* look up friendly label from the canonical registry: values first, then aliases */}}
-  {{ range hugo.Data.tags }}
-    {{ if eq (lower .facet) (lower $facet) }}
-      {{ range .values }}
-        {{ if eq (lower .value) (lower $value) }}{{ $label = .name }}{{ end }}
-      {{ end }}
-      {{ range $k, $v := .aliases }}
-        {{ if eq (lower $k) (lower $value) }}{{ $label = $v }}{{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
+  {{/* friendly label from the canonical registry (shared with the grouped lists) */}}
+  {{ $label := partial "tag-label.html" (dict "facet" $facet "value" $value) }}
   {{ if $link }}<a class="tag tag--{{ $facet | lower }}" href="{{ relURL (printf "tags/%s/" (lower $raw)) }}">{{ $label }}</a>
   {{ else }}<span class="tag tag--{{ $facet | lower }}">{{ $label }}</span>{{ end }}
 {{ else }}

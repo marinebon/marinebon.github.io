@@ -1,0 +1,8 @@
+{{/* Heading for one bucket of a grouped list page. The count is live — the DOM
+     filter rewrites [data-group-count] as filters change (tag-filter.js).
+     Args: dict {group (from tag-groups.html), facet}. */}}
+{{ $facet := .facet }}{{ $g := .group }}
+<div class="tag-group__head" id="{{ $g.id }}" style="--_c:var(--facet-{{ $facet }}, var(--ink-500));">
+  <h2 class="tag-group__title">{{ $g.label }}</h2>
+  <span class="tag-group__count"><span data-group-count>{{ len $g.pages }}</span></span>
+</div>

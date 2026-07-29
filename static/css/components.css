@@ -324,20 +324,13 @@ a.card:hover .card__foot i{ transform:translateX(3px); }
   list-style:none; margin:var(--space-6) 0 0; padding:0;
   display:flex; flex-direction:column; gap:0;
 }
+/* the year lives in the group heading now, so the row is a single column */
 .paper-row{
-  display:grid;
-  grid-template-columns:4rem 1fr;
-  gap:var(--space-4);
-  align-items:start;
   padding:var(--space-4) 0;
   border-bottom:1px solid var(--border);
   transition:background var(--dur-fast) var(--ease-out);
 }
 .paper-row:last-child{ border-bottom:none; }
-.paper-row__year{
-  font-family:var(--font-mono); font-size:var(--text-sm); font-weight:var(--fw-semibold);
-  color:var(--text-muted); line-height:1.4; padding-top:.15em; text-align:right;
-}
 .paper-row__body{ display:flex; flex-direction:column; gap:var(--space-1); }
 .paper-row__title{
   font:var(--type-card); color:var(--text-heading); text-decoration:none; line-height:1.4;
@@ -418,6 +411,9 @@ a.card:hover .card__foot i{ transform:translateX(3px); }
 .tag-filter__foot{ display:flex; flex-wrap:wrap; align-items:center; gap:var(--space-2); margin-top:var(--space-3); }
 .tag-filter__chips{ display:flex; flex-wrap:wrap; gap:var(--space-2); }
 .tag-filter__count{ margin-left:auto; font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); }
+/* .btn's display:inline-flex outranks the UA [hidden] rule — keep Clear hidden
+   until a filter is actually active */
+.tag-filter__clear[hidden]{ display:none; }
 .tag-filter__status{ font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); margin:var(--space-3) 0 0; }
 .tag-filter__results{ margin-top:var(--space-6); }
 /* phones: the tag adder drops below the text input instead of crowding it */
@@ -428,6 +424,30 @@ a.card:hover .card__foot i{ transform:translateX(3px); }
   .tag-filter__panel{ width:100%; }
   .tag-filter__count{ margin-left:0; }
 }
+
+/* ---- Grouped list pages: quick pills + section headings ------------------ */
+/* Tools by tool.*, Papers by year.*, Datasets by portal.*. The pills sit under
+   the filter bar and toggle the same selection as the dropdown chips; each
+   heading marks one group and shows a live count. See partials/tag-pills.html,
+   partials/tag-group-head.html, static/js/tag-filter.js. */
+.tag-pills{
+  display:flex; flex-wrap:wrap; gap:var(--space-2);
+  margin:calc(-1 * var(--space-3)) 0 var(--space-7);
+}
+.tag-pills__pill{ font-size:var(--text-sm); padding:.5em .9em; }
+.tag-pills__n{
+  font-family:var(--font-mono); font-size:.85em; opacity:.65;
+  padding-left:.15em;
+}
+.tag-group{ margin-bottom:var(--space-8); }
+.tag-group:last-of-type{ margin-bottom:0; }
+.tag-group__head{
+  display:flex; align-items:baseline; gap:var(--space-3);
+  margin:0 0 var(--space-5); padding-bottom:var(--space-2); scroll-margin-top:5rem;
+  border-bottom:2px solid color-mix(in srgb, var(--_c,var(--ink-500)) 32%, transparent);
+}
+.tag-group__title{ font:var(--type-h3); margin:0; color:var(--text-heading); }
+.tag-group__count{ font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-muted); }
 
 /* ---- Search results (shared by /search/, /404, and the tag filter) ------- */
 .tag-chip{ display:inline-flex; align-items:center; gap:.4em; }
