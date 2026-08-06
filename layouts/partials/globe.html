@@ -23,14 +23,14 @@
       <p style="color:var(--text-on-dark-muted);max-width:46ch;margin-bottom:var(--space-5);">{{ .lead }}</p>
       <div class="node-chips">
         <div class="node-chips__col">
-          <span class="node-chip-label">USA</span>
-          {{ range $usa.ByTitle }}
+          <span class="node-chip-label"></span>
+          {{ range $intl.ByTitle }}
             <button class="node-chip" data-node-id="{{ .File.ContentBaseName }}">{{ replace .Title " MBON" "" }}</button>
           {{ end }}
         </div>
         <div class="node-chips__col">
-          <span class="node-chip-label">Worldwide</span>
-          {{ range $intl.ByTitle }}
+          <span class="node-chip-label">USA</span>
+          {{ range $usa.ByTitle }}
             <button class="node-chip" data-node-id="{{ .File.ContentBaseName }}">{{ replace .Title " MBON" "" }}</button>
           {{ end }}
         </div>
