@@ -29,7 +29,7 @@
           {{ end }}
         </div>
         <div class="node-chips__col">
-          <span class="node-chip-label">USA</span>
+          <span class="node-chip-label node-chip-label--sub">USA</span>
           {{ range $usa.ByTitle }}
             <button class="node-chip" data-node-id="{{ .File.ContentBaseName }}">{{ replace .Title " MBON" "" }}</button>
           {{ end }}
