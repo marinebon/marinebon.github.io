@@ -18,16 +18,16 @@
             </a>
             <div class="nav-dropdown__panel">
               <div class="nav-dropdown__col">
-                <span class="nav-dropdown__label">USA</span>
-                {{ range $usa.ByTitle }}
-                  <a href="{{ .RelPermalink }}">{{ .Title | strings.TrimSuffix " MBON" }}</a>
-                {{ end }}
-              </div>
-              <div class="nav-dropdown__col">
-                <span class="nav-dropdown__label">Worldwide</span>
+                <span class="nav-dropdown__label">Regional Nodes</span>
                 {{ range $intl.ByTitle }}
                   <a href="{{ .RelPermalink }}">{{ .Title | strings.TrimSuffix " MBON" }}</a>
                 {{ end }}
+                <div class="nav-dropdown__col">
+                  <span class="nav-dropdown__sublabel">USA</span>
+                    {{ range $usa.ByTitle }}
+                      <a href="{{ .RelPermalink }}">{{ .Title | strings.TrimSuffix " MBON" }}</a>
+                    {{ end }}
+                </div>
               </div>
               <div class="nav-dropdown__col">
                 <span class="nav-dropdown__label">Working Groups</span>
