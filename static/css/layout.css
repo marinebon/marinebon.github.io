@@ -127,7 +127,7 @@
 .node-chips{ display:grid; grid-template-columns:1fr 1fr; gap:var(--space-3) var(--space-4); margin-bottom:var(--space-4); }
 .node-chips__col{ display:flex; flex-wrap:wrap; gap:var(--space-2); align-content:flex-start; }
 .node-chip-label{ flex-basis:100%; font-family:var(--font-mono); font-size:var(--text-xs); text-transform:uppercase; letter-spacing:var(--ls-wide); color:rgba(174,226,234,0.45); padding-bottom:var(--space-1); border-bottom:1px solid rgba(255,255,255,0.10); }
-.node-chip-label--sub{ flex-basis:100%; margin-top:var(--space-3); font-family:var(--font-mono); font-size:calc(var(--text-xs) * 0.9); text-transform:uppercase; letter-spacing:var(--ls-wide); color:rgba(174,226,234,0.30); padding-bottom:var(--space-1); border-bottom:1px solid rgba(255,255,255,0.05); }
+.node-chip-label--sub{ flex-basis:100%; margin-top:var(--space-3); font-family:var(--font-mono); font-size:calc(var(--text-xs) * 0.9); text-transform:uppercase; letter-spacing:var(--ls-wide); color:rgba(174,226,234,0.30); padding-bottom:var(--space-1); border-bottom:0px solid rgba(255,255,255,0.05); }
 .node-chip{ font-family:var(--font-mono); font-size:var(--text-xs); cursor:pointer; padding:6px 12px; border-radius:var(--radius-pill); border:1px solid rgba(174,226,234,0.3); background:transparent; color:var(--aqua-200); transition:all .15s; }
 .node-chip.is-active{ border-color:var(--coral-500); background:var(--coral-500); color:#fff; }
 .node-card{ background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-lg); padding:var(--space-4); }
