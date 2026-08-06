@@ -23,9 +23,9 @@
       <p style="color:var(--text-on-dark-muted);max-width:46ch;margin-bottom:var(--space-5);">{{ .lead }}</p>
       <div class="node-chips_single_col">
         <div class="node-chips__col">
-          <span class="node-chip-label"></span>
+          <span class="node-chip-label node-chip-label--sub"></span>
           {{ range $intl.ByTitle }}
-            <button class="node-chip node-chip-label--sub" data-node-id="{{ .File.ContentBaseName }}">{{ replace .Title " MBON" "" }}</button>
+            <button class="node-chip" data-node-id="{{ .File.ContentBaseName }}">{{ replace .Title " MBON" "" }}</button>
           {{ end }}
           <span class="node-chip-label">USA</span>
           {{ range $usa.ByTitle }}
