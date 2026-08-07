@@ -60,9 +60,14 @@ We, the **MBON** members, are international and strive to nurture a global commu
 ### MBON Executive Secretary
 
 <div class="people-grid">
-{{< person img="img/about/headshot_Joana_Soares.jpeg" name="Joana Soares" org="GEO BON / MBON Secretariat" >}}
+{{< person img="img/about/headshot_Joana_Soares.jpeg" name="Joana Soares" org="Atlantic International Research Centre, Portugal" >}}
 </div>
 
+### MBON Scientific Programmer
+
+<div class="people-grid">
+{{< person img="img/about/adriano-lima.jpeg" name="Adriano Lima" org="Atlantic International Research Centre, Portugal" >}}
+</div>
 ---
 
 ## Code of Conduct
