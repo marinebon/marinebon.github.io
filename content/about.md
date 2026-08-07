@@ -69,8 +69,6 @@ We, the **MBON** members, are international and strive to nurture a global commu
 {{< person img="img/about/adriano-lima.jpeg" name="Adriano Lima" org="Atlantic International Research Centre, Portugal" >}}
 </div>
 
----
-
 ## Code of Conduct
 
 Values and principles regarding how we work with others, engage with society, and how our work and methods impact life and nature.
