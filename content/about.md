@@ -68,6 +68,7 @@ We, the **MBON** members, are international and strive to nurture a global commu
 <div class="people-grid">
 {{< person img="img/about/adriano-lima.jpeg" name="Adriano Lima" org="Atlantic International Research Centre, Portugal" >}}
 </div>
+
 ---
 
 ## Code of Conduct
