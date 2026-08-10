@@ -3,7 +3,7 @@ banner: img/photos/ocean-blue.jpg
 fcenter:
 - -119
 - 44
-footprint: 45
+footprint: 40
 kind_node: regional
 geo: International
 lat: 38
