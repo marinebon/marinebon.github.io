@@ -87,9 +87,9 @@
       {{ range $t := $tiers }}
         {{ $items := where hugo.Data.partners "tier" $t.key }}
         {{ with $items }}
-        <div style="margin-top:var(--space-7);">
+        <div style="margin-top:var(--space-4);">
           {{/*<span class="eyebrow eyebrow--rule">{{ $t.label }} <span style="opacity:.6;">· {{ len . }}</span></span>*/}}
-          <p class="tags-note" style="max-width:70ch;margin:var(--space-2) 0 0;font-size:var(--text-sm);color:var(--text-muted);">{{ $t.note }}</p>
+          <p class="tags-note" style="max-width:70ch;margin:var(--space-1) 0 0;font-size:var(--text-sm);color:var(--text-muted);">{{ $t.note }}</p>
           <div class="partner-grid">
             {{ range . }}
               {{ $internal := hasPrefix .url "/" }}
