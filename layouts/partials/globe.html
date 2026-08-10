@@ -60,7 +60,7 @@
               <a class="partner-tile" title="{{ .name }}"
                  href="{{ if $internal }}{{ (strings.TrimPrefix "/" .url) | relURL }}{{ else }}{{ .url }}{{ end }}"{{ if not $internal }} target="_blank" rel="noopener"{{ end }}>
                 <img src="{{ .logo | relURL }}" alt="{{ .name }} logo" loading="lazy">
-                {{/*<span>{{ .name }}</span>*/}}
+                <span>{{ .name }}</span>
               </a>
             {{ end }}
           </div>
@@ -115,14 +115,6 @@
       {{ end }}
     </div>
     */}}
-
-     <div class="partner-strip" style="margin-top:var(--space-4);">
-      {{ range $t := $tiers }}
-        <a class="partner-chip" href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener">
-          <img src="{{ .logo | relURL }}" alt="{{ .name }}">
-        </a>
-      {{ end }}
-    </div>
        
     <div style="margin-top:var(--space-4);">
       <a class="btn btn--on-photo btn--sm" href="{{ "network/partners" | relURL }}">View all partners <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
