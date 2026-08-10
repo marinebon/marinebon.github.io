@@ -51,7 +51,7 @@
         {{ $items := where hugo.Data.partners "tier" $t.key }}
         {{ with $items }}
         <div style="margin-top:var(--space-7);">
-          <span class="eyebrow eyebrow--rule">{{ $t.label }} <span style="opacity:.6;">· {{ len . }}</span></span>
+          {{/*<span class="eyebrow eyebrow--rule">{{ $t.label }} <span style="opacity:.6;">· {{ len . }}</span></span>*/}}
           <p class="tags-note" style="max-width:70ch;margin:var(--space-2) 0 0;font-size:var(--text-sm);color:var(--text-muted);">{{ $t.note }}</p>
           <div class="partner-grid">
             {{ range . }}
@@ -60,7 +60,7 @@
               <a class="partner-tile" title="{{ .name }}"
                  href="{{ if $internal }}{{ (strings.TrimPrefix "/" .url) | relURL }}{{ else }}{{ .url }}{{ end }}"{{ if not $internal }} target="_blank" rel="noopener"{{ end }}>
                 <img src="{{ .logo | relURL }}" alt="{{ .name }} logo" loading="lazy">
-                <span>{{ .name }}</span>
+                {{/*<span>{{ .name }}</span>*/}}
               </a>
             {{ end }}
           </div>
@@ -88,7 +88,7 @@
         {{ $items := where hugo.Data.partners "tier" $t.key }}
         {{ with $items }}
         <div style="margin-top:var(--space-7);">
-          <span class="eyebrow eyebrow--rule">{{ $t.label }} <span style="opacity:.6;">· {{ len . }}</span></span>
+          {{/*<span class="eyebrow eyebrow--rule">{{ $t.label }} <span style="opacity:.6;">· {{ len . }}</span></span>*/}}
           <p class="tags-note" style="max-width:70ch;margin:var(--space-2) 0 0;font-size:var(--text-sm);color:var(--text-muted);">{{ $t.note }}</p>
           <div class="partner-grid">
             {{ range . }}
