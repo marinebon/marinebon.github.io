@@ -4,12 +4,8 @@ fcenter:
 - -119
 - 44
 footprint: 26
-kind_node: 
-- umbrella
-- regional
-geo:
-- USA
-- International
+kind_node: regional
+geo: International
 lat: 38
 lng: -77
 since: '2013'
