@@ -1,11 +1,17 @@
 ---
 banner: img/photos/ocean-blue.jpg
+fcenter:
+- -119
+- 44
+footprint: 26
 kind_node: 
 - umbrella
 - regional
 geo:
 - USA
 - International
+lat: 38
+lng: -77
 since: '2013'
 summary: The U.S. partnership integrating biology and ecosystem surveys with remote sensing and molecular (eDNA) methods across regional MBONs.
 tags:
