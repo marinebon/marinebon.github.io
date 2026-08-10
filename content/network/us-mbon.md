@@ -3,7 +3,7 @@ banner: img/photos/ocean-blue.jpg
 fcenter:
 - -119
 - 44
-footprint: 26
+footprint: 36
 kind_node: regional
 geo: International
 lat: 38
@@ -14,7 +14,7 @@ tags:
 - place.US
 - topic.eDNA
 - method.Genomics
-title: US MBON
+title: USA MBON
 aliases:
 - /bons/us-mbon/
 - /us-mbon/
