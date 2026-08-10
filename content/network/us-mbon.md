@@ -14,7 +14,7 @@ tags:
 - place.US
 - topic.eDNA
 - method.Genomics
-title: USA MBON
+title: US MBON
 aliases:
 - /bons/us-mbon/
 - /us-mbon/
