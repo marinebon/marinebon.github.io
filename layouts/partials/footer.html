@@ -3,6 +3,24 @@
     <div>
       <img class="wordmark" src="{{ "img/logos/mbon-logo.png" | relURL }}" alt="MBON">
       <p>{{ site.Params.description }}</p>
+      <footer class="site-footer" data-pagefind-ignore>
+        <div class="footer-main">
+         <div>
+          <img class="wordmark" src="{{ "img/logos/mbon-logo.png" | relURL }}" alt="MBON">
+           <p>{{ site.Params.description }}</p>
+
+           {{ with site.Params.footer.fundingNote }}
+           <p class="footer-funding-note">{{ . }}</p>
+           {{ end }}
+           {{ with site.Params.footer.fundingLogos }}
+           <div class="footer-funding-logos">
+             {{ range . }}
+          <img src="{{ .src | relURL }}" alt="{{ .alt }}">
+           {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    <div class="footer-col">
     </div>
     <div class="footer-col">
       <h4>Network</h4>
