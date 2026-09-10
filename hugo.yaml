@@ -21,6 +21,13 @@ params:
   heroImage: img/photos/reef-sunlight.jpg
   heroHeadline: Observing life in the sea, across instruments and the globe
   heroLead: MBON integrates long-term programs into a connected, open and interoperable record of marine biodiversity — turning observations into products that inform conservation and policy worldwide.
+  footer:
+    fundingNote: "The MBON Executive Secretariat is supported by the Regional Government of the Autonomous Region of the Azores, Grant Number M1.1.A/AIRCENTRE/2024-2028/002."
+    fundingLogos:
+      - src: img/logos/azores_gov_vp_logo.png
+        alt: "Gov_Azores_VP"
+      - src: img/logos/aircentre_logo.png
+        alt: "AIR_Centre"
 
 menu:
   main:
