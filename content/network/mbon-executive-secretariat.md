@@ -16,7 +16,7 @@ tags:
 - place.Europe
 - place.North-Atlantic
 - topic.Data-Publishing
-title: MBON Exeecutive Secretariat
+title: MBON Executive Secretariat
 ---
 
 The agreement between MBON, AIR Centre and the Azores Regional Fund for Science and Technology was first 
