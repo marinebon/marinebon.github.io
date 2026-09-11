@@ -17,6 +17,7 @@
   {{ $all  := where (where site.RegularPages "Section" "network") "Params.kind_node" "regional" }}
   {{ $usa  := where $all "Params.geo" "USA" }}
   {{ $intl := where $all "Params.geo" "International" }}
+  {{ $exec := where $all "Params.geo" "Executive Secretariat" }}
 
   <section id="regional-worldwide" class="section section--tint">
     <div class="container">
