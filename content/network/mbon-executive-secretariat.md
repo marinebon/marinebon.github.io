@@ -7,15 +7,11 @@ fcenter:
 - 38
 footprint: 10
 kind_node: regional
-geo: International
+geo: Executive Secretariat
 lat: 38
 lng: -27
-since: '2018'
 summary: The Executive Secretariat of the Marine Biodiversity Observation Network (MBON) is hosted by the AIR Centre, with its headquarters in Terceira Island, Azores. 
 tags:
-- place.Europe
-- place.North-Atlantic
-- topic.Data-Publishing
 title: MBON Executive Secretariat
 ---
 
