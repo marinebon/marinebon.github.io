@@ -20,6 +20,7 @@
     </div>
     <div>
       <span class="eyebrow eyebrow--rule eyebrow--ondark">{{ .eyebrow }}</span>
+         <p></p>
           {{ range $exec.ByTitle }}
             <button class="node-chip" data-node-id="{{ .File.ContentBaseName }}">{{ replace .Title " MBON" "" }}</button>
           {{ end }} 
