@@ -10,11 +10,13 @@
       </div>
       <h1>{{ .Title }}</h1>
       <p class="page-header__lead">{{ .Params.summary }}</p>
+      {{ if ne .Params.geo "Executive Secretariat" }}
       <div class="stat-strip">
         <div class="stat stat--ondark"><div class="stat__value">{{ .Params.since }}</div><div class="stat__label">Observing since</div></div>
         <div class="stat stat--ondark"><div class="stat__value">FAIR</div><div class="stat__label">Open data</div></div>
         <div class="stat stat--ondark"><div class="stat__value">{{ if eq .Params.geo "International" }}Worldwide{{ else }}USA{{ end }}</div><div class="stat__label">Node type</div></div>
       </div>
+      {{ end }}
     </div>
   </section>
 
