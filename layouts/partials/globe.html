@@ -5,6 +5,7 @@
 {{ $regional := where (where site.RegularPages "Section" "network") "Params.kind_node" "regional" }}
 {{ $usa      := where $regional "Params.geo" "USA" }}
 {{ $intl     := where $regional "Params.geo" "International" }}
+{{ $exec     := where $regional "Params.geo" "Executive Secretariat" }}
 {{ $nodes    := slice }}
 {{ range $regional }}
   {{ $n := dict "id" .File.ContentBaseName "name" .Title "lat" .Params.lat "lng" .Params.lng "footprint" .Params.footprint "blurb" .Params.summary "url" .RelPermalink "geo" .Params.geo }}
