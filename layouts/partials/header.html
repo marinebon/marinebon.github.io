@@ -11,6 +11,7 @@
           {{ $regional := where (where site.RegularPages "Section" "network") "Params.kind_node" "regional" }}
           {{ $usa      := where $regional "Params.geo" "USA" }}
           {{ $intl     := where $regional "Params.geo" "International" }}
+          {{ $exec := where $all "Params.geo" "Executive Secretariat" }}
           {{ $working  := where site.RegularPages "Section" "working-groups" }}
           <div class="nav-dropdown">
             <a href="{{ .URL }}"{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="is-active"{{ end }}>
