@@ -7,8 +7,8 @@ kind_node: regional
 geo: USA
 lat: 38
 lng: -74
-since: '2019'
-summary: Wind-energy planning and shelf biodiversity.
+since: '2024'
+summary: Integrative biodiversity monitoring of a dynamic continental shelf.
 tags:
 - place.US
 - place.Mid-Atlantic
