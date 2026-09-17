@@ -5,19 +5,31 @@ banner: img/photos/ocean-blue.jpg
 footprint: 5
 kind_node: regional
 geo: USA
-lat: 41.4
+lat: 43.0
 lng: -70.6
 since: '2018'
-summary: Nearshore observing from Long Island to Cape Cod.
+summary: Tracking Atlantic cod, common terns and their forage in the coastal Gulf of Maine, from the Isles of Shoals to Casco Bay.
+leads:
+- name: Nathan Furey
+  org: University of New Hampshire, Fish and Movement Ecology Lab
 tags:
 - place.US
 - place.New-England
+- place.Gulf-of-Maine
 - topic.Climate-Change
 - topic.Fisheries
 - topic.eDNA
 - method.Genomics
+- method.Tracking
+- method.Acoustics
+related:
+- /working-groups/biotrack
+- /working-groups/biosound
+- /working-groups/edna
 title: Coastal New England MBON
 ---
+
+The Coastal New England MBON is led by [Nathan Furey](https://x.com/NBFurey) of the Fish and Movement Ecology Lab at the University of New Hampshire, working from the UNH Shoals Marine Laboratory at the Isles of Shoals and with partners across New Hampshire and southern Maine.
 
 The Coastal New England project integrates powerful technologies (acoustic telemetry, environmental DNA [eDNA], and acoustics) with traditional fisheries sampling to quantify impacts of changes in local and regional water conditions on individuals, populations, and community structure. Research includes study of the impacts of forage species and environmental conditions on Atlantic cod and common terns in both New Hampshire (Isles of Shoals) and southern Maine (Casco Bay) coastal waters.
 
