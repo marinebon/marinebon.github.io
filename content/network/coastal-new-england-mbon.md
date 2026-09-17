@@ -12,7 +12,7 @@ summary: Tracking Atlantic cod, common terns and their forage in the coastal Gul
 pi:
 - name: Nathan Furey
   org: University of New Hampshire, Fish and Movement Ecology Lab
-  url: https://x.com/NBFurey
+  url: https://marine.unh.edu/person/nathan-furey
 # co_investigators use the same name/org/url shape, e.g.:
 # co_investigators:
 # - name: Jane Doe
