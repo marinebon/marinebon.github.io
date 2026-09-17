@@ -29,14 +29,20 @@
             <img src="{{ . | relURL }}" alt="" style="width:100%;height:200px;object-fit:cover;">
           </div>
         {{ end }}
-        {{ with .Params.leads }}
+        {{/* investigators: `pi:` and `co_investigators:` are lists of {name, org, url} */}}
+        {{ $pi := .Params.pi }}{{ $coi := .Params.co_investigators }}
+        {{ if or $pi $coi }}
         <div style="background:var(--foam-100);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-5);margin-bottom:var(--space-5);">
-          <span class="eyebrow eyebrow--rule" style="margin-bottom:var(--space-4);display:block;">Principal Investigator{{ if gt (len .) 1 }}s{{ end }}</span>
-          {{ range . }}
+          {{ range $block := slice (dict "label" "Principal Investigator" "people" $pi) (dict "label" "Co-Investigator" "people" $coi) }}
+          {{ with $block.people }}
+          <span class="eyebrow eyebrow--rule" style="margin-bottom:var(--space-4);display:block;">{{ $block.label }}{{ if gt (len .) 1 }}s{{ end }}</span>
+          {{ range $p := . }}
           <div style="display:flex;flex-direction:column;gap:.2em;margin-bottom:var(--space-3);">
-            <strong style="font-size:var(--text-sm);">{{ .name }}</strong>
+            <strong style="font-size:var(--text-sm);">{{ with $p.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $p.name }}</a>{{ else }}{{ $p.name }}{{ end }}</strong>
             {{ with .org }}<span style="font-size:var(--text-xs);color:var(--text-muted);font-family:var(--font-mono);">{{ . }}</span>{{ end }}
           </div>
+          {{ end }}
+          {{ end }}
           {{ end }}
         </div>
         {{ end }}

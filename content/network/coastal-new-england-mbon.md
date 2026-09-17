@@ -9,9 +9,15 @@ lat: 43.0
 lng: -70.6
 since: '2018'
 summary: Tracking Atlantic cod, common terns and their forage in the coastal Gulf of Maine, from the Isles of Shoals to Casco Bay.
-leads:
+pi:
 - name: Nathan Furey
   org: University of New Hampshire, Fish and Movement Ecology Lab
+  url: https://x.com/NBFurey
+# co_investigators use the same name/org/url shape, e.g.:
+# co_investigators:
+# - name: Jane Doe
+#   org: Example University
+co_investigators: []
 tags:
 - place.US
 - place.New-England

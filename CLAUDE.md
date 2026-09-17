@@ -247,7 +247,9 @@ Pagefind, and without `-ignore` the hidden values leak into result excerpts.
   content is otherwise skipped. Events split Upcoming/Past by `date`.
 - Front-matter image paths are relative to `static/`, e.g. `banner: img/news/x.jpg`.
 - Adding a `content/network/*.md` with `lat`/`lng` auto-adds a globe node
-  (`globe.js` reads nodes emitted by `layouts/partials/globe.html`).
+  (`globe.js` reads nodes emitted by `layouts/partials/globe.html`). Nodes name their
+  people with `pi:` and `co_investigators:` (lists of `{name, org, url}`), rendered as
+  sidebar blocks by `layouts/network/single.html`; working groups use `leads:` instead.
 - Markdown allows raw HTML (`unsafe: true` in `hugo.yaml`); icons are Font Awesome 6.
 - **Internal links must carry the base path.** Production is the root today, so this
   costs nothing to honor and everything to skip if the site ever moves again. The trap:

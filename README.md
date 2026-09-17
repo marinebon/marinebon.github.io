@@ -64,7 +64,7 @@ and publishes to GitHub Pages. A merged Pull Request is a push to `main`, so
 hugo.yaml                # site config: menu, hero text, params (incl. github_repo)
 content/                 # ← all editable content (Markdown + YAML front matter)
   _index.md              #   home (hero text lives in hugo.yaml params)
-  network/*.md           #   one file per regional node (geo: USA | International)
+  network/*.md           #   one file per regional node (geo: USA | International; pi:/co_investigators:)
   working-groups/*.md    #   one file per working group (leads:)
   methods/*.md           #   observing methods (paired with data/methods.yaml hotspots)
   papers/*.md            #   one file per publication
