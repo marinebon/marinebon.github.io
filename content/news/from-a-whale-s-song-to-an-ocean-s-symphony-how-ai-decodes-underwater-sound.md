@@ -9,6 +9,7 @@ tags:
 - method.Acoustics
 - place.South-Florida
 - org.FWRI
+- topic.Soundscape
 banner: img/news/from-a-whale-s-song-to-an-ocean-s-symphony-how-ai-decodes-underwater-sound.png
 ---
 

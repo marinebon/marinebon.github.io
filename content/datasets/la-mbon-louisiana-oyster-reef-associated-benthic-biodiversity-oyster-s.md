@@ -14,6 +14,7 @@ tags:
 - place.US
 - portal.GBIF
 - portal.OBIS
+- topic.Soundscape
 sources:
 - portal: OBIS
   url: https://obis.org/dataset/c1cd22b4-7f0d-476e-8c26-481bf28ccb4f

@@ -14,6 +14,7 @@ tags:
 - org.NationalMarineSanctuaries
 - topic.Marine-Protected-Areas
 - topic.Monitoring
+- topic.Soundscape
 title: SanctSound
 weight: 20
 ---
