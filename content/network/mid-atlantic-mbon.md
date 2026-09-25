@@ -1,7 +1,7 @@
 ---
 aliases:
 - /bons/mid-atlantic-mbon/
-banner: img/photos/ocean-blue.jpg
+banner: img/network/mid-atlantic-mbon-2026.jpg
 footprint: 6
 kind_node: regional
 geo: USA
