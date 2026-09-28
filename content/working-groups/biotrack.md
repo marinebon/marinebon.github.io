@@ -37,6 +37,10 @@ Knowledge about marine species hotspots and how they are changing provides oppor
 ## News and publications
 
 - [Tracking Ocean Sunfish to Map Marine Biodiversity Hotspots](/news/tracking-ocean-sunfish/)
+- [Reimagining the Deep: BioTrack's Quest to Map Marine Biodiversity Hotspots](https://secoora.org/reimagining-the-deep-biotracks-quest-to-map-marine-biodiversity-hotspots/) — SECOORA
+- [Reimagining the Deep: BioTrack and the Whitespotted Eagle Rays of Florida's Indian River Lagoon](https://secoora.org/reimagining-the-deep-biotrack-and-the-whitespotted-eagle-rays-of-floridas-indian-river-lagoon/) — SECOORA
+- [A New Way To Predict Where Sharks, Turtles And Whales Will Be](https://www.forbes.com/sites/melissacristinamarquez/2026/09/24/a-new-way-to-predict-where-sharks-turtles-and-whales-will-be/) — Forbes
+- [Marine megafauna select pelagic habitats in a dynamic ocean](https://link.springer.com/article/10.1007/s10980-026-02428-6) — *Landscape Ecology*
 
 ## Frequently asked questions
 
