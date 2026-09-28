@@ -1,0 +1,5 @@
+{{/* a detail page's front-matter banner, shown at the top of the body column —
+     skipped when the body already embeds the same image (working groups do) */}}
+{{ with .Params.banner }}{{ if not (strings.Contains $.RawContent (path.Base .)) }}
+<figure class="detail-banner"><img src="{{ . | relURL }}" alt=""></figure>
+{{ end }}{{ end }}

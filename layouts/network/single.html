@@ -20,39 +20,18 @@
     </div>
   </section>
 
+  {{/* investigators: `pi:` and `co_investigators:` are lists of {name, org, url} */}}
+  {{ partial "detail-meta.html" (dict "page" .
+       "people"  (slice (dict "label" "Principal Investigator" "people" .Params.pi)
+                        (dict "label" "Co-Investigator" "people" .Params.co_investigators))
+       "buttons" (slice (dict "label" "View related tools" "href" ("tools" | relURL) "class" "btn--action"))) }}
+
   <section class="section">
-    <div class="container" style="display:grid;grid-template-columns:1.5fr 1fr;gap:var(--space-8);align-items:start;">
-      <div style="max-width:62ch;">{{ .Content }}</div>
-      <aside>
-        {{ with .Params.banner }}
-          <div style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:var(--space-5);">
-            <img src="{{ . | relURL }}" alt="" style="width:100%;height:200px;object-fit:cover;">
-          </div>
-        {{ end }}
-        {{/* investigators: `pi:` and `co_investigators:` are lists of {name, org, url} */}}
-        {{ $pi := .Params.pi }}{{ $coi := .Params.co_investigators }}
-        {{ if or $pi $coi }}
-        <div style="background:var(--foam-100);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-5);margin-bottom:var(--space-5);">
-          {{ range $block := slice (dict "label" "Principal Investigator" "people" $pi) (dict "label" "Co-Investigator" "people" $coi) }}
-          {{ with $block.people }}
-          <span class="eyebrow eyebrow--rule" style="margin-bottom:var(--space-4);display:block;">{{ $block.label }}{{ if gt (len .) 1 }}s{{ end }}</span>
-          {{ range $p := . }}
-          <div style="display:flex;flex-direction:column;gap:.2em;margin-bottom:var(--space-3);">
-            <strong style="font-size:var(--text-sm);">{{ with $p.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $p.name }}</a>{{ else }}{{ $p.name }}{{ end }}</strong>
-            {{ with .org }}<span style="font-size:var(--text-xs);color:var(--text-muted);font-family:var(--font-mono);">{{ . }}</span>{{ end }}
-          </div>
-          {{ end }}
-          {{ end }}
-          {{ end }}
-        </div>
-        {{ end }}
-        {{ with .Params.tags }}
-        <div class="card__tags" style="margin-bottom:var(--space-5);">
-          {{ range . }}{{ partial "tag.html" (dict "value" . "link" true) }}{{ end }}
-        </div>
-        {{ end }}
-        <a class="btn btn--action btn--full" href="{{ "tools" | relURL }}">View related tools <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-      </aside>
+    <div class="container">
+      <div class="detail-body">
+        {{ partial "detail-banner.html" . }}
+        {{ .Content }}
+      </div>
     </div>
   </section>
 

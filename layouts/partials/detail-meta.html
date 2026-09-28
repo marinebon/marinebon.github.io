@@ -1,0 +1,41 @@
+{{/* full-width facts bar under a detail page's header: people, tags, and action
+     buttons in one wrapping row. Replaces the old right-hand <aside>, which left a
+     tall empty column beside long content and never collapsed on mobile.
+     args: page, people (slice of {label, people: [{name, org, url, org_url}]}),
+           tags (bool, default true), buttons (slice of {label, href, class}) */}}
+{{ $page := .page }}
+{{ $groups := slice }}{{ range .people }}{{ if .people }}{{ $groups = $groups | append . }}{{ end }}{{ end }}
+{{ $tags := cond (isset . "tags") .tags true }}
+{{ $tags = and $tags $page.Params.tags }}
+{{ if or $groups $tags .buttons }}
+<section class="detail-meta">
+  <div class="detail-meta__inner">
+    {{ range $groups }}
+    <div class="detail-meta__group">
+      <span class="detail-meta__label">{{ .label }}{{ if gt (len .people) 1 }}s{{ end }}</span>
+      <ul class="detail-meta__people">
+        {{ range $p := .people }}
+        <li>
+          <strong>{{ with $p.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $p.name }}</a>{{ else }}{{ $p.name }}{{ end }}</strong>
+          {{ with $p.org }}<span class="detail-meta__org">{{ with $p.org_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ . }}{{ with $p.org_url }}</a>{{ end }}</span>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+    {{ if $tags }}
+    <div class="detail-meta__group">
+      <span class="detail-meta__label">Tags</span>
+      <div class="card__tags">
+        {{ range $page.Params.tags }}{{ partial "tag.html" (dict "value" . "link" true) }}{{ end }}
+      </div>
+    </div>
+    {{ end }}
+    {{ with .buttons }}
+    <div class="detail-meta__actions">
+      {{ range . }}<a class="btn btn--sm {{ .class | default "btn--outline" }}" href="{{ .href }}">{{ .label }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
