@@ -248,8 +248,15 @@ Pagefind, and without `-ignore` the hidden values leak into result excerpts.
 - Front-matter image paths are relative to `static/`, e.g. `banner: img/news/x.jpg`.
 - Adding a `content/network/*.md` with `lat`/`lng` auto-adds a globe node
   (`globe.js` reads nodes emitted by `layouts/partials/globe.html`). Nodes name their
-  people with `pi:` and `co_investigators:` (lists of `{name, org, url}`), rendered as
-  sidebar blocks by `layouts/network/single.html`; working groups use `leads:` instead.
+  people with `pi:` and `co_investigators:` (lists of `{name, org, url, org_url}`);
+  working groups use `leads:` instead. Detail pages (network / working-groups / methods)
+  are **single-column**: people, tags and action buttons go in the full-width facts bar
+  `layouts/partials/detail-meta.html` under the page header — there is no `<aside>`
+  (it left a tall empty column beside long content and never collapsed on mobile).
+  The body spans the container; at ≥900px its media — image-only paragraphs, the
+  `youtube` embed, and the front-matter `banner` (`detail-banner.html`, skipped when
+  the body already embeds that image) — float right at ≤44% so text wraps beside it
+  (`.detail-body` in `layout.css`). Below 900px everything stacks.
 - Markdown allows raw HTML (`unsafe: true` in `hugo.yaml`); icons are Font Awesome 6.
 - **Internal links must carry the base path.** Production is the root today, so this
   costs nothing to honor and everything to skip if the site ever moves again. The trap:
@@ -268,6 +275,8 @@ Pagefind, and without `-ignore` the hidden values leak into result excerpts.
   `grep -rn "^- /<path>/" content/`.
 - All CSS is in `static/css/`: `styles.css` imports `tokens/*` then
   `components.css` + `layout.css`. Brand and `--facet-*` colors are single-source.
+  `head.html` bundles them with `readFile` at render time, so **`hugo server` does
+  not pick up CSS edits — restart it**.
 
 ## Repo-only directories (not part of the Hugo build)
 

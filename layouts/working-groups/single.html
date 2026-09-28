@@ -12,33 +12,16 @@
     </div>
   </section>
 
+  {{ partial "detail-meta.html" (dict "page" .
+       "people"  (slice (dict "label" "Lead" "people" .Params.leads))
+       "buttons" (slice (dict "label" "Explore related methods" "href" ("methods" | relURL)))) }}
+
   <section class="section">
-    <div class="container" style="display:grid;grid-template-columns:1.5fr 1fr;gap:var(--space-8);align-items:start;">
-      <div style="max-width:64ch;">{{ .Content }}</div>
-      <aside>
-        {{ with .Params.banner }}
-          <div style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:var(--space-5);">
-            <img src="{{ . | relURL }}" alt="" style="width:100%;height:200px;object-fit:cover;">
-          </div>
-        {{ end }}
-        {{ with .Params.leads }}
-        <div style="background:var(--foam-100);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-5);margin-bottom:var(--space-5);">
-          <span class="eyebrow eyebrow--rule" style="margin-bottom:var(--space-4);display:block;">Lead{{ if gt (len .) 1 }}s{{ end }}</span>
-          {{ range . }}
-          <div style="display:flex;flex-direction:column;gap:.2em;margin-bottom:var(--space-3);">
-            <strong style="font-size:var(--text-sm);">{{ .name }}</strong>
-            {{ $org_url := .org_url }}{{ with .org }}<span style="font-size:var(--text-xs);color:var(--text-muted);font-family:var(--font-mono);">{{ with $org_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ . }}{{ with $org_url }}</a>{{ end }}</span>{{ end }}
-          </div>
-          {{ end }}
-        </div>
-        {{ end }}
-        {{ with .Params.tags }}
-        <div class="card__tags" style="margin-bottom:var(--space-5);">
-          {{ range . }}{{ partial "tag.html" (dict "value" . "link" true) }}{{ end }}
-        </div>
-        {{ end }}
-        <a class="btn btn--outline btn--full" href="{{ "methods" | relURL }}">Explore related methods <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-      </aside>
+    <div class="container">
+      <div class="detail-body">
+        {{ partial "detail-banner.html" . }}
+        {{ .Content }}
+      </div>
     </div>
   </section>
 
