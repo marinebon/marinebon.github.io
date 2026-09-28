@@ -27,7 +27,7 @@
           {{ range . }}
           <div style="display:flex;flex-direction:column;gap:.2em;margin-bottom:var(--space-3);">
             <strong style="font-size:var(--text-sm);">{{ .name }}</strong>
-            {{ with .org }}<span style="font-size:var(--text-xs);color:var(--text-muted);font-family:var(--font-mono);">{{ . }}</span>{{ end }}
+            {{ $org_url := .org_url }}{{ with .org }}<span style="font-size:var(--text-xs);color:var(--text-muted);font-family:var(--font-mono);">{{ with $org_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ . }}{{ with $org_url }}</a>{{ end }}</span>{{ end }}
           </div>
           {{ end }}
         </div>

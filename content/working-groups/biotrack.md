@@ -15,7 +15,8 @@ summary: Mapping marine biodiversity hotspots by integrating satellite and acous
   animal tracking with remotely sensed environmental data.
 leads:
 - name: Neil Hammerschlag
-  org: University of Miami
+  org: Shark Research Foundation Inc
+  org_url: https://sharkresearch.org/
 tags:
 - method.Tracking
 title: BioTrack
