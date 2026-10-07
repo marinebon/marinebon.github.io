@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>{{ partial "head.html" . }}</head>
-<body{{ if ne .Kind "page" }} data-pagefind-ignore{{ end }}>
+<body{{ if or (ne .Kind "page") .Params.unlisted }} data-pagefind-ignore{{ end }}>
   {{ partial "header.html" . }}
   {{ block "main" . }}{{ end }}
   {{/* pagefind metadata so search can render type-aware result cards.
