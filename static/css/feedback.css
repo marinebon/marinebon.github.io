@@ -1,0 +1,81 @@
+/* MBON · FEEDBACK DIALOG (static/js/feedback.js)
+   One <dialog> built on demand, plus the footer trigger. Everything is a site token (colors.css,
+   typography.css, spacing.css) so it matches the page; the three annotator marker colours are the one
+   place a literal colour is right (they must read on any screenshot). The site has no dark theme today;
+   the :root[data-theme="dark"] block below is ready if one is added, and the dialog never relies on it. */
+.fb {
+  --fb-bg: var(--bg-surface); --fb-fg: var(--text-body); --fb-head: var(--text-heading);
+  --fb-panel: var(--bg-tint); --fb-border: var(--border); --fb-muted: var(--ink-400);
+  --fb-accent: var(--brand); --fb-on-accent: #fff; --fb-warn: var(--warn); --fb-err: var(--err);
+  border: 1px solid var(--fb-border); border-radius: var(--radius-md); background: var(--fb-bg); color: var(--fb-fg);
+  padding: 0; width: min(720px, calc(100vw - 32px)); max-height: calc(100vh - 32px);
+  box-shadow: var(--shadow-xl); font: var(--type-body);
+}
+:root[data-theme="dark"] .fb {
+  --fb-bg: var(--abyss-800); --fb-fg: var(--text-on-dark); --fb-head: var(--text-on-dark);
+  --fb-panel: var(--abyss-900); --fb-border: rgba(255, 255, 255, 0.16); --fb-muted: var(--text-on-dark-muted);
+  --fb-accent: var(--teal-400); --fb-on-accent: var(--abyss-900);
+}
+.fb::backdrop { background: rgba(4, 19, 31, 0.6); }
+.fb h2 { margin: 0; flex: 1; font: var(--type-h3); color: var(--fb-head); }
+.fb-form, .fb-annot { display: flex; flex-direction: column; max-height: calc(100vh - 34px); }
+.fb-head { display: flex; align-items: center; gap: 10px; padding: 14px 18px 10px; border-bottom: 1px solid var(--fb-border); }
+.fb-head .fb-i { width: 22px; height: 22px; fill: var(--fb-accent); }
+.fb-i { width: 18px; height: 18px; fill: currentColor; vertical-align: -4px; flex: none; }
+.fb-close { display: inline-grid; place-items: center; width: 34px; height: 34px; border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--fb-fg); cursor: pointer; }
+.fb-close:hover { background: var(--fb-panel); }
+.fb-body { padding: 14px 18px; overflow: auto; display: flex; flex-direction: column; gap: 12px; }
+.fb-f { display: flex; flex-direction: column; gap: 4px; font-size: var(--text-sm); font-weight: var(--fw-semibold); color: var(--fb-head); }
+.fb-f .fb-hint { font-weight: var(--fw-regular); }
+.fb-f textarea, .fb-f input { font: var(--type-body); font-size: var(--text-sm); color: var(--fb-fg); background: var(--fb-panel); border: 1px solid var(--fb-border); border-radius: var(--radius-sm); padding: 8px 10px; width: 100%; }
+.fb button:focus-visible, .fb a:focus-visible, .fb textarea:focus-visible, .fb input:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.fb-hp { position: absolute; left: -9999px; width: 1px; height: 1px; }
+.fb-hint { margin: 0; font-size: var(--text-xs); color: var(--fb-muted); line-height: 1.4; }
+.fb-hint code { font-size: 0.9em; }
+.fb-warn { color: var(--fb-warn); }
+.fb-err { color: var(--fb-err); }
+.fb-shot { display: flex; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+.fb-thumb { flex: 0 0 240px; aspect-ratio: 16 / 10; border: 1px solid var(--fb-border); border-radius: var(--radius-sm); background: var(--fb-panel); display: grid; place-items: center; overflow: hidden; }
+.fb-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; max-width: none; }
+.fb-thumb img.off { opacity: 0.35; }
+.fb-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font-size: var(--text-sm); }
+.fb-pill { font: var(--type-small); font-size: var(--text-xs); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; color: var(--fb-fg); background: var(--fb-bg); border: 1px solid var(--fb-border); border-radius: var(--radius-pill); padding: 3px 10px; }
+.fb-pill:hover:not(:disabled) { color: var(--fb-accent); border-color: var(--fb-accent); }
+.fb-pill:disabled { opacity: 0.5; cursor: default; }
+.fb-pill .fb-i { width: 14px; height: 14px; }
+.fb-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; padding: 10px 18px 14px; border-top: 1px solid var(--fb-border); }
+.fb-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.4em; min-height: 36px; font: var(--type-small); font-weight: var(--fw-semibold); padding: 0.3em 1.1em; border: 1px solid transparent; border-radius: var(--radius-sm); cursor: pointer; text-decoration: none; }
+.fb-btn .fb-i { width: 16px; height: 16px; }
+.fb-btn-primary { background: var(--fb-accent); color: var(--fb-on-accent); }
+.fb-btn-primary:hover:not(:disabled) { filter: brightness(0.94); color: var(--fb-on-accent); text-decoration: none; }
+.fb-btn-ghost { background: transparent; color: var(--fb-accent); border-color: var(--fb-border); }
+.fb-btn-ghost:hover { border-color: var(--fb-accent); text-decoration: none; }
+.fb-btn:disabled { opacity: 0.45; cursor: default; }
+/* the annotator */
+.fb-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 14px; border-bottom: 1px solid var(--fb-border); }
+.fb-seg { display: inline-flex; border: 1px solid var(--fb-border); border-radius: var(--radius-sm); overflow: hidden; }
+.fb-seg button { display: inline-flex; align-items: center; gap: 4px; padding: 5px 8px; border: 0; background: var(--fb-panel); color: var(--fb-fg); font: var(--type-small); cursor: pointer; }
+.fb-seg button + button { border-left: 1px solid var(--fb-border); }
+.fb-seg button.on { background: var(--fb-accent); color: var(--fb-on-accent); }
+.fb-seg button:disabled { opacity: 0.45; cursor: default; }
+.fb-dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; }
+.fb-spacer { flex: 1; }
+.fb-stage { position: relative; padding: 10px 14px 0; overflow: auto; }
+.fb-stage canvas { display: block; width: 100%; max-width: none; height: auto; border: 1px solid var(--fb-border); border-radius: var(--radius-sm); }
+.fb-text { position: absolute; transform: translate(14px, 10px); font: 600 15px var(--font-sans); background: rgba(0, 0, 0, 0.55); border: 1px solid; border-radius: 4px; padding: 2px 6px; min-width: 120px; }
+.fb-annot .fb-hint { padding: 8px 14px 12px; }
+@media (max-width: 640px) {
+  .fb-thumb { flex-basis: 100%; }
+  .fb-actions { justify-content: stretch; }
+  .fb-actions .fb-btn { flex: 1; }
+}
+
+/* the footer trigger: a text button in the colophon, styled like the Contact link beside it */
+.mbon-feedback {
+  display: inline-flex; align-items: center; gap: 0.5em; padding: 0; border: 0; background: none; cursor: pointer;
+  font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: var(--ls-label); text-transform: uppercase;
+  color: var(--teal-300);
+}
+.mbon-feedback:hover { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+.mbon-feedback:focus-visible { outline: 2px solid var(--teal-300); outline-offset: 3px; border-radius: var(--radius-xs); }
+.mbon-feedback .fb-i { width: 16px; height: 16px; }

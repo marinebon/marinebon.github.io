@@ -16,6 +16,11 @@ params:
   # Google Apps Script web-app /exec URL backing the Contact form (see scripts/contact-form.gs).
   # Leave empty until deployed; recipient emails live in the script, never on the site.
   contact_endpoint: "https://script.google.com/macros/s/AKfycbzrDZ6kPDILybYJSuQqTAQqkIkKDk8PBeJzf1xPzFUOejQE-78yz0ZoCEpGQG3xbBG-MQ/exec"
+  # Feedback widget (static/js/feedback.js). feedback_url is the shared Ocean Metrics Apps Script
+  # web-app /exec URL; leave it empty until that is deployed and the widget offers only the prefilled
+  # GitHub issue in feedback_repo. Runbook: docs/feedback.md in oceanmetrics/erddap-places.
+  feedback_url: ""
+  feedback_repo: marinebon/marinebon.github.io
   description: A global collaborative initiative contributing to the effective management of marine biodiversity and ecosystem services. A thematic node of GEO BON.
   tagline: Global ocean observing · GEO BON node
   heroImage: img/photos/reef-sunlight.jpg

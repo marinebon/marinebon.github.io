@@ -251,3 +251,29 @@ d3 + world-atlas load from a CDN at runtime; the globe degrades gracefully offli
 
 Markdown allows raw HTML (e.g. `<iframe>` embeds); `unsafe: true` is set in
 `hugo.yaml`. Icons use **Font Awesome 6** (CDN, in `layouts/partials/head.html`).
+
+---
+
+## 8. Feedback widget
+
+A **Send feedback** button in the footer colophon (and a link in the footer's About column) opens a dialog on
+every page: a note, an optional email ("optional, so we can reply; not published"), and a screenshot of the
+current view that the visitor can annotate (arrow, rectangle, text, in three colours) or retake. Code:
+`static/js/feedback.js`, `static/css/feedback.css` (site tokens), and the vendored
+[html-to-image](https://github.com/bubkoo/html-to-image) 1.11.13 in `static/js/lib/` (MIT, loaded on first use,
+no CDN). It is the dialog from calcofi.io, ported; the button is in `layouts/partials/footer.html` and the script
+is loaded from `layouts/_default/baseof.html`.
+
+- **Config** (`hugo.yaml`, under `params`): `feedback_url` is the shared Ocean Metrics Apps Script web-app `/exec`
+  URL; `feedback_repo` is `marinebon/marinebon.github.io`. The payload's `app` is `marinebon-org`, which the shared
+  script maps to that repo.
+- **With `feedback_url` empty** (the state until the endpoint is deployed) the dialog says so and offers only
+  **Open as GitHub issue myself**, a prefilled issue in `feedback_repo` with the screenshot copied to the clipboard.
+- **Endpoint runbook** (deploying the Apps Script, repos map, token, recipients): `docs/feedback.md` in
+  [oceanmetrics/erddap-places](https://github.com/oceanmetrics/erddap-places). Do not add a `Code.gs` here.
+- **Test an endpoint without editing config:** in the browser console run
+  `localStorage['marinebon-org.feedback_url'] = 'https://script.google.com/macros/s/.../exec'`, reload, send a
+  report; `localStorage.removeItem('marinebon-org.feedback_url')` undoes it. The honeypot field is `website`.
+- **What is sent:** the text, the optional email, the page URL, viewport, theme, user-agent and the screenshot.
+  The email is never part of the public issue.
+

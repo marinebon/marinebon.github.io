@@ -30,11 +30,14 @@
       <a href="{{ "events" | relURL }}">Events</a>
       <a href="{{ "about" | relURL }}">About MBON</a>
       <a href="{{ "contact" | relURL }}">Contact</a>
+      <a href="#feedback" data-feedback>Send feedback</a>
     </div>
   </div>
   <div class="footer-colophon">
     <div class="footer-colophon__inner">
       <span>MARINE BIODIVERSITY OBSERVATION NETWORK &middot; FAIR &middot; OPEN &middot; GLOBAL &middot; {{ now.Year }}</span>
+      <button class="mbon-feedback" type="button" title="Send feedback, with a screenshot of this page"
+        data-endpoint="{{ site.Params.feedback_url }}" data-repo="{{ site.Params.feedback_repo }}" data-app="marinebon-org"><i class="fa-regular fa-comment-dots" aria-hidden="true"></i> Send feedback</button>
       {{ partial "social-links.html" (dict "class" "footer-social" "showContact" true) }}
     </div>
   </div>
