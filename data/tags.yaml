@@ -121,6 +121,7 @@
     - { value: NOAA-IEA,                  name: "NOAA IEA" }
     - { value: NationalMarineSanctuaries, name: "Nat'l Marine Sanctuaries" }
     - { value: FWRI,                      name: FWRI }
+    - { value: Ocean-Metrics,             name: "Ocean Metrics" }
   aliases:
     GEOBON:      "GEO BON"
     FWBON:       FWBON

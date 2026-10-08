@@ -1,0 +1,16 @@
+{{- /* a numbered-or-not figure for long pages (tool guides):
+       {{< fig src="img/tools/x/anatomy.png" alt="…" id="fig-anatomy" marks="1@89,3.5 2@86,10" >}}caption, Markdown{{< /fig >}}
+     src is relative to static/ (a leading slash is trimmed so relURL keeps the base path);
+     marks are optional numbered callouts drawn over the image, "n@x,y" with x, y in percent of
+     the image's width and height, separated by spaces. */ -}}
+{{- $src := .Get "src" | strings.TrimPrefix "/" -}}
+<figure class="fig"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
+  <div class="fig__frame">
+    <img src="{{ $src | relURL }}" alt="{{ .Get "alt" }}" loading="lazy">
+    {{- with .Get "marks" }}{{ range split . " " }}{{ with . }}
+      {{- $p := split . "@" }}{{ $xy := split (index $p 1) "," }}
+      <span class="fig__mark" style="left:{{ index $xy 0 }}%;top:{{ index $xy 1 }}%;" aria-hidden="true">{{ index $p 0 }}</span>
+    {{- end }}{{ end }}{{ end }}
+  </div>
+  {{- with .Inner }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

@@ -8,6 +8,32 @@
     </div>
   </section>
 
+  {{ if .Params.guide }}
+  {{/* a guide page: a long, figure-led walk through an app for a reader who has it open
+       beside the page. The card image is the anatomy figure inside the text, so it is not
+       repeated as a banner; the pipeline chips (brand motif) and a contents list lead. */}}
+  <section class="section">
+    <div class="container guide">
+      {{ with .Params.links }}
+        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-5);">
+          {{ range . }}<a class="btn {{ if .primary }}btn--action{{ else }}btn--outline{{ end }}" href="{{ .url }}">{{ .label }}</a>{{ end }}
+        </div>
+      {{ end }}
+      {{ with .Params.pipeline }}
+        <ul class="guide__pipeline" aria-label="dataset, place, method, delivery">
+          {{ with .dataset }}<li class="guide__chip guide__chip--dataset"><b>dataset</b> {{ . }}</li>{{ end }}
+          {{ with .place }}<li class="guide__chip guide__chip--place"><b>place</b> {{ . }}</li>{{ end }}
+          {{ with .method }}<li class="guide__chip guide__chip--method"><b>method</b> {{ . }}</li>{{ end }}
+          {{ with .delivery }}<li class="guide__chip guide__chip--delivery"><b>delivery</b> {{ . }}</li>{{ end }}
+        </ul>
+      {{ end }}
+      {{ with .Params.built_by }}<p class="guide__byline">Built by {{ with $.Params.built_by_url }}<a href="{{ . }}">{{ $.Params.built_by }}</a>{{ else }}{{ . }}{{ end }} for MBON.</p>{{ end }}
+      {{ if .Params.toc }}<nav class="guide__toc" aria-label="On this page"><span class="eyebrow">On this page</span>{{ .TableOfContents }}</nav>{{ end }}
+      <div class="guide__body">{{ .Content }}</div>
+      <p style="margin-top:var(--space-7);"><a href="{{ "tools" | relURL }}" class="btn btn--ghost"><i class="fas fa-arrow-left" aria-hidden="true"></i> All tools</a></p>
+    </div>
+  </section>
+  {{ else }}
   <section class="section">
     <div class="container" style="max-width:840px;">
       {{ with .Params.image }}
@@ -22,6 +48,7 @@
       <p style="margin-top:var(--space-7);"><a href="{{ "tools" | relURL }}" class="btn btn--ghost"><i class="fas fa-arrow-left" aria-hidden="true"></i> All tools</a></p>
     </div>
   </section>
+  {{ end }}
 
   {{/* portal tool pages become a hub: datasets served by this portal (from the
        portal.<CODE> tag, matched to the tool slug uppercased, e.g. tools/obis -> portal.OBIS) */}}
