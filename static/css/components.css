@@ -612,3 +612,35 @@ a.card:hover .card__foot i{ transform:translateX(3px); }
   margin-top:var(--space-7);
   flex-wrap:wrap;
 }
+
+/* ---- tool guides (tools/single.html with `guide: true`) ------------------
+   a long page read beside an open app: wider than a card page, figures at
+   full width with numbered callouts, a contents list, the pipeline chips. */
+.guide{max-width:960px}
+.guide__body{max-width:72ch}
+.guide__body h2{margin:var(--space-7) 0 var(--space-3)}
+.guide__body h3{margin:var(--space-6) 0 var(--space-2)}
+.guide__body p,.guide__body ul,.guide__body ol{margin:0 0 var(--space-4)}
+.guide__body li{margin-bottom:var(--space-2)}
+.guide__body table{width:100%;border-collapse:collapse;font-size:var(--text-sm);margin:var(--space-3) 0 var(--space-5)}
+.guide__body th,.guide__body td{text-align:left;vertical-align:top;padding:6px 8px;border-bottom:1px solid var(--border)}
+.guide__body td code{white-space:nowrap}
+.guide__pipeline{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:0 0 var(--space-4);padding:0;list-style:none}
+.guide__chip{font:var(--text-sm)/1.2 var(--font-sans);padding:8px 14px;border-radius:999px;color:#fff}
+.guide__chip b{font-family:var(--font-display);font-weight:var(--fw-semibold);margin-right:4px}
+.guide__chip--dataset{background:var(--facet-portal)}
+.guide__chip--place{background:var(--navy-700)}
+.guide__chip--method{background:var(--teal-600)}
+.guide__chip--delivery{background:var(--coral-500)}
+.guide__byline{font:var(--text-sm)/1.4 var(--font-mono);color:var(--text-muted);margin:0 0 var(--space-5)}
+.guide__toc{border:1px solid var(--border);border-radius:var(--radius-md);background:var(--bg-tint);padding:var(--space-4) var(--space-5);margin:0 0 var(--space-6);font-size:var(--text-sm)}
+.guide__toc ul{margin:var(--space-2) 0 0;padding-left:var(--space-5)}
+.guide__toc ul ul{display:none}
+.guide__toc li{margin:2px 0}
+.fig{margin:var(--space-5) 0 var(--space-6);max-width:none;width:calc(100% + 0px)}
+.guide__body .fig{width:min(912px, calc(100vw - 2 * var(--space-5)))}
+.fig__frame{position:relative;border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;line-height:0}
+.fig__frame img{width:100%;height:auto;display:block}
+.fig__mark{position:absolute;transform:translate(-50%,-50%);width:26px;height:26px;border-radius:50%;background:var(--coral-500);color:#fff;font:var(--fw-bold) 13px/26px var(--font-sans);text-align:center;box-shadow:0 0 0 2px #fff,0 1px 4px rgba(0,0,0,.35)}
+.fig figcaption{font-size:var(--text-sm);line-height:var(--lh-normal);color:var(--text-muted);margin-top:var(--space-2);max-width:72ch}
+.fig figcaption ol{margin:var(--space-2) 0 0;padding-left:var(--space-5)}
