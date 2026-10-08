@@ -205,3 +205,40 @@
 .footer-colophon__inner{ max-width:var(--container-wide); margin:0 auto; padding:var(--space-4) var(--space-6); display:flex; justify-content:space-between; flex-wrap:wrap; gap:var(--space-3); font-family:var(--font-mono); font-size:var(--text-xs); color:var(--text-on-dark-muted); letter-spacing:.04em; }
 @media (max-width:860px){ .footer-main{ grid-template-columns:1fr 1fr; } }
 @media (max-width:520px){ .footer-main{ grid-template-columns:1fr; } }
+
+/* ---- Detail pages (working groups / network nodes / methods) ----------- */
+/* single reading column; the people/tags/actions that used to sit in a right-hand
+   <aside> live in a full-width facts bar under the page header instead, so long
+   content never leaves an empty column beside it and mobile needs no breakpoint */
+.detail-meta{ background:var(--foam-100); border-bottom:1px solid var(--border); }
+.detail-meta__inner{ max-width:var(--container-wide); margin:0 auto; padding:var(--space-5) var(--space-6); display:flex; flex-wrap:wrap; align-items:flex-start; gap:var(--space-5) var(--space-8); }
+.detail-meta__group{ display:flex; flex-direction:column; gap:var(--space-2); min-width:0; }
+.detail-meta__label{ font-family:var(--font-mono); font-size:var(--text-xs); text-transform:uppercase; letter-spacing:var(--ls-wide); color:var(--text-muted); }
+.detail-meta__people{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:var(--space-2) var(--space-6); }
+.detail-meta__people li{ display:flex; flex-direction:column; gap:.15em; font-size:var(--text-sm); }
+.detail-meta__org{ font-size:var(--text-xs); color:var(--text-muted); font-family:var(--font-mono); }
+.detail-meta__actions{ display:flex; flex-wrap:wrap; gap:var(--space-2); margin-left:auto; align-self:center; }
+/* body spans the container; on wide screens its media (image-only paragraphs,
+   embedded video, the banner) float into the right half so text wraps beside them
+   instead of leaving that half empty. :has() keys off the markup Markdown emits. */
+.detail-body{ display:flow-root; }
+.detail-body img{ max-width:100%; height:auto; }
+@media (min-width:900px){
+  .detail-body > p:has(> img:only-child),
+  .detail-body > div:has(> iframe),
+  .detail-body > figure{ float:right; clear:right; width:44%; margin:0 0 var(--space-5) var(--space-7); }
+  /* images shrink-wrap to their natural size (never upscaled — a 300px logo stays
+     300px), capped at the same 44%; video has no intrinsic width so it keeps 44% */
+  .detail-body > p:has(> img:only-child){ width:auto; max-width:44%; }
+  .detail-body > p:has(> img:only-child) img{ display:block; border-radius:var(--radius-md); }
+  /* the youtube shortcode sizes itself with padding-bottom:56.25%, which is a % of
+     the *parent's* width, so once floated it needs a real aspect ratio instead */
+  .detail-body > div:has(> iframe){ padding-bottom:0 !important; height:auto !important; aspect-ratio:16/9; border-radius:var(--radius-md); }
+}
+.detail-banner{ margin:0 0 var(--space-6); border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); }
+.detail-banner img{ display:block; width:100%; height:clamp(160px,28vw,280px); object-fit:cover; }
+@media (max-width:600px){
+  .detail-meta__inner{ padding-inline:var(--space-4); gap:var(--space-4); }
+  .detail-meta__actions{ margin-left:0; }
+  .page-header__inner{ padding-inline:var(--space-4); }
+}

@@ -21,22 +21,17 @@
     </div>
   </section>
 
+  {{/* tags are already in the page header here */}}
+  {{ partial "detail-meta.html" (dict "page" . "tags" false
+       "buttons" (slice (dict "label" "View related tools" "href" $toolsURL "class" "btn--action")
+                        (dict "label" "All methods" "href" ("methods" | relURL)))) }}
+
   <section class="section">
-    <div class="container" style="display:grid;grid-template-columns:1.5fr 1fr;gap:var(--space-8);align-items:start;">
-      <div style="max-width:62ch;">{{ .Content }}</div>
-      <aside>
-        {{ with .Params.banner }}
-        <div style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);margin-bottom:var(--space-5);">
-          <img src="{{ . | relURL }}" alt="" style="width:100%;height:220px;object-fit:cover;">
-        </div>
-        {{ end }}
-        <a class="btn btn--action btn--full" href="{{ $toolsURL }}" style="margin-bottom:var(--space-3);">
-          View related tools <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </a>
-        <a class="btn btn--outline btn--full" href="{{ "methods" | relURL }}">
-          All methods <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </a>
-      </aside>
+    <div class="container">
+      <div class="detail-body">
+        {{ partial "detail-banner.html" . }}
+        {{ .Content }}
+      </div>
     </div>
   </section>
 
