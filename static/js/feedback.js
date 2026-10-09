@@ -220,9 +220,12 @@
                         text: ta.value.trim(), email: em.value.trim(), image: image, website: dlg.querySelector('.fb-hp').value, user_agent: navigator.userAgent };
         return fetch(cfg.endpoint, { method: 'POST', body: JSON.stringify(payload), headers: { 'Content-Type': 'text/plain;charset=UTF-8' }, redirect: 'follow' });
       }).then(function (res) { return res.json().catch(function () { return null; }); }).then(function (j) {
-        if (j && j.ok === false) throw new Error(j.error || 'the endpoint refused it');
+        // only the script's JSON receipt counts: Apps Script answers 200 with an HTML page when the
+        // deployment is not public, needs authorisation, or hits a transient Google error
+        if (!j || typeof j.ok !== 'boolean') throw new Error('the endpoint answered with a page instead of a receipt');
+        if (j.ok === false) throw new Error(j.error || 'the endpoint refused it');
         if (window.gtag && !navigator.webdriver) try { window.gtag('event', 'feedback', { app: cfg.app, image: !!(include && shot) }); } catch (e) {}
-        body.innerHTML = '<p>' + (j ? 'Received.' : 'Sent.') + ' The MBON team gets it by mail' + (j && j.issue_url ? ' and it is public issue <a href="' + esc(j.issue_url) + '" target="_blank" rel="noopener">' + esc(j.issue_url.replace(/^https?:\/\/github\.com\//, '')) + '</a>' : '') + (j && j.id ? ' <span class="fb-hint">· id ' + esc(j.id) + '</span>' : '') + '.</p><p class="fb-hint">Thank you.</p>';
+        body.innerHTML = '<p>Received. The MBON team gets it by mail' + (j && j.issue_url ? ' and it is public issue <a href="' + esc(j.issue_url) + '" target="_blank" rel="noopener">' + esc(j.issue_url.replace(/^https?:\/\/github\.com\//, '')) + '</a>' : '') + (j && j.id ? ' <span class="fb-hint">· id ' + esc(j.id) + '</span>' : '') + '.</p><p class="fb-hint">Thank you.</p>';
         dlg.querySelector('.fb-actions').innerHTML = '<button type="button" class="fb-btn-primary fb-btn fb-ok">Close</button>';
         dlg.querySelector('.fb-ok').addEventListener('click', function () { dlg.close(); });
       }).catch(function (e) { err.hidden = false; err.textContent = 'Not sent: ' + e.message + '. Try again, or open the issue yourself.'; })
