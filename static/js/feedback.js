@@ -176,7 +176,8 @@
       '<div class="fb-body">' +
       '<label class="fb-f">What happened / what did you expect?<textarea rows="4" placeholder="the link on this page is broken … / this dataset looks out of date … / the globe is empty on my phone …" autofocus></textarea></label>' +
       '<label class="fb-f">Email <span class="fb-hint">optional, so we can reply; not published</span><input type="email" placeholder="you@example.org" autocomplete="email"></label>' +
-      '<input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">' +
+      /* the honeypot: never name it website/url/company, Chrome autofill fills those with the email */
+      '<input type="text" name="xq_note_check" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore class="fb-hp" aria-hidden="true">' +
       '<div class="fb-shot"><div class="fb-thumb"><span class="fb-hint">capturing the view…</span></div>' +
       '<div class="fb-row"><label class="fb-row"><input type="checkbox" checked class="fb-include"> include screenshot</label>' +
       '<button type="button" class="fb-pill" data-act="edit" disabled>' + icon('pen') + ' edit</button><button type="button" class="fb-pill" data-act="retake" disabled>' + icon('capture') + ' retake</button></div></div>' +
@@ -224,6 +225,7 @@
         // deployment is not public, needs authorisation, or hits a transient Google error
         if (!j || typeof j.ok !== 'boolean') throw new Error('the endpoint answered with a page instead of a receipt');
         if (j.ok === false) throw new Error(j.error || 'the endpoint refused it');
+        if (j.skipped) throw new Error('the endpoint dropped it as spam (a hidden field was filled, usually by browser autofill)');
         if (window.gtag && !navigator.webdriver) try { window.gtag('event', 'feedback', { app: cfg.app, image: !!(include && shot) }); } catch (e) {}
         body.innerHTML = '<p>Received. The MBON team gets it by mail' + (j && j.issue_url ? ' and it is public issue <a href="' + esc(j.issue_url) + '" target="_blank" rel="noopener">' + esc(j.issue_url.replace(/^https?:\/\/github\.com\//, '')) + '</a>' : '') + (j && j.id ? ' <span class="fb-hint">· id ' + esc(j.id) + '</span>' : '') + '.</p><p class="fb-hint">Thank you.</p>';
         dlg.querySelector('.fb-actions').innerHTML = '<button type="button" class="fb-btn-primary fb-btn fb-ok">Close</button>';
