@@ -29,7 +29,6 @@
 .fb-f .fb-hint { font-weight: var(--fw-regular); }
 .fb-f textarea, .fb-f input { font: var(--type-body); font-size: var(--text-sm); color: var(--fb-fg); background: var(--fb-panel); border: 1px solid var(--fb-border); border-radius: var(--radius-sm); padding: 8px 10px; width: 100%; }
 .fb button:focus-visible, .fb a:focus-visible, .fb textarea:focus-visible, .fb input:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
-.fb-hp { position: absolute; left: -9999px; width: 1px; height: 1px; }
 .fb-hint { margin: 0; font-size: var(--text-xs); color: var(--fb-muted); line-height: 1.4; }
 .fb-hint code { font-size: 0.9em; }
 .fb-warn { color: var(--fb-warn); }

@@ -176,8 +176,10 @@
       '<div class="fb-body">' +
       '<label class="fb-f">What happened / what did you expect?<textarea rows="4" placeholder="the link on this page is broken … / this dataset looks out of date … / the globe is empty on my phone …" autofocus></textarea></label>' +
       '<label class="fb-f">Email <span class="fb-hint">optional, so we can reply; not published</span><input type="email" placeholder="you@example.org" autocomplete="email"></label>' +
-      /* the honeypot: never name it website/url/company, Chrome autofill fills those with the email */
-      '<input type="text" name="xq_note_check" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore class="fb-hp" aria-hidden="true">' +
+      /* no honeypot input: Chrome autofill filled the hidden trap together with the email (as "website", then
+         as "xq_note_check" with autocomplete="off"), and the script dropped a person's feedback as spam
+         (2026-10-12). A bot posts to the script directly, never through this dialog, so the trap caught
+         nobody; the payload still sends website: "" (the script's contract). Email autofill is welcome. */
       '<div class="fb-shot"><div class="fb-thumb"><span class="fb-hint">capturing the view…</span></div>' +
       '<div class="fb-row"><label class="fb-row"><input type="checkbox" checked class="fb-include"> include screenshot</label>' +
       '<button type="button" class="fb-pill" data-act="edit" disabled>' + icon('pen') + ' edit</button><button type="button" class="fb-pill" data-act="retake" disabled>' + icon('capture') + ' retake</button></div></div>' +
@@ -218,7 +220,7 @@
       if (include && shot) p = fitBytes(shot, 3e6).then(function (r) { return new Promise(function (ok) { var fr = new FileReader(); fr.onload = function () { ok(String(fr.result)); }; fr.readAsDataURL(r.blob); }); });
       p.then(function (image) {
         var payload = { app: cfg.app, kind: 'feedback', label: cfg.label, title: '', link: '', datasets: '', url: url, viewport: viewport, theme: theme,
-                        text: ta.value.trim(), email: em.value.trim(), image: image, website: dlg.querySelector('.fb-hp').value, user_agent: navigator.userAgent };
+                        text: ta.value.trim(), email: em.value.trim(), image: image, website: '', user_agent: navigator.userAgent };
         return fetch(cfg.endpoint, { method: 'POST', body: JSON.stringify(payload), headers: { 'Content-Type': 'text/plain;charset=UTF-8' }, redirect: 'follow' });
       }).then(function (res) { return res.json().catch(function () { return null; }); }).then(function (j) {
         // only the script's JSON receipt counts: Apps Script answers 200 with an HTML page when the

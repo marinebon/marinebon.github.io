@@ -29,9 +29,11 @@ The dialog POSTs one JSON body as `text/plain` (a CORS simple request; the scrip
 - `email` is optional. It goes to the Sheet row and the mail only; the public issue never carries it.
 - `image` is the annotated screenshot as a `data:image/png;base64,…` URL (fitted to about 3 MB by the dialog;
   the script refuses more than 6 MB decoded).
-- `website` is the honeypot: it must be empty. The dialog's hidden input is named `xq_note_check` on purpose.
-  Chrome autofill fills a field named `website` together with the email, and the script then drops the
-  submission as a bot (see "When Sent shows but nothing arrives").
+- `website` is the script's honeypot key and must be empty. **The dialog has no honeypot input** and always
+  sends `""`: Chrome autofill filled a hidden trap together with the email (named `website`, then
+  `xq_note_check` with `autocomplete="off"`), and the script dropped a person's feedback as spam. Bots post
+  to the script directly, never through the dialog, so the trap caught nobody. Autofilling the email is
+  welcome.
 
 The script then, each step on its own and reported into the row's `status` column:
 
@@ -81,8 +83,8 @@ ignores).
   Google answers such pages when the deployment is not public, needs authorisation, points at a stale version,
   or hits its transient "unable to open the file at this time" error.
 - **A honeypot receipt** (`{"ok":true,"skipped":"honeypot"}`) is shown as "Not sent: the endpoint dropped it
-  as spam (a hidden field was filled, usually by browser autofill)". It means the hidden input got a value;
-  never rename that input to `website`, `url`, `company` or anything autofill recognises.
+  as spam (a hidden field was filled, usually by browser autofill)". The dialog no longer has that input, so
+  this can only come from a changed `feedback.js` that reintroduces one; do not.
 - **Script side**: Apps Script editor → **Executions** lists every `doPost` with its status and log. A GET of
   the `/exec` URL must return the JSON status line. From a shell, follow Google's redirect the way a browser
   does: `curl -L --data '{"app":"marinebon-org","kind":"feedback","text":"test","website":""}' <url>`

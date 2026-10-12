@@ -277,8 +277,9 @@ is loaded from `layouts/_default/baseof.html`.
   honeypot receipt is shown as "Not sent" with the issue fallback.
 - **Test an endpoint without editing config:** in the browser console run
   `localStorage['marinebon-org.feedback_url'] = 'https://script.google.com/macros/s/.../exec'`, reload, send a
-  report; `localStorage.removeItem('marinebon-org.feedback_url')` undoes it. The honeypot's payload key is
-  `website`; its hidden input is named `xq_note_check`, never `website` (Chrome autofill fills that).
+  report; `localStorage.removeItem('marinebon-org.feedback_url')` undoes it. The payload's `website` key is
+  always empty: the dialog has no honeypot input (Chrome autofill filled it with the email and the script
+  dropped the send as spam), so email autofill is welcome.
 - **What is sent:** the text, the optional email, the page URL, viewport, theme, user-agent and the screenshot.
   The email is never part of the public issue.
 

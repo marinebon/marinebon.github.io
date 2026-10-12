@@ -29,9 +29,8 @@
 //
 // CORS: the dialog POSTs `text/plain` JSON so the request stays a simple request (this endpoint
 // answers no OPTIONS, so a JSON preflight would be dropped). Spam: a honeypot (payload key `website`,
-// must be empty; the dialog's hidden input is deliberately NOT named "website", because Chrome autofill
-// fills a field of that name together with the email), a cap per hour (MAX_PER_HOUR), and an unknown
-// `app` is refused.
+// must be empty; it catches scripts that post every field), a cap per hour (MAX_PER_HOUR), and an unknown
+// `app` is refused. (The site's dialog sends website: "" and has no trap input: autofill filled it.)
 
 // the apps this deployment serves: the payload's `app` -> repository and branch of the public issue.
 // To add one, add a row, give its owner a token (GITHUB_TOKEN_<OWNER>), re-paste, New version.
