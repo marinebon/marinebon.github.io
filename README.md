@@ -264,16 +264,21 @@ current view that the visitor can annotate (arrow, rectangle, text, in three col
 no CDN). It is the dialog from calcofi.io, ported; the button is in `layouts/partials/footer.html` and the script
 is loaded from `layouts/_default/baseof.html`.
 
-- **Config** (`hugo.yaml`, under `params`): `feedback_url` is the shared Ocean Metrics Apps Script web-app `/exec`
-  URL; `feedback_repo` is `marinebon/marinebon.github.io`. The payload's `app` is `marinebon-org`, which the shared
-  script maps to that repo.
-- **With `feedback_url` empty** (the state until the endpoint is deployed) the dialog says so and offers only
-  **Open as GitHub issue myself**, a prefilled issue in `feedback_repo` with the screenshot copied to the clipboard.
-- **Endpoint runbook** (deploying the Apps Script, repos map, token, recipients): `docs/feedback.md` in
-  [oceanmetrics/erddap-places](https://github.com/oceanmetrics/erddap-places). Do not add a `Code.gs` here.
+- **Endpoint**: the site's own Google Apps Script, `scripts/feedback.gs`, bound to the Sheet "marinebon.org
+  feedback"; its `/exec` URL is the repo's Actions variable `VITE_FEEDBACK_URL`, which `deploy.yml` passes to
+  Hugo as `HUGO_FEEDBACK_URL` and `footer.html` writes into the button (`params.feedback_url` in `hugo.yaml`
+  wins when set; it is left empty). `feedback_repo` is `marinebon/marinebon.github.io`; the payload's `app`
+  is `marinebon-org`, which the script's `APPS` map turns into that repo. Deployment, Sheet layout, token,
+  recipients and troubleshooting: **`docs/feedback.md`** (this repo; it no longer depends on the Ocean
+  Metrics repos it was copied from on 2026-10-12).
+- **With no endpoint** the dialog says so and offers only **Open as GitHub issue myself**, a prefilled issue in
+  `feedback_repo` with the screenshot copied to the clipboard.
+- **Only the script's JSON receipt counts as sent**; an HTML page (Google's error or sign-in page) or the
+  honeypot receipt is shown as "Not sent" with the issue fallback.
 - **Test an endpoint without editing config:** in the browser console run
   `localStorage['marinebon-org.feedback_url'] = 'https://script.google.com/macros/s/.../exec'`, reload, send a
-  report; `localStorage.removeItem('marinebon-org.feedback_url')` undoes it. The honeypot field is `website`.
+  report; `localStorage.removeItem('marinebon-org.feedback_url')` undoes it. The honeypot's payload key is
+  `website`; its hidden input is named `xq_note_check`, never `website` (Chrome autofill fills that).
 - **What is sent:** the text, the optional email, the page URL, viewport, theme, user-agent and the screenshot.
   The email is never part of the public issue.
 

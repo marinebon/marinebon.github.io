@@ -3,9 +3,9 @@
    footer opens one dialog: the current view is captured (html-to-image, vendored in static/js/lib/, loaded
    on first use, no CDN), shown as a thumbnail with edit (the annotator: arrow, circle, rectangle, pen,
    text, three colours, undo, clear) and retake, and posted with the note, this page's URL, the viewport and
-   the theme to the shared Ocean Metrics Apps Script endpoint (hugo.yaml params.feedback_url). The script
-   files a public issue in the repo it maps the payload's `app` ("marinebon-org") to, which is
-   marinebon/marinebon.github.io; its runbook is docs/feedback.md in oceanmetrics/erddap-places. With no
+   the theme to the site's own Apps Script endpoint (scripts/feedback.gs; the /exec URL reaches the button
+   through the repo variable VITE_FEEDBACK_URL, see docs/feedback.md). The script files a public issue in the
+   repo it maps the payload's `app` ("marinebon-org") to, which is marinebon/marinebon.github.io. With no
    endpoint configured, "Open as GitHub issue myself" (a prefilled issue, the screenshot copied to the
    clipboard) is the only path. Test an endpoint without redeploying:
    localStorage['marinebon-org.feedback_url'] = 'https://script.google.com/macros/s/.../exec'.
