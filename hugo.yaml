@@ -19,7 +19,7 @@ params:
   # Feedback widget (static/js/feedback.js). feedback_url is the shared Ocean Metrics Apps Script
   # web-app /exec URL; leave it empty until that is deployed and the widget offers only the prefilled
   # GitHub issue in feedback_repo. Runbook: docs/feedback.md in oceanmetrics/erddap-places.
-  feedback_url: ""
+  feedback_url: ""   # empty here: deploy.yml passes the repo variable VITE_FEEDBACK_URL as HUGO_FEEDBACK_URL
   feedback_repo: marinebon/marinebon.github.io
   description: A global collaborative initiative contributing to the effective management of marine biodiversity and ecosystem services. A thematic node of GEO BON.
   tagline: Global ocean observing · GEO BON node

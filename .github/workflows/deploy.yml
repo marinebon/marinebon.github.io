@@ -35,6 +35,8 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
+          # the feedback endpoint (footer.html): the same variable name as the Ocean Metrics apps
+          HUGO_FEEDBACK_URL: ${{ vars.VITE_FEEDBACK_URL }}
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Index with Pagefind
         # must run before the link check: Pagefind generates /pagefind/*

@@ -36,8 +36,11 @@
   <div class="footer-colophon">
     <div class="footer-colophon__inner">
       <span>MARINE BIODIVERSITY OBSERVATION NETWORK &middot; FAIR &middot; OPEN &middot; GLOBAL &middot; {{ now.Year }}</span>
+      {{/* the endpoint: hugo.yaml params.feedback_url, else the HUGO_FEEDBACK_URL build env (deploy.yml maps
+           the repo variable VITE_FEEDBACK_URL to it, so the three Ocean Metrics apps share one variable name) */}}
+      {{ $fb := site.Params.feedback_url | default (os.Getenv "HUGO_FEEDBACK_URL") }}
       <button class="mbon-feedback" type="button" title="Send feedback, with a screenshot of this page"
-        data-endpoint="{{ site.Params.feedback_url }}" data-repo="{{ site.Params.feedback_repo }}" data-app="marinebon-org"><i class="fa-regular fa-comment-dots" aria-hidden="true"></i> Send feedback</button>
+        data-endpoint="{{ $fb }}" data-repo="{{ site.Params.feedback_repo }}" data-app="marinebon-org"><i class="fa-regular fa-comment-dots" aria-hidden="true"></i> Send feedback</button>
       {{ partial "social-links.html" (dict "class" "footer-social" "showContact" true) }}
     </div>
   </div>
