@@ -4,3 +4,6 @@ static/pagefind/
 .DS_Store
 .RData
 .Rhistory
+
+# ubuntu backup files
+*~
