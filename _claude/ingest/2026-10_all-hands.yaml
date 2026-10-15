@@ -1,0 +1,230 @@
+# curated ingest for the 2026-10 US MBON All-Hands before/after demo.
+#
+# built by Claude from unstructured sources (no rigid format required):
+#   - "MBON All-Hands PI Updates" Google Slides (Year 5, one slide per node / WG)
+#   - "MBON All Hands Meeting_Oct 2026_draft agenda" Google Doc
+#   - reports Frank Muller-Karger emailed to ben@ecoquants.com:
+#       NOAA CPO Sanctuaries Indicators RPPR, Sep 2026 (NA22OAR4310561)
+#       NASA MBON Yr4 RPPR, 2026-05-30 (80NSSC22K1779)
+#       NOAA CPO Sanctuaries Indicators progress report, Jan 2026
+# raw per-source extractions (with page/slide citations) were reduced to this file:
+#   papers  = peer-reviewed + published, with a DOI that Crossref resolves (title/authors/
+#             journal/year/abstract come from Crossref, not from the source text)
+#   events  = dated, public meetings not already on the site
+#   tools   = named products with a live URL (HTTP 200 on 2026-10-15) not already on the site
+# held back for PI review (not ingested) are listed under `held:`.
+#
+# apply with:  python3 scripts/ingest_extracted.py _claude/ingest/2026-10_all-hands.yaml
+
+papers:
+  # southeast us mbon / usf imars (nasa mbon + noaa cpo reports, pi updates slide)
+  - {doi: 10.1007/s10980-026-02428-6, related: [/network/southeast-mbon, /working-groups/biotrack], method: [Tracking, Remote Sensing], src: "PI Updates (SE US, BioTrack slides); CPO RPPR Sep 2026 pubs"}
+  - {doi: 10.3389/fmars.2026.1737002, related: [/network/southeast-mbon, /working-groups/indicators], method: [Indicators], src: "PI Updates (SE US); CPO RPPR Sep 2026; NASA RPPR May 2026"}
+  - {doi: 10.1111/con4.70042,        related: [/network/southeast-mbon, /working-groups/indicators], method: [Indicators], src: "CPO RPPR Sep 2026; NASA RPPR May 2026"}
+  - {doi: 10.1163/9789004760806_005, related: [/network/southeast-mbon], src: "CPO RPPR Sep 2026; NASA RPPR May 2026"}
+  - {doi: 10.3389/fmars.2026.1840546, related: [/network/southeast-mbon], src: "CPO RPPR Sep 2026"}
+  - {doi: 10.3389/fmars.2025.1561737, related: [/network/southeast-mbon], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  - {doi: 10.3897/mbmg.10.174450,    related: [/network/southeast-mbon, /working-groups/edna], method: [Genomics], src: "CPO RPPR Sep 2026; NASA RPPR May 2026"}
+  - {doi: 10.1016/j.dsr.2025.104580, related: [/network/southeast-mbon], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  - {doi: 10.1093/biosci/biaf199,    related: [/network/southeast-mbon], method: [Indicators], src: "NASA RPPR May 2026 (in press in CPO Jan 2026)"}
+  - {doi: 10.1093/biosci/biaf049,    related: [/network/southeast-mbon], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  - {doi: 10.1038/s43247-025-02074-x, related: [/network/southeast-mbon], method: [Remote Sensing], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  - {doi: 10.1038/s41598-025-94475-3, related: [/network/southeast-mbon], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  - {doi: 10.1029/2024JH000559,      related: [/network/southeast-mbon], method: [Remote Sensing], src: "NASA RPPR May 2026"}
+  - {doi: 10.1016/j.isprsjprs.2025.06.034, related: [/network/southeast-mbon], method: [Remote Sensing], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  - {doi: 10.1111/fog.70011,         related: [/network/southeast-mbon], method: [Remote Sensing], src: "NASA RPPR May 2026"}
+  - {doi: 10.5670/oceanog.2025.143,  related: [/network/us-mbon], src: "NASA RPPR May 2026"}
+  # us mbon leadership
+  - {doi: 10.4031/MTSJ.59.3.7,       related: [/network/us-mbon], src: "NASA RPPR May 2026 (in press in CPO Jan 2026); TechSurge outcome"}
+  - {doi: 10.1093/icesjms/fsae187,   related: [/network/us-mbon, /network/pole-to-pole-americas], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  # pole to pole of the americas
+  - {doi: 10.3897/rio.11.e163815,    related: [/network/pole-to-pole-americas], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  - {doi: 10.5670/oceanog.2025.137,  related: [/network/pole-to-pole-americas], src: "NASA RPPR May 2026"}
+  - {doi: 10.3390/oceans7040062,     related: [/network/pole-to-pole-americas], method: [Indicators, Remote Sensing], src: "CPO RPPR Sep 2026"}
+  # indicators + eco-indicators working groups
+  - {doi: 10.1016/j.marpol.2025.106922, related: [/working-groups/indicators], method: [Indicators], src: "NASA RPPR May 2026; CPO Jan 2026"}
+  - {doi: 10.3389/fmars.2024.1333756, related: [/working-groups/eco-indicators], method: [Indicators], src: "CPO Jan 2026 (Kilborn EcoIndicatorS WG); DOI via Crossref title match"}
+  # coastal new england mbon
+  - {doi: 10.1186/s40462-026-00675-5, related: [/network/coastal-new-england-mbon], method: [Tracking], src: "PI Updates (Coastal New England slide: Caldwell et al. 2026, Movement Ecology); DOI via Crossref match"}
+
+events:
+  - title: US MBON All-Hands Meeting
+    date: '2026-10-14'
+    end_date: '2026-10-16'
+    location: St. Petersburg, Florida
+    summary: Three days on MBON national goals and strategic framing, data management, MBON data for fisheries, telemetry, remote sensing and seascapes, and eDNA, with partners from MarineGEO, MoveBON, Sanctuary Watch and IOOS.
+    topic: [Meeting]
+    related: [/network/us-mbon, /working-groups/indicators, /working-groups/edna, /working-groups/remote-sensing-seascapes, /working-groups/biotrack]
+    src: "All-Hands Oct 2026 draft agenda; NASA RPPR May 2026 ('MBON PI workshop', p. 9)"
+    body: |
+      The US MBON All-Hands Meeting brings the national network's teams, working groups and partners
+      together at **The Edge at USF** in St. Petersburg, Florida, with hybrid participation.
+
+      **Goals**
+
+      - Reach agreement on key messages about MBON national goals and the MBON strategic framework,
+        share updates on data management (helpdesk and product highlights; data to support fisheries),
+        and consider future planning.
+      - Strengthen links among US MBON teams and partners, and the connectivity across efforts.
+      - Encourage common activities and outputs: technology applications, data sharing, product
+        development and stories that show the network's value.
+
+      **Day 1 (Wed 14 Oct)**: MBON team-lead updates (one speaker per project and working group);
+      the MarineGEO strategy and MBON partnership; MoveBON; the Ocean Biodiversity Impact Initiative
+      and biodiversity KPIs; global engagement (AIR Centre, WCMB, GOOS, GEO); national goals and
+      strategic framing; Sanctuary Watch; and the Communications working group, including this website.
+
+      **Day 2 (Thu 15 Oct)**: MBON data contributions to support fisheries, with OBIS and GBIF
+      capabilities shown on a species of interest; linking the Animal Telemetry Network and MBON to
+      inform conservation and fisheries management; afternoon field trip to Egmont Key.
+
+      **Day 3 (Fri 16 Oct)**: the IOOS Marine Life Map; remote sensing and seascapes applications
+      (NASA program update, PACE, animal tracking, dashboards, eDNA and plankton imaging, foundation
+      models); eDNA in MBON (FAIR eDNA data tools, portals, a cross-node pilot of eDNA-based EBVs);
+      and MBON business: next steps on national goals, species distribution modeling, and a special
+      issue.
+  - title: Ocean Biodiversity TechSurge
+    date: '2024-10-01'
+    end_date: '2024-10-02'
+    location: Baltimore, Maryland
+    summary: A meeting of the MTS Ocean Enterprise Initiative, IOOS, MBON and NOPP on ocean biodiversity information and technology. Its outcomes led to a report and a Marine Technology Society Journal paper.
+    topic: [Meeting]
+    related: [/network/us-mbon]
+    src: "CPO Jan 2026 Accomplishments (p. 9); NASA RPPR May 2026"
+    body: |
+      The Ocean Biodiversity TechSurge brought the Marine Technology Society (MTS) Ocean Enterprise
+      Initiative, NOAA IOOS, MBON and the National Oceanographic Partnership Program (NOPP) together
+      to ask what technology and information the ocean economy needs from biodiversity observing.
+      Its outcomes were written up in a report and in *A Prosperous Economy Requires Ocean
+      Biodiversity Information, Technology, and Innovation* in the Marine Technology Society Journal.
+
+tools:
+  - title: places gazetteer
+    summary: One STAC catalog of marine place layers (sanctuaries, MPAs, EEZs, leases, planning areas) as GeoParquet and PMTiles, with stable place ids, per-feature licence and H3 membership for joining hexagon data by place.
+    links: ["Browse the catalog|https://storage.oceanmetrics.io/gazetteer/catalog.json", "Source code|https://github.com/oceanmetrics/places"]
+    tool: [Package]
+    method: [Indicators]
+    place: [US]
+    org: [Ocean Metrics]
+    other: [topic.Marine-Protected-Areas, topic.Standards, topic.Interoperability]
+    related: [/working-groups/indicators, /tools/obis-hex, /tools/erddap-places]
+    src: "PI Updates (Indicators WG slide: places, github.com/oceanmetrics/places); CPO RPPR Sep 2026 §6 (gazetteer, FY27)"
+    body: |
+      **places** is the gazetteer behind [erddap-places](/tools/erddap-places/) and the place filter
+      in [OBIS hex](/tools/obis-hex/): one [STAC](https://stacspec.org) catalog of marine place layers,
+      such as National Marine Sanctuaries, MPAs, EEZs, BOEM leases and planning areas, aquaculture
+      opportunity areas and stations. It covers places that are missing from the standard registries
+      as well as those that are in them.
+
+      - **Stable ids.** Every place is `<authority>:<source_id>` (for example `NMS:FKNMS`); ids never
+        change, geometry versions do.
+      - **Cloud-native files.** Each collection is a GeoParquet file (queryable straight from DuckDB
+        with bbox pushdown) plus a PMTiles archive for maps, with a style, README and provenance.
+      - **Licence and attribution per feature**, so derived products can credit sources correctly.
+      - **H3 membership.** For every polygon collection, the H3 cells (res 1–7) each place covers and
+        the share of each cell inside it, so hexagon data such as the OBIS H3 indicators can be
+        summarised by place with a join and no geometry.
+
+      Built by the [Indicators working group](/working-groups/indicators/) for place-based indicator
+      reporting: dataset · place · method · delivery as configuration.
+  - title: STAC-SDM
+    summary: A STAC extension that describes species distribution models (range, habitat-suitability or density) — what the value means, how it was modeled, which taxon, and the month or season it predicts.
+    links: ["Specification|https://github.com/MarineSensitivity/stac-sdm"]
+    tool: [Package]
+    method: [Indicators]
+    place: [Global]
+    org: [Ocean Metrics]
+    other: [topic.Species-Distribution-Modeling, topic.Standards, topic.Interoperability]
+    related: [/working-groups/indicators, /tools/marine-sensitivity-toolkit, /tools/marine-sdms]
+    src: "PI Updates (Indicators WG: STAC-SDM paper slated); CPO RPPR Sep 2026 S1 Products table"
+    body: |
+      **STAC-SDM** is a [SpatioTemporal Asset Catalog](https://stacspec.org) extension (prefix `sdm:`)
+      for species distribution models. It records the semantics that core STAC lacks: the response
+      type of each cell value and its unit, the modeling method, the source authority, the
+      predictors, the vintage of the environmental layers, and the prediction interval (static,
+      monthly or seasonal) that captures phenology. Everything else (projection, raster bands,
+      citation, versioning, lineage) is delegated to existing STAC extensions. It is the catalog
+      schema of the [Marine Sensitivity Toolkit](/tools/marine-sensitivity-toolkit/).
+  - title: Marine Sensitivity Toolkit
+    summary: A catalog and atlas of marine species distribution models and sensitivity scores for U.S. waters, harmonized with STAC-SDM into cloud-optimized GeoTIFF and GeoParquet.
+    links: ["Open the toolkit|https://marinesensitivity.org"]
+    tool: [Portal]
+    method: [Indicators]
+    place: [US]
+    org: [Ocean Metrics]
+    other: [topic.Species-Distribution-Modeling]
+    related: [/working-groups/indicators, /tools/stac-sdm, /tools/marine-sdms, /tools/aquamaps-downscaled]
+    src: "CPO RPPR Sep 2026 §5, Fig. S4 and S1 Products table; Ben Best FY26 input"
+    body: |
+      The **Marine Sensitivity Toolkit** catalogs species distribution models from many sources
+      (80,791 models from 11 sources, merged into 17,763 U.S. taxon surfaces, including AquaMaps),
+      describes them with [STAC-SDM](/tools/stac-sdm/), and serves them as cloud-optimized GeoTIFF
+      and GeoParquet alongside species sensitivity scores for offshore planning.
+  - title: phytoclass
+    summary: An R package and Shiny app that estimate phytoplankton group biomass from HPLC pigment concentrations, giving pigment-derived taxonomic occurrence data from the Florida Keys cruises.
+    links: ["Open the app|https://phytoclass.org", "R package|https://phytoclass.github.io/phytoclass/", "Source code|https://github.com/phytoclass"]
+    tool: [Package]
+    place: [South Florida]
+    other: [topic.Phytoplankton]
+    related: [/network/southeast-mbon]
+    src: "CPO Jan 2026 Accomplishments (p. 9); CPO RPPR Sep 2026"
+    body: |
+      **phytoclass** is a pigment-based chemotaxonomic method: it uses non-negative matrix
+      factorization and simulated annealing to estimate the biomass of phytoplankton classes from
+      HPLC pigment concentrations. The Southeast US MBON uses it to turn pigment samples from the
+      Florida Keys National Marine Sanctuary cruises into taxonomic occurrence data. A Shiny
+      graphical interface makes the method usable without writing R.
+  - title: USF IMaRS ERDDAP
+    summary: USF's ERDDAP server for satellite ocean color (MODIS, VIIRS, Sentinel-3 OLCI, PACE), net primary productivity and precipitation products over the Gulf, Florida and the wider Atlantic.
+    links: ["Browse datasets|https://erddap.marine.usf.edu/erddap/info/index.html?page=1&itemsPerPage=1000"]
+    tool: [Portal]
+    method: [Remote Sensing]
+    place: [South Florida]
+    portal: [ERDDAP]
+    related: [/network/southeast-mbon, /working-groups/remote-sensing-seascapes, /tools/erddap-places]
+    src: "NASA RPPR May 2026 Products (p. 22); CPO Jan 2026 (p. 11); CPO RPPR Sep 2026 B.2"
+    body: |
+      The University of South Florida's Institute for Marine Remote Sensing (IMaRS) serves its
+      satellite products on ERDDAP. These include MODIS-Aqua, VIIRS-SNPP and Sentinel-3 OLCI ocean
+      color composites and means for the Gulf and South Florida, PACE-OCI hyperspectral reflectance
+      and biogeochemistry, VGPM net primary productivity and IMERG monthly precipitation. They feed
+      the sanctuary dashboards and [erddap-places](/tools/erddap-places/).
+  - title: SEUS MBON cruise CTD processing
+    summary: Quarto notebooks that pull SEUS MBON / South Florida cruise CTD casts from GCOOS ERDDAP, apply QA/QC and align station ids, and publish cleaned profiles and reports.
+    links: ["Reports|https://usf-imars.github.io/seus-mbon-cruise-ctd-processing/", "Source code|https://github.com/USF-IMARS/seus-mbon-cruise-ctd-processing"]
+    tool: [Workflow]
+    place: [South Florida]
+    portal: [ERDDAP]
+    other: [topic.Data-Publishing]
+    related: [/network/southeast-mbon]
+    src: "CPO RPPR Sep 2026 B.2 (seus-mbon-cruise-ctd-processing); CPO Jan 2026"
+    body: |
+      CTD casts from the South Florida / Southeast US MBON research cruises, aboard the R/V Walton
+      Smith and R/V W. T. Hogarth, are published on GCOOS ERDDAP. These notebooks download them,
+      clean them further, align station ids with the FRESCA standard names, and render cleaned
+      profiles and a report site. To add a cruise, add its ERDDAP dataset ids to a mapping table.
+  - title: FWRI Florida Keys NMS Data Viewer
+    summary: An ArcGIS dashboard by the Florida Fish and Wildlife Research Institute and MBON that maps monitoring data across the Florida Keys National Marine Sanctuary.
+    links: ["Open the viewer|https://experience.arcgis.com/experience/10f2072b9c3c42da9facdeb445227ff1"]
+    tool: [App]
+    place: [South Florida]
+    org: [FWRI, National Marine Sanctuaries]
+    other: [topic.Marine-Protected-Areas]
+    related: [/network/southeast-mbon, /tools/storymap-fk-fwri-water-quality]
+    src: "PI Updates (SE US MBON slide)"
+    body: ""
+
+held:
+  # reported in the NASA MBON RPPR but outside marine biodiversity; ask the PI before listing
+  - {doi: 10.1016/j.uclim.2025.102742, why: "heat vulnerability, Ponce PR (urban climate)"}
+  - {doi: 10.1016/j.joclim.2025.100581, why: "extreme heat in learning environments"}
+  - {doi: 10.1175/BAMS-D-24-0045.1, why: "African dust event (atmospheric)"}
+  - {doi: 10.1016/j.envsci.2025.104055, why: "nitrogen pollution cyberinfrastructure"}
+  # datacite doi (zenodo report chapter), not resolvable through crossref
+  - {doi: 10.5281/zenodo.14046427, why: "Peralta Brichtova et al. 2025, Seafloor Biology Data (report chapter); DataCite DOI"}
+  # not yet published (in review / in prep), so not a paper page yet
+  - {title: "Coding Ocean Indicators: Patterns and People (Progress in Physical Geography, PPG-26-197)", why: in review}
+  - {title: "D'Antonio et al., Ecological Applications; Couto et al., Frontiers in Ecology and Evolution (BioTrack)", why: in review}
+  - {title: "OBIS-hex / H3 EOV data cube; STAC-SDM atlas; places gazetteer; Kilborn EOV trajectories", why: in preparation}
+  # named on a slide but no link or detail to build a page from
+  - {title: "Mid-Atlantic PAM soundscape R package; Gulf of Maine indicators beta dashboard; Great Lakes amplicon pipeline", why: no URL in sources}
