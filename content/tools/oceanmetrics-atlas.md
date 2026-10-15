@@ -1,6 +1,6 @@
 ---
 title: OceanMetrics Atlas
-image: img/tools/oceanmetrics-atlas.png
+image: img/tools/oceanmetrics-atlas.jpg
 summary: A browser map of species distribution and biodiversity model outputs, read
   from a STAC catalog. It now hosts the MBON BioTrack indicators (species richness
   and uncertainty for the US Atlantic and Gulf, from telemetry and OBIS).
