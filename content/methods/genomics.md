@@ -30,7 +30,7 @@ The power of eDNA depends critically on high-quality reference sequence database
 
 ## FAIR eDNA
 
-The <a href="https://fair-edna.github.io/">FAIR eDNA (FAIRe) guidelines</a> provide data components and formats, a comprehensive metadata checklist and scripts and tools to guide users through the data formatting process. 
+The <a href="https://fair-edna.github.io/">FAIR eDNA (FAIRe) guidelines</a> provide data components and formats, a comprehensive metadata checklist, and scripts and tools to guide users through the data formatting process. 
 
 ## Working groups
 
