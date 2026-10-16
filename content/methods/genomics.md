@@ -28,9 +28,9 @@ Shotgun sequencing of all DNA (metagenomics) or RNA (metatranscriptomics) in a w
 
 The power of eDNA depends critically on high-quality reference sequence databases. MBON collaborates with the Barcode of Life Data System (BOLD), NCBI, and the OBIS eDNA working group to curate marine reference libraries and develop standard operating procedures for field collection, preservation, extraction, amplification, and bioinformatic analysis.
 
-## Fair eDNA
+## FAIR eDNA
 
-The <a href="https://fair-edna.github.io/guidelines.html">FAIR eDNA (FAIRe) guidelines</a> provide data components and formats, a comprehensive metadata checklist and scripts and tools to guide users through the data formatting process. 
+The <a href="https://fair-edna.github.io/">FAIR eDNA (FAIRe) guidelines</a> provide data components and formats, a comprehensive metadata checklist and scripts and tools to guide users through the data formatting process. 
 
 ## Working groups
 
