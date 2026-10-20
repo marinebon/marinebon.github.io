@@ -21,6 +21,12 @@
  * Note: the form posts application/x-www-form-urlencoded with mode:"no-cors", so the
  * browser can't read the reply — that's expected. Validation happens client-side and
  * here; a failed send is caught as a network error on the page.
+ *
+ * Spam: the /exec URL is public, so bots post here without the page's JS — every check
+ * that matters lives in this script. A submission whose name, subject and message are
+ * mostly lone runs of random mixed-case letters ("kLfsDCVIYwqjgMVSPBhtaPx") is logged
+ * to the Sheet with Status "spam" and NOT emailed (see isGibberish_). Review that column
+ * now and then for false positives.
  */
 
 // ── CONFIG (edit these) ──────────────────────────────────────────────────────
@@ -45,6 +51,13 @@ function doPost(e) {
       return json_({ ok: false, error: 'Invalid email.' });
     }
 
+    // bot gibberish: keep a record in the Sheet, but don't save files or email the team.
+    // answer ok like a real send so the bot learns nothing.
+    if (isGibberish_(name, subject, message)) {
+      getSheet_(SHEET_TAB).appendRow([new Date(), name, email, subject, message, '', 'spam']);
+      return json_({ ok: true });
+    }
+
     // optional attachment: sent as base64 in a field, so no multipart parsing needed
     var attachment = null, attachmentUrl = '';
     if (p.fileData && p.fileName) {
@@ -57,7 +70,7 @@ function doPost(e) {
     }
 
     // log to the bound Sheet
-    getSheet_(SHEET_TAB).appendRow([new Date(), name, email, subject, message, attachmentUrl]);
+    getSheet_(SHEET_TAB).appendRow([new Date(), name, email, subject, message, attachmentUrl, 'sent']);
 
     // notify the team — recipients come from NOTIFY_EMAILS, not from the request
     var body =
@@ -81,12 +94,29 @@ function doGet() {
   return json_({ ok: true, note: 'MBON contact endpoint — POST to submit.' });
 }
 
+// a lone run of 12+ letters, mixing lower case with 2+ capitals after the first letter,
+// e.g. "kLfsDCVIYwqjgMVSPBhtaPx". real names, subjects and messages have spaces, and a
+// real word rarely carries more than one inner capital ("McDonald", "iNaturalist").
+function looksRandom_(s) {
+  return /^[A-Za-z]{12,}$/.test(s) && /[a-z]/.test(s) &&
+    (s.slice(1).match(/[A-Z]/g) || []).length >= 2;
+}
+
+// spam when at least 2 of name / subject / message look random, so one odd field
+// (a handle typed as a name, a one-word subject) never drops a real message
+function isGibberish_(name, subject, message) {
+  return [name, subject, message].filter(looksRandom_).length >= 2;
+}
+
 function getSheet_(tab) {
+  var HEADER = ['Timestamp', 'Name', 'Email', 'Subject', 'Message', 'Attachment', 'Status'];
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sh = ss.getSheetByName(tab);
   if (!sh) {
     sh = ss.insertSheet(tab);
-    sh.appendRow(['Timestamp', 'Name', 'Email', 'Subject', 'Message', 'Attachment']);
+    sh.appendRow(HEADER);
+  } else if (sh.getRange(1, HEADER.length).getValue() !== 'Status') {
+    sh.getRange(1, HEADER.length).setValue('Status');  // tabs made before the spam filter
   }
   return sh;
 }
