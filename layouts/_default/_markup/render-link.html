@@ -10,3 +10,4 @@
   {{- $u = $u | strings.TrimPrefix "/" | relURL -}}
 {{- end -}}
 <a href="{{ $u | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /* chomp the file's trailing newline, or every link renders a space before the next character ("Atlas .") */ -}}
