@@ -225,12 +225,16 @@
 .detail-body img{ max-width:100%; height:auto; }
 @media (min-width:900px){
   .detail-body > p:has(> img:only-child),
+  .detail-body > p:has(> a:only-child > img:only-child),
   .detail-body > div:has(> iframe),
   .detail-body > figure{ float:right; clear:right; width:44%; margin:0 0 var(--space-5) var(--space-7); }
   /* images shrink-wrap to their natural size (never upscaled — a 300px logo stays
-     300px), capped at the same 44%; video has no intrinsic width so it keeps 44% */
-  .detail-body > p:has(> img:only-child){ width:auto; max-width:44%; }
-  .detail-body > p:has(> img:only-child) img{ display:block; border-radius:var(--radius-md); }
+     300px), capped at the same 44%; video has no intrinsic width so it keeps 44%.
+     a linked image (`[![alt](img)](url)`) floats and rounds the same as a bare one */
+  .detail-body > p:has(> img:only-child),
+  .detail-body > p:has(> a:only-child > img:only-child){ width:auto; max-width:44%; }
+  .detail-body > p:has(> img:only-child) img,
+  .detail-body > p:has(> a:only-child > img:only-child) img{ display:block; border-radius:var(--radius-md); }
   /* the youtube shortcode sizes itself with padding-bottom:56.25%, which is a % of
      the *parent's* width, so once floated it needs a real aspect ratio instead */
   .detail-body > div:has(> iframe){ padding-bottom:0 !important; height:auto !important; aspect-ratio:16/9; border-radius:var(--radius-md); }
