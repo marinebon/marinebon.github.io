@@ -30,6 +30,14 @@ BioTrack is a collaborative project to assess and monitor biodiversity hotspots 
 
 Knowledge about marine species hotspots and how they are changing provides opportunities for prioritizing spatial protections, planning for multiple use of ocean spaces, and monitoring ecosystem responses to environmental change. Data are made available through an interactive portal jointly hosted by MBON and the Animal Tracking Network (ATN). The current focus is the Western North Atlantic, Gulf of Mexico, and Caribbean Sea, with a plan to scale to other regions.
 
+## Biodiversity indicator map
+
+BioTrack's biodiversity indicators (Couto, Hammerschlag et al., under review) map ecoregion-weighted species richness and cumulative uncertainty for all species, fish, rays, sharks, turtles and red-listed species, in summer and winter, across the US Atlantic, the Gulf of Mexico and the Caribbean. They come from integrated spatial occupancy models of acoustic telemetry and OBIS records for 66 species. Click a cell to see the species likely to occur there. **[Open the interactive map](https://oceanmetrics.io/atlas/?c=biotrack_indicators)** on the [OceanMetrics Atlas](/tools/oceanmetrics-atlas/).
+
+[![BioTrack ecoregion-weighted richness of all species in summer, on the OceanMetrics Atlas: click to open the interactive map](img/working-groups/biotrack-atlas-map.png)](https://oceanmetrics.io/atlas/?c=biotrack_indicators)
+
+This work was made possible through the data sharing via the ACT, FACT, iTAG and OTN telemetry networks, with funding from NOAA IOOS MBON, SECOORA, NASA and NOAA.
+
 ![ATN Data Assembly Center map showing marine animal satellite telemetry tracks in the South Florida/Gulf of Mexico region](img/working-groups/atn-biotrack.png)
 
 ![BioTrack shark tagging field work](img/working-groups/biotrack-shark-tagging.jpg)
