@@ -8,11 +8,9 @@ tags:
 - topic.Workshop
 - topic.Training
 - place.Azores
-- topic.UN Ocean Decade
 - topic.Data
 - topic.Monitoring
 - topic.Biodiversity
-- topic.Best Practices
 - method.Benthic
 title: 'International Workshop in the Azores strengthens marine biodiversity data sharing '
 
