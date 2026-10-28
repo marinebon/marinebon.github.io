@@ -13,9 +13,7 @@ tags:
 - topic.Monitoring
 - topic.Biodiversity
 - topic.Best Practices
-
 title: 'International Workshop in the Azores strengthens marine biodiversity data sharing '
-
 methods: Benthic
 ---
 
