@@ -28,3 +28,9 @@ The instructors were Carolina Peralta and Tylar Murray (Institute for Marine Rem
 The Azores workshop adds to MBON Pole to Pole’s growing training effort. Together, these activities help build a community of practice that collects comparable data and shares it openly through OBIS. 
 
 The workshop is endorsed by the UN Ocean Decade and supported by IOC-UNESCO and the Government of the Azores. It reflects MBON’s commitment to international collaboration and to expanding the sharing of high-quality biodiversity data for science, conservation and informed decision-making.
+
+![Workshop Terceira 2026 - group](/img/photos/terceira-ws-2026.jpeg)
+
+![Workshop Terceira 2026 - shore sampling](/img/photos/terceira-ws-2026.jpeg)
+
+![Workshop Terceira 2026 - diving](/img/photos/terceira-ws-2026.jpeg)
