@@ -31,6 +31,6 @@ The workshop is endorsed by the UN Ocean Decade and supported by IOC-UNESCO and 
 
 ![Workshop Terceira 2026 - group](/img/photos/terceira-ws-2026.jpeg)
 
-![Workshop Terceira 2026 - shore sampling](/img/photos/terceira-ws-2026.jpeg)
+![Workshop Terceira 2026 - shore sampling](/img/photos/terceira-ws-2026-1.jpeg)
 
-![Workshop Terceira 2026 - diving](/img/photos/terceira-ws-2026.jpeg)
+![Workshop Terceira 2026 - diving](/img/photos/terceira-ws-2026-2.jpeg)
