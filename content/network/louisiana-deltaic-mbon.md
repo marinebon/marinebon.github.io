@@ -34,11 +34,12 @@ related:
 - /network/us-mbon
 ---
 
-The **Louisiana Deltaic Estuaries MBON** (LA MBON) is the first U.S. MBON project
-sited in an estuarine system. Coastal Louisiana is a globally significant deltaic
-coast and a vital sea-level-rise sentinel: it experiences some of the highest rates
-of coastal land loss in the world, mirroring the range of responses that estuaries
-elsewhere may face as seas continue to rise.
+The **Louisiana Deltaic Estuaries MBON** (LA MBON) — *Sea Level Rise Sentinels* —
+is the first U.S. MBON project sited in an estuarine system. Coastal Louisiana's highly productive and diverse
+estuaries make it a globally significant deltaic coast and a vital sea-level-rise
+sentinel: it experiences some of the highest rates of coastal land loss in the
+world, mirroring the range of responses that estuaries elsewhere may face as seas
+continue to rise.
 
 Led by Cassandra Glaspie at Louisiana State University and established in 2023, the
 project collates and synthesizes data from existing monitoring programs to make them

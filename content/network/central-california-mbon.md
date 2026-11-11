@@ -7,6 +7,10 @@ lat: 36.6
 lng: -122
 since: '2014'
 summary: Monterey Bay sanctuary observing and Seascapes.
+pi:
+- name: Francisco Chavez
+  org: Monterey Bay Aquarium Research Institute
+  org_url: https://www.mbari.org/
 aliases:
 - /bons/central-california-mbon/
 tags:
@@ -21,11 +25,13 @@ tags:
 title: Central California MBON
 ---
 
-This project will integrate remote sensing products, *in situ* data and
-models in support of long term needs of the NOAA California Current
-Integrated Ecosystem Assessment (CCIEA), Office of National Marine
-Sanctuaries, Bureau of Ocean Energy Management, and State of California.
-The goal is to quantify relationships between climate, the ocean
+The **CeNCOOS MBON** provides marine biodiversity information in support of a
+healthy Blue Economy in the Central California Current (CCC). This project will
+integrate remote sensing products, *in situ* data and models in support of long
+term needs of the NOAA California Current Integrated Ecosystem Assessment
+(CCIEA), Office of National Marine Sanctuaries, Bureau of Ocean Energy
+Management, and State of California. The goal is to quantify relationships
+between climate, the ocean
 environment (physics, chemistry) and marine food webs (from microbes to
 fish and top predators), with the aim of providing predictive
 understanding of marine ecosystem responses to environmental change.

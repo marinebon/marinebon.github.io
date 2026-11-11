@@ -7,6 +7,10 @@ lat: 24.6
 lng: -81.8
 since: '2014'
 summary: Southeastern United States, integrating fieldwork and satellite observations.
+pi:
+- name: Frank Muller-Karger
+  org: University of South Florida
+  org_url: https://www.usf.edu/
 tags:
 - place.US
 - place.South-Florida
@@ -21,6 +25,8 @@ aliases:
 - /bons/southeast-mbon/
 - /network/south-florida-mbon/
 ---
+
+The **Southeast US MBON** project — *Toward Operational Marine Life Data for Conservation and Sustainability* — serves as a regional collaboration hub of U.S. IOOS, addressing needs for marine biodiversity information in the Gulf of Mexico and Southeast U.S. EEZ. Its work focuses on the needs of resource managers of the Florida Keys National Marine Sanctuary and other federal and state jurisdictions spanning Biscayne Bay, the Florida Keys, the West Florida Shelf, and deep corals.
 
 This project will build on the foundations laid by the present Sanctuaries MBON demonstration. A close partnership with NOAA AOML and the FKNMS has focused on periodic MBON surveys of the Florida Keys since 2014. Additional partners now add animal tracking and other dimensions to the Sanctuaries MBON.
 

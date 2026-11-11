@@ -7,6 +7,10 @@ lat: 71
 lng: -150
 since: '2019'
 summary: Pan-Arctic biodiversity observing across a rapidly changing ocean.
+pi:
+- name: Katrin Iken
+  org: University of Alaska Fairbanks
+  org_url: https://www.uaf.edu/
 tags:
 - place.US
 - place.Arctic
@@ -20,6 +24,8 @@ aliases:
 ---
 
 Unprecedented changes are occurring in the Arctic and affect all components of Arctic marine ecosystems, including humans. However, consistent, long-term observations for planning and adaptation are currently lacking in the Arctic Ocean. AMBON is working towards a sustainable approach to biodiversity observing in the Chukchi Sea as one component of the development of a national MBON.
+
+**AMBON** — *AMBON (Arctic MBON): linking biodiversity observations in the Arctic* — continues efforts to collect biodiversity data across trophic levels and in relation to environmental conditions, uses those data to detect changes in species composition, including invasive species, and determines effective *in situ* observing designs through modeling.
 
 Grounded in the concept that sustained biodiversity across ecosystem components is critical for maintaining healthy ecosystem functions, this project is building on lessons learned from the first 5-year **AMBON** demonstration project. Using strategic collaborations, the new project will add currently un-observed essential ocean variables (EOV) to other, ongoing long-term research programs in a sustainable way to conduct logistically costly observations in the Arctic. This approach ensures that biodiversity is measured across multiple scales of diversity – from microbes to whales. We specifically propose to link to and enhance a stationary mooring array in the northern Chukchi Sea (Chukchi Ecosystem Observatory) that provides year-round environmental and biological observations.
 

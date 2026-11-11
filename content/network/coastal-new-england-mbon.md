@@ -35,7 +35,7 @@ related:
 title: Coastal New England MBON
 ---
 
-The Coastal New England MBON is led by [Nathan Furey](https://x.com/NBFurey) of the Fish and Movement Ecology Lab at the University of New Hampshire, working from the UNH Shoals Marine Laboratory at the Isles of Shoals and with partners across New Hampshire and southern Maine.
+The Coastal New England MBON — *Quantifying marine biodiversity through movements and feeding: Assessing coastal marine ecosystem dynamics near estuary mouths* — is led by [Nathan Furey](https://x.com/NBFurey) of the Fish and Movement Ecology Lab at the University of New Hampshire, working from the UNH Shoals Marine Laboratory at the Isles of Shoals and with partners across New Hampshire and southern Maine.
 
 The Coastal New England project integrates powerful technologies (acoustic telemetry, environmental DNA [eDNA], and acoustics) with traditional fisheries sampling to quantify impacts of changes in local and regional water conditions on individuals, populations, and community structure. Research includes study of the impacts of forage species and environmental conditions on Atlantic cod and common terns in both New Hampshire (Isles of Shoals) and southern Maine (Casco Bay) coastal waters.
 

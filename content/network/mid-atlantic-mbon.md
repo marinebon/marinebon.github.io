@@ -9,6 +9,10 @@ lat: 38
 lng: -74
 since: '2024'
 summary: Integrative biodiversity monitoring of a dynamic continental shelf.
+pi:
+- name: Matthew Ogburn
+  org: Smithsonian Environmental Research Center
+  org_url: https://serc.si.edu/
 tags:
 - place.US
 - place.Mid-Atlantic
@@ -19,6 +23,8 @@ tags:
 - method.Genomics
 title: Mid-Atlantic MBON
 ---
+
+The **Mid-Atlantic MBON** project — *Dynamic Biodiversity and Telemetry Data for a Changing Coast* — is led by Matthew Ogburn at the Smithsonian Environmental Research Center.
 
 The Mid-Atlantic MBON project integrates cutting edge biological information with ocean observations to develop new data products, analytical tools, and information resources supporting ocean and coastal management. The project will provide dynamic biodiversity information at timescales relevant for fisheries management, offshore energy, and other stakeholders to support jobs, the economy, safety and well-being for the more than 78 million people living, visiting, and working in the Mid-Atlantic Bight.
 

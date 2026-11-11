@@ -7,6 +7,10 @@ lat: 44
 lng: -124
 since: '2014'
 summary: Upwelling-driven productivity off Oregon and Washington.
+pi:
+- name: Maria Kavanaugh
+  org: Oregon State University
+  org_url: https://oregonstate.edu/
 tags:
 - place.US
 - place.California-Current
@@ -19,6 +23,8 @@ title: N. California Current MBON
 aliases:
 - /bons/northern-california-current-mbon/
 ---
+
+The project — *Marine Biodiversity Observation Network in the Northern California Current: Dynamic, Multiscale Assessment of Biodiversity and Ecosystem Function to Support Emerging Science and Management Needs* — is led by Maria Kavanaugh at Oregon State University.
 
 The goal of this project is to extend the observational framework of US MBON to the Pacific Northwest – a region that presents unique hydrological, ecological, and socio-economic interactions with marine biodiversity, but also has a long history of ocean observing. Specifically, the project will:
 

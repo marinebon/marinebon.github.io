@@ -26,6 +26,8 @@ title: BioTrack
 
 BioTrack is a collaborative project to assess and monitor biodiversity hotspots where marine species share habitat. By integrating satellite and acoustic tracking of marine animals with remotely sensed environmental data and modeling techniques, BioTrack maps these hotspots and their intersections with areas of human use such as marine sanctuaries and wind energy leasing blocks.
 
+The U.S. MBON project — *An Operational BioTrack: Monitoring At-Risk Marine Species Biodiversity Hotspot Interactions with Management and Resource Use Areas to Support Stakeholder Needs in the Face of Global Change* — focuses on at-risk marine species and on how biodiversity hotspots intersect with management and resource-use areas as global change reshapes the ocean.
+
 Knowledge about marine species hotspots and how they are changing provides opportunities for prioritizing spatial protections, planning for multiple use of ocean spaces, and monitoring ecosystem responses to environmental change. Data are made available through an interactive portal jointly hosted by MBON and the Animal Tracking Network (ATN). The current focus is the Western North Atlantic, Gulf of Mexico, and Caribbean Sea, with a plan to scale to other regions.
 
 ## Biodiversity indicator map

@@ -7,6 +7,10 @@ lat: 44.5
 lng: -84
 since: '2020'
 summary: Freshwater biodiversity at continental scale.
+pi:
+- name: Casey Godwin
+  org: University of Michigan
+  org_url: https://umich.edu/
 tags:
 - place.US
 - place.Great-Lakes
@@ -18,6 +22,8 @@ title: Great Lakes MBON
 aliases:
 - /bons/great-lakes-mbon/
 ---
+
+The **Great Lakes MBON** project — *Dynamics of Biodiversity Across Lakescapes in North America’s Inland Seas* — is led by Casey Godwin at the University of Michigan.
 
 This project will fill a critical gap in science and management of the Great Lakes by creating a BON that uses complementary technological approaches to address interconnections among dynamic pelagic habitats known as “Lakescapes”, biodiversity across the tree of life, movement of key fisheries species, and the role of diversity in supporting ecosystem functions.
 

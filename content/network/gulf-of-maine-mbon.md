@@ -9,6 +9,13 @@ lat: 43.5
 lng: -68.5
 since: '2016'
 summary: Cold-water shelf ecosystem and fisheries.
+pi:
+- name: Jackie Motyka
+  org: Northeastern Regional Association of Coastal Ocean Observing Systems (NERACOOS)
+  org_url: https://neracoos.org/
+- name: Cameron Thompson
+  org: Northeastern Regional Association of Coastal Ocean Observing Systems (NERACOOS)
+  org_url: https://neracoos.org/
 tags:
 - place.US
 - place.Gulf-of-Maine
@@ -19,6 +26,8 @@ tags:
 - method.Genomics
 title: Gulf of Maine MBON
 ---
+
+The project — *Multi-Trophic Level Expansion of the Gulf of Maine Marine Biodiversity Observation Network: Meeting Management Challenges in a Rapidly Changing Ecosystem* — is led by Jackie Motyka and Cameron Thompson at NERACOOS.
 
 The Gulf of Maine (GoM) lies at the epicenter of the most rapid warming trend in U.S. coastal waters. The GoM ecosystem supports the most valuable U.S. fishery (lobster) and the most valuable U.S. fishing seaport (New Bedford). Evidence is mounting that recent warming is affecting ecosystem structure and services, for example, closure of the northern shrimp fishery, impacts on Atlantic cod recovery, and recovery of endangered North Atlantic right whales.
 
