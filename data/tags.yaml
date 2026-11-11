@@ -109,6 +109,9 @@
     New-England:               "New England"
     Great-Lakes:               "Great Lakes"
     Gulf-of-Maine:             "Gulf of Maine"
+    Gulf-of-Mexico:            "Gulf of Mexico"
+    Louisiana:                 Louisiana
+    Caribbean:                 Caribbean
     Mid-Atlantic:              "Mid-Atlantic"
     California-Current:        "California Current"
     Southern-California-Bight: "Southern California Bight"
@@ -143,6 +146,8 @@
   aliases:
     EOV:                  EOV
     eDNA:                 eDNA
+    Estuaries:            Estuaries
+    Sea-Level-Rise:       "Sea Level Rise"
     UN-Ocean-Decade:      "UN Ocean Decade"
     Marine-Life-2030:     "Marine Life 2030"
     Marine-Protected-Areas: "Marine Protected Areas"

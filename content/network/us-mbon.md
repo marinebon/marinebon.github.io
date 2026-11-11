@@ -34,7 +34,9 @@ MBON projects, partners and data play an important role in enabling the scientif
 - [Gulf of Maine](/network/gulf-of-maine-mbon/)
 - [Pacific Northwest](/network/northern-california-current-mbon/)
 - [Southeast](/network/southeast-mbon/)
+- [Great Lakes](/network/great-lakes-mbon/)
 - [Coastal New England](/network/coastal-new-england-mbon/)
+- [Louisiana Deltaic Estuaries](/network/louisiana-deltaic-mbon/)
 - [Mid-Atlantic](/network/mid-atlantic-mbon/)
 - [BioTrack](/working-groups/biotrack/)
 
