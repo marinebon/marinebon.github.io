@@ -17,6 +17,8 @@ about a `/hugo2/` base path predates that — **the site now serves at the root*
 ## Commands
 
 ```bash
+make preview                 # CI-style build + Pagefind, served at http://localhost:8000
+make build                   # hugo --gc --minify + pagefind, no server
 hugo server                  # live-reloading preview at http://localhost:1313
 hugo --gc --minify           # production build into ./public (what CI runs)
 npx --yes pagefind --site public   # build the search index over the built site

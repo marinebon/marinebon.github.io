@@ -21,8 +21,15 @@ You need Hugo **extended**, v0.163+ ([install guide](https://gohugo.io/installat
 Run from the repository root:
 
 ```bash
+make preview         # production-style build + search index, served at http://localhost:8000
 hugo server          # live-reloading preview at http://localhost:1313
 ```
+
+`make preview` builds `public/` the way CI does (Hugo + Pagefind) and hosts it with
+Python's built-in web server, so links and **search both work** — use it to check a
+change before pushing. It needs Python 3 and Node/npx; override the port with
+`make preview PORT=9000`. `hugo server` remains the fast loop for content, layouts,
+and CSS (but not search — see below).
 
 `hugo server` live-reloads content, layouts, and CSS — **but not search**. The search
 index is a separate build step ([Pagefind](https://pagefind.app)), so `hugo server`
