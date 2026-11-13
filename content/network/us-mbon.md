@@ -40,6 +40,8 @@ MBON projects, partners and data play an important role in enabling the scientif
 - [Mid-Atlantic](/network/mid-atlantic-mbon/)
 - [BioTrack](/working-groups/biotrack/)
 
+A summary of the US MBON project can be found on [the NOAA IOOS MBON page](https://ioos.noaa.gov/project/mbon/).
+
 ## Sponsors
 
 U.S. MBON projects have been funded since 2013 under the National Oceanographic Partnership Program (FY14 RFP NOAA-NOS-IOOS-2014-2003803 and FY19 ONR Announcement # N00014-18-S-B007). U.S. MBON represents a partnership among NOAA, NASA, BOEM, and ONR, with coordination provided by the U.S. Integrated Ocean Observing System (U.S. IOOS) Program Office.
