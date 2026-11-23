@@ -46,7 +46,7 @@ This work was made possible through the data sharing via the ACT, FACT, iTAG and
 
 ## News and publications
 
-- [Satellites Track White Marlin on the Run ](https://secoora.org/satellites-track-white-marlin-on-the-run/)
+- [Satellites Track White Marlin on the Run ](https://secoora.org/satellites-track-white-marlin-on-the-run/) — SECOORA
 - [Tracking Ocean Sunfish to Map Marine Biodiversity Hotspots](/news/tracking-ocean-sunfish/)
 - [Reimagining the Deep: BioTrack's Quest to Map Marine Biodiversity Hotspots](https://secoora.org/reimagining-the-deep-biotracks-quest-to-map-marine-biodiversity-hotspots/) — SECOORA
 - [Reimagining the Deep: BioTrack and the Whitespotted Eagle Rays of Florida's Indian River Lagoon](https://secoora.org/reimagining-the-deep-biotrack-and-the-whitespotted-eagle-rays-of-floridas-indian-river-lagoon/) — SECOORA
